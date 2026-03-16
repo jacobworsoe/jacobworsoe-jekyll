@@ -6,3 +6,10 @@ Gemfile.lock
 node_modules/
 assets/js/bundle.js
 *.log
+
+# Local credentials (never commit)
+scripts/.mysql-credentials
+scripts/.env
+
+# WordPress DB import temp output
+tmp_wp_import/

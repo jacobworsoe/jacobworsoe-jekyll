@@ -9,5 +9,12 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-sitemap"
   gem "jekyll-seo-tag"
-  # gem "jekyll-import"  # optional, for WordPress WXR import
+  gem "jekyll-import"
 end
+
+# WordPress DB importer (run: bundle exec jekyll import wordpress ...)
+gem "sequel"
+gem "mysql2"
+gem "unidecode"
+gem "safe_yaml"
+gem "htmlentities"
