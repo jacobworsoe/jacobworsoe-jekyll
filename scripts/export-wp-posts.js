@@ -3,7 +3,6 @@
  * Export WordPress posts (and optionally pages) to Jekyll _posts via REST API.
  * Usage: node export-wp-posts.js --url=https://www.jacobworsoe.dk [--pages] [--per-page=100]
  */
-const fetch = require('node-fetch');
 const fs = require('fs');
 const path = require('path');
 

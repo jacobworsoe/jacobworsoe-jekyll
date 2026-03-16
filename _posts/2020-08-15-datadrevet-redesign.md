@@ -1,0 +1,505 @@
+---
+layout: post
+title: Datadrevet redesign
+date: 2020-08-15 22:59:24
+slug: datadrevet-redesign
+categories:
+  - Webdesign
+---
+
+<p>Jeg startede denne blog i 2009 og <a href="https://www.jacobworsoe.dk/design-versioner/" rel="noopener">den første version</a> var bygget helt fra bunden hvor jeg havde kodet det hele i PHP med MySQL som database.</p>
+<p>I 2013 <a href="https://www.jacobworsoe.dk/flyttet-til-wordpress/" rel="noopener noreferrer">flyttede jeg bloggen over på WordPress</a> hvor alt HTML blev konverteret til WordPress templates, men designet forblev nogenlunde uændret.</p>
+<p>I 2014 <a href="https://www.jacobworsoe.dk/responsive-design-3-nemme-trin/">lavede jeg designet responsivt</a> så siden blev mobilvenlig.</p>
+<p>I 2019 var det så tid til et redesign hvor jeg har brugt data fra Google Analytics, både til at tage beslutninger for at få sitet til at loade så hurtigt som muligt, men også til at forbedre KPI&#8217;erne for sitet. Jeg har også testet et råd fra Steve Krug&#8217;s Dont Make Me Think, for at få brugerne til at læse flere af mine blogindlæg.</p>
+<p>Jeg har delt blogindlægget op i to dele, hvor den første del fokuserer på hvordan jeg har kodet sitet (der er brugt GA data to steder, som er markeret med fed herunder).</p>
+<p>Den anden del fokuserer på optimering med Google Analytics og opfølgning på effekten af de ændringer jeg har lavet.</p>
+<h2>Indhold</h2>
+<p><strong>Part 1:</strong> Det tekniske med fokus på hvordan designet er kodet.</p>
+<ul>
+<li><a href="#article-header-id-0">Mål med det nye design</a></li>
+<li><a href="#article-header-id-1">Workflow</a>
+<ul>
+<li><a href="#article-header-id-11">GruntJS</a></li>
+<li><a href="#article-header-id-2">Kun én JavaScript fil</a></li>
+<li><a href="#article-header-id-3">Browser caching og cache busting</a></li>
+<li><a href="#article-header-id-4">Gruntfile.js</a></li>
+</ul>
+</li>
+<li><a href="#article-header-id-5">JavaScript</a>
+<ul>
+<li><a href="#article-header-id-5">Tracking logik fra GTM til dataLayer</a></li>
+<li><a href="#article-header-id-6">Væk med jQuery</a></li>
+<li><a href="#article-header-id-7">JavaScript reduceret fra 184 KB til 31 KB</a></li>
+</ul>
+</li>
+<li><a href="#article-header-id-8">CSS</a>
+<ul>
+<li><a href="#article-header-id-81">CSS skrevet i Sass</a></li>
+<li><a href="#article-header-id-9">Inline CSS eller ekstern fil? <strong>(Baseret på adfærdsdata fra Google Analytics)</strong></a></li>
+<li><a href="#article-header-id-10">Inline kun den nødvendige CSS kode</a></li>
+<li><a href="#article-header-id-11">CSS reduceret med 45%</a></li>
+<li><a href="#article-header-id-12">Væk med !important</a></li>
+</ul>
+</li>
+<li><a href="#article-header-id-13">Billeder</a></li>
+<li><a href="#article-header-id-14">WordPress</a>
+<ul>
+<li><a href="#article-header-id-141">Væk med unødvendige plugins</a></li>
+<li><a href="#article-header-id-15">Tabeller</a></li>
+<li><a href="#article-header-id-16">Syntax highlighting</a></li>
+<li><a href="#article-header-id-17">Relaterede indlæg <strong>(Baseret på adfærdsdata fra Google Analytics)</strong></a></li>
+</ul>
+</li>
+</ul>
+<p><strong>Part 2:</strong> Optimering af adfærden på sitet med Google Analytics data.</p>
+<ul>
+<li><a href="#article-header-id-18">Loadtid og konvertering</a>
+<ul>
+<li><a href="#article-header-id-181">Google Pagespeed Score hævet fra 86 til 99</a></li>
+<li><a href="#article-header-id-19">Er sitet så blevet hurtigere?</a></li>
+<li><a href="#article-header-id-20">Hvad med konvertering?</a></li>
+<li><a href="#article-header-id-21">Øge sidevisninger pr. besøg (test af råd fra Steve Krug)</a></li>
+</ul>
+</li>
+<li><a href="#article-header-id-22">Lykkedes målene?</a></li>
+</ul>
+<h2 id="article-header-id-0">Mål med det nye design</h2>
+<ol>
+<li>Mere moderne workflow til udvikling af websitet</li>
+<li>Oprydning i kode og sletning af unødvendige ting</li>
+<li>Hurtigere loadtid</li>
+<li>Højere konvertering</li>
+<li>Øge sidevisninger pr. besøg</li>
+</ol>
+<h2 id="article-header-id-1">Workflow</h2>
+<h3 id="article-header-id-11">GruntJS</h3>
+<p>Der er mange (kedelige) opgaver involveret i at optimere front-end kode og jeg bruger <a href="https://gruntjs.com/">GruntJS</a> som task runner, til at udføre alle de opgaver automatisk.</p>
+<p>GruntJS gør følgende ved mine filer:</p>
+<ol>
+<li>Samler JavaScript filer til én samlet, minificeret fil. Både de forskellige libraries jeg bruger og mine egne JavaScript filer.</li>
+<li>Compiler alle <a href="https://sass-lang.com/">Sass</a> filerne til en minificeret CSS fil.</li>
+<li>Kopiere alle de færdige optimerede filer over i en mappe, som indeholder de filer der skal uploades til webserveren.</li>
+<li>JavaScript filen bliver cachet 1 år i browseren og derfor får den et unikt nyt navn, hvis filen ændres, så browseren downloader den nye fil.</li>
+<li>Grunt overvåger mine filer og kører de ovenstående opgaver, når jeg gemmer en ny ændring, fx i en Sass eller JavaScript fil.</li>
+</ol>
+<h3 id="article-header-id-2">Kun én JavaScript fil</h3>
+<p>Det er ikke så vigtigt efter HTTP2 blev lanceret, men det er stadig best practise at lave så få requests som muligt, fx ved at samle alt JavaScript i én fil. Takket være GruntJS bliver dette gjort helt automatisk og derefter bliver filen minificeret.</p>
+<h3 id="article-header-id-3">Browser caching og cache busting</h3>
+<p>JS filen caches i browseren i 1 år ved at sætte expire-headers til 1 år i <code class="" data-line="">.htaccess</code>. Jeg har brugt de anbefalede settings fra <a href="https://html5boilerplate.com/" rel="noopener noreferrer" target="_blank">html5boilerplate</a>.</p>
+<pre><code class="" data-line="">ExpiresByType application/javascript                &quot;access plus 1 year&quot;
+ExpiresByType application/x-javascript              &quot;access plus 1 year&quot;
+ExpiresByType text/javascript                       &quot;access plus 1 year&quot;
+</code></pre>
+<p>GruntJS laver et hash baseret på indholdet i filen og det hash bliver tilføjet til filnavnet.</p>
+<p>Dvs. denne fil:</p>
+<p><code class="" data-line="">bundle.min.js</code></p>
+<p>Kommer til at hedde:</p>
+<p><code class="" data-line="">bundle.min.e3d609e4.js</code></p>
+<p>Hvis filen ændrer sig bliver der lavet en ny hash, så filnavnet ændrer sig. Dermed vil browseren se det som en ny fil, så den ikke bruger den fil den allerede har i cache, men downloade den nye fil.</p>
+<p>Dermed kan jeg have filen cachet nærmest uendeligt, men stadig sikre at alle browsere får den nyeste fil, hvis jeg ændrer noget.</p>
+<h3 id="article-header-id-4">Gruntfile.js</h3>
+<p>For de interesserede, så er her min <code class="" data-line="">Gruntfile.js</code> som indeholder hele den opsætning af GruntJS som er beskrevet herover. Derudover har den også compile af Sass til CSS som jeg beskriver om lidt.</p>
+<pre><code class="" data-line="">module.exports = function(grunt) {
+    require(&quot;load-grunt-tasks&quot;)(grunt);
+
+    // 1. All configuration goes here
+    grunt.initConfig({
+        pkg: grunt.file.readJSON(&quot;package.json&quot;),
+
+        // grunt-contrib-concat
+        concat: {
+            dist: {
+                src: [
+                    &quot;js/libs/prism.js&quot;,
+                    &quot;js/SlideUpBox.js&quot;,
+                    &quot;js/content-as-ecommerce.js&quot;,
+                    &quot;js/tracking.js&quot;,
+                    &quot;js/hamburgerNav.js&quot;,
+                    &quot;js/jacobworsoe.js&quot;,
+                    &quot;js/drinksberegner.js&quot;
+                ],
+                dest: &quot;js/build/bundle.js&quot;
+            }
+        },
+
+        // grunt-contrib-uglify
+        uglify: {
+            build: {
+                files: [
+                    {
+                        src: &quot;js/build/bundle.js&quot;,
+                        dest: &quot;js/build/bundle.min.js&quot;
+                    }
+                ]
+            }
+        },
+
+        // grunt-contrib-sass
+        sass: {
+            dist: {
+                options: {
+                    style: &quot;compressed&quot;,
+                    sourcemap: &quot;none&quot;
+                },
+                files: {
+                    &quot;css/homepage.css&quot;: &quot;scss/homepage-bundle.sass&quot;,
+                    &quot;css/single.css&quot;: &quot;scss/single-bundle.sass&quot;
+                }
+            }
+        },
+
+        // grunt-contrib-copy
+        copy: {
+            main: {
+                files: [
+                    {
+                        expand: true,
+                        src: [&quot;*.php&quot;],
+                        dest: &quot;dist/&quot;,
+                        filter: &quot;isFile&quot;
+                    },
+                    {
+                        expand: true,
+                        src: [&quot;*.css&quot;],
+                        dest: &quot;dist/&quot;,
+                        filter: &quot;isFile&quot;
+                    },
+                    {
+                        expand: true,
+                        src: [&quot;*.png&quot;],
+                        dest: &quot;dist/&quot;,
+                        filter: &quot;isFile&quot;
+                    },
+                    {
+                        expand: true,
+                        src: [&quot;css/*.css&quot;],
+                        dest: &quot;dist/&quot;,
+                        filter: &quot;isFile&quot;
+                    },
+                    {
+                        expand: true,
+                        src: [&quot;js/build/*.min.js&quot;],
+                        dest: &quot;dist/&quot;,
+                        filter: &quot;isFile&quot;
+                    },
+                    {
+                        expand: true,
+                        src: [&quot;svg/*.svg&quot;],
+                        dest: &quot;dist/&quot;,
+                        filter: &quot;isFile&quot;
+                    }
+                ]
+            }
+        },
+
+        // grunt-hashres
+        hashres: {
+            options: {
+                fileNameFormat: &quot;${name}.${hash}.${ext}&quot;,
+                renameFiles: true
+            },
+            prod: {
+                options: {},
+                src: [&quot;dist/js/**/*.min.js&quot;],
+                dest: [&quot;dist/footer.php&quot;]
+            }
+        },
+
+        // grunt-contrib-watch
+        watch: {
+            options: {
+                livereload: true
+            },
+            scripts: {
+                files: [&quot;js/*.js&quot;],
+                tasks: [&quot;concat&quot;, &quot;uglify&quot;],
+                options: {
+                    spawn: false
+                }
+            },
+            css: {
+                files: [&quot;scss/*.sass&quot;, &quot;scss/*.scss&quot;],
+                tasks: [&quot;sass&quot;],
+                options: {
+                    spawn: false
+                }
+            }
+        }
+
+    }); // grunt.initConfig
+
+    // 4. Where we tell Grunt what to do when we type &quot;grunt&quot; into the terminal.
+    // Development tasks
+    grunt.registerTask(&quot;default&quot;, [&quot;sass&quot;, &quot;watch&quot;]);
+    grunt.registerTask(&quot;stage&quot;, [&quot;sass&quot;, &quot;concat&quot;, &quot;uglify&quot;, &quot;copy&quot;]);
+    grunt.registerTask(&quot;deploy&quot;, [
+        &quot;sass&quot;,
+        &quot;concat&quot;,
+        &quot;uglify&quot;,
+        &quot;copy&quot;,
+        &quot;hashres&quot;        
+    ]);
+};
+</code></pre>
+<h2 id="article-header-id-5">JavaScript</h2>
+<h3 id="article-header-id-51">Tracking logik fra GTM til dataLayer</h3>
+<p>Jeg afprøver og tester en masse forskellig tracking på mit website. Noget af det er tilføjet til sitets JavaScript fil og udstillet i <code class="" data-line="">dataLayer</code> som det bør, men noget bliver også hurtigt tilføjet direkte i GTM for at afprøve det.</p>
+<p>Jeg gik alt GTM kode igennem og fik det flyttet til sitet, så GTM indeholder så lidt kode og logik som muligt. Det er fint at teste noget hurtigt i GTM, men det skal tilføjes til <code class="" data-line="">dataLayer</code> hvis det skal være permanent.</p>
+<h3 id="article-header-id-6">Væk med jQuery</h3>
+<p>Jeg har omskrevet alt jQuery til ren JavaScript for at slippe for at loade de 87 KB som jQuery fylder når det er minified (274 KB unminified). Her var <a href="http://youmightnotneedjquery.com/" rel="noopener noreferrer" target="_blank">youmightnotneedjquery.com</a> en stor hjælp.</p>
+<h3 id="article-header-id-7">JavaScript reduceret fra 184 KB til 31 KB</h3>
+<p>JavaScript koden til websitet er reduceret kraftigt med i alt 153 KB hvoraf de 87 KB er jQuery. Men der er også en masse andre ting jeg har skåret væk og skrevet smartere. Fx <a href="http://fitvidsjs.com/">FitVids.JS</a> som jeg brugte da jeg lavede <a href="https://www.jacobworsoe.dk/responsive-design-3-nemme-trin/">sitet responsivt</a> til at gøre YouTube videoer responsive. Det er meget smart, men med lidt simpel HTML og CSS kan man undvære det jQuery plugin.</p>
+<p>Jeg indsætter en <code class="" data-line="">div</code> rundt om videoen.</p>
+<pre><code class="" data-line="">&lt;div class=&quot;videoWrapper&quot;&gt;
+    &lt;iframe src=&quot;//www.youtube.com/embed/usyYXNNBRjc&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Og tilføjer lidt styling af den <code class="" data-line="">div</code> samt iframen som indeholder videoen, og så er videoen responsiv.</p>
+<pre><code class="" data-line="">.videoWrapper
+    position: relative
+    padding-bottom: 56.25%
+    padding-top: 25px
+    height: 0
+    margin: 20px 0 20px 0
+    border: 5px solid $lightGrey
+
+.videoWrapper iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+</code></pre>
+<p>Jeg brugte også LunaMetrics&#8217; <a href="https://www.bounteous.com/insights/2015/05/11/youtube-tracking-google-analytics-google-tag-manager/?ns=l">script til tracking af visninger af YouTube videoer</a>, men jeg brugte ikke den tracking til noget, så det blev også fjernet.</p>
+<h2 id="article-header-id-8">CSS</h2>
+<h3 id="article-header-id-81">CSS skrevet i Sass</h3>
+<p>I det nye redesign skrev jeg alt CSS fra bunden igen og jeg valgte at skrive det i <a href="https://sass-lang.com/" rel="noopener noreferrer" target="_blank">Sass</a>.</p>
+<p>Sass er et sprog som giver nogle ekstra muligheder og Sass filerne skal compiles til almindelige CSS filer inden de ryger ud på websitet.</p>
+<p>Her er mine top 3 fedeste ting ved Sass.</p>
+<p><strong>1) Variabler.</strong> Jeg kan definere variabler, fx til farvekoder som er brugt mange steder i koden. Dermed kan du nemt skifte farven overalt i din kode, blot ved at ændre én variabel. Da facebook valgte at rydde op i deres CSS, fandt de 800 næsten ens blå farver i koden. Det sker ikke med Sass.</p>
+<div id="attachment_2372" style="width: 650px" class="wp-caption alignnone"><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Sass-vars-farver.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-2372" src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Sass-vars-farver.jpg" alt="Websitets farver defineret i Sass variabler." width="640" height="420" class="size-full wp-image-2372" /></a><p id="caption-attachment-2372" class="wp-caption-text">Websitets farver defineret i Sass variabler.</p></div>
+<p><strong>2) Imports.</strong> Jeg kan splitte Sass koden op i mindre filer som tilhører en bestemt side eller sektion af sitet. Det hele kan samles til én fil, så browseren stadig kun skal lave et request.</p>
+<pre><code class="" data-line="">// Base
+@import &quot;normalize&quot;
+@import &quot;_vars&quot;
+@import &quot;_base&quot;
+@import &quot;_jetpack&quot;
+
+// Critical
+@import &quot;_header&quot;
+@import &quot;_videoEmbeds&quot;
+@import &quot;_pre&quot;
+@import &quot;_button&quot;
+@import &quot;_blockquote&quot;
+
+// Below-the-fold
+@import &quot;_post-share-follow&quot;
+@import &quot;_comments&quot;
+@import &quot;_footer&quot;
+@import &quot;_slide-up-box&quot;
+
+// Pages
+@import &quot;_single&quot;
+@import &quot;_highlight&quot;
+@import &quot;_tables&quot;
+</code></pre>
+<p><strong>3) Nesting.</strong> Med Nesting kan man tilføje underliggende selectors blot ved at indent&#8217;e linjen, så man slipper for at gentage selectors mange gange.</p>
+<p>Her er et eksempel på Nesting i Sass.</p>
+<pre><code class="" data-line="">.comment-gravatar
+    float: left
+    width: 15%
+    max-width: 120px
+    padding-right: 20px
+    margin-top: 10px
+
+    @media(max-width: 500px)
+        padding-right: 8px
+
+    img
+        border-radius: 5px
+</code></pre>
+<p>Og her den CSS kode det compiles til.</p>
+<pre><code class="" data-line="">.comment-gravatar {
+  float: left;
+  width: 15%;
+  max-width: 120px;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+
+@media(max-width: 500px) {
+  .comment-gravatar {
+    padding-right: 8px;
+  }
+}
+
+.comment-gravatar img {
+  border-radius: 5px;
+}
+</code></pre>
+<h3 id="article-header-id-9">Inline CSS eller ekstern fil?</h3>
+<p>Normalt er det best practice at have CSS i en ekstern fil, så den kan caches i browseren. Men det kræver et ekstra request at have den i en ekstern fil. Så om det kan betale sig at lave et ekstra request kommer an på hvor stor filen er samt hvor mange sider brugeren ser på sitet.</p>
+<p>På første sidevisning vil det nemlig være en ulempe at have CSS i en ekstern fil, da der skal laves et request mere. Men på efterfølgende sider vil filen være cachet og skal ikke hentes igen.</p>
+<div id="attachment_2300" style="width: 896px" class="wp-caption alignnone"><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-2300" src="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent.jpg" alt="Bounce rate på 85% og 1,17 sider pr. session" width="886" height="286" class="size-full wp-image-2300" srcset="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent.jpg 886w, https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent-690x223.jpg 690w, https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent-768x248.jpg 768w, https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent-860x278.jpg 860w" sizes="auto, (max-width: 886px) 100vw, 886px" /></a><p id="caption-attachment-2300" class="wp-caption-text">Bounce rate på 85% og 1,17 sider pr. session</p></div>
+<p>I løbet af det sidste år har der været en bounce rate på 85% på sitet, dvs. langt de fleste læser kun et enkelt blogindlæg. Der bliver også kun set 1,17 sider pr. session. Det betyder altså at 85% af de besøgende ikke ser en efterfølgende side og dermed ikke får gevinsten af en cachet CSS fil.</p>
+<p>I hvert fald ikke i det samme besøg. Men det kan jo være de kommer tilbage på sitet igen og dermed stadig har CSS filen i deres cache.</p>
+<div id="attachment_2094" style="width: 640px" class="wp-caption alignnone"><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/new-vs.-returning-visitors.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-2094" src="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/new-vs.-returning-visitors.jpg" alt="25% af de besøgende har været på sitet før." width="630" height="453" class="size-full wp-image-2094" /></a><p id="caption-attachment-2094" class="wp-caption-text">25% af de besøgende har været på sitet før.</p></div>
+<p>Det er kun 25% af de besøgende der har været på sitet før, så langt de fleste vil ikke have CSS filen cachet.</p>
+<div class="attention"><strong>Bemærk!</strong> Jeg har ekskluderet Safari her, da Safari ikke længere giver korrekte tal for tilbagevendende besøg efter ITP 2.1.</div>
+<p>Min konklusion på de ovenstående data bliver at det er bedst at optimere efter at give en hurtig oplevelse på den første sidevisning og derfor lægger jeg CSS&#8217;en inline, for at spare det ekstra request.</p>
+<h3 id="article-header-id-10">Inline kun den nødvendige CSS kode</h3>
+<p>Når man har CSS i en ekstern fil som bliver cachet giver det typisk bedst mening at samle det hele i én fil. Men når jeg inliner min CSS kode, giver det bedre mening kun at inline den CSS kode der skal bruges på den specifikke side.</p>
+<p>Min forside er rimelig simpel. I mit tilfælde er det bare en liste af mine blogindlæg med titel, dato og antal kommentarer.</p>
+<div id="attachment_2473" style="width: 410px" class="wp-caption aligncenter"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-2473" src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/50466523-B08F-45FF-AE69-A85876863517.jpg" alt="Forsiden er meget simpel." width="400" height="437" class="size-full wp-image-2473" /><p id="caption-attachment-2473" class="wp-caption-text">Forsiden er meget simpel.</p></div>
+<p>Et blogindlæg har både billeder og video i indlægget, den har en anderledes header med titlen på indlægget. I bunden er der links til sociale medier, tilmelding til nyhedsbrev og så er der hele kommentar sektionen, som kræver en masse CSS kode.</p>
+<div id="attachment_2474" style="width: 410px" class="wp-caption aligncenter"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-2474" src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/716B5771-D030-4214-BF2C-4B0A8DA036D3.jpg" alt="Et blogindlæg kræver noget mere CSS." width="400" height="560" class="size-full wp-image-2474" /><p id="caption-attachment-2474" class="wp-caption-text">Et blogindlæg kræver noget mere CSS.</p></div>
+<p>Der er altså en masse CSS kode som er helt overflødig at loade på forsiden og vice versa.</p>
+<p>Når jeg bruger Sass til at samle de enkelte .sass filer til en færdig CSS fil laver jeg derfor to filer:</p>
+<ol>
+<li>En til forsiden og kategorisider, hvor der blot vises en liste af indlæg.</li>
+<li>En til <code class="" data-line="">single.php</code> som viser hele indlægget.</li>
+</ol>
+<p>De to filer har alt den generelle styling til fælles, som jeg har brudt ud i logiske moduler.</p>
+<pre><code class="" data-line="">// Base
+@import &quot;normalize&quot; // https://necolas.github.io/normalize.css/
+@import &quot;_vars&quot; // Sass variabler med alle de farver jeg bruger
+@import &quot;_base&quot; // Site-wide styling, fx box-sizing: border-box og H1, H2, H3 og overordnet font-family
+@import &quot;_jetpack&quot; // Jetpack tilføjer en lille statistik box, som jeg sjuler med CSS
+
+// Critical - Above-the-fold
+@import &quot;_header&quot; // SVG logo, sidens titel, hamburger menuen og selve menuen som åbnes
+
+// Below-the-fold
+@import &quot;_footer&quot; // Footer med sociale links, mit billede og en række links
+</code></pre>
+<p>Ovenstående CSS kode inkluderes i begge filer og derudover inkluderer jeg så den kode som er relevant for hhv. forsiden og blogindlægget.</p>
+<p>Jeg har i alt 19 KB CSS kode.</p>
+<p><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/Frodeling-af-bytes-i-CSS-koden.jpg"><img loading="lazy" decoding="async" src="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/Frodeling-af-bytes-i-CSS-koden-860x503.jpg" alt="" width="860" height="503" class="alignnone size-large wp-image-2099" srcset="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/Frodeling-af-bytes-i-CSS-koden-860x503.jpg 860w, https://www.jacobworsoe.dk/wp-content/uploads/2019/11/Frodeling-af-bytes-i-CSS-koden-690x404.jpg 690w, https://www.jacobworsoe.dk/wp-content/uploads/2019/11/Frodeling-af-bytes-i-CSS-koden-768x449.jpg 768w, https://www.jacobworsoe.dk/wp-content/uploads/2019/11/Frodeling-af-bytes-i-CSS-koden.jpg 1200w" sizes="auto, (max-width: 860px) 100vw, 860px" /></a></p>
+<ul>
+<li>41% er Normalize, som jeg måske skal overveje om jeg kan undvære.</li>
+<li>38% er specifikt til blogindlæg som jeg derved ikke behøver at loade på forsiden.</li>
+<li>18% er den globale CSS til header og footer.</li>
+<li>3% er til forsiden, der som sagt er meget simpel.</li>
+</ul>
+<p>I WordPress inkluderer jeg de to CSS filer så de ligger inline, baseret på et check for om siden er <code class="" data-line="">single.php</code> eller andre sider.</p>
+<pre><code class="" data-line="">&lt;style&gt;
+&lt;?php if ( is_single() || is_page() ) {
+    include(&quot;css/single.css&quot;);
+} else {
+    include(&quot;css/homepage.css&quot;);
+}
+?&gt;
+&lt;/style&gt;
+</code></pre>
+<h3 id="article-header-id-11">CSS reduceret med 45%</h3>
+<p>CSS kode har det med at vokse over tid og man får sjældent ryddet op løbende. Her skrev jeg alt fra bunden og jeg er nok også blevet bedre til at skrive CSS så det fylder mindre. Resultatet er en 45% reduktion af CSS fra 34,5 KB på i det gamle design til 19 KB i det nye design.</p>
+<p><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/CSS-kode-KB-jacobworsoe-v2-vs.-v3.jpg"><img loading="lazy" decoding="async" src="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/CSS-kode-KB-jacobworsoe-v2-vs.-v3.jpg" alt="" width="1002" height="601" class="alignnone size-full wp-image-2103" srcset="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/CSS-kode-KB-jacobworsoe-v2-vs.-v3.jpg 1002w, https://www.jacobworsoe.dk/wp-content/uploads/2019/11/CSS-kode-KB-jacobworsoe-v2-vs.-v3-690x414.jpg 690w, https://www.jacobworsoe.dk/wp-content/uploads/2019/11/CSS-kode-KB-jacobworsoe-v2-vs.-v3-768x461.jpg 768w, https://www.jacobworsoe.dk/wp-content/uploads/2019/11/CSS-kode-KB-jacobworsoe-v2-vs.-v3-860x516.jpg 860w" sizes="auto, (max-width: 1002px) 100vw, 1002px" /></a></p>
+<h3 id="article-header-id-12">Væk med !important</h3>
+<p>Når jeg skriver !important i min CSS kode er det et tegn på at jeg har malet mig op i et hjørne.</p>
+<p>Det er en sidste udvej. Og det kommer til at bide mig i røven senere hen.</p>
+<p>Det gamle design brugte !important 35 gange.</p>
+<p>Derfor har jeg fokuseret på at få gennemtænkt mine CSS selectors så jeg undgår at bruge !important i det nye design.</p>
+<p>Jeg har også tænkt over at min styling skal cascade så meget som muligt, så jeg definerer mest muligt CSS kode på de øverste selectors (dem med lavest specificity) og derefter nedarves de bare til alt det øvrige. Det betyder også at jeg ikke overskriver min egen kode eller laver den samme styling flere gange på forskellige selectors.</p>
+<p>Et eksempel er at jeg styler min font på <code class="" data-line="">html</code> elementet og derefter nedarves det bare til resten af sitet, så jeg ikke skal style min font igen &#8211; lige bortset fra <code class="" data-line="">input</code> elementer som ikke nedarver styling og derfor skal styling skrives specifikt på dem.</p>
+<pre><code class="" data-line="">html
+    background: $grey-dark
+    color: $lightGrey
+    font-family: -system-ui,-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,&quot;Segoe UI Symbol&quot;
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    letter-spacing: 0.02em
+    font-size: 20px
+    line-height: 1.75
+</code></pre>
+<p>Tit bruges !important også for at overskrive noget andet styling, fx noget CSS der kommer med et plugin. Det betyder dermed overflødig kode, som blot overskrives.</p>
+<p>Det giver også browseren mere arbejde med at finde ud af hvad der skal overskrive noget andet.</p>
+<p>Jeg har, så vidt det er muligt, deaktiveret den medfølgende CSS fra de enkelte plugins, så jeg blot får den rå HTML og selv skrevet alt styling. Dermed er jeg sikker på at der ikke kommer noget overflødig CSS kode med.</p>
+<h2 id="article-header-id-13">SVG til grafik</h2>
+<p>SVG er super fedt til grafiske elementer fordi det er kode og ikke et billede. Dermed kan det skalere uendeligt uden at blive grimt og det fylder meget lidt.</p>
+<p>Jeg bruger det fx til den lille graf i mit logo.</p>
+<p>Der er forskellige måder at indsætte et SVG billede på og jeg lytter til <a href="https://css-tricks.com/">Chris Coyiers</a> enorme erfaring om SVG (han har skrevet en bog om det: <a href="https://abookapart.com/products/practical-svg" rel="noopener noreferrer" target="_blank">Practical SVG</a>). Hans anbefaling er blot at inline SVG koden direkte i HTML&#8217;en. Det har han skrevet om her: <a href="https://css-tricks.com/pretty-good-svg-icon-system/" rel="noopener noreferrer" target="_blank">A Pretty Good SVG Icon System</a></p>
+<p>Jeg har alle mine SVG filer liggende i koden og selve koden til grafen i logoet kan ses herunder. Den fylder kun 848 bytes som SVG fil.</p>
+<div id="attachment_2060" style="width: 870px" class="wp-caption alignnone"><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/SVG-filer.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-2060" src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/SVG-filer-860x247.jpg" alt="SVG koden til grafen som fylder under 1 KB" width="860" height="247" class="size-large wp-image-2060" srcset="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/SVG-filer-860x247.jpg 860w, https://www.jacobworsoe.dk/wp-content/uploads/2019/10/SVG-filer-690x198.jpg 690w, https://www.jacobworsoe.dk/wp-content/uploads/2019/10/SVG-filer-768x221.jpg 768w, https://www.jacobworsoe.dk/wp-content/uploads/2019/10/SVG-filer.jpg 1292w" sizes="auto, (max-width: 860px) 100vw, 860px" /></a><p id="caption-attachment-2060" class="wp-caption-text">SVG koden til grafen som fylder under 1 KB</p></div>
+<p>Indholdet af SVG filen indsætter jeg i <code class="" data-line="">header.php</code> med følgende kode. Når SVG filen ligger i koden, skal der ikke laves et ekstra request for at hente den og færre requests er med til at gøre sitet hurtigt.</p>
+<pre><code class="" data-line="">&lt;a href=&quot;https://www.jacobworsoe.dk/&quot; title=&quot;jacobworsoe.dk&quot; rel=&quot;home&quot; class=&quot;blog-title&quot;&gt;
+   &lt;span class=&quot;logo&quot;&gt;&lt;?php include(&quot;svg/logo.svg&quot;); ?&gt;&lt;/span&gt;
+   &lt;span class=&quot;title&quot;&gt;&lt;?php bloginfo( &#039;name&#039; ); ?&gt;&lt;/span&gt;
+&lt;/a&gt;
+</code></pre>
+<h2 id="article-header-id-14">WordPress</h2>
+<h3 id="article-header-id-141">Væk med unødvendige plugins</h3>
+<p>Jeg har fået fjernet en del plugins, så det bliver mere simpelt, fjerner mulige sikkerhedshuller og gør sitet hurtigere.</p>
+<h3 id="article-header-id-15">Tabeller</h3>
+<p><a href="https://wordpress.org/plugins/tablepress/" rel="noopener noreferrer" target="_blank">TablePress</a> er et fedt plugin, men de få simple tabeller jeg har i mine indlæg, kan jeg sagtens skrive i hånden, så væk med det.</p>
+<h3 id="article-header-id-16">Syntax highlighting</h3>
+<p>Jeg brugte <a href="https://github.com/googlearchive/code-prettify">Code Prettify</a> til syntax highlighting af kode. Jeg er skiftet til at bruge <a href="https://prismjs.com/" rel="noopener noreferrer" target="_blank">Prism.js</a> hvor jeg vælger præcis de kodesprog jeg skal bruge og så får jeg en CSS fil og en JavaScript fil. CSS filen inkluderer jeg i min SCSS fil og JavaScript filen bliver bundlet sammen med min øvrige JS kode i én samlet fil. Og så er dét plugin overflødigt :)</p>
+<p>Jeg kan i øvrigt anbefale <a href="https://css-tricks.com/posting-code-blocks-wordpress-site/" rel="noopener noreferrer" target="_blank">denne artikel</a> med alle de forskellige muligheder for at skrive og vise kode i WordPress.</p>
+<h3 id="article-header-id-17">Relaterede indlæg</h3>
+<p>Jeg har brugt Yet Another Related Posts Plugin til at vise relaterede indlæg i bunden af hvert blogindlæg.</p>
+<div id="attachment_1829" style="width: 951px" class="wp-caption alignnone"><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Relaterede-blogindlæg.png"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-1829" src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Relaterede-blogindlæg.png" alt="I bunden af alle blogindlæg vises links til relaterede blogindlæg." width="941" height="595" class="size-full wp-image-1829" srcset="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Relaterede-blogindlæg.png 941w, https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Relaterede-blogindlæg-690x436.png 690w, https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Relaterede-blogindlæg-768x486.png 768w, https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Relaterede-blogindlæg-725x458.png 725w" sizes="auto, (max-width: 941px) 100vw, 941px" /></a><p id="caption-attachment-1829" class="wp-caption-text">I bunden af alle blogindlæg vises links til relaterede blogindlæg.</p></div>
+<p>Jeg brugte Enhanced Ecommerce til at tracke impressions og clicks på dem og fandt ud af at de links havde en CTR på 0,42% så for 99,58% var de bare ligegyldigt støj på siden. Så jeg fjernede dem inklusiv det plugin.</p>
+<div id="attachment_1830" style="width: 1104px" class="wp-caption alignnone"><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Product-list-performance-nyeste-og-relaterede-indlæg.png"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-1830" src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Product-list-performance-nyeste-og-relaterede-indlæg.png" alt="CTR på 0,42% viser at meget få klikker på de links." width="1094" height="485" class="size-full wp-image-1830" srcset="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Product-list-performance-nyeste-og-relaterede-indlæg.png 1094w, https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Product-list-performance-nyeste-og-relaterede-indlæg-690x306.png 690w, https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Product-list-performance-nyeste-og-relaterede-indlæg-768x340.png 768w, https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Product-list-performance-nyeste-og-relaterede-indlæg-725x321.png 725w" sizes="auto, (max-width: 1094px) 100vw, 1094px" /></a><p id="caption-attachment-1830" class="wp-caption-text">CTR på 0,42% viser at meget få klikker på de links.</p></div>
+<p>Jeg fjernede i øvrigt også links til de seneste blogindlæg, da de havde en endnu lavere CTR på 0,05% &#8211; disse blev ikke lavet med et plugin, men det er altid godt at få fjernet unødvendigt støj.</p>
+<div id="attachment_1828" style="width: 1280px" class="wp-caption alignnone"><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Nyeste-blogindlæg-imressions-clicks-CTR.png"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-1828" src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Nyeste-blogindlæg-imressions-clicks-CTR.png" alt="Sidebar med nyeste blogindlæg." width="1270" height="526" class="size-full wp-image-1828" srcset="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Nyeste-blogindlæg-imressions-clicks-CTR.png 1270w, https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Nyeste-blogindlæg-imressions-clicks-CTR-690x286.png 690w, https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Nyeste-blogindlæg-imressions-clicks-CTR-768x318.png 768w, https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Nyeste-blogindlæg-imressions-clicks-CTR-725x300.png 725w" sizes="auto, (max-width: 1270px) 100vw, 1270px" /></a><p id="caption-attachment-1828" class="wp-caption-text">Sidebar med nyeste blogindlæg.</p></div>
+<h2 id="article-header-id-18">Loadtid og konvertering</h2>
+<p>Okay, det var en lang teknisk snak. Nu skal vi se om det har givet de ønskede resultater.</p>
+<h3 id="article-header-id-181">Google Pagespeed Score hævet fra 86 til 99</h3>
+<p>Det gamle design havde en pagespeed score på 86 for desktop. <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.jacobworsoe.dk%2F&#038;tab=desktop" rel="noopener noreferrer" target="_blank">Den er nu 99</a>.</p>
+<div id="attachment_2337" style="width: 711px" class="wp-caption alignnone"><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/pagespeed_score_99_desktop.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-2337" src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/pagespeed_score_99_desktop.jpg" alt="Pagespeed score på 99 for desktop." width="701" height="467" class="size-full wp-image-2337" srcset="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/pagespeed_score_99_desktop.jpg 701w, https://www.jacobworsoe.dk/wp-content/uploads/2020/08/pagespeed_score_99_desktop-690x460.jpg 690w" sizes="auto, (max-width: 701px) 100vw, 701px" /></a><p id="caption-attachment-2337" class="wp-caption-text">Pagespeed score på 99 for desktop.</p></div>
+<p>Den vigtige metric er dog mobile nu og <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.jacobworsoe.dk%2F&#038;tab=mobile" rel="noopener noreferrer" target="_blank">den er 96</a>.</p>
+<div id="attachment_2338" style="width: 697px" class="wp-caption alignnone"><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/pagespeed_score_96_mobile.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-2338" src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/pagespeed_score_96_mobile.jpg" alt="Pagespeed score på 96 for mobile." width="687" height="477" class="size-full wp-image-2338" /></a><p id="caption-attachment-2338" class="wp-caption-text">Pagespeed score på 96 for mobile.</p></div>
+<h3 id="article-header-id-19">Er sitet så blevet hurtigere?</h3>
+<p>Ja, det er det. I gennemsnit er loadtiden blevet forbedret 29%.</p>
+<div id="attachment_2367" style="width: 602px" class="wp-caption alignnone"><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Average-pageload-times.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-2367" src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Average-pageload-times.jpg" alt="Den gennemsnitlige loadtid er forbedret 29%." width="592" height="327" class="size-full wp-image-2367" /></a><p id="caption-attachment-2367" class="wp-caption-text">Den gennemsnitlige loadtid er forbedret 29%.</p></div>
+<p>Men gennemsnit kan snyde meget og skjule sandheden.</p>
+<p>Ikke alle sider loader lige hurtigt.</p>
+<p>Jeg har blogindlæg på mere end <a href="https://www.jacobworsoe.dk/indhold-enhanced-ecommerce/">6000 ord med masser af billeder</a>. Jeg har meget populære blogindlæg som står for <a href="https://www.jacobworsoe.dk/hvor-meget-drikker-gaesterne-til-et-bryllup/">70% af sidevisningerne</a> som kun har få, men til gengæld meget store billeder. Og så er der <a href="https://www.jacobworsoe.dk">forsiden</a> som stort set kun er tekst.</p>
+<p>Især det faktum at de har meget forskellige antal sidevisninger gør at de fylder meget forskelligt i gennemsnittet.</p>
+<p>Lad os derfor kigge på top 10 mest populære sider hver for sig, samt et vægtet gennemsnit for de sider. Alle top 10 sider er blevet hurtigere, men der er stor forskel på hvor meget de er forbedret.</p>
+<div id="attachment_2368" style="width: 870px" class="wp-caption alignnone"><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-loadtid-top-10-sider.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-2368" src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-loadtid-top-10-sider-860x496.jpg" alt="Top 10 sider er i gennemsnit blevet 22% hurtigere - men der er store forskelle!" width="860" height="496" class="size-large wp-image-2368" srcset="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-loadtid-top-10-sider-860x496.jpg 860w, https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-loadtid-top-10-sider-690x398.jpg 690w, https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-loadtid-top-10-sider-768x443.jpg 768w, https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-loadtid-top-10-sider.jpg 1102w" sizes="auto, (max-width: 860px) 100vw, 860px" /></a><p id="caption-attachment-2368" class="wp-caption-text">Top 10 sider er i gennemsnit blevet 22% hurtigere &#8211; men der er store forskelle!</p></div>
+<p>22% er et mere retvisende gennemsnit for udviklingen i loadtid.</p>
+<h3 id="article-header-id-20">Hvad med konvertering?</h3>
+<p>Jeg har tidligere skrevet om hvordan jeg bruger Enhanced Ecommerce til at <a href="https://www.jacobworsoe.dk/indhold-enhanced-ecommerce/">tracke om brugerne læser mine blogindlæg</a>.</p>
+<p>Kort fortalt tracker jeg hvor mange der scroller helt til bunden af et blogindlæg og har været mindst 1 minut på siden. Det er den vigtigste KPI for min blog. Hvor mange læser hele blogindlægget?</p>
+<p>For hvert blogindlæg har jeg en Buy-to-detail Rate, som er forholdet mellem antal sidevisninger og antal læsninger.</p>
+<p>På trods af at loadtiden er markant forbedret for alle blogindlæg, så er konverteringen desværre ikke steget &#8211; tværtimod.</p>
+<p>Jeg tror den store årsag til den lavere konvertering skyldes designet. Jeg har skruet op for <code class="" data-line="">font-size</code> fra <code class="" data-line="">17px</code> til <code class="" data-line="">20px</code> i det nye design og gjort overskrifter markant større og givet det hele lidt mere &#8220;luft&#8221;. Det gør det nemmere at læse, men siden bliver også markant længere. Måske føles det som et længere blogindlæg at tygge sig igennem?</p>
+<div id="attachment_2377" style="width: 1068px" class="wp-caption alignnone"><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-konvertering-top-10-sider.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-2377" src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-konvertering-top-10-sider.jpg" alt="Udvikling i konvertering - top 10 sider" width="1058" height="645" class="size-full wp-image-2377" srcset="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-konvertering-top-10-sider.jpg 1058w, https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-konvertering-top-10-sider-690x421.jpg 690w, https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-konvertering-top-10-sider-768x468.jpg 768w, https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-konvertering-top-10-sider-860x524.jpg 860w" sizes="auto, (max-width: 1058px) 100vw, 1058px" /></a><p id="caption-attachment-2377" class="wp-caption-text">Udvikling i konvertering &#8211; top 10 sider</p></div>
+<p>Bounce Rate er ligeledes uændret, på trods af den hurtigere loadtid.</p>
+<div id="attachment_2378" style="width: 925px" class="wp-caption alignnone"><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Bounce-Rate-comparison.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-2378" src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Bounce-Rate-comparison.jpg" alt="Bounce Rate før/efter designet." width="915" height="497" class="size-full wp-image-2378" srcset="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Bounce-Rate-comparison.jpg 915w, https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Bounce-Rate-comparison-690x375.jpg 690w, https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Bounce-Rate-comparison-768x417.jpg 768w, https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Bounce-Rate-comparison-860x467.jpg 860w" sizes="auto, (max-width: 915px) 100vw, 915px" /></a><p id="caption-attachment-2378" class="wp-caption-text">Bounce Rate før/efter designet.</p></div>
+<p>Så det nye design har ikke haft den ønskede effekt på konverteringen. Det må jeg gøre bedre i næste design.</p>
+<h3 id="article-header-id-21">Øge sidevisninger pr. besøg</h3>
+<p>Jeg har læst <a href="https://www.saxo.com/dk/dont-make-me-think-revisited_steve-krug_paperback_9780321965516">Don&#8217;t Make Me Think</a> mange gange og den kan anbefales til alle der arbejder med noget digitalt.</p>
+<div id="attachment_2383" style="width: 632px" class="wp-caption alignnone"><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Dont_make_me_think.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-2383" src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Dont_make_me_think.jpg" alt="Don&#039;t Make Me Think af Steve Krug" width="622" height="622" class="size-full wp-image-2383" srcset="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Dont_make_me_think.jpg 622w, https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Dont_make_me_think-300x300.jpg 300w" sizes="auto, (max-width: 622px) 100vw, 622px" /></a><p id="caption-attachment-2383" class="wp-caption-text">Don&#8217;t Make Me Think af Steve Krug</p></div>
+<p>Her er en god pointe fra bogen omkring navigation.</p>
+<div id="attachment_2384" style="width: 870px" class="wp-caption alignnone"><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/The-overlooked-purpose-of-navigation.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-2384" src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/The-overlooked-purpose-of-navigation-860x486.jpg" alt="Navigation reveals content!" width="860" height="486" class="size-large wp-image-2384" srcset="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/The-overlooked-purpose-of-navigation-860x486.jpg 860w, https://www.jacobworsoe.dk/wp-content/uploads/2020/08/The-overlooked-purpose-of-navigation-690x390.jpg 690w, https://www.jacobworsoe.dk/wp-content/uploads/2020/08/The-overlooked-purpose-of-navigation-768x434.jpg 768w, https://www.jacobworsoe.dk/wp-content/uploads/2020/08/The-overlooked-purpose-of-navigation.jpg 1000w" sizes="auto, (max-width: 860px) 100vw, 860px" /></a><p id="caption-attachment-2384" class="wp-caption-text">Navigation reveals content!</p></div>
+<p>Som tidligere vist, så har sitet en Bounce Rate på 85% og der bliver kun set 1,17 sider pr. session.</p>
+<div id="attachment_2300" style="width: 896px" class="wp-caption alignnone"><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-2300" src="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent.jpg" alt="Bounce rate på 85% og 1,17 sider pr. session" width="886" height="286" class="size-full wp-image-2300" srcset="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent.jpg 886w, https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent-690x223.jpg 690w, https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent-768x248.jpg 768w, https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent-860x278.jpg 860w" sizes="auto, (max-width: 886px) 100vw, 886px" /></a><p id="caption-attachment-2300" class="wp-caption-text">Bounce rate på 85% og 1,17 sider pr. session</p></div>
+<p>Jeg vil gerne at brugerne fortsætter rundt på sitet og ser nogle flere blogindlæg.</p>
+<p>Det gamle design havde ikke en menu, så jeg tilføjede en burger menu som viser sitets kategorier, som Steve Krug anbefaler i Don&#8217;t Make Me Think.</p>
+<div id="attachment_2386" style="width: 808px" class="wp-caption alignnone"><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/burger-menu-open.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-2386" src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/burger-menu-open.jpg" alt="Burger menu med kategorier." width="798" height="552" class="size-full wp-image-2386" srcset="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/burger-menu-open.jpg 798w, https://www.jacobworsoe.dk/wp-content/uploads/2020/08/burger-menu-open-690x477.jpg 690w, https://www.jacobworsoe.dk/wp-content/uploads/2020/08/burger-menu-open-768x531.jpg 768w" sizes="auto, (max-width: 798px) 100vw, 798px" /></a><p id="caption-attachment-2386" class="wp-caption-text">Burger menu med kategorier.</p></div>
+<p>Jeg tracker både hvor mange der åbner burger menuen og hvor mange der klikker i den.</p>
+<ul>
+<li>1,6% af alle besøg åbner menuen.</li>
+<li>0,4% af alle besøg klikker på noget i menuen.</li>
+</ul>
+<p>Her er de kategorier der bliver klikket på.</p>
+<div id="attachment_2385" style="width: 772px" class="wp-caption alignnone"><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Click-in-hamburger-navigation.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-2385" src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Click-in-hamburger-navigation.jpg" alt="Mest klikkede kategorier i burger menuen." width="762" height="587" class="size-full wp-image-2385" srcset="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Click-in-hamburger-navigation.jpg 762w, https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Click-in-hamburger-navigation-690x532.jpg 690w" sizes="auto, (max-width: 762px) 100vw, 762px" /></a><p id="caption-attachment-2385" class="wp-caption-text">Mest klikkede kategorier i burger menuen.</p></div>
+<p>Umiddelbart en ret lav konverteringsrate og sider pr. besøg er dog også uændret.</p>
+<div id="attachment_2388" style="width: 473px" class="wp-caption alignnone"><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Pages-per-session.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-2388" src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Pages-per-session.jpg" alt="Pages per session er uændret." width="463" height="266" class="size-full wp-image-2388" /></a><p id="caption-attachment-2388" class="wp-caption-text">Pages per session er uændret.</p></div>
+<p>Så selvom Steve Krug har ret i mange ting, så virker en burger menu altså ikke på dette site. Jeg må i tænkeboks.</p>
+<p>Til sammenligning er der 0,47% der klikker på et internt link når jeg i et blogindlæg, linker til et andet af mine blogindlæg.</p>
+<h2 id="article-header-id-22">Lykkedes målene?</h2>
+<p>Lad os se.</p>
+<ol>
+<li>Mere moderne workflow til udvikling af websitet &#8211; <span class="task-status-completed">Tjek!</span></li>
+<li>Oprydning i kode og sletning af unødvendige ting &#8211; <span class="task-status-completed">Tjek!</span></li>
+<li>Hurtigere loadtid &#8211; <span class="task-status-completed">Tjek!</span></li>
+<li>Højere konvertering &#8211; <span class="task-status-failed">Nope!</span></li>
+<li>Øge sidevisninger pr. besøg &#8211; <span class="task-status-failed">Nope!</span></li>
+</ol>
+<style>
+.task-status-completed { color: #48e0a4 }
+.task-status-failed { color: #ffafaf }
+</style>
+

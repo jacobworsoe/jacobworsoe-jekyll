@@ -4,7 +4,6 @@
  * Comments are keyed by post slug (resolved from post ID).
  * Usage: node export-wp-comments.js --url=https://www.jacobworsoe.dk
  */
-const fetch = require('node-fetch');
 const fs = require('fs');
 const path = require('path');
 
