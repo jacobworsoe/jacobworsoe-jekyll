@@ -4,35 +4,30 @@ var JacobWorsoeMain = {
   },
 
   bindUIActions: function() {
-    // single.php
-    if (
-      (typeof pageType !== "undefined" && pageType === "single") ||
-      (typeof pageType !== "undefined" && pageType === "page")
-    ) {
-      ContentAsEcommerce.trackSinglePostAsProduct(product);      
+    if (typeof pageType === "undefined") return;
 
-      // Track clicks on links in post content
-      document
-        .querySelector(".post-content")
-        .addEventListener("click", function(e) {
+    if (pageType === "single" || pageType === "page") {
+      if (typeof product !== "undefined" && Array.isArray(product) && product.length) {
+        ContentAsEcommerce.trackSinglePostAsProduct(product);
+      }
+      var postContent = document.querySelector(".post-content");
+      if (postContent) {
+        postContent.addEventListener("click", function(e) {
           Tracking.trackLinkClicks(e, "Link click in content");
         });
+      }
     }
 
-    // index.php
-    if (
-      (typeof pageType !== "undefined" && pageType === "homepage") ||
-      (typeof pageType !== "undefined" && pageType === "category")
-    ) {
+    if (pageType === "homepage" || pageType === "category") {
       ContentAsEcommerce.trackProductImpressions();
-
-      // Track clicks on posts
-      document.querySelector(".content").addEventListener("click", function(e) {
-        ContentAsEcommerce.trackClicksOnPosts(e);
-      });
+      var contentEl = document.querySelector(".content");
+      if (contentEl) {
+        contentEl.addEventListener("click", function(e) {
+          ContentAsEcommerce.trackClicksOnPosts(e);
+        });
+      }
     }
   }
 };
 
-// Launch main app
 JacobWorsoeMain.init();

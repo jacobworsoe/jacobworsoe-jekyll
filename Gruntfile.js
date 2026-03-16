@@ -29,12 +29,12 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         options: {
-          style: "compressed",
-          sourcemap: "none"
+          implementation: require("sass"),
+          outputStyle: "compressed",
+          sourceMap: false
         },
         files: {
-          "assets/css/homepage.css": "scss/homepage-bundle.sass",
-          "assets/css/single.css": "scss/single-bundle.sass"
+          "assets/css/main.css": "scss/main-bundle.sass"
         }
       }
     }
