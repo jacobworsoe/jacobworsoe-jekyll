@@ -10,12 +10,6 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year/:month/:title/
 
-# Collections / structure
-collections:
-  posts:
-    output: true
-    permalink: /:year/:month/:title/
-
 # Exclude from processing
 exclude:
   - Gemfile
@@ -25,6 +19,7 @@ exclude:
   - package-lock.json
   - Gruntfile.js
   - scss
+  - scripts
   - README.md
 
 # Plugins (GitHub Pages uses a whitelist; add here if using more)
