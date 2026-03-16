@@ -19,6 +19,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -36,19 +38,21 @@ jobs:
       - name: Setup Node (for theme assets)
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
-      - name: "Build assets (Grunt: Sass, concat + uglify to JS)"
-        run: |
-          npm install
-          npm run build
-
-      - name: Build with Jekyll
+      - name: Build (assets + Jekyll)
         env:
           JEKYLL_ENV: production
         run: |
           set -o pipefail
-          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" 2>&1 | tee jekyll-build.log
+          {
+            echo "=== npm install ==="
+            npm install
+            echo "=== npm run build (Grunt) ==="
+            npm run build
+            echo "=== Jekyll build ==="
+            bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+          } 2>&1 | tee jekyll-build.log
 
       - name: Upload build log on failure
         if: failure()
@@ -56,6 +60,7 @@ jobs:
         with:
           name: jekyll-build-log
           path: jekyll-build.log
+        continue-on-error: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
