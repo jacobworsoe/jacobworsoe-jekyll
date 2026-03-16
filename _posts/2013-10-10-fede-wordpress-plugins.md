@@ -3,6 +3,7 @@ layout: post
 title: 10 fede Wordpress plugins
 date: 2013-10-10 08:09:11
 slug: fede-wordpress-plugins
+wordpress_id: 222
 categories:
   - Wordpress
 ---

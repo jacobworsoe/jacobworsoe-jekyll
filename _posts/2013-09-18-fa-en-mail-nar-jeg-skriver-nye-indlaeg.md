@@ -3,6 +3,7 @@ layout: post
 title: Få en mail når jeg skriver nye indlæg
 date: 2013-09-18 20:36:53
 slug: fa-en-mail-nar-jeg-skriver-nye-indlaeg
+wordpress_id: 252
 categories:
   - Wordpress
 ---

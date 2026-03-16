@@ -3,6 +3,7 @@ layout: post
 title: Spor søgemaskinernes robotter i Google Analytics
 date: 2010-01-15 01:53:51
 slug: spor-sogemaskinernes-robotter-i-google-analytics
+wordpress_id: 25
 categories:
   - Analytics
 ---

@@ -3,6 +3,7 @@ layout: post
 title: Tracking af cola med Google Analytics og Flic buttons
 date: 2018-07-29 23:50:27
 slug: cola-google-analytics-flic-buttons
+wordpress_id: 1358
 categories:
   - Analytics
 ---

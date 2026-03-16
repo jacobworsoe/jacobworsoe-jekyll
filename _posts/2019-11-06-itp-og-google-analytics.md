@@ -3,6 +3,7 @@ layout: post
 title: ITP og Google Analytics
 date: 2019-11-06 21:56:19
 slug: itp-og-google-analytics
+wordpress_id: 2001
 categories:
   - Analytics
 ---

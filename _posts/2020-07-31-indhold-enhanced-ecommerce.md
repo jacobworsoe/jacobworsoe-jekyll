@@ -3,6 +3,7 @@ layout: post
 title: Tracking af indhold med Enhanced Ecommerce
 date: 2020-07-31 23:33:15
 slug: indhold-enhanced-ecommerce
+wordpress_id: 1700
 categories:
   - Analytics
 ---

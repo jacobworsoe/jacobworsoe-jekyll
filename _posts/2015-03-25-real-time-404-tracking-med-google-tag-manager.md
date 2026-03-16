@@ -3,6 +3,7 @@ layout: post
 title: Real-time 404 tracking med Google Tag Manager
 date: 2015-03-25 14:50:50
 slug: real-time-404-tracking-med-google-tag-manager
+wordpress_id: 674
 categories:
   - Analytics
 ---

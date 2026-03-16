@@ -16,7 +16,7 @@ style: homepage
     <h1 class="home-post-headline">
       <a href="{{ post.url | relative_url }}"
          data-title="{{ post.title | escape }}"
-         data-id="{{ post.id }}"
+         data-id="{{ post.wordpress_id | default: post.id }}"
          data-category="{{ post.categories | join: '' }}"
          data-year="{{ post.date | date: '%Y' }}"
          data-price="{{ post.content | number_of_words }}"
@@ -25,7 +25,7 @@ style: homepage
         {{ post.title }}
       </a>
     </h1>
-    <span class="home-post-date">{{ post.date | date: '%d. %b %Y' }}</span>
+    <span class="home-post-date">{% include date-da.html date=post.date %}</span>
   </div>
   {% assign position = position | plus: 1 %}
   {% endfor %}

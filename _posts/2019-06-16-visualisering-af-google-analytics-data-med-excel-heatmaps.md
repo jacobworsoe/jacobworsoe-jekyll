@@ -3,6 +3,7 @@ layout: post
 title: Visualisering af Google Analytics data med Excel heatmaps
 date: 2019-06-16 11:20:41
 slug: visualisering-af-google-analytics-data-med-excel-heatmaps
+wordpress_id: 1444
 categories:
   - Analytics
 ---

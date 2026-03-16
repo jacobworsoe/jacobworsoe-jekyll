@@ -1,4 +1,4 @@
 ---
 layout: home
-title: Home
+title: "jacobworsoe.dk – only differences that are significant are different, otherwise it's just random…"
 ---

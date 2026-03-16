@@ -3,6 +3,7 @@ layout: post
 title: I nærkontakt med Matt Cutts
 date: 2010-02-04 01:40:53
 slug: i-naerkontakt-med-matt-cutts
+wordpress_id: 42
 categories:
   - SEO
 ---

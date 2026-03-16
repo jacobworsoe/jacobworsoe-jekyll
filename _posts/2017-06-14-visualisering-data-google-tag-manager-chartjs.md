@@ -3,6 +3,7 @@ layout: post
 title: Visualisering af data med Google Tag Manager og ChartJS
 date: 2017-06-14 21:29:04
 slug: visualisering-data-google-tag-manager-chartjs
+wordpress_id: 1138
 categories:
   - Analytics
 ---

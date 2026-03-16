@@ -2,8 +2,8 @@
 """
 Export WordPress posts and pages from MySQL to Jekyll.
 Uses same DB and credentials as export_wp_comments_mysql.py.
-Preserves WordPress URL structure: posts -> /:year/:month/:title/ (slug = post_name),
-pages -> /:slug/ (via root .md files). Requires _config.yml permalink: /:year/:month/:title/
+Preserves WordPress URL structure: posts -> /:year/:month/:day/:title/ (slug = post_name),
+pages -> /:slug/ (via root .md files). Requires _config.yml permalink: /:year/:month/:day/:title/
 Reads credentials from scripts/.mysql-credentials (gitignored).
 Usage: python scripts/export_wp_posts_pages_mysql.py
 """
@@ -60,6 +60,23 @@ def escape_yaml(s):
     return s
 
 
+def wp_permalink_to_jekyll(permalink_structure):
+    """
+    Convert WordPress permalink_structure to Jekyll permalink.
+    E.g. /%postname%/ -> /:title/   or   /%year%/%monthnum%/%postname%/ -> /:year/:month/:title/
+    """
+    if not permalink_structure or not permalink_structure.strip():
+        return "/:year/:month/:day/:title/"
+    s = permalink_structure.strip().strip("/")
+    # Map WP tags to Jekyll tokens
+    s = s.replace("%year%", ":year").replace("%monthnum%", ":month").replace("%day%", ":day")
+    s = s.replace("%postname%", ":title").replace("%post_id%", ":id").replace("%category%", ":categories")
+    s = s.replace("%author%", ":author")
+    if "%" in s or (":year" not in s and ":title" not in s):
+        return "/:year/:month/:day/:title/"
+    return "/" + s.strip("/") + "/"
+
+
 def main():
     creds = load_credentials()
     try:
@@ -84,6 +101,21 @@ def main():
         conn.close()
         raise SystemExit("No WordPress posts table found. Tables: %s" % ", ".join(tables[:20]))
     table_prefix = posts_tables[0].rsplit("posts", 1)[0]
+
+    # WordPress options (permalink_structure, siteurl, etc.)
+    wp_settings = {}
+    options_table = table_prefix + "options"
+    if any(t == options_table for t in tables):
+        with conn.cursor() as cur:
+            cur.execute(f"""
+                SELECT option_name, option_value FROM {options_table}
+                WHERE option_name IN (
+                    'permalink_structure', 'blogname', 'siteurl', 'home',
+                    'category_base', 'tag_base', 'page_on_front', 'show_on_front'
+                )
+            """)
+            for row in cur.fetchall():
+                wp_settings[(row[0] or "").strip()] = (row[1] or "").strip()
 
     # Post ID -> category names (from term_relationships -> term_taxonomy -> terms)
     post_categories = {}
@@ -162,6 +194,7 @@ def main():
             "title: %s" % escape_yaml(post_title),
             "date: %s" % date_fm,
             "slug: %s" % post_name,
+            "wordpress_id: %s" % post_id,
         ]
         if categories:
             lines.append("categories:")
@@ -201,7 +234,44 @@ def main():
         out.write_text("\n".join(lines), encoding="utf-8")
         pages_written += 1
 
-    print("Wrote %d posts to _posts/, %d pages to root. URL structure matches WordPress (permalink /:year/:month/:title/)." % (posts_written, pages_written))
+    # Write WordPress settings to _data and update Jekyll _config.yml permalink
+    data_dir = repo_root / "_data"
+    data_dir.mkdir(parents=True, exist_ok=True)
+    permalink_structure = wp_settings.get("permalink_structure", "")
+    jekyll_permalink = wp_permalink_to_jekyll(permalink_structure)
+
+    settings_lines = [
+        "# Exported from WordPress wp_options (run export_wp_posts_pages_mysql.py to refresh)",
+        "",
+    ]
+    for k, v in sorted(wp_settings.items()):
+        if v:
+            settings_lines.append("%s: %s" % (k, escape_yaml(v)))
+    settings_lines.append("")
+    settings_lines.append("# Derived Jekyll permalink (from permalink_structure)")
+    settings_lines.append("jekyll_permalink: %s" % escape_yaml(jekyll_permalink.strip("/")))
+    (data_dir / "wordpress_settings.yml").write_text("\n".join(settings_lines), encoding="utf-8")
+
+    config_path = repo_root / "_config.yml"
+    config_text = config_path.read_text(encoding="utf-8")
+    # Replace permalink block: optional comment line + "permalink: ..."
+    permalink_pattern = re.compile(
+        r"^(\s*)#.*[Pp]ermalink.*\n\s*permalink:\s*[^\n]+",
+        re.MULTILINE,
+    )
+    replacement = "# Match WordPress permalink_structure (from wp_options)\npermalink: %s" % jekyll_permalink
+    if permalink_pattern.search(config_text):
+        config_text = permalink_pattern.sub(replacement, config_text, count=1)
+    else:
+        # No comment+permalink block; replace single permalink: line
+        config_text = re.sub(r"^(\s*)permalink:\s*[^\n]+", r"\1" + "permalink: %s" % jekyll_permalink, config_text, count=1, flags=re.MULTILINE)
+        if "permalink:" not in config_text:
+            config_text = config_text.replace("highlighter: rouge\n", "highlighter: rouge\n" + replacement + "\n")
+    config_path.write_text(config_text, encoding="utf-8")
+
+    print("Wrote %d posts to _posts/, %d pages to root." % (posts_written, pages_written))
+    print("WordPress permalink_structure: %s -> Jekyll permalink: %s" % (repr(permalink_structure), jekyll_permalink))
+    print("Settings saved to _data/wordpress_settings.yml, _config.yml updated.")
 
 
 if __name__ == "__main__":

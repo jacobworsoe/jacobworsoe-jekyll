@@ -3,6 +3,7 @@ layout: post
 title: Statistikken bag en splittest
 date: 2009-12-11 02:16:08
 slug: statistikken-bag-google-website-optimizer
+wordpress_id: 9
 categories:
   - Konverteringsoptimering
 ---

@@ -3,6 +3,7 @@ layout: post
 title: Datadrevet redesign
 date: 2020-08-15 22:59:24
 slug: datadrevet-redesign
+wordpress_id: 1180
 categories:
   - Webdesign
 ---

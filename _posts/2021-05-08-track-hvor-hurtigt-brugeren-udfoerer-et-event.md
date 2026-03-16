@@ -3,6 +3,7 @@ layout: post
 title: Track hvor hurtigt brugeren udfører et event
 date: 2021-05-08 16:21:41
 slug: track-hvor-hurtigt-brugeren-udfoerer-et-event
+wordpress_id: 1935
 categories:
   - Analytics
 ---

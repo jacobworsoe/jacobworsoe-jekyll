@@ -3,6 +3,7 @@ layout: post
 title: 15 danske split-test cases
 date: 2016-03-28 13:19:27
 slug: danske-split-test-cases
+wordpress_id: 40
 categories:
   - Konverteringsoptimering
 ---

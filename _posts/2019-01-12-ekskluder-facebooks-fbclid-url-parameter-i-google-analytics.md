@@ -3,6 +3,7 @@ layout: post
 title: Ekskluder facebooks fbclid URL parameter i Google Analytics
 date: 2019-01-12 00:13:39
 slug: ekskluder-facebooks-fbclid-url-parameter-i-google-analytics
+wordpress_id: 1474
 categories:
   - Analytics
 ---

@@ -3,6 +3,7 @@ layout: post
 title: Kør en test på tværs af dit website
 date: 2009-12-06 01:03:58
 slug: kor-en-test-pa-tvaers-af-dit-website
+wordpress_id: 4
 categories:
   - Konverteringsoptimering
 ---

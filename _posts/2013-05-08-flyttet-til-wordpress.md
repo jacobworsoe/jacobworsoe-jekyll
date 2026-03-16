@@ -3,6 +3,7 @@ layout: post
 title: Flyttet til Wordpress
 date: 2013-05-08 16:31:24
 slug: flyttet-til-wordpress
+wordpress_id: 111
 categories:
   - Wordpress
 ---

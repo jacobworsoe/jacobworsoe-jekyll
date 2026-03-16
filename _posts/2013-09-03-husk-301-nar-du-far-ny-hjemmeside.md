@@ -3,6 +3,7 @@ layout: post
 title: Husk 301 når du får ny hjemmeside
 date: 2013-09-03 07:12:21
 slug: husk-301-nar-du-far-ny-hjemmeside
+wordpress_id: 226
 categories:
   - SEO
 ---

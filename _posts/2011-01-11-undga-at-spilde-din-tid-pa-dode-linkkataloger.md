@@ -3,6 +3,7 @@ layout: post
 title: Undgå at spilde din tid på døde linkkataloger
 date: 2011-01-11 23:51:18
 slug: undga-at-spilde-din-tid-pa-dode-linkkataloger
+wordpress_id: 67
 categories:
   - SEO
 ---

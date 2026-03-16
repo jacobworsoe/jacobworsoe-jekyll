@@ -3,6 +3,7 @@ layout: post
 title: Workarounds på ITP
 date: 2019-11-08 21:56:20
 slug: workarounds-paa-itp
+wordpress_id: 2614
 categories:
   - Analytics
 ---

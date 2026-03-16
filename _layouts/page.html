@@ -25,9 +25,10 @@ style: single
     var pageType = "page";
     var wordsInPostInt = {{ words_in_post }};
     var wordsInPostBuckets = "{{ words_buckets }}";
+    // price = word count (same as WordPress), computed at build from content
     var product = [{
       name: {{ page.title | jsonify }},
-      id: "{{ page.id }}",
+      id: "{{ page.wordpress_id | default: page.id }}",
       price: "{{ words_in_post }}",
       brand: "{{ page.date | date: '%Y' }}",
       category: "page",

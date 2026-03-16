@@ -3,6 +3,7 @@ layout: post
 title: Kan browser fingerprinting erstatte cookies?
 date: 2022-01-11 22:01:18
 slug: browser-fingerprinting-erstatte-cookies
+wordpress_id: 2166
 categories:
   - Analytics
 ---

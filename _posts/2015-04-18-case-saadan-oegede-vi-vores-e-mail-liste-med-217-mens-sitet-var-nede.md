@@ -3,6 +3,7 @@ layout: post
 title: Case: Sådan øgede vi vores e-mail liste med 217% - mens sitet var nede!
 date: 2015-04-18 21:55:37
 slug: case-saadan-oegede-vi-vores-e-mail-liste-med-217-mens-sitet-var-nede
+wordpress_id: 717
 categories:
   - E-mail marketing
 ---

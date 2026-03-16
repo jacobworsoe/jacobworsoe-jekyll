@@ -3,6 +3,7 @@ layout: post
 title: Machine Learning med Excel
 date: 2021-07-24 16:11:16
 slug: machine-learning-med-excel
+wordpress_id: 652
 categories:
   - Analytics
 ---

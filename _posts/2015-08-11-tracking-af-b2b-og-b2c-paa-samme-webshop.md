@@ -3,6 +3,7 @@ layout: post
 title: Tracking af B2B og B2C på samme webshop
 date: 2015-08-11 23:46:45
 slug: tracking-af-b2b-og-b2c-paa-samme-webshop
+wordpress_id: 2662
 categories:
   - Analytics
 ---

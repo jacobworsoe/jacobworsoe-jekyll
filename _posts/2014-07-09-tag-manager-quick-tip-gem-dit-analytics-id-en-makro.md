@@ -3,6 +3,7 @@ layout: post
 title: Tag Manager Quick Tip: Gem dit Analytics ID i en makro
 date: 2014-07-09 09:11:02
 slug: tag-manager-quick-tip-gem-dit-analytics-id-en-makro
+wordpress_id: 603
 categories:
   - Analytics
 ---

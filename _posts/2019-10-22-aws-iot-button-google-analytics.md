@@ -3,6 +3,7 @@ layout: post
 title: Tracking af kaffeforbrug med AWS IoT Button og Google Analytics
 date: 2019-10-22 21:48:06
 slug: aws-iot-button-google-analytics
+wordpress_id: 1998
 categories:
   - Analytics
 ---

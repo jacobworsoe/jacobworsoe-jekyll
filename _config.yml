@@ -8,7 +8,8 @@ lang: "da-DK"
 # Build
 markdown: kramdown
 highlighter: rouge
-permalink: /:year/:month/:title/
+# Match WordPress permalink_structure (from wp_options): /%postname%/
+permalink: /:title/
 
 # Exclude from processing
 exclude:

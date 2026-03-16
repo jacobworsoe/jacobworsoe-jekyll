@@ -21,7 +21,7 @@ style: single
 
 <div class="post-header wrap">
   <h1 class="post-headline">{{ page.title }}</h1>
-  <div class="post-date">{{ page.date | date: '%d/%m-%Y' }}</div>
+  <div class="post-date">{% include date-da.html date=page.date %}</div>
 </div>
 
 <div class="post-content wrap">
@@ -32,9 +32,10 @@ style: single
   var pageType = "single";
   var wordsInPostInt = {{ words_in_post }};
   var wordsInPostBuckets = "{{ words_buckets }}";
+  // product + dataLayer match WordPress: price = word count (computed at build from content)
   var product = [{
     name: {{ page.title | jsonify }},
-    id: "{{ page.id }}",
+    id: "{{ page.wordpress_id | default: page.id }}",
     price: "{{ words_in_post }}",
     brand: "{{ page.date | date: '%Y' }}",
     category: "{{ category_display | escape }}",

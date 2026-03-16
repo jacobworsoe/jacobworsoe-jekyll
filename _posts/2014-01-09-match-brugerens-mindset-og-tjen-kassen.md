@@ -3,6 +3,7 @@ layout: post
 title: Match brugerens mindset og tjen kassen
 date: 2014-01-09 19:52:55
 slug: match-brugerens-mindset-og-tjen-kassen
+wordpress_id: 496
 categories:
   - SEO
   - Konverteringsoptimering

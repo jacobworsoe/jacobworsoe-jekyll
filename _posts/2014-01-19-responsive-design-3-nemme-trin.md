@@ -3,6 +3,7 @@ layout: post
 title: Responsivt web design i 3 nemme trin
 date: 2014-01-19 09:37:49
 slug: responsive-design-3-nemme-trin
+wordpress_id: 397
 categories:
   - Webdesign
 ---

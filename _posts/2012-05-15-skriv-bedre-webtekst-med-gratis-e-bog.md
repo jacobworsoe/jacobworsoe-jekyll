@@ -3,6 +3,7 @@ layout: post
 title: Skriv bedre webtekst med gratis e-bog
 date: 2012-05-15 21:38:15
 slug: skriv-bedre-webtekst-med-gratis-e-bog
+wordpress_id: 74
 categories:
   - Konverteringsoptimering
 ---

@@ -3,6 +3,7 @@ layout: post
 title: Tracking af returvarer i Google Analytics
 date: 2019-10-27 00:10:19
 slug: returvarer-google-analytics
+wordpress_id: 1597
 categories:
   - Analytics
 ---

@@ -3,6 +3,7 @@ layout: post
 title: Tracking af retina skærme med Google Tag Manager
 date: 2017-05-14 10:35:46
 slug: tracking-retina-skaerme-google-tag-manager
+wordpress_id: 1123
 categories:
   - Analytics
 ---

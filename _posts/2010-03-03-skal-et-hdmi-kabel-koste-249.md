@@ -3,6 +3,7 @@ layout: post
 title: HDMI kabel - Skal det virkelig koste 249 kroner?
 date: 2010-03-03 23:48:13
 slug: skal-et-hdmi-kabel-koste-249
+wordpress_id: 45
 categories:
   - Nethandel
 ---

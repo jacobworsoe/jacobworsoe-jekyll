@@ -3,6 +3,7 @@ layout: post
 title: "Status på \"Google and China\"-testen"
 date: 2010-11-04 16:48:06
 slug: status-pa-google-and-china-testen
+wordpress_id: 60
 categories:
   - SEO
 ---

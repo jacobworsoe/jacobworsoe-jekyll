@@ -3,6 +3,7 @@ layout: post
 title: 11 fordele ved et statisk website (udover at det loader på 0,2 sek!)
 date: 2016-09-21 22:15:08
 slug: fordele-ved-et-statisk-website
+wordpress_id: 933
 categories:
   - Webdesign
 ---

@@ -1,0 +1,3 @@
+{% assign d = include.date | date: '%m' %}
+{% case d %}{% when '01' %}{% assign month_da = 'jan' %}{% when '02' %}{% assign month_da = 'feb' %}{% when '03' %}{% assign month_da = 'mar' %}{% when '04' %}{% assign month_da = 'apr' %}{% when '05' %}{% assign month_da = 'maj' %}{% when '06' %}{% assign month_da = 'jun' %}{% when '07' %}{% assign month_da = 'jul' %}{% when '08' %}{% assign month_da = 'aug' %}{% when '09' %}{% assign month_da = 'sep' %}{% when '10' %}{% assign month_da = 'okt' %}{% when '11' %}{% assign month_da = 'nov' %}{% when '12' %}{% assign month_da = 'dec' %}{% endcase %}
+{{ include.date | date: '%d' }}. {{ month_da }} {{ include.date | date: '%Y' }}

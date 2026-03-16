@@ -3,6 +3,7 @@ layout: post
 title: Gæsteblogger på CSS-Tricks + Tweetet af Google Analytics
 date: 2019-03-11 10:19:00
 slug: css-tricks-tweetet-google-analytics
+wordpress_id: 1967
 categories:
   - Analytics
 ---

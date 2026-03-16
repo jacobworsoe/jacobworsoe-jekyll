@@ -3,6 +3,7 @@ layout: post
 title: Opdateret liste over linkkataloger
 date: 2011-12-03 21:19:31
 slug: opdateret-liste-over-linkkataloger
+wordpress_id: 69
 categories:
   - SEO
 ---

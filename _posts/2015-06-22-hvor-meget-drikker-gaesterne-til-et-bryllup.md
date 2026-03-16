@@ -3,6 +3,7 @@ layout: post
 title: Hvor meget drikker gæsterne til et bryllup?
 date: 2015-06-22 22:56:20
 slug: hvor-meget-drikker-gaesterne-til-et-bryllup
+wordpress_id: 737
 categories:
   - Hverdagsstatistik
 ---

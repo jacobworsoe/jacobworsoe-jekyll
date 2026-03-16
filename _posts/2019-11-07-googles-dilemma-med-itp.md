@@ -3,6 +3,7 @@ layout: post
 title: Googles dilemma med ITP
 date: 2019-11-07 21:49:59
 slug: googles-dilemma-med-itp
+wordpress_id: 2609
 categories:
   - Analytics
 ---

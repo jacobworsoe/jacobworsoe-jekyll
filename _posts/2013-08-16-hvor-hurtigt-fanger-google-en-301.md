@@ -3,6 +3,7 @@ layout: post
 title: Hvor hurtigt fanger Google en 301?
 date: 2013-08-16 06:38:12
 slug: hvor-hurtigt-fanger-google-en-301
+wordpress_id: 85
 categories:
   - SEO
 ---
