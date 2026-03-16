@@ -51,6 +51,39 @@ def escape_liquid(content):
     return content
 
 
+def convert_wp_caption_shortcodes(content):
+    """
+    Convert WordPress [caption id="..." align="..." width="..."]...[/caption] to <figure>/<figcaption>.
+    Inner content is typically: <a href="..."><img ... /></a> Caption text.
+    """
+    if not content:
+        return content
+    pattern = re.compile(r"\[caption[^\]]*\](.*?)\[/caption\]", re.DOTALL | re.IGNORECASE)
+
+    def repl(m):
+        inner = m.group(1).strip()
+        caption = ""
+        if "</a>" in inner:
+            pos = inner.rfind("</a>")
+            content_part = inner[: pos + len("</a>")]
+            caption = inner[pos + len("</a>") :].strip()
+        elif "/>" in inner:
+            last_self = inner.rfind("/>")
+            content_part = inner[: last_self + 2]
+            caption = inner[last_self + 2 :].strip()
+        else:
+            content_part = inner
+        if caption:
+            return "<figure>%s<figcaption>%s</figcaption></figure>" % (content_part, caption)
+        return "<figure>%s</figure>" % content_part
+
+    out = pattern.sub(repl, content)
+    # Avoid <p><figure>...</figure></p> (invalid HTML): unwrap lone figure from p
+    out = re.sub(r"<p>\s*<figure>", "<figure>", out, flags=re.IGNORECASE)
+    out = re.sub(r"</figure>\s*</p>", "</figure>", out, flags=re.IGNORECASE)
+    return out
+
+
 def escape_yaml(s):
     if s is None:
         return ""
@@ -177,6 +210,7 @@ def main():
         if not post_name:
             post_name = "post-%s" % post_id
         post_content = (post_content or "").replace("\r\n", "\n")
+        post_content = convert_wp_caption_shortcodes(post_content)
         post_content = escape_liquid(post_content)
 
         # Jekyll post filename: YYYY-MM-DD-slug.md -> URL /:year/:month/:title/ = /YYYY/MM/slug/
@@ -214,6 +248,7 @@ def main():
             continue
         post_title = (post_title or "").strip()
         post_content = (post_content or "").replace("\r\n", "\n")
+        post_content = convert_wp_caption_shortcodes(post_content)
         post_content = escape_liquid(post_content)
         date_str = str(post_date)[:10] if post_date else ""
         date_fm = date_str

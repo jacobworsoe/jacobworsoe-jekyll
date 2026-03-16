@@ -3,55 +3,32 @@ layout: default
 style: single
 ---
 
-{% assign words_in_post = content | number_of_words %}
-{% assign words_buckets = "0-500" %}
-{% if words_in_post >= 5001 %}{% assign words_buckets = "5001+" %}
-{% elsif words_in_post >= 4501 %}{% assign words_buckets = "4501-5000" %}
-{% elsif words_in_post >= 4001 %}{% assign words_buckets = "4001-4500" %}
-{% elsif words_in_post >= 3501 %}{% assign words_buckets = "3501-4000" %}
-{% elsif words_in_post >= 3001 %}{% assign words_buckets = "3001-3500" %}
-{% elsif words_in_post >= 2501 %}{% assign words_buckets = "2501-3000" %}
-{% elsif words_in_post >= 2001 %}{% assign words_buckets = "2001-2500" %}
-{% elsif words_in_post >= 1501 %}{% assign words_buckets = "1501-2000" %}
-{% elsif words_in_post >= 1001 %}{% assign words_buckets = "1001-1500" %}
-{% elsif words_in_post >= 501 %}{% assign words_buckets = "501-1000" %}
-{% endif %}
+{% include word_buckets.html content=content %}
 {% assign slug = page.slug | default: page.url | split: '/' | last | replace: '/','' %}
 {% assign category_display = page.categories | join: ', ' %}
+{% assign product_id = page.wordpress_id | default: page.id %}
 
-<div class="post-header wrap">
-  <h1 class="post-headline">{{ page.title }}</h1>
-  <div class="post-date">{% include date-da.html date=page.date %}</div>
-</div>
+<article aria-labelledby="post-heading">
+  <header class="post-header wrap">
+    <h1 id="post-heading" class="post-headline">{{ page.title }}</h1>
+    <div class="post-date">{% include date-da.html date=page.date %}</div>
+  </header>
+  <div class="post-content wrap">
+    {{ content }}
+  </div>
+</article>
 
-<div class="post-content wrap">
-  {{ content }}
-</div>
+{% assign year_str = page.date | date: '%Y' %}
+{% include datalayer_product.html
+  page_type="single"
+  product_id=product_id
+  product_name=page.title
+  brand=year_str
+  year=year_str
+  category=category_display
+%}
 
-<script>
-  var pageType = "single";
-  var wordsInPostInt = {{ words_in_post }};
-  var wordsInPostBuckets = "{{ words_buckets }}";
-  // product + dataLayer match WordPress: price = word count (computed at build from content)
-  var product = [{
-    name: {{ page.title | jsonify }},
-    id: "{{ page.wordpress_id | default: page.id }}",
-    price: "{{ words_in_post }}",
-    brand: "{{ page.date | date: '%Y' }}",
-    category: "{{ category_display | escape }}",
-    variant: '',
-    quantity: 1,
-    dimension1: wordsInPostBuckets
-  }];
-  window.dataLayer = window.dataLayer || [];
-  dataLayer.push({
-    'Year': '{{ page.date | date: "%Y" }}',
-    'Category': '{{ category_display | escape }}',
-    'Words': '{{ words_in_post }}'
-  });
-</script>
-
-<div class="comments wrap" id="comments">
+<div class="comments wrap" id="comments" aria-label="Kommentarer">
   {% if site.data.comments[slug] and site.data.comments[slug] != empty %}
   <h2 id="comments-title" class="paragraph-headline">
     {% assign count = site.data.comments[slug] | size %}
@@ -61,7 +38,7 @@ style: single
     {% for c in site.data.comments[slug] %}
     <li class="comment" id="comment-{{ forloop.index }}">
       <div class="comment-gravatar">
-        <img src="{{ c.avatar_url | default: 'https://www.gravatar.com/avatar/?d=mp' }}" width="100" height="100" class="lazyload-gravatar" alt="Avatar">
+        <img src="{{ c.avatar_url | default: 'https://www.gravatar.com/avatar/?d=mp' }}" width="100" height="100" class="lazyload-gravatar" alt="">
       </div>
       <div class="comment-content">
         <div class="comment-author">

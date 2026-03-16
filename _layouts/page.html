@@ -3,44 +3,20 @@ layout: default
 style: single
 ---
 
-{% assign words_in_post = content | number_of_words %}
-{% assign words_buckets = "0-500" %}
-{% if words_in_post >= 5001 %}{% assign words_buckets = "5001+" %}
-{% elsif words_in_post >= 4501 %}{% assign words_buckets = "4501-5000" %}
-{% elsif words_in_post >= 4001 %}{% assign words_buckets = "4001-4500" %}
-{% elsif words_in_post >= 3501 %}{% assign words_buckets = "3501-4000" %}
-{% elsif words_in_post >= 3001 %}{% assign words_buckets = "3001-3500" %}
-{% elsif words_in_post >= 2501 %}{% assign words_buckets = "2501-3000" %}
-{% elsif words_in_post >= 2001 %}{% assign words_buckets = "2001-2500" %}
-{% elsif words_in_post >= 1501 %}{% assign words_buckets = "1501-2000" %}
-{% elsif words_in_post >= 1001 %}{% assign words_buckets = "1001-1500" %}
-{% elsif words_in_post >= 501 %}{% assign words_buckets = "501-1000" %}
-{% endif %}
+{% include word_buckets.html content=content %}
+{% assign product_id = page.wordpress_id | default: page.id %}
+{% assign year_str = page.date | date: '%Y' %}
 
-<div class="post-content wrap">
-  <h1 class="article-headline">{{ page.title }}</h1>
+<article class="post-content wrap" aria-labelledby="page-heading">
+  <h1 id="page-heading" class="article-headline">{{ page.title }}</h1>
   {{ content }}
 
-  <script>
-    var pageType = "page";
-    var wordsInPostInt = {{ words_in_post }};
-    var wordsInPostBuckets = "{{ words_buckets }}";
-    // price = word count (same as WordPress), computed at build from content
-    var product = [{
-      name: {{ page.title | jsonify }},
-      id: "{{ page.wordpress_id | default: page.id }}",
-      price: "{{ words_in_post }}",
-      brand: "{{ page.date | date: '%Y' }}",
-      category: "page",
-      variant: '',
-      quantity: 1,
-      dimension1: wordsInPostBuckets
-    }];
-    window.dataLayer = window.dataLayer || [];
-    dataLayer.push({
-      'Year': '{{ page.date | date: "%Y" }}',
-      'Category': 'page',
-      'Words': '{{ words_in_post }}'
-    });
-  </script>
-</div>
+  {% include datalayer_product.html
+    page_type="page"
+    product_id=product_id
+    product_name=page.title
+    brand=year_str
+    year=year_str
+    category="page"
+  %}
+</article>
