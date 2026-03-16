@@ -46,13 +46,13 @@ categories:
 <h2>Fordel #1: Man arbejder stadig i templates</h2>
 <p>Det rigtig smarte ved værktøjer som Jekyll, er at man stadig kan arbejde med templates, dvs. hvis man vil indsætte et nyt logo i headeren, så skal det kun rettes ét sted, nemlig i header templaten, som bliver indsat på alle sider, når Jekyll bygger websitet. Fuldstændigt som du kender det, hvis du har bygget templates til WordPress eller blot har brugt include i PHP.</p>
 <p>Templates i Jekyll er drevet af Liquid som er et template-sprog udviklet af Shopify og gør det mega nemt at opsætte templates. Herunder ses et eksempel på den template som bruges til at vise blogindlæg.</p>
-<pre><code class="" data-line="">{% include header.html %}
-&lt;article id=&quot;{{ page.id }}&quot; class=&quot;{{ page.id }}&quot;&gt;
-       &lt;h1&gt;{{ page.title }}&lt;/h1&gt;
-       &lt;p class=&quot;post-date&quot;&gt;{{ page.date | date: &#039;%B %d, %Y&#039; }}&lt;/p&gt;
-       {{ content }}
+<pre><code class="" data-line="">&#123;% include header.html %&#125;
+&lt;article id=&quot;&#123;&#123; page.id &#125;&#125;&quot; class=&quot;&#123;&#123; page.id &#125;&#125;&quot;&gt;
+       &lt;h1&gt;&#123;&#123; page.title &#125;&#125;&lt;/h1&gt;
+       &lt;p class=&quot;post-date&quot;&gt;&#123;&#123; page.date | date: &#039;%B %d, %Y&#039; &#125;&#125;&lt;/p&gt;
+       &#123;&#123; content &#125;&#125;
 &lt;/article&gt;
-{% include footer.html %}
+&#123;% include footer.html %&#125;
 </code></pre>
 <h2>Fordel #2: Det tunge arbejde laves ved ændringer – ikke læsninger</h2>
 <p>Det helt geniale – ud fra et performancesynspunkt – ved Jekyll er, at det tunge arbejde med at bygge websitet ved at hente indhold og samle det med templates til færdige HTML sider, bliver lavet når jeg ændrer noget på websitet og ikke hver gang en side bliver vist. Og det er jo den helt rigtige tilgang. Så længe der ikke er ændret noget på websitet er der ingen grund til at de færdige HTML sider skal bygges fra bunden igen.</p>
@@ -87,11 +87,11 @@ categories:
 <h2>Fordel #11: Et hav af smarte funktioner</h2>
 <p>Og der er masser af <a href="https://jekyllrb.com/docs/templates/">smarte funktioner</a>, fx til at generere meta descriptions. Hvis der er skrevet en excerpt til siden, så bliver den brugt. Ellers tager den de første 155 tegn fra selve indholdet, fjernet for html koder og linjeskift.</p>
 <pre><code class="" data-line="">&lt;meta name=&quot;description&quot; content=&quot;
-{% if page.excerpt %}
-{{ page.excerpt }}
-{% else %}
-{{ page.content | strip_html | strip_newlines | truncate: 155 }}
-{% endif %}
+&#123;% if page.excerpt %&#125;
+&#123;&#123; page.excerpt &#125;&#125;
+&#123;% else %&#125;
+&#123;&#123; page.content | strip_html | strip_newlines | truncate: 155 &#125;&#125;
+&#123;% endif %&#125;
 &quot;&gt;
 </code></pre>
 <p>Så bare fordi sitet er statisk, kan det stadig lave alt det hårde arbejde for dig.</p>

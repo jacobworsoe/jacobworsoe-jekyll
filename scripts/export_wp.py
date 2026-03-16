@@ -74,6 +74,9 @@ def md_from_post(post, is_page, category_names):
     content = (post.get("content") or {}).get("rendered", "")
     content = re.sub(r"\r\n", "\n", content)
     content = re.sub(r"<!-- /?wp:.*?-->", "", content)
+    # Escape Liquid so Jekyll doesn't interpret {{ }} or {% %} in post body
+    content = content.replace("}}", "&#125;&#125;").replace("{{", "&#123;&#123;")
+    content = content.replace("%}", "%&#125;").replace("{%", "&#123;%")
     cat_ids = post.get("categories") or []
     categories = [category_names.get(c, str(c)) for c in cat_ids if category_names.get(c)]
     layout = "page" if is_page else "post"
