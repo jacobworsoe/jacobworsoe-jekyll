@@ -1,8 +1,11 @@
-name: Jekyll build and deploy
+# Build and deploy Jekyll site to GitHub Pages
+# Combines: Node assets build + GitHub's configure-pages (correct baseurl for project sites)
+name: Deploy Jekyll site to Pages
 
 on:
   push:
     branches: [ main, master ]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -17,15 +20,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
+          ruby-version: '3.1'
           bundler-cache: true
 
-      - name: Setup Node (for assets)
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Setup Node (for theme assets)
         uses: actions/setup-node@v4
         with:
           node-version: '18'
@@ -36,12 +44,10 @@ jobs:
           npm run build
         continue-on-error: true
 
-      - name: Build Jekyll
+      - name: Build with Jekyll
         env:
           JEKYLL_ENV: production
-        run: |
-          bundle install
-          bundle exec jekyll build
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
