@@ -57,6 +57,14 @@ def escape_yaml(s):
         return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
     return s
 
+
+def escape_yaml_quoted(s):
+    """Always return a YAML-quoted string (for values that may start with @, {, etc.)."""
+    if s is None:
+        return '""'
+    s = str(s)
+    return '"' + s.replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n") + '"'
+
 def slugify(s):
     return re.sub(r"[^a-z0-9]+", "-", (s or "").lower()).strip("-")
 
@@ -182,7 +190,7 @@ def main():
         for item in by_slug[slug]:
             lines.append(f"  - author: {escape_yaml(item['author'])}")
             lines.append(f"    date: {escape_yaml(item['date'])}")
-            lines.append(f"    content: {escape_yaml(item['content'])}")
+            lines.append(f"    content: {escape_yaml_quoted(item['content'])}")
             lines.append(f"    avatar_url: {escape_yaml(item['avatar_url'])}")
             lines.append(f"    author_url: {escape_yaml(item['author_url'])}")
         lines.append("")
