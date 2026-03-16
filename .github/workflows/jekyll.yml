@@ -38,7 +38,7 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Build assets (Grunt: Sass → CSS, concat + uglify → JS)
+      - name: "Build assets (Grunt: Sass, concat + uglify to JS)"
         run: |
           npm install
           npm run build
