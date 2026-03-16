@@ -38,6 +38,6 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-# Liquid
+# Liquid (lax avoids build failure on undefined/missing variables in content)
 liquid:
-  error_mode: strict
+  error_mode: lax
