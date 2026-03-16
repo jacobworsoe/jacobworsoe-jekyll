@@ -1,0 +1,53 @@
+.slide-in-box
+  box-sizing: border-box
+  position: fixed
+  width: 97%
+  max-width: 350px
+  background: $brown
+  padding: 10px
+  bottom: -100%
+  right: 5px
+  color: white
+  z-index: 99999
+  border: 1px solid $blue
+  transition: .5s bottom ease-in-out
+
+  &.open
+    bottom: 5px
+
+  h3
+    font-size: 1.2em
+    margin-top: 5px
+    line-height: 1.3em
+
+  .input-box
+    width: 100%    
+
+  .btn
+    margin: 20px 0 10px
+    width: 100%
+
+
+.slide-in-box-close
+  color: white
+  text-decoration: none
+
+  &:hover
+    &:before
+      color: $blue
+
+  &:before    
+    position: absolute
+    background: $brown
+    content: "\00D7"
+    font-size: 60px    
+    line-height: 0.5
+    top: -40px
+    right: -1px
+    padding: 5px
+    color: white
+    border: 1px solid $blue
+    border-bottom: 0
+
+    
+

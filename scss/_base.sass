@@ -1,0 +1,84 @@
+*
+	box-sizing: border-box
+	//outline: 1px solid red
+
+
+html
+	color: #d1d2d3		
+	background: #121d21
+	font-family: 'Open Sans', sans-serif
+	letter-spacing: 0.02em
+	font-size: 16px
+	line-height: 2		
+
+	@media(max-width: 510px)
+		font-size: 14px
+
+body
+	overflow-x: hidden
+	width: 100%
+
+h1
+	line-height: 1.5em
+	font-weight: 400
+
+h2
+	font-size: 1.75em
+	margin: 60px 0 0
+	font-weight: 400
+
+h3
+	font-size: 1.5em
+	margin: 45px 0 0
+	font-weight: 400
+
+img
+	max-width: 100%
+	height: auto
+
+ol
+	padding-left: 1.25em
+
+hr.divider
+	width: 50%
+	color: $blue
+	background: $blue
+	border: 2px solid $blue
+
+	@media(max-width: 768px)
+		border: 1px solid $blue
+
+.wrap
+	width: 100%
+	max-width: 900px
+	padding: 0 20px
+	margin: 0 auto
+
+	@media(max-width: 768px)
+		padding: 0 10px
+
+.input-field
+	padding: 8px 5px
+	font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif
+	width: 100%
+
+a, a:visited
+	color: $blue
+	text-decoration: none
+
+a:hover		
+	color: $blue
+	text-decoration: underline	
+
+	.post-content &:hover		
+		color: $grey
+		text-decoration: none
+
+.floatleft
+	float: left
+
+.floatright
+	float: right
+
+.clear
+	clear: both

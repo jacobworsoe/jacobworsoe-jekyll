@@ -1,0 +1,14 @@
+p > code,
+li > code,
+dd > code,
+td > code {
+	background: $lightGrey;
+	padding: 0 5px 2px;
+	border-radius: 4px;
+	position: relative;
+	top: -1px;
+	margin: 0 3px 0 1px;
+	font-size: 90%;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}

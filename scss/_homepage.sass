@@ -1,0 +1,51 @@
+.homepage
+	padding-top: 30px
+
+	@media(max-width: 768px)
+		padding-top: 0.50em
+
+	p
+		margin: 0
+
+.home-post
+	margin-bottom: 50px
+	position: relative
+				
+
+.home-post-year
+	position: relative
+	left: 0
+	top: 10px
+	z-index: 9999
+	display: inline-block
+	background: $blue
+	color: white
+	padding: 3px 10px
+	margin-bottom: 20px
+
+	@media(min-width: 1035px)
+		position: absolute
+		left: -80px		
+		display: block		
+		padding: 3px 10px
+		margin-bottom: 0
+	
+
+.home-post-date
+	color: #7d7b78
+				
+
+.home-post-headline
+	margin-bottom: 0
+	font-size: 2rem
+	font-weight: 600	
+
+	a
+		text-decoration: none
+		color: white
+
+		&:hover
+			color: $blue
+
+	@media(max-width: 510px)
+		font-size: 1.25rem

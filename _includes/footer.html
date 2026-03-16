@@ -1,0 +1,37 @@
+  </div>
+
+  <section class="footer">
+    <div class="footer-inner wrap">
+      <div class="footer-50">
+        <h3>Jacob Worsøe</h3>
+        <div class="footer-social-rss">
+          <div class="social-icons">
+            <a href="https://twitter.com/jacobworsoe"><span class="social-icon">{% include twitter.svg %}</span></a>
+            <a href="https://www.linkedin.com/in/jacobworsoe/"><span class="social-icon">{% include linkedin.svg %}</span></a>
+            <a href="{{ '/feed.xml' | relative_url }}" target="_blank"><span class="social-icon">{% include rss.svg %}</span></a>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <ul>
+          <li>Head of Measurement & Attribution hos <a href="https://s360digital.com/da/">s360</a></li>
+          <li><a href="https://www.linkedin.com/in/jacobworsoe/"><span id="experienceInYears"></span></a> års erfaring med digital marketing</li>
+        </ul>
+        <script>
+          var experienceInYearsElem = document.getElementById("experienceInYears");
+          var now = Date.now()/1000;
+          var careerBegin = new Date("2008-01-02").getTime()/1000;
+          var experienceInYearsValue = parseFloat((now - careerBegin)/60/60/24/365).toLocaleString("da-DK", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+          experienceInYearsElem.innerText = experienceInYearsValue;
+        </script>
+      </div>
+      <div class="footer-50">
+        <img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/jacob-bay-worsøe-footer.jpg" width="300" height="300" class="lazyload-gravatar" alt="Jacob Worsøe">
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>
+
+  <script src="{{ '/assets/js/bundle.min.js' | relative_url }}"></script>
+</div>
+</body>
+</html>

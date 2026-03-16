@@ -1,0 +1,11 @@
+{
+  "name": "jekyll-site-scripts",
+  "private": true,
+  "scripts": {
+    "export-posts": "node export-wp-posts.js",
+    "export-comments": "node export-wp-comments.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}

@@ -1,0 +1,9 @@
+# WordPress comments exported as static data, keyed by post slug.
+# Run scripts/export-wp-comments.js against your WordPress site to populate.
+# Example:
+# my-post-slug:
+#   - author: "Jane"
+#     date: "15/01-2020 - 10:30"
+#     content: "Comment text..."
+#     avatar_url: "https://..."
+#     author_url: "https://..."

@@ -1,0 +1,57 @@
+.footer
+	background: $lightGrey
+	color: white
+	padding-bottom: 20px
+
+	h3
+		line-height: 1.3em
+		margin-bottom: 20px
+		margin-top: 0
+		color: white	
+
+	a
+		color: $blue
+		font-weight: normal
+
+
+	.social-icon
+		svg			
+			fill: white
+			height: 50px
+			width: 50px
+
+			@media(max-width: 768px)
+				height: 40px
+				width: 40px
+
+			&:hover
+				fill: $blue
+
+.footer-50
+	float: left
+	width: 50%
+	padding-top: 30px
+
+	@media (max-width: 768px)
+		width: 100%
+
+	ul
+		padding: 0
+		margin: 0
+		
+
+	li
+		list-style: none		
+		
+
+	&:first-child
+		padding-right: 20px
+
+	&:nth-child(2)
+		text-align: right
+
+		@media (max-width: 768px)
+			text-align: left		
+
+.footer-social-rss
+	margin: 10px 0

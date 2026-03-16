@@ -1,0 +1,51 @@
+<meta charset="utf-8" />
+<link rel="shortcut icon" href="https://www.jacobworsoe.dk/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jacob Worsøe",
+  "image": "https://www.gravatar.com/avatar/?d=mp",
+  "gender": "Male",
+  "nationality": "Danish",
+  "description": "Analytics ninja og datanørd",
+  "jobTitle": "Cloud Director",
+  "telephone": "(+45) 27208210",
+  "url": "https://www.jacobworsoe.dk",
+  "sameAs": [
+    "https://www.facebook.com/jacobworsoe",
+    "https://twitter.com/jacobworsoe",
+    "https://www.linkedin.com/in/jacobworsoe/"
+  ]
+}
+</script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  'timestamp': {{ 'now' | date: '%s' }}.{{ 'now' | date: '%N' | slice: 0, 3 }},
+  'user_id': "0"
+});
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XWB4');</script>
+<!-- End Google Tag Manager -->
+
+{% if layout.style == 'single' or page.layout == 'post' or page.layout == 'page' %}
+<link rel="stylesheet" href="{{ '/assets/css/single.css' | relative_url }}">
+{% else %}
+<link rel="stylesheet" href="{{ '/assets/css/homepage.css' | relative_url }}">
+{% endif %}
+
+{% seo %}

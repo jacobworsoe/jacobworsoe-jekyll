@@ -1,0 +1,81 @@
+---
+layout: default
+style: single
+---
+
+{% assign words_in_post = content | number_of_words %}
+{% assign words_buckets = "0-500" %}
+{% if words_in_post >= 5001 %}{% assign words_buckets = "5001+" %}
+{% elsif words_in_post >= 4501 %}{% assign words_buckets = "4501-5000" %}
+{% elsif words_in_post >= 4001 %}{% assign words_buckets = "4001-4500" %}
+{% elsif words_in_post >= 3501 %}{% assign words_buckets = "3501-4000" %}
+{% elsif words_in_post >= 3001 %}{% assign words_buckets = "3001-3500" %}
+{% elsif words_in_post >= 2501 %}{% assign words_buckets = "2501-3000" %}
+{% elsif words_in_post >= 2001 %}{% assign words_buckets = "2001-2500" %}
+{% elsif words_in_post >= 1501 %}{% assign words_buckets = "1501-2000" %}
+{% elsif words_in_post >= 1001 %}{% assign words_buckets = "1001-1500" %}
+{% elsif words_in_post >= 501 %}{% assign words_buckets = "501-1000" %}
+{% endif %}
+{% assign slug = page.slug | default: page.url | split: '/' | last | replace: '/','' %}
+{% assign category_display = page.categories | join: ', ' %}
+
+<div class="post-header wrap">
+  <h1 class="post-headline">{{ page.title }}</h1>
+  <div class="post-date">{{ page.date | date: '%d/%m-%Y' }}</div>
+</div>
+
+<div class="post-content wrap">
+  {{ content }}
+</div>
+
+<script>
+  var pageType = "single";
+  var wordsInPostInt = {{ words_in_post }};
+  var wordsInPostBuckets = "{{ words_buckets }}";
+  var product = [{
+    name: {{ page.title | jsonify }},
+    id: "{{ page.id }}",
+    price: "{{ words_in_post }}",
+    brand: "{{ page.date | date: '%Y' }}",
+    category: "{{ category_display | escape }}",
+    variant: '',
+    quantity: 1,
+    dimension1: wordsInPostBuckets
+  }];
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    'Year': '{{ page.date | date: "%Y" }}',
+    'Category': '{{ category_display | escape }}',
+    'Words': '{{ words_in_post }}'
+  });
+</script>
+
+<div class="comments wrap" id="comments">
+  {% if site.data.comments[slug] and site.data.comments[slug] != empty %}
+  <h2 id="comments-title" class="paragraph-headline">
+    {% assign count = site.data.comments[slug] | size %}
+    {% if count == 1 %}1 kommentar{% else %}{{ count }} kommentarer{% endif %}
+  </h2>
+  <ol class="comments-list">
+    {% for c in site.data.comments[slug] %}
+    <li class="comment" id="comment-{{ forloop.index }}">
+      <div class="comment-gravatar">
+        <img src="{{ c.avatar_url | default: 'https://www.gravatar.com/avatar/?d=mp' }}" width="100" height="100" class="lazyload-gravatar" alt="Avatar">
+      </div>
+      <div class="comment-content">
+        <div class="comment-author">
+          {% if c.author_url and c.author_url != '' and c.author_url != 'http://' %}
+            <a {% unless c.author_url contains 'jacobworsoe.dk' %}rel="nofollow"{% endunless %} href="{{ c.author_url | escape }}">{{ c.author | escape }}</a>
+          {% else %}
+            {{ c.author | escape }}
+          {% endif %}
+        </div>
+        <div class="comment-date">{{ c.date }}</div>
+        <div class="comment-body">{{ c.content }}</div>
+      </div>
+      <div class="clear"></div>
+    </li>
+    {% endfor %}
+  </ol>
+  {% endif %}
+</div>
