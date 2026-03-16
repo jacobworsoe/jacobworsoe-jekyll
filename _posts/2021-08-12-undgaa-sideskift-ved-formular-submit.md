@@ -7,16 +7,17 @@ categories:
   - Analytics
 ---
 
-<p>Her er et lille trick som jeg bruger når jeg skal teste tracking af en formular. Du kan affyre denne kode i konsollen og undgå at side skifter når formularen submittes. Dermed mister du ikke debug information i konsollen eller i diverse tracking debug extensions.</p>
-<p>Det eneste du skal gøre er at udskifte <code class="" data-line="">#formId</code> med ID eller class på formularen og affyre koden i konsollen, inden du submitter formularen.</p>
-<pre><code class="" data-line="">window.addEventListener(&#039;beforeunload&#039;, function(e) {
+Her er et lille trick som jeg bruger når jeg skal teste tracking af en formular. Du kan affyre denne kode i konsollen og undgå at side skifter når formularen submittes. Dermed mister du ikke debug information i konsollen eller i diverse tracking debug extensions.
+
+Det eneste du skal gøre er at udskifte <code>#formId</code> med ID eller class på formularen og affyre koden i konsollen, inden du submitter formularen.
+
+<pre><code class="language-javascript">window.addEventListener('beforeunload', function(e) {
     e.preventDefault();
-    e.returnValue = &#039;&#039;;
+    e.returnValue = '';
 });
 
-document.querySelector(&quot;#formId&quot;).addEventListener(&quot;submit&quot;, function(e){    
+document.querySelector("#formId").addEventListener("submit", function(e){    
     e.preventDefault();
-    console.log(&quot;form submitted&quot;);    
+    console.log("form submitted");    
 });
 </code></pre>
-

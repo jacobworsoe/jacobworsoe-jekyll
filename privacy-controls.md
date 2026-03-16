@@ -6,4 +6,3 @@ slug: privacy-controls
 ---
 
 <div id="cicc-template"></div>
-

@@ -7,47 +7,83 @@ categories:
   - Konverteringsoptimering
 ---
 
-<p><a href="http://wordpress.org/plugins/convert-experiments/" target="_blank" rel="noopener">Convert Experiments by Yoast</a> er navnet på et nyt WordPress plugin af Joost de Valk, som står bag mange fede plugins, hvoraf de fleste nok kender <a href="http://wordpress.org/plugins/google-analytics-for-wordpress/" target="_blank" rel="noopener">Google Analytics for WordPress</a> og <a href="http://wordpress.org/plugins/wordpress-seo/" target="_blank" rel="noopener">WordPress SEO by Yoast</a>. Begge to hamre gode plugins og det nye plugin lyder bestemt også til at være spændende, da det byder på simple A/B splittests på en WordPress platform, og jeg har kigget lidt nærmere på hvad det kan.</p>
-<h2>Hvad er Convert Experiments by Yoast?</h2>
-<p>Det er faktisk bare et plugin som indsætter det nødvendige tracking script på dit WordPress site, så du kan opsætte splittests i et andet værktøj &#8211; <a href="http://www.convertexperiments.com" target="_blank" rel="noopener">Convert Experiments</a>. Ikke så meget fancy der. Men så alligevel&#8230; For Convert Experiments har en smart feature hvor du kan indsætte nogle custom variabler i scriptet, hvor man kan angive bestemte parametre omkring den enkelte side. Og alt den information sørger dette plugin for at hente fra WordPress og indsætte i scriptet, uden at du skal røre en finger.</p>
-<p>Det giver mulighed for at køre splittests på bestemte dele af sitet, uden at man skal sidde at finde mønstre i URL&#8217;erne på de sider testen skal køre på, fx alle produktsider, kategorisider, etc. Mere præcist indsætter den følgende variable i scriptet:</p>
-<ul>
-<li>Page type (fx post, page, archieve, etc.)</li>
-<li>Sidens titel</li>
-<li>Kategori ID</li>
-<li>Kategori navn</li>
-</ul>
-<p>Man kan derved, meget nemt, køre en splittest fx på alle blogindlæg, undtagen gæsteindlæg. Ulempen er bare at, selvom scriptet er gratis og indsætter alle disse informationer, så skal man som minimum have et &#8220;Expert&#8221; abonnement til $399 om måneden <a href="http://support.convert.com/entries/21795481-Targeting-using-advanced-page-tagging" target="_blank" rel="noopener">for at kunne bruge dem i Convert Experiments</a>. Og det var sgu lidt et antiklimaks, at opdage det.</p>
-<div id="attachment_527" style="width: 760px" class="wp-caption alignnone"><a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-23.01.11.png"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-527" class="size-medium wp-image-527" alt="Priser for Convert Experiments" src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-23.01.11-750x417.png" width="750" height="417" /></a><p id="caption-attachment-527" class="wp-caption-text">Priser for Convert Experiments</p></div>
-<p>Men der er også fordele. Igennem Yoast får man nemlig en gratis konto til Convert Experiments, hvor man kan teste på 5.000 besøgende om måneden i 12 måneder. Uden Yoast kan man kun få en 15 dages gratis trial.</p>
-<h2>Opsætning i WordPress</h2>
-<p>For at afprøve hvordan det virkede, opsatte jeg en helt simpel &#8220;rød eller grøn knap&#8221;-test på mit linkkatalog, som også er min WordPress legeplads.</p>
-<p>Det eneste man skal gøre, er at koble det nye plugin sammen med den konto man opretter på Convert Experiments via et konto ID og så er man færdig med at rode i WordPress &#8211; resten foregår via webinterfacet i Convert Experiments.</p>
-<div id="attachment_528" style="width: 760px" class="wp-caption alignnone"><a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-19.46.27.png"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-528" class="size-medium wp-image-528" alt="Sammenkobling af WordPress og Convert Experiments." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-19.46.27-750x308.png" width="750" height="308" /></a><p id="caption-attachment-528" class="wp-caption-text">Sammenkobling af WordPress og Convert Experiments.</p></div>
-<p>Derefter hopper man over i et lækkert interface og opretter et eksperiment.</p>
-<div id="attachment_529" style="width: 760px" class="wp-caption alignnone"><a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-19.36.52.png"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-529" class="size-medium wp-image-529" alt="Convert Experiment's webinterface." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-19.36.52-750x371.png" width="750" height="371" /></a><p id="caption-attachment-529" class="wp-caption-text">Convert Experiment&#8217;s webinterface.</p></div>
-<p>Man giver testen et navn og vælger hvilken URL man vil bruge til at opsætte testen. Senere kan den udvides til at køre på flere URL&#8217;er. I den gratis version kan man lave to typer splittest. A/B experiment, hvor man designer en &#8220;virtuel&#8221; variant i værktøjet og Split-test experiment, hvor man selv laver en anden version på en anden URL og bare lader værktøjet dele trafikken mellem de to URL&#8217;er.</p>
-<div id="attachment_530" style="width: 760px" class="wp-caption alignnone"><a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-20.14.34.png"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-530" class="size-medium wp-image-530" alt="Navngivning og valg af eksperiment type." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-20.14.34-750x525.png" width="750" height="525" /></a><p id="caption-attachment-530" class="wp-caption-text">Navngivning og valg af eksperiment type.</p></div>
-<p>Man bliver derefter sendt til den visuelle designer, hvor man kan foretage ændringer på den side man gerne vil teste.</p>
-<div id="attachment_532" style="width: 760px" class="wp-caption alignnone"><a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-21-00.07.05.png"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-532" class="size-medium wp-image-532" alt="Visuel designer." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-21-00.07.05-750x372.png" width="750" height="372" /></a><p id="caption-attachment-532" class="wp-caption-text">Visuel designer.</p></div>
-<p>Jeg skal bare lave et helt simpelt eksperiment, så jeg scroller ned til knappen, klikker på den og vælger &#8220;Change Background Color&#8221; i menuen der kommer frem. Som det ses herunder kan man også lave en masse avancerede ting, ligesom i de andre splittest værktøjer der findes på markedet.</p>
-<div id="attachment_533" style="width: 427px" class="wp-caption alignnone"><a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-20.15.20.png"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-533" class="size-full wp-image-533" alt="Ændring af knappens farve." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-20.15.20.png" width="417" height="433" /></a><p id="caption-attachment-533" class="wp-caption-text">Ændring af knappens farve.</p></div>
-<p>Efter knappen er blevet grøn, vælger jeg målet for testen. I dette tilfælde vil jeg måle på hvor mange der klikker på knappen.</p>
-<div id="attachment_534" style="width: 525px" class="wp-caption alignnone"><a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-21-00.11.33.png"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-534" class="size-full wp-image-534" alt="Valg af mål." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-21-00.11.33.png" width="515" height="419" /></a><p id="caption-attachment-534" class="wp-caption-text">Valg af mål.</p></div>
-<p>Og så er testen faktisk klar til at blive sat igang. Lige inden du sætter den igang giver værktøjet en fin opsummering af indstillingerne, sat op på en lidt utraditionel måde.</p>
-<p>Bemærk at de har valgt et lidt utraditionelt signifikansniveau for deres tests som standard på 97%, som alt andet lige kræver mere data/tid, for at kunne træffe konklusioner. Jeg vil dog anbefale at skrue det ned til 95% signifikans, som giver et bedre mix mellem den tid det tager at køre testen og den sikkerhed du har for at træffe korrekte beslutninger. Hvis alt dette er sort snak, så vil jeg anbefale dig denne artikler, hvor jeg gennemgår alle disse begreber: <a href="//www.jacobworsoe.dk/statistikken-bag-google-website-optimizer/" target="_blank" rel="noopener">Statistikken bag en splittest</a>.</p>
-<div id="attachment_535" style="width: 760px" class="wp-caption alignnone"><a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-21-00.21.58.png"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-535" class="size-medium wp-image-535" alt="Smart opsummering af indstillingerne for testen." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-21-00.21.58-750x319.png" width="750" height="319" /></a><p id="caption-attachment-535" class="wp-caption-text">Smart opsummering af indstillingerne for testen.</p></div>
-<p>Det er i øvrigt samme opstilling som <a href="https://www.v4d5.net/" target="_blank" rel="noopener">Morten Vadskær</a> <a href="http://www.v4d5.net/blog/tag-dine-formularer-alvorligt" target="_blank" rel="noopener">implementerede på faktorfobi for snart 2 år siden</a>, og den er der endnu, så mon ikke det er en meget god måde at præsentere information på? :)</p>
-<div id="attachment_550" style="width: 760px" class="wp-caption alignnone"><a href="//www.jacobworsoe.dk/wp-content/uploads/faktorfobi-checkout.png"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-550" class="size-medium wp-image-550" alt="Betalingsflowet på faktorfobi." src="//www.jacobworsoe.dk/wp-content/uploads/faktorfobi-checkout-750x449.png" width="750" height="449" /></a><p id="caption-attachment-550" class="wp-caption-text">Betalingsflowet på faktorfobi.</p></div>
-<p>Næste trin er en fin rapport over testens udvikling, som man kender det fra andre splittest værktøjer &#8211; ikke så meget innovation her.</p>
-<div id="attachment_536" style="width: 760px" class="wp-caption alignnone"><a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-21-00.23.49.png"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-536" class="size-medium wp-image-536" alt="Statusrapport for testen." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-21-00.23.49-750x328.png" width="750" height="328" /></a><p id="caption-attachment-536" class="wp-caption-text">Statusrapport for testen.</p></div>
-<h2>Et lille es i ærmet</h2>
-<p>Som en smart lille ting kan værktøjet hente omsætningen fra dit Google Analytics E-commerce script, som du selvfølgelig allerede har på siden. Det kan Visual Website Optimizer fx ikke, og kræver at man indsætter deres eget script på sin kvitteringsside, hvis man vil have omsætningen med som mål for testen. I kombination med dette nye plugin, er det en smart lille detajle, som gør det så meget nemmere og hurtigere at komme igang med, for dem som ikke selv vil rode med scripts.</p>
-<div id="attachment_537" style="width: 689px" class="wp-caption alignnone"><a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-20.54.16.png"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-537" class="size-full wp-image-537" alt="Convert Experiments snupper omsætningen fra dit Google Analytics script - smart." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-20.54.16.png" width="679" height="109" /></a><p id="caption-attachment-537" class="wp-caption-text">Convert Experiments snupper omsætningen fra dit Google Analytics script &#8211; smart.</p></div>
-<h2>Konklusion</h2>
-<p>Med dette plugin er det blevet utrolig nemt at opsætte splittests på et WordPress site, hvor man tilmeld kan afprøve det i et helt år. Det virker dog til at Convert Experiments først bliver rigtig sjovt, når man begynder at betale for det og får adgang til alle features. Og her er det cirka det samme som konkurrenterne.</p>
-<div id="attachment_538" style="width: 760px" class="wp-caption alignnone"><a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-23.03.19.png"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-538" class="size-medium wp-image-538" alt="Priserne hos Optimizely." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-23.03.19-750x275.png" width="750" height="275" /></a><p id="caption-attachment-538" class="wp-caption-text">Priserne hos Optimizely.</p></div>
-<div id="attachment_539" style="width: 734px" class="wp-caption alignnone"><a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-23.03.36.png"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-539" class="size-full wp-image-539" alt="Priserne hos Visual Website Optimizer." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-23.03.36.png" width="724" height="256" srcset="https://www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-23.03.36.png 724w, https://www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-23.03.36-690x244.png 690w" sizes="auto, (max-width: 724px) 100vw, 724px" /></a><p id="caption-attachment-539" class="wp-caption-text">Priserne hos Visual Website Optimizer.</p></div>
-<p>Herover ses priserne på Visual Website Optimizer og Optimizely. Sammenligner man prisen for 200.000 besøgende (der hvor Convert Experiments giver adgang til de smarte filtre og segmenteringer) så er det samme pris som Optimizely nemlig $399 om måneden, mens VWO koster $500 om måneden.</p>
-<p>Jeg synes derfor at den konkurrencedygtige pris, kombineret med den nemme opsætning, gør det til en rigtig spændende kombination, for både store og små WordPress sites.</p>
+<a href="http://wordpress.org/plugins/convert-experiments/" target="_blank" rel="noopener">Convert Experiments by Yoast</a> er navnet på et nyt Wordpress plugin af Joost de Valk, som står bag mange fede plugins, hvoraf de fleste nok kender <a href="http://wordpress.org/plugins/google-analytics-for-wordpress/" target="_blank" rel="noopener">Google Analytics for WordPress</a> og <a href="http://wordpress.org/plugins/wordpress-seo/" target="_blank" rel="noopener">WordPress SEO by Yoast</a>. Begge to hamre gode plugins og det nye plugin lyder bestemt også til at være spændende, da det byder på simple A/B splittests på en Wordpress platform, og jeg har kigget lidt nærmere på hvad det kan.
 
+<h2>Hvad er Convert Experiments by Yoast?</h2>
+
+Det er faktisk bare et plugin som indsætter det nødvendige tracking script på dit Wordpress site, så du kan opsætte splittests i et andet værktøj - <a href="http://www.convertexperiments.com" target="_blank" rel="noopener">Convert Experiments</a>. Ikke så meget fancy der. Men så alligevel... For Convert Experiments har en smart feature hvor du kan indsætte nogle custom variabler i scriptet, hvor man kan angive bestemte parametre omkring den enkelte side. Og alt den information sørger dette plugin for at hente fra Wordpress og indsætte i scriptet, uden at du skal røre en finger.
+
+Det giver mulighed for at køre splittests på bestemte dele af sitet, uden at man skal sidde at finde mønstre i URL'erne på de sider testen skal køre på, fx alle produktsider, kategorisider, etc. Mere præcist indsætter den følgende variable i scriptet:
+
+<ul>
+    <li>Page type (fx post, page, archieve, etc.)</li>
+    <li>Sidens titel</li>
+    <li>Kategori ID</li>
+    <li>Kategori navn</li>
+</ul>
+
+Man kan derved, meget nemt, køre en splittest fx på alle blogindlæg, undtagen gæsteindlæg. Ulempen er bare at, selvom scriptet er gratis og indsætter alle disse informationer, så skal man som minimum have et "Expert" abonnement til $399 om måneden <a href="http://support.convert.com/entries/21795481-Targeting-using-advanced-page-tagging" target="_blank" rel="noopener">for at kunne bruge dem i Convert Experiments</a>. Og det var sgu lidt et antiklimaks, at opdage det.
+
+[caption id="attachment_527" align="alignnone" width="750"]<a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-23.01.11.png"><img class="size-medium wp-image-527" alt="Priser for Convert Experiments" src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-23.01.11-750x417.png" width="750" height="417" /></a> Priser for Convert Experiments[/caption]
+
+Men der er også fordele. Igennem Yoast får man nemlig en gratis konto til Convert Experiments, hvor man kan teste på 5.000 besøgende om måneden i 12 måneder. Uden Yoast kan man kun få en 15 dages gratis trial.
+
+<h2>Opsætning i Wordpress</h2>
+
+For at afprøve hvordan det virkede, opsatte jeg en helt simpel "rød eller grøn knap"-test på mit linkkatalog, som også er min Wordpress legeplads.
+
+Det eneste man skal gøre, er at koble det nye plugin sammen med den konto man opretter på Convert Experiments via et konto ID og så er man færdig med at rode i Wordpress - resten foregår via webinterfacet i Convert Experiments.
+
+[caption id="attachment_528" align="alignnone" width="750"]<a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-19.46.27.png"><img class="size-medium wp-image-528" alt="Sammenkobling af Wordpress og Convert Experiments." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-19.46.27-750x308.png" width="750" height="308" /></a> Sammenkobling af Wordpress og Convert Experiments.[/caption]
+
+Derefter hopper man over i et lækkert interface og opretter et eksperiment.
+
+[caption id="attachment_529" align="alignnone" width="750"]<a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-19.36.52.png"><img class="size-medium wp-image-529" alt="Convert Experiment's webinterface." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-19.36.52-750x371.png" width="750" height="371" /></a> Convert Experiment's webinterface.[/caption]
+
+Man giver testen et navn og vælger hvilken URL man vil bruge til at opsætte testen. Senere kan den udvides til at køre på flere URL'er. I den gratis version kan man lave to typer splittest. A/B experiment, hvor man designer en "virtuel" variant i værktøjet og Split-test experiment, hvor man selv laver en anden version på en anden URL og bare lader værktøjet dele trafikken mellem de to URL'er.
+
+[caption id="attachment_530" align="alignnone" width="750"]<a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-20.14.34.png"><img class="size-medium wp-image-530" alt="Navngivning og valg af eksperiment type." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-20.14.34-750x525.png" width="750" height="525" /></a> Navngivning og valg af eksperiment type.[/caption]
+
+Man bliver derefter sendt til den visuelle designer, hvor man kan foretage ændringer på den side man gerne vil teste.
+
+[caption id="attachment_532" align="alignnone" width="750"]<a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-21-00.07.05.png"><img class="size-medium wp-image-532" alt="Visuel designer." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-21-00.07.05-750x372.png" width="750" height="372" /></a> Visuel designer.[/caption]
+
+Jeg skal bare lave et helt simpelt eksperiment, så jeg scroller ned til knappen, klikker på den og vælger "Change Background Color" i menuen der kommer frem. Som det ses herunder kan man også lave en masse avancerede ting, ligesom i de andre splittest værktøjer der findes på markedet.
+
+[caption id="attachment_533" align="alignnone" width="417"]<a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-20.15.20.png"><img class="size-full wp-image-533" alt="Ændring af knappens farve." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-20.15.20.png" width="417" height="433" /></a> Ændring af knappens farve.[/caption]
+
+Efter knappen er blevet grøn, vælger jeg målet for testen. I dette tilfælde vil jeg måle på hvor mange der klikker på knappen.
+
+[caption id="attachment_534" align="alignnone" width="515"]<a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-21-00.11.33.png"><img class="size-full wp-image-534" alt="Valg af mål." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-21-00.11.33.png" width="515" height="419" /></a> Valg af mål.[/caption]
+
+Og så er testen faktisk klar til at blive sat igang. Lige inden du sætter den igang giver værktøjet en fin opsummering af indstillingerne, sat op på en lidt utraditionel måde.
+
+Bemærk at de har valgt et lidt utraditionelt signifikansniveau for deres tests som standard på 97%, som alt andet lige kræver mere data/tid, for at kunne træffe konklusioner. Jeg vil dog anbefale at skrue det ned til 95% signifikans, som giver et bedre mix mellem den tid det tager at køre testen og den sikkerhed du har for at træffe korrekte beslutninger. Hvis alt dette er sort snak, så vil jeg anbefale dig denne artikler, hvor jeg gennemgår alle disse begreber: <a href="//www.jacobworsoe.dk/statistikken-bag-google-website-optimizer/" target="_blank" rel="noopener">Statistikken bag en splittest</a>.
+
+[caption id="attachment_535" align="alignnone" width="750"]<a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-21-00.21.58.png"><img class="size-medium wp-image-535" alt="Smart opsummering af indstillingerne for testen." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-21-00.21.58-750x319.png" width="750" height="319" /></a> Smart opsummering af indstillingerne for testen.[/caption]
+
+Det er i øvrigt samme opstilling som <a href="https://www.v4d5.net/" target="_blank" rel="noopener">Morten Vadskær</a> <a href="http://www.v4d5.net/blog/tag-dine-formularer-alvorligt" target="_blank" rel="noopener">implementerede på faktorfobi for snart 2 år siden</a>, og den er der endnu, så mon ikke det er en meget god måde at præsentere information på? :)
+
+[caption id="attachment_550" align="alignnone" width="750"]<a href="//www.jacobworsoe.dk/wp-content/uploads/faktorfobi-checkout.png"><img class="size-medium wp-image-550" alt="Betalingsflowet på faktorfobi." src="//www.jacobworsoe.dk/wp-content/uploads/faktorfobi-checkout-750x449.png" width="750" height="449" /></a> Betalingsflowet på faktorfobi.[/caption]
+
+Næste trin er en fin rapport over testens udvikling, som man kender det fra andre splittest værktøjer - ikke så meget innovation her.
+
+[caption id="attachment_536" align="alignnone" width="750"]<a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-21-00.23.49.png"><img class="size-medium wp-image-536" alt="Statusrapport for testen." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-21-00.23.49-750x328.png" width="750" height="328" /></a> Statusrapport for testen.[/caption]
+
+<h2>Et lille es i ærmet</h2>
+
+Som en smart lille ting kan værktøjet hente omsætningen fra dit Google Analytics E-commerce script, som du selvfølgelig allerede har på siden. Det kan Visual Website Optimizer fx ikke, og kræver at man indsætter deres eget script på sin kvitteringsside, hvis man vil have omsætningen med som mål for testen. I kombination med dette nye plugin, er det en smart lille detajle, som gør det så meget nemmere og hurtigere at komme igang med, for dem som ikke selv vil rode med scripts.
+
+[caption id="attachment_537" align="alignnone" width="679"]<a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-20.54.16.png"><img class="size-full wp-image-537" alt="Convert Experiments snupper omsætningen fra dit Google Analytics script - smart." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-20.54.16.png" width="679" height="109" /></a> Convert Experiments snupper omsætningen fra dit Google Analytics script - smart.[/caption]
+
+<h2>Konklusion</h2>
+
+Med dette plugin er det blevet utrolig nemt at opsætte splittests på et Wordpress site, hvor man tilmeld kan afprøve det i et helt år. Det virker dog til at Convert Experiments først bliver rigtig sjovt, når man begynder at betale for det og får adgang til alle features. Og her er det cirka det samme som konkurrenterne.
+
+[caption id="attachment_538" align="alignnone" width="750"]<a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-23.03.19.png"><img class="size-medium wp-image-538" alt="Priserne hos Optimizely." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-23.03.19-750x275.png" width="750" height="275" /></a> Priserne hos Optimizely.[/caption]
+
+[caption id="attachment_539" align="alignnone" width="724"]<a href="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-23.03.36.png"><img class="size-full wp-image-539" alt="Priserne hos Visual Website Optimizer." src="//www.jacobworsoe.dk/wp-content/uploads/Screenshot-2014-02-20-23.03.36.png" width="724" height="256" /></a> Priserne hos Visual Website Optimizer.[/caption]
+
+Herover ses priserne på Visual Website Optimizer og Optimizely. Sammenligner man prisen for 200.000 besøgende (der hvor Convert Experiments giver adgang til de smarte filtre og segmenteringer) så er det samme pris som Optimizely nemlig $399 om måneden, mens VWO koster $500 om måneden.
+
+Jeg synes derfor at den konkurrencedygtige pris, kombineret med den nemme opsætning, gør det til en rigtig spændende kombination, for både store og små Wordpress sites.

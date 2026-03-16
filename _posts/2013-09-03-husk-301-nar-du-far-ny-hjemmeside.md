@@ -7,18 +7,30 @@ categories:
   - SEO
 ---
 
-<p><a href="http://www.hifiklubben.dk/" target="_blank">Hi-Fi klubben</a> har fået nyt website og det er et virkelig fedt website! Måden jeg opdagede det på var dog mindre fed&#8230;</p>
-<p>Da jeg opsatte denne blog, lyttede jeg til et <a href="http://www.antphilosophy.com/category/podcasts/" target="_blank">The Industrious Geeks</a> podcast, hvor de giver masser af gode <a href="http://www.antphilosophy.com/opsaetning-af-wordpress/" target="_blank">tips og tricks til opsætning af WordPress</a>. De nævnte blandt andet <a href="http://wordpress.org/plugins/broken-link-checker/" target="_blank">Broken Link Checker</a> som løbende holder øje med alle interne og eksterne links på din blog og giver dig besked hvis de er døde. I går sendte min blog mig så denne mail:</p>
-<div id="attachment_227" style="width: 518px" class="wp-caption alignnone"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-227" class="size-full wp-image-227" alt="Mit link til Hi-Fi klubben var dødt." src="//www.jacobworsoe.dk/wp-content/uploads/hifi-klubben-broken-link-checker.png" width="508" height="170" /><p id="caption-attachment-227" class="wp-caption-text">Mit link til Hi-Fi klubben var dødt.</p></div>
-<p>Linket findes i et gammelt blogindlæg om at <a title="HDMI kabel – Skal det virkelig koste 249 kroner?" href="//www.jacobworsoe.dk/skal-et-hdmi-kabel-koste-249/" target="_blank">købe billige HDMI kabler i Østen</a>. Grunden til at linket nu er dødt er fordi Hi-Fi klubbens nye website har en anden URL struktur end det gamle site og produkterne har dermed ikke samme URL som tidligere. Det produkt jeg linkede til, lå tidligere på:</p>
-<p><code class="" data-line="">http://www.hifiklubben.dk/produkter/tilbehor/kabel/hdmi-kabel/qed_reference_hdmi-kabel_5-meter.htm</code></p>
-<p>men ligger nu på:</p>
-<p><code class="" data-line="">http://www.hifiklubben.dk/Products/qed-reference-hdmi-kabel-28642/</code></p>
-<p>Det betyder at man nu lander på en fejlside på den gamle URL.</p>
-<div id="attachment_229" style="width: 650px" class="wp-caption alignnone"><a href="//www.jacobworsoe.dk/wp-content/uploads/hifiklubben-404.png"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-229" class="size-medium wp-image-229" alt="Den gamle URL giver nu bare en fejlside." src="//www.jacobworsoe.dk/wp-content/uploads/hifiklubben-404-640x619.png" width="640" height="619" /></a><p id="caption-attachment-229" class="wp-caption-text">Den gamle URL giver nu bare en fejlside.</p></div>
-<h2>301 redirect er løsningen</h2>
-<p>For at undgå fejlsider når man skifter URL struktur skal der opsættes 301 redirects fra alle de gamle URL&#8217;er til deres nye URL. Hvis den gamle URL er udgået bør der istedet peges på en overordnet side, fx en kategoriside med lignende produkter.</p>
-<p>Hi-Fi klubbens website indeholder ifølge Googles indeks 7.170 sider, så det vil være ret tidskrævende at gå igennem alle siderne og opsætte redirects. En hurtigere løsning vil være at hoppe ind i Google Analytics og trække fx top 500 landingssider ud og hive dem ind i Excel. Derved har du en prioriteret liste over de vigtigste sider som skal redirectes.</p>
-<p>Derefter ville jeg redirecte resten til relevante kategorisider. I dette tilfælde indeholder den gamle URL faktisk hele kategoristrukturen, så man kunne nemt lave et filter i Excel på <em>/tilbehor/kabel/hdmi-kabel/<strong> </strong></em>og redirecte alle resterende sider der indeholder dette til <a href="http://www.hifiklubben.dk/Kabler/HDMI-kabel/">http://www.hifiklubben.dk/Kabler/HDMI-kabel/</a>.</p>
-<p>Til sidst ville jeg tage alle de resterende sider og redirecte til forsiden, så man i det mindste ikke får en fejlside.</p>
+<a href="http://www.hifiklubben.dk/" target="_blank">Hi-Fi klubben</a> har fået nyt website og det er et virkelig fedt website! Måden jeg opdagede det på var dog mindre fed...
 
+Da jeg opsatte denne blog, lyttede jeg til et <a href="http://www.antphilosophy.com/category/podcasts/" target="_blank">The Industrious Geeks</a> podcast, hvor de giver masser af gode <a href="http://www.antphilosophy.com/opsaetning-af-wordpress/" target="_blank">tips og tricks til opsætning af Wordpress</a>. De nævnte blandt andet <a href="http://wordpress.org/plugins/broken-link-checker/" target="_blank">Broken Link Checker</a> som løbende holder øje med alle interne og eksterne links på din blog og giver dig besked hvis de er døde. I går sendte min blog mig så denne mail:
+
+[caption id="attachment_227" align="alignnone" width="508"]<img class="size-full wp-image-227" alt="Mit link til Hi-Fi klubben var dødt." src="//www.jacobworsoe.dk/wp-content/uploads/hifi-klubben-broken-link-checker.png" width="508" height="170" /> Mit link til Hi-Fi klubben var dødt.[/caption]
+
+Linket findes i et gammelt blogindlæg om at <a title="HDMI kabel – Skal det virkelig koste 249 kroner?" href="//www.jacobworsoe.dk/skal-et-hdmi-kabel-koste-249/" target="_blank">købe billige HDMI kabler i Østen</a>. Grunden til at linket nu er dødt er fordi Hi-Fi klubbens nye website har en anden URL struktur end det gamle site og produkterne har dermed ikke samme URL som tidligere. Det produkt jeg linkede til, lå tidligere på:
+
+<code>http://www.hifiklubben.dk/produkter/tilbehor/kabel/hdmi-kabel/qed_reference_hdmi-kabel_5-meter.htm</code>
+
+men ligger nu på:
+
+<code>http://www.hifiklubben.dk/Products/qed-reference-hdmi-kabel-28642/</code>
+
+Det betyder at man nu lander på en fejlside på den gamle URL.
+
+[caption id="attachment_229" align="alignnone" width="640"]<a href="//www.jacobworsoe.dk/wp-content/uploads/hifiklubben-404.png"><img class="size-medium wp-image-229" alt="Den gamle URL giver nu bare en fejlside." src="//www.jacobworsoe.dk/wp-content/uploads/hifiklubben-404-640x619.png" width="640" height="619" /></a> Den gamle URL giver nu bare en fejlside.[/caption]
+
+<h2>301 redirect er løsningen</h2>
+
+For at undgå fejlsider når man skifter URL struktur skal der opsættes 301 redirects fra alle de gamle URL'er til deres nye URL. Hvis den gamle URL er udgået bør der istedet peges på en overordnet side, fx en kategoriside med lignende produkter.
+
+Hi-Fi klubbens website indeholder ifølge Googles indeks 7.170 sider, så det vil være ret tidskrævende at gå igennem alle siderne og opsætte redirects. En hurtigere løsning vil være at hoppe ind i Google Analytics og trække fx top 500 landingssider ud og hive dem ind i Excel. Derved har du en prioriteret liste over de vigtigste sider som skal redirectes.
+
+Derefter ville jeg redirecte resten til relevante kategorisider. I dette tilfælde indeholder den gamle URL faktisk hele kategoristrukturen, så man kunne nemt lave et filter i Excel på <em>/tilbehor/kabel/hdmi-kabel/<strong> </strong></em>og redirecte alle resterende sider der indeholder dette til <a href="http://www.hifiklubben.dk/Kabler/HDMI-kabel/">http://www.hifiklubben.dk/Kabler/HDMI-kabel/</a>.
+
+Til sidst ville jeg tage alle de resterende sider og redirecte til forsiden, så man i det mindste ikke får en fejlside.

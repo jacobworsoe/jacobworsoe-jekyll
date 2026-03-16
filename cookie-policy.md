@@ -8,4 +8,3 @@ slug: cookie-policy
 <div>
 <script id="CookiePolicy" src="https://policy.app.cookieinformation.com/cid.js" data-culture="DA" type="text/javascript"></script>
 </div>
-

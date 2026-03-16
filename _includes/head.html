@@ -42,10 +42,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-XWB4');</script>
 <!-- End Google Tag Manager -->
 
+{% assign asset_version = site.time | date: '%s' %}
 {% if layout.style == 'single' or page.layout == 'post' or page.layout == 'page' %}
-<link rel="stylesheet" href="{{ '/assets/css/single.css' | relative_url }}">
+{% assign main_css = '/assets/css/single.css' | relative_url %}
 {% else %}
-<link rel="stylesheet" href="{{ '/assets/css/homepage.css' | relative_url }}">
+{% assign main_css = '/assets/css/homepage.css' | relative_url %}
 {% endif %}
+<link rel="preload" href="{{ main_css }}?v={{ asset_version }}" as="style">
+<link rel="stylesheet" href="{{ main_css }}?v={{ asset_version }}">
 
 {% seo %}

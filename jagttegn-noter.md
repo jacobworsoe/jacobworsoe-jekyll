@@ -6,6 +6,7 @@ slug: jagttegn-noter
 ---
 
 <h2>Lovgivning</h2>
+
 <ul>
 <li>Svar nej til alt med ringmærkning</li>
 <li>Jagtretten følger brugsretten, medmindre andet er aftalt, så man kan godt forpagte jorden, men bevare jagtretten</li>
@@ -20,45 +21,57 @@ slug: jagttegn-noter
 <li>Det er lovligt at skyde trækkende ænder henover en foderplads</li>
 <li>Svømmeænder, dykænder og gæs er de eneste der må skydes før solopgang</li>
 </ul>
+
 <h2>Udsætning af vildt og indsamling af æg</h2>
+
 <ul>
 <li>Fasan, agerhøns, grågæs må udsættes</li>
 <li>Det er ikke lovligt udsætte nogen vildtarter i Danmark</li>
 <li>De eneste æg der må indsamles er gråandeæg fra kunstige rugepladser og det kræver ikke jagttegn</li>
 <li>Dog må der også indsamles æg fra ødelagte reder fra fasan, agerhøns og grågæs (de tre arter man også må udsætte)</li>
 </ul>
+
 <h2>Arealer</h2>
+
 <ul>
 <li>Der må ikke drives jagt på et sammenhængende areal på mindre end 1 hektar</li>
 <li>Kun ejendommens ejer eller husstand må drive jagt på mindre end 5 hektar</li>
 <li>Begrænsningen gælder ikke hvis der er indgået aftaler om at flere mindre arealer ligges sammen til mindst 5 hektar</li>
 </ul>
+
 <h2>Fælder</h2>
+
 <ul>
 <li>Max størrelse for fælder er 60 x 60 og 250 i længden</li>
-<li>Ved mårhunde og ræv må åbningen være 60&#215;60 og ved alt andet (fx mink, ilder og husmår) må åbningen max være 30&#215;30</li>
+<li>Ved mårhunde og ræv må åbningen være 60x60 og ved alt andet (fx mink, ilder og husmår) må åbningen max være 30x30</li>
 <li>Fælder skal efterses morgen og aften</li>
 <li>Fælder må ikke være gravet ned</li>
 <li>Pattedyrsfælder skal være overdækket for oven og siden og der må gerne bruge lokkemad (kød og odsler)</li>
 <li>Ved fælder til fugle må der ikke bruges kød og odsler, så der bruges æg. Fælden skal ikke være overdækket, så fuglene kan se lokkemaden</li>
 <li>Fælder er kun til regulering</li>
 </ul>
+
 <h2>Kunstigt skjul og skydetårn</h2>
+
 <ul>
 <li>Sædet i et skydetårn må max være 5 meter over jorden</li>
 <li>Skydestige skal mindst sættes 130 meter fra nabo, med mindre andet er aftalt</li>
 <li>Ved skud på fugl må skjul/stige max være 0,5 meter over jorden!</li>
-<li>Pattedyr må ikke skydes fra kunstigt skjul &#8211; ræve og klovbærende må dog skydes, men kun med riffel og kun fra skydetårn/stige</li>
+<li>Pattedyr må ikke skydes fra kunstigt skjul - ræve og klovbærende må dog skydes, men kun med riffel og kun fra skydetårn/stige</li>
 <li>Der må aldrig sættes stige/tårn i skel</li>
 <li>Minimumskrav til areal ved skydetårn er 0,5 ha</li>
 </ul>
+
 <h2>Dagjagter</h2>
+
 <ul>
 <li>Som udgangspunkt må der udlejes dagjagter på alle jagtbare arter</li>
 <li>Dog ikke på andefugle, vadefugle og vandhøns (blishøne) med undtagelse af opdrættede gråænder og skovsnepper</li>
 <li>Agerhøns og fasaner er hønsefugle og derfor må der gerne udlejes dagjagt</li>
 </ul>
+
 <h2>Fiskeriterritorum</h2>
+
 <ul>
 <li>Ved pramjagt skal man være 500 meter væk i byzoner</li>
 <li>Ikke lovligt at skyde hare på fiskeri territorium</li>
@@ -68,7 +81,9 @@ slug: jagttegn-noter
 <li>Klovbærende og hare må ikke skydes på vandområde</li>
 <li>Motorbåd er altid forbudt i ferskvand</li>
 </ul>
+
 <h2>Regulering</h2>
+
 <ul>
 <li>Mindst 18 år for at lave regulering</li>
 <li>Der er ingen areal-krav ved regulering, kun ved jagt</li>
@@ -76,10 +91,12 @@ slug: jagttegn-noter
 <li>Pattedyr må reguleres uden tilladelse</li>
 <li>Man skal være 50 meter fra andres huse</li>
 <li>Ved regulering må hagl gerne falde ned i anden mands have</li>
-<li>Der kan gives tilladelse til at regulere husskade og krage med skydevåben og fælder 1. februar til 15. april &#8211; ikke hele året</li>
+<li>Der kan gives tilladelse til at regulere husskade og krage med skydevåben og fælder 1. februar til 15. april - ikke hele året</li>
 <li>Bue og pil må aldrig bruges til regulering</li>
 </ul>
+
 <h2>Salg af nedlagt vildt</h2>
+
 <ul>
 <li>Der må handles med alle jagtbare pattedyr hele året</li>
 <li>Derudover må der handles med 10 fuglearter
@@ -96,7 +113,9 @@ slug: jagttegn-noter
 </ul>
 </li>
 </ul>
+
 <h2>Jægerhåndværk</h2>
+
 <ul>
 <li>Hvad hedder den tale man holder ved jagtens start? Parolen = velkomsttale</li>
 <li>Man bør altid afholde vildtparade?</li>
@@ -121,13 +140,17 @@ slug: jagttegn-noter
 <li>Jæger uden vildthygiejne kursus må kun sælge 15 stykker vildt og 500 stykker småvildt til detailsalg eller bekendtskaber</li>
 <li>Råvildt aflives med kniv to fingre bagved ørerne (lammer centralnervesystemet)</li>
 </ul>
+
 <h2>Afskydning</h2>
+
 <ul>
 <li>Skyd altid afkom før moderdyr, hvis de går sammen</li>
 <li>Det er ikke etisk korrekt at skyde en ræv i hovedet</li>
 <li>Ved bestand i balance, må man skyde 33% og 50% af dem vi skyder skal være lam.</li>
 </ul>
+
 <h2>Jagtformer</h2>
+
 <ul>
 <li>Klapjagt og drivjagt er med hagl</li>
 <li>Trykjagt er riffel på klovbærende
@@ -137,7 +160,9 @@ slug: jagttegn-noter
 </ul>
 </li>
 </ul>
+
 <h2>Vildtpleje</h2>
+
 <ul>
 <li>Flere agerhøns = mindre skov og flere åbne områder</li>
 <li>Kan mange krager i et område betyde nedgang i agerhøns? Ja</li>
@@ -150,21 +175,27 @@ slug: jagttegn-noter
 <li>Barjordstriber gavner agerhøns</li>
 <li>Natura 2000 er for at beskytte dyr og planter</li>
 <li>Natura 2000 er naturbeskyttelsesområder, nogle kan være fredet for jagt</li>
-<li>Biotoper for agerhøns skal være billebanker, insektvolde og vildtager &#8211; ikke skov</li>
-<li>Normalt bruges konsorten hvede til vinterfodring af hønsefugle &#8211; ikke havre</li>
+<li>Biotoper for agerhøns skal være billebanker, insektvolde og vildtager - ikke skov</li>
+<li>Normalt bruges konsorten hvede til vinterfodring af hønsefugle - ikke havre</li>
 </ul>
+
 <h2>Søer</h2>
+
 <ul>
 <li>1/3 af selve søen anligges med en min. dybde på 150 cm</li>
 <li>1/3 skal være lavere vand</li>
 <li>1/3 skal være overgang</li>
 <li>Man må ikke ændre på søer der er større end 100 m2</li>
 </ul>
+
 <h2>Biologi</h2>
+
 <ul>
 <li>Kraftig formering = høj dødelighed</li>
 </ul>
-<p>Monogame:</p>
+
+Monogame:
+
 <ul>
 <li>Agerhøns</li>
 <li>Ringduer</li>
@@ -173,14 +204,18 @@ slug: jagttegn-noter
 <li>Ænder</li>
 <li>Rovfugle</li>
 </ul>
-<p>Polygame:</p>
+
+Polygame:
+
 <ul>
 <li>Alt klovbærende</li>
 <li>Vildsvin</li>
 <li>Fasan</li>
 <li>Hare</li>
 </ul>
+
 <h3>Pattedyr</h3>
+
 <ul>
 <li>Bæver har bred hale og er fredet</li>
 <li>Råvildt og husmår der har forlænget drægtighed</li>
@@ -211,9 +246,9 @@ slug: jagttegn-noter
 <li>Yngelpleje er sparsom (kun 1 gang i døgnet kan der dies)</li>
 </ul>
 </li>
-<li>Råvildt: brunst juli/august &#8211; 2 lam i maj/juni</li>
-<li>Kronvildt: Brunst september/oktober &#8211; 1 lam i maj/juni</li>
-<li>Dåvildt: Brunst oktober/november &#8211; 1 lam i maj/juni</li>
+<li>Råvildt: brunst juli/august - 2 lam i maj/juni</li>
+<li>Kronvildt: Brunst september/oktober - 1 lam i maj/juni</li>
+<li>Dåvildt: Brunst oktober/november - 1 lam i maj/juni</li>
 <li>7/8, 9/10, 10/11</li>
 <li>Vildsvin føder 3-7 grise</li>
 <li>En flok kronvildt = Rudel</li>
@@ -242,7 +277,9 @@ slug: jagttegn-noter
 </ul>
 </li>
 </ul>
+
 <h3>Fugle</h3>
+
 <ul>
 <li>Sølvmåger kan spise mange æg fra andre arter? De er altædende</li>
 <li>Dykænder løber hen af vandet (ude på havet med masser af plads)</li>
@@ -251,7 +288,7 @@ slug: jagttegn-noter
 <li>Tårnfalk hun og spurvehøg har stor forskel på ryggen!</li>
 <li>Rørhøg har helt lyst hoved og sorte vingespidser</li>
 <li>Spurvehøg og duehøg kan ikke kombineres</li>
-<li>Tårnfalk er rødlig &#8211; han har blålig kalot</li>
+<li>Tårnfalk er rødlig - han har blålig kalot</li>
 <li>Kolonirugere:
 <ul>
 <li>Ederfugl</li>
@@ -263,8 +300,8 @@ slug: jagttegn-noter
 <li>Knortegås og kortnæbbet gås yngler ikke i DK – resten gør! (KK)</li>
 <li>Canada gås har sort hoved og hals med hvidt under hagen</li>
 <li>Viben/hjejlen er svær at skelne i flugt</li>
-<li>Viben har brede M-formede vinger i flugt &#8211; det har hvidklire og stor regnspove ikke</li>
-<li>Toppet skallesluger vs. stor skallesluger er svære &#8211; lange tynde spredte er en toppet</li>
+<li>Viben har brede M-formede vinger i flugt - det har hvidklire og stor regnspove ikke</li>
+<li>Toppet skallesluger vs. stor skallesluger er svære - lange tynde spredte er en toppet</li>
 <li>Bramgås har hvidt ansigt</li>
 <li>Knortegås har hvide pletter på siden af halsen</li>
 <li>Amerikansk skarveand han har blåt næb som den eneste and</li>
@@ -272,10 +309,12 @@ slug: jagttegn-noter
 <li>Sildemåge har mørke vinger og gullige ben</li>
 <li>Nilgås er invasiv (og det er den eneste invasive gås)</li>
 <li>Gråand er en svømmeand</li>
-<li>Fasan og agerhøns kyllinger lever af dyrisk føde &#8211; voksne af planteføde</li>
-<li>Allike er kun grå i nakken &#8211; gråkrage på ryg og underside</li>
+<li>Fasan og agerhøns kyllinger lever af dyrisk føde - voksne af planteføde</li>
+<li>Allike er kun grå i nakken - gråkrage på ryg og underside</li>
 </ul>
+
 <h3>Sygdomme</h3>
+
 <ul>
 <li>Skabsmiddel overføres let til hunde og kan overføres til mennesker</li>
 <li>Hunde skal behandles med shampoo og dyrlæge</li>
@@ -283,7 +322,7 @@ slug: jagttegn-noter
 <li>Råvildt er plaget af pelslus (giver hårtab sidst på vinteren)</li>
 <li>Stor bestand giver flere sygdomme, pga. mangel på mad og dermed dårligere imunforsvar</li>
 <li>Man kan spise råvildt med svælgbremser</li>
-<li>Råvildtssyge &#8211; dyrene skider sig ihjel &#8211; sker ved for stor bestand</li>
+<li>Råvildtssyge - dyrene skider sig ihjel - sker ved for stor bestand</li>
 <li>Borelia overføres ved flåt bid</li>
 <li>Ubehandlet kan give lammelser</li>
 <li>Skal behandles med pencilin</li>
@@ -291,7 +330,9 @@ slug: jagttegn-noter
 <li>I Sverige bør man være vaccineret</li>
 <li>Skift derfor jagttøj hurtigt og tjek hjortevildt grundigt, da de ofte er ramt</li>
 </ul>
+
 <h2>Jagttider</h2>
+
 <ul>
 <li>Er der jagttid på vaskebjørn? Ja, inversiv art, max jagttid</li>
 <li>Der er jagttider på alt med klove, også muffloer</li>
@@ -299,15 +340,21 @@ slug: jagttegn-noter
 <li>Vildtarter uden jagttid er fredet hele året</li>
 <li>Svømmeænder, dykænder og gæs må skydes 1,5 time før/efter solnedgang</li>
 </ul>
-<p>September &#8211; December</p>
+
+September - December
+
 <ul>
 <li>Svømmeænder (samt januar på fiskeriterritorium)</li>
 </ul>
-<p>Oktober &#8211; Januar</p>
+
+Oktober - Januar
+
 <ul>
 <li>Dykænder</li>
 </ul>
-<p>September &#8211; Januar</p>
+
+September - Januar
+
 <ul>
 <li>Gæs</li>
 <li>Blishøne</li>
@@ -317,15 +364,21 @@ slug: jagttegn-noter
 <li>Ræv</li>
 <li>Husmår</li>
 </ul>
-<p>16/9 til 15/10</p>
+
+16/9 til 15/10
+
 <ul>
 <li>Agerhøne</li>
 </ul>
-<p>Oktober &#8211; December</p>
+
+Oktober - December
+
 <ul>
 <li>Fasanhøne</li>
 </ul>
-<p>Oktober til januar</p>
+
+Oktober til januar
+
 <ul>
 <li>Fasanhane</li>
 <li>Sikahind og kalv</li>
@@ -333,7 +386,9 @@ slug: jagttegn-noter
 <li>Mufflonfår og lam</li>
 <li>Vildsvin so og grise</li>
 </ul>
-<p>Råbuk:</p>
+
+Råbuk:
+
 <ul>
 <li>
 16/5 til 15/7
@@ -342,8 +397,11 @@ slug: jagttegn-noter
 Kronkalv må skydes i februar
 </li>
 </ul>
+
 <h2>Fredede arter</h2>
-<p>Rovdyr:</p>
+
+Rovdyr:
+
 <ul>
 <li>Grævling</li>
 <li>Skovmår</li>
@@ -353,7 +411,9 @@ Kronkalv må skydes i februar
 <li>Odder</li>
 <li>Sæler</li>
 </ul>
-<p>Andefugle:</p>
+
+Andefugle:
+
 <ul>
 <li>Knortegås</li>
 <li>Bramgås</li>
@@ -365,44 +425,60 @@ Kronkalv må skydes i februar
 <li>Alle skalleslugere</li>
 <li>Svaner</li>
 </ul>
-<p>Andre:</p>
+
+Andre:
+
 <ul>
 <li>Skarver</li>
 <li>Fiskehejre</li>
 <li>Rovfugle</li>
 <li>Ugler</li>
 </ul>
-<p>Vandhøns:</p>
+
+Vandhøns:
+
 <ul>
 <li>Grønbenet rørhøne</li>
 <li>Der er jagttid på blishøne</li>
 </ul>
-<p>Vadefugle &#8211; alle undtagen:</p>
+
+Vadefugle - alle undtagen:
+
 <ul>
 <li>Skovsneppe</li>
 <li>Dobbeltbekkasiner</li>
 </ul>
-<p>Gnavere:</p>
+
+Gnavere:
+
 <ul>
 <li>Egern</li>
 </ul>
-<p>Måger:</p>
+
+Måger:
+
 <ul>
 <li>Alle måger er fredet</li>
 </ul>
-<p>Duer:</p>
+
+Duer:
+
 <ul>
 <li>Huldue fredet</li>
 <li>Ringduen har ikke jagt i september, først i november</li>
 </ul>
-<p>Kragefugle:</p>
+
+Kragefugle:
+
 <ul>
 <li>Ravn</li>
 <li>Skovskade</li>
 <li>Råge</li>
 <li>Allike</li>
 </ul>
+
 <h2>Våben</h2>
+
 <ul>
 <li>Våben med ikke ligge lukket i en båd</li>
 <li>Jagtriffel med fastmonteret støtteben er lovligt</li>
@@ -434,7 +510,9 @@ Kronkalv må skydes i februar
 <li>Den mest almindelige er kaliber 12 med 70 mm kammerlængde</li>
 <li>De to løb falder sammen på 35 meters afstand</li>
 </ul>
+
 <h2>Ammunition</h2>
+
 <ul>
 <li>Alt salon våben har rand-tænding</li>
 <li>Haglgevær og riffel har centraltænding</li>
@@ -447,11 +525,13 @@ Kronkalv må skydes i februar
 <li>Det er lovligt at skyde ræv med fuldkappet (ikke-ekspanderende) riffel</li>
 <li>Hagl 5 er 3 mm, dvs. 300 meters sikkerhedsafstand.</li>
 <li>3 grams kugle er forbudt, det skal være minimum 3,2 gram til råvildt</li>
-<li>Krudtet i en riffelpatron er normalt udformet som stangkrudt eller rørkrudt &#8211; ikke bladkrudt</li>
+<li>Krudtet i en riffelpatron er normalt udformet som stangkrudt eller rørkrudt - ikke bladkrudt</li>
 <li>Blyhagl er forbudt</li>
 <li>Chokvirkning er størst ved bevægelse</li>
 </ul>
-<p>Trangboring</p>
+
+Trangboring
+
 <ul>
 <li>Fuld = 1/1</li>
 <li>Derefter 1/2, 1/3, 1/4</li>
@@ -459,37 +539,49 @@ Kronkalv må skydes i februar
 <li>Jo flere stjerner, jo mere åbent er våbnet</li>
 <li>Trangboring med fuld har 17mm ved udmundingen</li>
 </ul>
+
 <h2>Vildt grupper</h2>
-<p>Gruppe 1: Kronvildt, dåvildt, sika, muflon, vildsvin, spættet sæl</p>
+
+Gruppe 1: Kronvildt, dåvildt, sika, muflon, vildsvin, spættet sæl
+
 <ul>
 <li>9 gram E100/2700</li>
 <li>10 gram E100/2200</li>
 </ul>
-<p>Gruppe 2: Råvildt</p>
+
+Gruppe 2: Råvildt
+
 <ul>
 <li>3,2 gram E100/800</li>
 <li>Kaliber 12-20</li>
 </ul>
-<p>Gruppe 3: Ræv, hare, gås, vaskebjørn, mårhund, sumpbæver og skarv</p>
+
+Gruppe 3: Ræv, hare, gås, vaskebjørn, mårhund, sumpbæver og skarv
+
 <ul>
 <li>E100/175</li>
 <li>Kaliber 12-20</li>
 </ul>
-<p>Gruppe 4: Ænder, måger, husmår, ilder, mink, vildkanin, bisamrotte, hønsefugle og blishøne</p>
+
+Gruppe 4: Ænder, måger, husmår, ilder, mink, vildkanin, bisamrotte, hønsefugle og blishøne
+
 <ul>
 <li>E0/150</li>
 <li>Kaliber 12-20</li>
 </ul>
-<p>Gruppe 5: Kragefugle, vadefugle, duer</p>
+
+Gruppe 5: Kragefugle, vadefugle, duer
+
 <ul>
 <li>V0/200 m/s</li>
 <li>5,5 mm luftgevær</li>
 <li>Alle haglkalibre</li>
 </ul>
+
 <h2>Hunde</h2>
+
 <ul>
 <li>Anstandsjagt med riffel kræver ikke apporterende hund</li>
 <li>Apportering = når hunden henter det nedlagte vildt</li>
 <li>Ikke hund med til riffel og klovbærende, men til fasan</li>
 </ul>
-

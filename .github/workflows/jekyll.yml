@@ -38,11 +38,10 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Build assets
+      - name: Build assets (Grunt: Sass → CSS, concat + uglify → JS)
         run: |
           npm install
           npm run build
-        continue-on-error: true
 
       - name: Build with Jekyll
         env:
