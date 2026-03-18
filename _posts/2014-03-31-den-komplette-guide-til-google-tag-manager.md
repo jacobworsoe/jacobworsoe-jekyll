@@ -92,11 +92,11 @@ Derefter kan vi begynde at opsætte Tags og regler i Tag Managers webinterface.
 
 Det første Tag, som opsættes, er Google Analytics. Det skal køre på alle sider, så vi skal bruge en regel til det. Denne regel ser således ud:
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GMT2.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GMT2.png" alt="" width="512" height="156" class="aligncenter size-full wp-image-2667" /></a>
+<a href="{{ '/assets/images/2021/06/GMT2.png' | relative_url }}"><img src="{{ '/assets/images/2021/06/GMT2.png' | relative_url }}" alt="" width="512" height="156" class="aligncenter size-full wp-image-2667" /></a>
 
 Derefter kan vi oprette et Tag med det normale Google Analytics script. Dette script er indbygget i Tag Manager, så der skal du blot vælge Klassisk Google Analytics og indsætte dit konto ID. Den normale Google Analytics tracking er baseret på tracking af sidevisninger, så derfor vælges ”sidevisninger” som sporingstype. Som udløsningsregel vælger du den ”Alle sider”-regel som vi lige har opsat og dermed vil dette Tag blive indlæst på alle sider på sitet. Det ser dermed således ud:
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GTM3.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GTM3-860x380.png" alt="" width="860" height="380" class="aligncenter size-large wp-image-2668" /></a>
+<a href="{{ '/assets/images/2021/06/GTM3.png' | relative_url }}"><img src="{{ '/assets/images/2021/06/GTM3-860x380.png' | relative_url }}" alt="" width="860" height="380" class="aligncenter size-large wp-image-2668" /></a>
 
 <h3>3. Google Analytics E-commerce</h3>
 
@@ -133,11 +133,11 @@ Når det er sat op, har vi adgang til alle disse informationer i GTM og kan brug
 
 Det næste, der skal implementeres, er reglen. Denne regel skal kun være opfyldt, når brugeren lander på kvitteringssiden. Vi bruger derfor den indbyggede makro &#123;&#123;url path&#125;&#125;. Denne regel ser således ud:
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GMT4.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GMT4.png" alt="" width="509" height="149" class="aligncenter size-full wp-image-2669" /></a>
+<a href="{{ '/assets/images/2021/06/GMT4.png' | relative_url }}"><img src="{{ '/assets/images/2021/06/GMT4.png' | relative_url }}" alt="" width="509" height="149" class="aligncenter size-full wp-image-2669" /></a>
 
 Så mangler vi kun det Tag, som skal sende informationerne til Google Analytics. Vi opretter derfor et Tag næsten ligesom det almindelige Google Analytics Tag, men hvor du blot vælger ’Transaktion’, som sporingstype. Når brugeren lander på kvitteringssiden, vil reglen sørge for, at Tagget blive udløst, henter informationer fra det opsatte Data Layer og sender det til Google Analytics som en transaktion:
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GMT5.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GMT5-860x436.png" alt="" width="860" height="436" class="aligncenter size-large wp-image-2670" /></a>
+<a href="{{ '/assets/images/2021/06/GMT5.png' | relative_url }}"><img src="{{ '/assets/images/2021/06/GMT5-860x436.png' | relative_url }}" alt="" width="860" height="436" class="aligncenter size-large wp-image-2670" /></a>
 
 <h3>4. AdWords conversion tracking</h3>
 
@@ -145,13 +145,13 @@ Nu bliver det rigtig smart! Nu skal vi have opsat AdWords conversion tracking, s
 
 Vi går derfor ind og opretter en ny makro og definerer, at den skal hente information fra websitet via et Data Layer og angiver navnet på den variabel i dit Data Layer, den skal hente information fra. I dette tilfælde skal den hente information fra den variabel, som hedder ’transactionTotal’ og indeholder omsætningen:
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GMT6.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GMT6.png" alt="" width="618" height="478" class="aligncenter size-full wp-image-2671" /></a>
+<a href="{{ '/assets/images/2021/06/GMT6.png' | relative_url }}"><img src="{{ '/assets/images/2021/06/GMT6.png' | relative_url }}" alt="" width="618" height="478" class="aligncenter size-full wp-image-2671" /></a>
 
 Den nye makro indeholder nu omsætningen for ordren.
 
 Vi opretter nu et nyt Tag og vælger AdWords Konverteringssporing som Tagtype. Derefter indtaster du dit konverterings ID og konverteringsetiket, som du finder inde i AdWords. Som konverteringsværdi vælges den makro, vi lige har sat op, og som udløsningsregel vælges ’Kvitteringsside’, som vi også brugte til at udløse E-commerce tagget:
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GMT7.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GMT7-860x319.png" alt="" width="860" height="319" class="aligncenter size-large wp-image-2672" /></a>
+<a href="{{ '/assets/images/2021/06/GMT7.png' | relative_url }}"><img src="{{ '/assets/images/2021/06/GMT7-860x319.png' | relative_url }}" alt="" width="860" height="319" class="aligncenter size-large wp-image-2672" /></a>
 
 Og så er der AdWords conversion tracking på sitet. Så hurtige er der ingen udviklere der er!
 
@@ -165,7 +165,7 @@ I GTM kan regler både bruges som udløsningsregler og blokeringsregler. I det f
 
 Hvis du bruger et 3. parts værktøj til remarketing, skal du tage det script, du ellers ville få din programmør til at indsætte på siden og i stedet indsætte det i GTM, hvorefter GTM vil indlæse det på siden asynkront, når reglerne er opfyldt. Og det smarte er, at du også kan bruge dine makroer her. Hvis dit remarketing script understøtter, at du sender omsætningen med, så du senere hen kan segmentere på, hvor mange penge dine kunder har købt for, kan du indsætte makroen &#123;&#123;transactionTotal&#125;&#125; nede i scriptet og dermed få omsætningen registreret i dit remarketing værktøj.
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GTM8.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GTM8-860x421.png" alt="" width="860" height="421" class="aligncenter size-large wp-image-2673" /></a>
+<a href="{{ '/assets/images/2021/06/GTM8.png' | relative_url }}"><img src="{{ '/assets/images/2021/06/GTM8-860x421.png' | relative_url }}" alt="" width="860" height="421" class="aligncenter size-large wp-image-2673" /></a>
 
 <h3>6. Hændelser / events</h3>
 
@@ -175,7 +175,7 @@ For at kunne tracke, når nogen klikker på knapper, skal vi have flere ting i s
 
 Dette Tag skal køre på alle sider, dvs. ’Alle sider’ skal være valgt som udløsningsregel. Når en bruger klikker på noget på websitet vil dette Tag sende et event tilbage til GTM, som vi kan ”lytte” på og dermed gøre noget, når brugeren klikker. Det skal vi bruge, når vi skal holde øje med, hvor mange der klikker på ’læg i kurv’-knapperne.
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GMT9.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GMT9.png" alt="" width="292" height="405" class="aligncenter size-full wp-image-2674" /></a>
+<a href="{{ '/assets/images/2021/06/GMT9.png' | relative_url }}"><img src="{{ '/assets/images/2021/06/GMT9.png' | relative_url }}" alt="" width="292" height="405" class="aligncenter size-full wp-image-2674" /></a>
 
 Derefter skal vi kunne identificere knappen, så vi ved, at brugeren har klikket på lige præcis den knap. Knappen kan fx identificeres ved, at den har en bestemt class eller ID, som bruges til styling af knappen. Det kan fx være, at knappen har en class, der hedder ’addToCart’. Vi kan dermed bruge denne class til at holde øje med, om der klikkes på knappen.
 
@@ -183,13 +183,13 @@ Udfordringen er ofte, at knappen på varelisten og produktsiden har samme class.
 
 Den regel, vi skal lave for varelister, skal derfor være følgende: Brugeren skal klikke på noget på websitet. Det, brugeren klikker på, skal have en class, der er lig ’addToCart’ og den URL, som brugeren står på, skal ikke indeholde id=. Hvis de tre ting er opfyldt, så kan vi være sikre på, at brugeren har klikket på ’læg i kurv’-knappen på varelisten. Denne regel opsættes således i GTM:
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GTM10.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GTM10.png" alt="" width="515" height="233" class="aligncenter size-full wp-image-2675" /></a>
+<a href="{{ '/assets/images/2021/06/GTM10.png' | relative_url }}"><img src="{{ '/assets/images/2021/06/GTM10.png' | relative_url }}" alt="" width="515" height="233" class="aligncenter size-full wp-image-2675" /></a>
 
 Den første linje er den event, der bliver sendt til GTM, når brugeren klikker på noget. Den sender altså en event tilbage til GTM med værdien ’gtm.click’, hver gang brugeren klikker. Den anden linje er en indbygget makro, som indeholder class’en på det element, der er klikket på, og den skal altså være ’addToCart’ i dette tilfælde. Den sidste linje sikrer, at URL’en ikke indeholder id=, og vi kan dermed være sikre på, at brugeren er på en vareliste.
 
 Reglen for produktsiden ser således ud, hvor den eneste ændring er den sidste linje:
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GTM11.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GTM11.png" alt="" width="511" height="233" class="aligncenter size-full wp-image-2676" /></a>
+<a href="{{ '/assets/images/2021/06/GTM11.png' | relative_url }}"><img src="{{ '/assets/images/2021/06/GTM11.png' | relative_url }}" alt="" width="511" height="233" class="aligncenter size-full wp-image-2676" /></a>
 
 Med de to regler på plads kan vi lave det Tag, som skal registrere klikket som en event/hændelse i Google Analytics. Der oprettes derfor et Tag, hvor ’Klassisk Google Analytics’ vælges som Tagtype og ’Hændelse’ som sporingstype. Derefter kan kategori, handling og etiket udfyldes, ligesom hvis man koder event tracking direkte ind på sitet. Her kan vi så bruge makroer til at indsætte dynamiske værdier, fx den URL, brugeren står på, når han klikker.
 
@@ -197,7 +197,7 @@ Derved kan vi se, hvilke produkter, der oftest bliver lagt i kurven, samt på hv
 
 Det endelige Tag for varelisten ser dermed således ud og den ovenstående regel vælges som udløsningsregel:
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GTM12.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2021/06/GTM12.png" alt="" width="459" height="692" class="aligncenter size-full wp-image-2677" /></a>
+<a href="{{ '/assets/images/2021/06/GTM12.png' | relative_url }}"><img src="{{ '/assets/images/2021/06/GTM12.png' | relative_url }}" alt="" width="459" height="692" class="aligncenter size-full wp-image-2677" /></a>
 
 Dermed trackes der et event i Google Analytics, hver gang brugeren klikker på ’læg i kurv’-knappen på en vareliste.
 

@@ -1,8 +1,14 @@
+# Crawl comparison (archived)
+
+*Historical only. WordPress comparison URLs may be invalid after WP is taken down. See `docs/MIGRATION.md`.*
+
+---
+
 # Crawl comparison: WordPress vs Jekyll (GitHub Pages)
 
 *Historical reference: migration is complete; this doc was used to align Jekyll with the live WordPress site.*
 
-**Compared:** [https://www.jacobworsoe.dk/](https://www.jacobworsoe.dk/) (WordPress) vs [https://jacobworsoe.github.io/jacobworsoe-jekyll/](https://jacobworsoe.github.io/jacobworsoe-jekyll/) (Jekyll).
+**Compared:** WordPress vs Jekyll (GitHub Pages) at the time of migration.
 
 ---
 
@@ -60,8 +66,7 @@
 
 ## 6. URL structure
 
-- Jekyll is now aligned with WordPress **Day and name** permalinks: `/:year/:month/:day/:title/` (e.g. `/2022/01/11/kan-browser-fingerprinting-erstatte-cookies/`).
-- `_config.yml` has `permalink: /:year/:month/:day/:title/`. For project Pages, `baseurl` is set in CI.
+- Aligned with WordPress permalink from `wp_options` (e.g. post name → `/:title/`).
 
 ---
 

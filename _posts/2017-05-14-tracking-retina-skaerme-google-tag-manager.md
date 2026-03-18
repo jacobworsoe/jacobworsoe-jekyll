@@ -14,25 +14,25 @@ Nå, men hvor mange brugere sidder egentlig på retina skærme? Vi ved at nye sm
 
 Alle nyere browser har en global property på window objektet, som vi nemt kan snuppe med JavaScript i Tag Manager.
 
-<a href="http://www.jacobworsoe.dk/wp-content/uploads/devicePixelRatio-browser-support.png"><img class="alignnone size-full wp-image-1124" src="http://www.jacobworsoe.dk/wp-content/uploads/devicePixelRatio-browser-support.png" alt="devicePixelRatio-browser-support" width="1264" height="482" /></a>
+<a href="{{ '/assets/images/devicePixelRatio-browser-support.png' | relative_url }}"><img class="alignnone size-full wp-image-1124" src="{{ '/assets/images/devicePixelRatio-browser-support.png' | relative_url }}" alt="devicePixelRatio-browser-support" width="1264" height="482" /></a>
 
 Værdien af devicePixelRatio angiver forholdet mellem fysiske pixels og CSS pixels som normalt er 1 for desktop skærme og ældre smartphones og 2 for nyere retina skærme som er dobbelt så mange CSS pixels på den samme fysiske plads. Du vil få det samme resultat hvis du zoomer 200% i din browser.
 
 Værdien hentes ved at lave en JavaScript variabel som henter værdien af devicePixelRatio.
 
-<a href="http://www.jacobworsoe.dk/wp-content/uploads/devicePixelRatio-javascript-variable.png"><img class="alignnone size-full wp-image-1128" src="http://www.jacobworsoe.dk/wp-content/uploads/devicePixelRatio-javascript-variable.png" alt="devicePixelRatio-javascript-variable" width="1177" height="312" /></a>
+<a href="{{ '/assets/images/devicePixelRatio-javascript-variable.png' | relative_url }}"><img class="alignnone size-full wp-image-1128" src="{{ '/assets/images/devicePixelRatio-javascript-variable.png' | relative_url }}" alt="devicePixelRatio-javascript-variable" width="1177" height="312" /></a>
 
 Derefter laves en custom dimension, som sættes til user scope, da værdien typisk ikke ændrer sig for den samme browser cookie.
 
-<a href="http://www.jacobworsoe.dk/wp-content/uploads/devicePixelRatio-custom-dimension.png"><img class="alignnone size-full wp-image-1125" src="http://www.jacobworsoe.dk/wp-content/uploads/devicePixelRatio-custom-dimension.png" alt="devicePixelRatio-custom-dimension" width="791" height="379" /></a>
+<a href="{{ '/assets/images/devicePixelRatio-custom-dimension.png' | relative_url }}"><img class="alignnone size-full wp-image-1125" src="{{ '/assets/images/devicePixelRatio-custom-dimension.png' | relative_url }}" alt="devicePixelRatio-custom-dimension" width="791" height="379" /></a>
 
 Det normale Pageview Tag udvides så den sender værdien af devicePixelRatio til GA på alle pageviews.
 
-<a href="http://www.jacobworsoe.dk/wp-content/uploads/devicePixelRatio-edit-pageview-tag.png"><img class="alignnone size-full wp-image-1127" src="http://www.jacobworsoe.dk/wp-content/uploads/devicePixelRatio-edit-pageview-tag.png" alt="devicePixelRatio-edit-pageview-tag" width="947" height="128" /></a>
+<a href="{{ '/assets/images/devicePixelRatio-edit-pageview-tag.png' | relative_url }}"><img class="alignnone size-full wp-image-1127" src="{{ '/assets/images/devicePixelRatio-edit-pageview-tag.png' | relative_url }}" alt="devicePixelRatio-edit-pageview-tag" width="947" height="128" /></a>
 
 Med de nye data kan vi bygge en Custom Report, som viser fordelingen og dermed kan vi analysere om desktop sitet også bør optimeres til retina skærme (det skal det nok).
 
-<a href="http://www.jacobworsoe.dk/wp-content/uploads/devicePixelRatio-custom-report.png"><img class="alignnone size-full wp-image-1126" src="http://www.jacobworsoe.dk/wp-content/uploads/devicePixelRatio-custom-report.png" alt="devicePixelRatio-custom-report" width="1171" height="522" /></a>
+<a href="{{ '/assets/images/devicePixelRatio-custom-report.png' | relative_url }}"><img class="alignnone size-full wp-image-1126" src="{{ '/assets/images/devicePixelRatio-custom-report.png' | relative_url }}" alt="devicePixelRatio-custom-report" width="1171" height="522" /></a>
 
 <h2>Den bedste måde at optimere til retina på</h2>
 

@@ -1,0 +1,21 @@
+---
+description: Jekyll site must not depend on the WordPress host for any runtime assets or URLs
+alwaysApply: true
+---
+
+# No WordPress hosting dependency
+
+The WordPress site at **www.jacobworsoe.dk** will be taken down. The Jekyll site **must not** reference it for:
+
+- Images, downloads, or any files under `/wp-content/` or other WordPress paths
+- Favicon or other static assets served only from WordPress
+- “Canonical” links that assume the old WordPress URLs still work
+
+**Do instead:**
+
+- Host all images and static files under this repo (e.g. `assets/images/…` mirroring former `wp-content/uploads/…` paths)
+- Use Jekyll `{{ '…' | relative_url }}` (or equivalent) in layouts/includes so paths work with `baseurl`
+- Internal blog links should point to Jekyll URLs (same slugs as production), not hard-coded WordPress URLs
+- Export scripts should rewrite WordPress media URLs to repo-relative Liquid when writing content
+
+**MySQL export scripts** may still read WordPress **database** until cutover; that is separate from **runtime** references in the built site.

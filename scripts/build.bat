@@ -4,17 +4,10 @@ REM Run from repo root: scripts\build.bat
 
 cd /d "%~dp0\.."
 
-echo Exporting posts and pages from MySQL...
-python scripts\export_wp_posts_pages_mysql.py
+echo MySQL export (posts, pages, comments)...
+python scripts\export_all.py
 if errorlevel 1 (
-    echo Posts/pages export failed.
-    exit /b 1
-)
-
-echo Exporting comments from MySQL...
-python scripts\export_wp_comments_mysql.py
-if errorlevel 1 (
-    echo Comments export failed.
+    echo Export failed.
     exit /b 1
 )
 

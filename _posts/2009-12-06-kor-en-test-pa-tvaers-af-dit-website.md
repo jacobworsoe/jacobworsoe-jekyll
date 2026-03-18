@@ -25,13 +25,13 @@ Hele finten i dette trick går ud på at GWO faktisk slet ikke bruger din test U
 
 Jeg driver til dagligt et linkkatalog hvor brugere kan tilmelde et link og få noget linkjuice tilbage. Derfor er det selvfølgelig vigtigt at det er nemt for brugeren at finde formularen hvor man kan tilmelde sit link. Min menu ser som udgangpunkt således ud:
 
-<a href="http://www.jacobworsoe.dk/wp-content/uploads/original.jpg"><img class="alignnone size-full wp-image-5 no-border" title="original" alt="" src="http://www.jacobworsoe.dk/wp-content/uploads/original.jpg" width="387" height="65" /></a>
+<a href="{{ '/assets/images/original.jpg' | relative_url }}"><img class="alignnone size-full wp-image-5 no-border" title="original" alt="" src="{{ '/assets/images/original.jpg' | relative_url }}" width="387" height="65" /></a>
 
 Den menu fungerer jo meget godt, men set i det lys at "Tilmeld link" er mit <em>Most Wanted Response</em>, så bør den være meget mere fremtrædende i forhold til de andre punkter i menuen. Derfor besluttede jeg at give det link en henholdsvis grøn og rød farve og teste det op mod originalen:
 
-<a href="http://www.jacobworsoe.dk/wp-content/uploads/green.jpg"><img class="alignnone size-full wp-image-6 no-border" title="green" alt="" src="http://www.jacobworsoe.dk/wp-content/uploads/green.jpg" width="387" height="65" /></a>
+<a href="{{ '/assets/images/green.jpg' | relative_url }}"><img class="alignnone size-full wp-image-6 no-border" title="green" alt="" src="{{ '/assets/images/green.jpg' | relative_url }}" width="387" height="65" /></a>
 
-<a href="http://www.jacobworsoe.dk/wp-content/uploads/red.jpg"><img class="alignnone size-full wp-image-7 no-border" title="red" alt="" src="http://www.jacobworsoe.dk/wp-content/uploads/red.jpg" width="386" height="65" /></a>
+<a href="{{ '/assets/images/red.jpg' | relative_url }}"><img class="alignnone size-full wp-image-7 no-border" title="red" alt="" src="{{ '/assets/images/red.jpg' | relative_url }}" width="386" height="65" /></a>
 Det er jo et noget stærkere Call-To-Action og samtidig kan vi også lige få testet hvor meget det betyder om knappen er rød eller grøn, og det skader jo aldrig :)
 
 <h2>Opsætning af testen</h2>

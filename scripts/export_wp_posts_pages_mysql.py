@@ -3,9 +3,11 @@
 Export WordPress posts and pages from MySQL to Jekyll.
 Reads wp_options (permalink_structure, blogname, siteurl, etc.) and writes _data/wordpress_settings.yml;
 updates _config.yml permalink from permalink_structure so no manual permalink config is required.
+Rewrites www.jacobworsoe.dk/wp-content/uploads/... to {{ '/assets/images/...' | relative_url }} (host files under assets/images/).
 Uses shared credentials from wp_mysql_credentials (scripts/.mysql-credentials, gitignored).
 Usage: python scripts/export_wp_posts_pages_mysql.py
 """
+import base64
 import re
 from pathlib import Path
 
@@ -53,6 +55,39 @@ def convert_wp_caption_shortcodes(content):
     out = re.sub(r"<p>\s*<figure>", "<figure>", out, flags=re.IGNORECASE)
     out = re.sub(r"</figure>\s*</p>", "</figure>", out, flags=re.IGNORECASE)
     return out
+
+
+# WordPress uploads → Jekyll assets (no runtime dependency on WP host). Tokens survive escape_liquid.
+_WP_UPLOADS = re.compile(
+    r"(?:https?:)?//www\.jacobworsoe\.dk/wp-content/uploads/([^\s\"\'<>\)]+)",
+    re.IGNORECASE,
+)
+
+
+def rewrite_wp_uploads_to_asset_tokens(content):
+    if not content:
+        return content
+
+    def repl(m):
+        rel = m.group(1).strip()
+        b = base64.urlsafe_b64encode(rel.encode("utf-8")).decode("ascii").rstrip("=")
+        return "__JAS__" + b + "__JAE__"
+
+    return _WP_UPLOADS.sub(repl, content)
+
+
+def finalize_jekyll_asset_tokens(content):
+    if not content:
+        return content
+
+    def repl(m):
+        b = m.group(1)
+        pad = (4 - len(b) % 4) % 4
+        path = base64.urlsafe_b64decode(b + "=" * pad).decode("utf-8")
+        full = "/assets/images/" + path.lstrip("/")
+        return "{{ '" + full.replace("'", "\\'") + "' | relative_url }}"
+
+    return re.sub(r"__JAS__([A-Za-z0-9_-]+)__JAE__", repl, content)
 
 
 def escape_yaml(s):
@@ -183,7 +218,9 @@ def main():
             post_name = "post-%s" % post_id
         post_content = (post_content or "").replace("\r\n", "\n")
         post_content = convert_wp_caption_shortcodes(post_content)
+        post_content = rewrite_wp_uploads_to_asset_tokens(post_content)
         post_content = escape_liquid(post_content)
+        post_content = finalize_jekyll_asset_tokens(post_content)
 
         # Jekyll post filename: YYYY-MM-DD-slug.md -> URL /:year/:month/:title/ = /YYYY/MM/slug/
         date_str = str(post_date)[:10] if post_date else "2020-01-01"
@@ -221,7 +258,9 @@ def main():
         post_title = (post_title or "").strip()
         post_content = (post_content or "").replace("\r\n", "\n")
         post_content = convert_wp_caption_shortcodes(post_content)
+        post_content = rewrite_wp_uploads_to_asset_tokens(post_content)
         post_content = escape_liquid(post_content)
+        post_content = finalize_jekyll_asset_tokens(post_content)
         date_str = str(post_date)[:10] if post_date else ""
         date_fm = date_str
         if post_date and len(str(post_date)) >= 19:

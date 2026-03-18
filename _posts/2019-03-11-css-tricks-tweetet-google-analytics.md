@@ -18,7 +18,7 @@ I januar skrev Chris Coyier, som driver sitet, at han ærgrede sig lidt over han
 
 Jeg skrev en hurtig mail til Chris og fortalte at jeg var ekspert i Google Analytics samt en lille guide til at tracke året i en custom dimension. Jeg respekterede hans tid og lavede derfor alt koden så det var nemt for ham at copy/paste ind på sitet.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Email-to-Chris.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Email-to-Chris-725x372.jpg" alt="Min pitch email til Chris Coyier" width="725" height="372" class="size-large wp-image-1968" /></a><figcaption>Min pitch email til Chris Coyier</figcaption></figure>
+<figure><a href="{{ '/assets/images/2019/10/Email-to-Chris.jpg' | relative_url }}"><img src="{{ '/assets/images/2019/10/Email-to-Chris-725x372.jpg' | relative_url }}" alt="Min pitch email til Chris Coyier" width="725" height="372" class="size-large wp-image-1968" /></a><figcaption>Min pitch email til Chris Coyier</figcaption></figure>
 
 Chris implementerede det og jeg anbefalede at vi udvidede det med nogle flere custom dimensions og spurgte om jeg skulle hjælpe med at analysere de nye data. Chris gav mig adgang og jeg fandt en masse interessante nye indsigter til ham.
 

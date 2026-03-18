@@ -14,7 +14,7 @@ Hvor meget drikker folk i gennemsnit over en hel aften? Det kan være skide svæ
 
 Sidste år i august havde jeg fornøjelsen af at blive gift med min dejlige kone og vi stod i præcis samme dilemma. Jeg hader at træffe beslutninger baseret på mavefornemmelser og besluttede at indsamle de nødvendige data og få lavet noget ordentlig analyse af hvad der præcis bliver drukket. Resultatet kan ses herunder. Håber du kan bruge det til din næste fest!
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/infografik-saa-meget-drikker-gaesterne-til-et-bryllup-1.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/infografik-saa-meget-drikker-gaesterne-til-et-bryllup-1.jpg" alt="Infografik: Så meget drikker gæsterne til et bryllup." width="900" height="5669" class="size-full wp-image-1167" /></a><figcaption>Infografik: Så meget drikker gæsterne til et bryllup.</figcaption></figure>
+<figure><a href="{{ '/assets/images/infografik-saa-meget-drikker-gaesterne-til-et-bryllup-1.jpg' | relative_url }}"><img src="{{ '/assets/images/infografik-saa-meget-drikker-gaesterne-til-et-bryllup-1.jpg' | relative_url }}" alt="Infografik: Så meget drikker gæsterne til et bryllup." width="900" height="5669" class="size-full wp-image-1167" /></a><figcaption>Infografik: Så meget drikker gæsterne til et bryllup.</figcaption></figure>
 
 <div class="drinksCalculator">
 <h2>Beregn hvor meget I skal købe til jeres fest</h2>
@@ -41,7 +41,7 @@ Alle antal er rundet op, dvs. 7,1 rammer er rundet op til 8 rammer, så der burd
 
 Ovenstående data stammer fra min kones og mit bryllup fra august 2014. Festen blev holdt i et forsamlingshus hvor gæsterne primært selv hentede drikkevarer i barens køleskab som ses herunder. Dog blev de første flasker vin serveret ved bordene af tjenere, men derefter hentede gæsterne selv vin og andre drikkevarer i baren. Vi havde i alt 76 gæster, hvoraf 40 var kvinder og 36 mænd. 53 af gæsterne, eller hvad der svarer til 70%, var mellem 20 og 39 år gamle. Vi blev viet i kirken kl. 13.30 og gæsterne ankom til festen kl. 15 og festede til kl. 04.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/ta-selv-baren.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/ta-selv-baren.jpg" alt="Ta-Selv baren" width="700" height="966" class="size-full wp-image-772" /></a><figcaption>Ta-Selv baren</figcaption></figure>
+<figure><a href="{{ '/assets/images/ta-selv-baren.jpg' | relative_url }}"><img src="{{ '/assets/images/ta-selv-baren.jpg' | relative_url }}" alt="Ta-Selv baren" width="700" height="966" class="size-full wp-image-772" /></a><figcaption>Ta-Selv baren</figcaption></figure>
 
 <h2>Sodvand</h2>
 
@@ -156,7 +156,7 @@ Hvis du læser dette, er der god chance for at du er igang med at planlægge et 
 
 <strong>I alt:</strong> 100.389,-
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/20140816-Tina-og-Jacobs-bryllup-1284-Edit.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/20140816-Tina-og-Jacobs-bryllup-1284-Edit.jpg" alt="Et billede fra vores bryllup taget af vores fotograf Allan Høgholm." width="692" height="461" class="size-full wp-image-884" /></a> Et billede fra vores bryllup taget af vores fotograf <a href="http://hoegholm.dk/">Allan Høgholm</a><figcaption>.</figcaption></figure>
+<figure><a href="{{ '/assets/images/20140816-Tina-og-Jacobs-bryllup-1284-Edit.jpg' | relative_url }}"><img src="{{ '/assets/images/20140816-Tina-og-Jacobs-bryllup-1284-Edit.jpg' | relative_url }}" alt="Et billede fra vores bryllup taget af vores fotograf Allan Høgholm." width="692" height="461" class="size-full wp-image-884" /></a> Et billede fra vores bryllup taget af vores fotograf <a href="http://hoegholm.dk/">Allan Høgholm</a><figcaption>.</figcaption></figure>
 
 <style type="text/css">
 .drinksCalculatorResult {

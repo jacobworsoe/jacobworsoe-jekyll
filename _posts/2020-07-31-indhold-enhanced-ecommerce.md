@@ -22,7 +22,7 @@ Det kan også være tilmelding til RSS feed, men selvom det er min foretrukne m�
 
 Endelig er der metrics som bounce rate og time on page. Men de er svære at konkludere noget ud fra isoleret set. Jeg har en bounce rate på 85% på dette site. Det er højt, men det betyder ikke nødvendigvis at mine blogindlæg ikke bliver læst grundigt. Det kan sagtens være brugerne er på sitet mange minutter og stadig bouncer. Det betyder bare at de kun læser ét blogindlæg.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent.jpg" alt="85% bounce rate." width="886" height="286" class="size-full wp-image-2300" /></a><figcaption>85% bounce rate.</figcaption></figure>
+<figure><a href="{{ '/assets/images/2020/07/Bounce-rate-på-85-procent.jpg' | relative_url }}"><img src="{{ '/assets/images/2020/07/Bounce-rate-på-85-procent.jpg' | relative_url }}" alt="85% bounce rate." width="886" height="286" class="size-full wp-image-2300" /></a><figcaption>85% bounce rate.</figcaption></figure>
 
 Time on page bliver ikke målt på den sidste side i et besøg, så med en bounce rate på 85% er det sjældent den bliver målt. Den metric er også farlig at konkludere noget ud fra, da brugeren ikke nødvendigvis forlader siden, men fx blot loader en ny side i en anden tab.
 
@@ -163,7 +163,7 @@ En debounce funktion siger: “Udfør denne kode når noget ikke er sket i X ant
 
 <a href="https://css-tricks.com/debouncing-throttling-explained-examples/" rel="noopener noreferrer" target="_blank">Denne artikel fra CSS-Tricks.com</a> har nogle gode visualiseringer og demoer som viser hvordan debounce virker. David Walsh har også <a href="https://davidwalsh.name/javascript-debounce-function" rel="noopener noreferrer" target="_blank">skrevet om det her</a>.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/css-tricks-debounce.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/css-tricks-debounce.png" alt="Kilde: CSS-Tricks.com" width="661" height="133" class="size-full wp-image-2328" /></a> Kilde: <a href="https://css-tricks.com/debouncing-throttling-explained-examples/">CSS-Tricks.com</a></figure>
+<figure><a href="{{ '/assets/images/2020/07/css-tricks-debounce.png' | relative_url }}"><img src="{{ '/assets/images/2020/07/css-tricks-debounce.png' | relative_url }}" alt="Kilde: CSS-Tricks.com" width="661" height="133" class="size-full wp-image-2328" /></a> Kilde: <a href="https://css-tricks.com/debouncing-throttling-explained-examples/">CSS-Tricks.com</a></figure>
 
 I dette tilfælde køres koden når brugeren stopper med at scrolle i 2 sekunder. Hvis brugeren scroller igen inden de 2 sekunder er gået, nulstilles timeren og når brugeren stopper med at scrolle, starter timeren igen fra 0 og hvis der går 2 sekunder uden scroll, udføres koden.
 
@@ -202,7 +202,7 @@ Den næste laver et Enhanced Ecommerce product object med de relevante produktda
 Produktdataene er placeret i data attributter i HTML koden.
 
 <pre><code class="language-html"><h1 class="home-post-headline">
-    <a href="https://www.jacobworsoe.dk/returvarer-google-analytics/" 
+    <a href="{{ '/returvarer-google-analytics/' | relative_url }}" 
         data-title="Tracking af returvarer i Google Analytics (den ultimative guide)" 
         data-id="1597" 
         data-category="Webanalyse" 
@@ -397,7 +397,7 @@ if (ga_products_not_visible.length > 0) {
 
 Antal impressions falder dermed jo længere ned på forsiden man kommer og de første to positioner har stort set samme antal impressions, da de er above-the-fold, både på mobile og desktop.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Impressions-fordelt-på-positioner-på-forsiden.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Impressions-fordelt-på-positioner-på-forsiden-860x477.png" alt="Impressions fordelt på positioner på forsiden." width="860" height="477" class="size-large wp-image-2315" /></a><figcaption>Impressions fordelt på positioner på forsiden.</figcaption></figure>
+<figure><a href="{{ '/assets/images/2020/07/Impressions-fordelt-på-positioner-på-forsiden.png' | relative_url }}"><img src="{{ '/assets/images/2020/07/Impressions-fordelt-på-positioner-på-forsiden-860x477.png' | relative_url }}" alt="Impressions fordelt på positioner på forsiden." width="860" height="477" class="size-large wp-image-2315" /></a><figcaption>Impressions fordelt på positioner på forsiden.</figcaption></figure>
 
 <h2>Produkt click med et callback</h2>
 
@@ -455,15 +455,15 @@ Brugbar fordi jeg ved at brugeren har haft tid til at læse overskriften og vurd
 
 Jeg har brugt Enhanced Ecommerce til at tracke min blog siden 2016. Da jeg gav bloggen et redesign i starten af 2019 undersøgte jeg hvor mange der klikker, når der vises relaterede indlæg i bunden af et indlæg eller klikker på listen af nyeste blogindlæg.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Nyeste-blogindlæg-imressions-clicks-CTR.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Nyeste-blogindlæg-imressions-clicks-CTR.png" alt="Sidebar med nyeste blogindlæg - men klikker folk på dem?" width="1270" height="526" class="size-full wp-image-1828" /></a><figcaption>Sidebar med nyeste blogindlæg - men klikker folk på dem?</figcaption></figure>
+<figure><a href="{{ '/assets/images/2019/08/Nyeste-blogindlæg-imressions-clicks-CTR.png' | relative_url }}"><img src="{{ '/assets/images/2019/08/Nyeste-blogindlæg-imressions-clicks-CTR.png' | relative_url }}" alt="Sidebar med nyeste blogindlæg - men klikker folk på dem?" width="1270" height="526" class="size-full wp-image-1828" /></a><figcaption>Sidebar med nyeste blogindlæg - men klikker folk på dem?</figcaption></figure>
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Relaterede-blogindlæg.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Relaterede-blogindlæg.png" alt="I bunden af alle blogindlæg vises links til relaterede blogindlæg." width="941" height="595" class="size-full wp-image-1829" /></a><figcaption>I bunden af alle blogindlæg vises links til relaterede blogindlæg.</figcaption></figure>
+<figure><a href="{{ '/assets/images/2019/08/Relaterede-blogindlæg.png' | relative_url }}"><img src="{{ '/assets/images/2019/08/Relaterede-blogindlæg.png' | relative_url }}" alt="I bunden af alle blogindlæg vises links til relaterede blogindlæg." width="941" height="595" class="size-full wp-image-1829" /></a><figcaption>I bunden af alle blogindlæg vises links til relaterede blogindlæg.</figcaption></figure>
 
 Det gør de ikke.
 
 Slet ikke.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Product-list-performance-nyeste-og-relaterede-indlæg.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Product-list-performance-nyeste-og-relaterede-indlæg.png" alt="CTR på 0,05% og 0,42% viser at meget få klikker på de links." width="1094" height="485" class="size-full wp-image-1830" /></a><figcaption>CTR på 0,05% og 0,42% viser at meget få klikker på de links.</figcaption></figure>
+<figure><a href="{{ '/assets/images/2019/08/Product-list-performance-nyeste-og-relaterede-indlæg.png' | relative_url }}"><img src="{{ '/assets/images/2019/08/Product-list-performance-nyeste-og-relaterede-indlæg.png' | relative_url }}" alt="CTR på 0,05% og 0,42% viser at meget få klikker på de links." width="1094" height="485" class="size-full wp-image-1830" /></a><figcaption>CTR på 0,05% og 0,42% viser at meget få klikker på de links.</figcaption></figure>
 
 Bemærk de meget forskellige antal impressions. Som beskrevet ovenfor tracker jeg kun impressions når links er synlige på skærmen og brugeren ikke har scrollet i 2 sekunder.
 
@@ -471,7 +471,7 @@ Nyeste indlæg vises i højre side højt oppe på siden, mens relaterede indlæg
 
 Fordi der er meget få kliks er det svært at optimere ud fra. Men hvis der havde været nogle flere kliks, ville det være oplagt at kigge på hvilke blogindlæg der fungerer godt når de vises som relaterede indlæg:
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Product-list-performance-products.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Product-list-performance-products.png" alt="CTR for de enkelte blogindlæg når de vises som relaterede indlæg." width="890" height="610" class="size-full wp-image-1833" /></a><figcaption>CTR for de enkelte blogindlæg når de vises som relaterede indlæg.</figcaption></figure>
+<figure><a href="{{ '/assets/images/2019/08/Product-list-performance-products.png' | relative_url }}"><img src="{{ '/assets/images/2019/08/Product-list-performance-products.png' | relative_url }}" alt="CTR for de enkelte blogindlæg når de vises som relaterede indlæg." width="890" height="610" class="size-full wp-image-1833" /></a><figcaption>CTR for de enkelte blogindlæg når de vises som relaterede indlæg.</figcaption></figure>
 
 CTR på de links var dermed så lav, at de for langt de fleste brugere ikke er brugbare links, og dermed blot støj. Jeg valgte derfor at fjerne dem i det nye design og dermed få et mere clean design.
 
@@ -479,7 +479,7 @@ CTR på de links var dermed så lav, at de for langt de fleste brugere ikke er b
 
 Til sammenligning har links på forsiden en CTR på 4,92%.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Product-list-performance-homepage-og-forsiden.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Product-list-performance-homepage-og-forsiden.png" alt="CTR på forsiden." width="818" height="313" class="size-full wp-image-1844" /></a><figcaption>CTR på forsiden.</figcaption></figure>
+<figure><a href="{{ '/assets/images/2019/08/Product-list-performance-homepage-og-forsiden.png' | relative_url }}"><img src="{{ '/assets/images/2019/08/Product-list-performance-homepage-og-forsiden.png' | relative_url }}" alt="CTR på forsiden." width="818" height="313" class="size-full wp-image-1844" /></a><figcaption>CTR på forsiden.</figcaption></figure>
 
 Screenshottet viser i øvrigt en kritisk vigtig ting i Enhanced Ecommerce og analytics generelt: <strong>Konsistent data</strong>.
 
@@ -827,7 +827,7 @@ trackSinglePostAsProduct: function(product) {
 
 Dataene kan blandt andet ses i Product Performance rapporten.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Product-performance.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Product-performance-860x452.jpg" alt="Top 10 mest læste blogindlæg og deres gennemsnitspris (antal ord)." width="860" height="452" class="size-large wp-image-2329" /></a><figcaption>Top 10 mest læste blogindlæg og deres gennemsnitspris (antal ord).</figcaption></figure>
+<figure><a href="{{ '/assets/images/2020/07/Product-performance.jpg' | relative_url }}"><img src="{{ '/assets/images/2020/07/Product-performance-860x452.jpg' | relative_url }}" alt="Top 10 mest læste blogindlæg og deres gennemsnitspris (antal ord)." width="860" height="452" class="size-large wp-image-2329" /></a><figcaption>Top 10 mest læste blogindlæg og deres gennemsnitspris (antal ord).</figcaption></figure>
 
 <h2>Analyse af Ecommerce data for min blog</h2>
 
@@ -839,25 +839,25 @@ En af de fedeste rapporter i Enhanced Ecommerce er Shopping Behaviour, som viser
 
 Her ses frafaldet i hvert step mod læste blogindlæg.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Shopping-behaviour.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Shopping-behaviour.png" alt="Shopping behaviour" width="1556" height="724" class="size-full wp-image-1926" /></a><figcaption>Shopping behaviour</figcaption></figure>
+<figure><a href="{{ '/assets/images/2019/08/Shopping-behaviour.png' | relative_url }}"><img src="{{ '/assets/images/2019/08/Shopping-behaviour.png' | relative_url }}" alt="Shopping behaviour" width="1556" height="724" class="size-full wp-image-1926" /></a><figcaption>Shopping behaviour</figcaption></figure>
 
 Jeg kan se at en stor del af de besøgende ser blogindlæg (faktisk hele 96%) og rigtige mange begynder at scrolle (add to cart). 85% af dem der scroller når også ned til den første 1/3 af indlægget (checkout) men kun 20% af dem læser et blogindlæg. Der er et stort frafald på det sidste step.
 
 Det kigger vi lige nærmere på med <code>Checkout behaviour</code>.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Checkout-behaviour.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Checkout-behaviour.png" alt="Checkout behaviour" width="1285" height="719" class="size-full wp-image-1927" /></a><figcaption>Checkout behaviour</figcaption></figure>
+<figure><a href="{{ '/assets/images/2019/08/Checkout-behaviour.png' | relative_url }}"><img src="{{ '/assets/images/2019/08/Checkout-behaviour.png' | relative_url }}" alt="Checkout behaviour" width="1285" height="719" class="size-full wp-image-1927" /></a><figcaption>Checkout behaviour</figcaption></figure>
 
 Antal sessioner bliver cirka halveret i hvert step, men dog er 78% af dem som scroller helt til bunden også på siden længe nok, til at de læser blogindlægget og tracket som et køb.
 
 <h3>Ekskludering af irrelevante blogindlæg</h3>
 
-Mit mest besøgte blogindlæg er uden sammenligning min <a href="https://www.jacobworsoe.dk/hvor-meget-drikker-gaesterne-til-et-bryllup/">infografik over hvor meget der blev drukket til vores bryllup</a>.
+Mit mest besøgte blogindlæg er uden sammenligning min <a href="{{ '/hvor-meget-drikker-gaesterne-til-et-bryllup/' | relative_url }}">infografik over hvor meget der blev drukket til vores bryllup</a>.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Mest-viste-sider-GDS-chart.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Mest-viste-sider-GDS-chart.png" alt="Mest besøgte sider siden 2009." width="823" height="415" class="size-full wp-image-1887" /></a><figcaption>Mest besøgte sider siden 2009.</figcaption></figure>
+<figure><a href="{{ '/assets/images/2019/08/Mest-viste-sider-GDS-chart.png' | relative_url }}"><img src="{{ '/assets/images/2019/08/Mest-viste-sider-GDS-chart.png' | relative_url }}" alt="Mest besøgte sider siden 2009." width="823" height="415" class="size-full wp-image-1887" /></a><figcaption>Mest besøgte sider siden 2009.</figcaption></figure>
 
 Jeg har brugt Enhanced Ecommerce til at tracke min blog siden december 2016 og siden da har den infografik stået for 77% af alle sidevisninger.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/drinksregnskab-77-procent-sidevisninger-siden-2016.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/drinksregnskab-77-procent-sidevisninger-siden-2016.png" alt="Infografikken står for 77% af alle sidevisninger på sitet." width="741" height="351" class="size-full wp-image-1888" /></a><figcaption>Infografikken står for 77% af alle sidevisninger på sitet.</figcaption></figure>
+<figure><a href="{{ '/assets/images/2019/08/drinksregnskab-77-procent-sidevisninger-siden-2016.png' | relative_url }}"><img src="{{ '/assets/images/2019/08/drinksregnskab-77-procent-sidevisninger-siden-2016.png' | relative_url }}" alt="Infografikken står for 77% af alle sidevisninger på sitet." width="741" height="351" class="size-full wp-image-1888" /></a><figcaption>Infografikken står for 77% af alle sidevisninger på sitet.</figcaption></figure>
 
 Målgruppen og adfærden på det blogindlæg er markant anderledes end de andre blogindlæg jeg skriver om digital marketing, så derfor udelukker jeg den med et segment, i alle de nedenstående analyser.
 
@@ -869,7 +869,7 @@ Eller sagt på en anden måde: En vanity metric mod en engagement metric.
 
 Bemærk de kæmpe forskelle i engagement!
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Top-10-blogposts-buy-to-detail-rate.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Top-10-blogposts-buy-to-detail-rate-860x380.jpg" alt="Der er kæmpe forskel på hvor mange der rent faktisk læser blogindlæggene." width="860" height="380" class="size-large wp-image-2331" /></a><figcaption>Der er kæmpe forskel på hvor mange der rent faktisk læser blogindlæggene.</figcaption></figure>
+<figure><a href="{{ '/assets/images/2020/07/Top-10-blogposts-buy-to-detail-rate.jpg' | relative_url }}"><img src="{{ '/assets/images/2020/07/Top-10-blogposts-buy-to-detail-rate-860x380.jpg' | relative_url }}" alt="Der er kæmpe forskel på hvor mange der rent faktisk læser blogindlæggene." width="860" height="380" class="size-large wp-image-2331" /></a><figcaption>Der er kæmpe forskel på hvor mange der rent faktisk læser blogindlæggene.</figcaption></figure>
 
 <h3>Konverteringsrate pr. trafikkilder</h3>
 
@@ -883,11 +883,11 @@ Gennemsnittet for sitet er en konverteringsrate på 26,58% hvilket vil sige at 2
 <li>E-mail er ekstremt høj hvor 43% læser blogindlægget. Næsten dobbelt så højt som gennemsnittet. Jeg sender kun e-mails ud, når jeg skriver nye blogindlæg, så det giver god mening at folk kun klikker på links i de e-mails, hvis de synes blogindlægget ser spændende ud. Men alligevel :)</li>
 </ul>
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Konvertering-for-default-channel-grouping.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Konvertering-for-default-channel-grouping.png" alt="Konvertering fordelt på trafikkilder." width="1276" height="511" class="size-full wp-image-1893" /></a><figcaption>Konvertering fordelt på trafikkilder.</figcaption></figure>
+<figure><a href="{{ '/assets/images/2019/08/Konvertering-for-default-channel-grouping.png' | relative_url }}"><img src="{{ '/assets/images/2019/08/Konvertering-for-default-channel-grouping.png' | relative_url }}" alt="Konvertering fordelt på trafikkilder." width="1276" height="511" class="size-full wp-image-1893" /></a><figcaption>Konvertering fordelt på trafikkilder.</figcaption></figure>
 
 Lad os først lige kigge nærmere på social og de posts jeg selv laver, når jeg har skrevet et nyt blogindlæg.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Source-medium-sociale-posts.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Source-medium-sociale-posts.png" alt="Konvertering er markant højere end gennemsnittet på 27%." width="1268" height="351" class="size-full wp-image-1892" /></a><figcaption>Konvertering er markant højere end gennemsnittet på 27%.</figcaption></figure>
+<figure><a href="{{ '/assets/images/2019/08/Source-medium-sociale-posts.png' | relative_url }}"><img src="{{ '/assets/images/2019/08/Source-medium-sociale-posts.png' | relative_url }}" alt="Konvertering er markant højere end gennemsnittet på 27%." width="1268" height="351" class="size-full wp-image-1892" /></a><figcaption>Konvertering er markant højere end gennemsnittet på 27%.</figcaption></figure>
 
 Konverteringen her er markant højere end gennemsnittet på 27% men det er interessant at facebook konvertere lavere end de andre. Jeg poster typisk kun i <a href="https://www.facebook.com/groups/googleanalytics/" rel="noopener noreferrer" target="_blank">Analytics-nørder - den hårde kerne</a> hvor alle er interesseret i Analytics. På <a href="https://www.linkedin.com/in/jacobworsoe/" rel="noopener noreferrer" target="_blank">LinkedIn</a> og <a href="https://twitter.com/jacobworsoe" rel="noopener noreferrer" target="_blank">Twitter</a> ryger den bredt ud til mit netværk, som nok er en lidt mere blandet skare, men til trods for det, så er der flere der læser hele indlægget.
 
@@ -905,7 +905,7 @@ Jeg laver 3 segmenter, som allesammen har en detaljevisning i deres session:
 
 De tre segmenter kan brydes ned på device og dermed se adfærden.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Andel-der-skimmer-eller-læser-fordelt-på-devices.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Andel-der-skimmer-eller-læser-fordelt-på-devices.png" alt="Andel der skimmer og læser fordelt på devices" width="1450" height="715" class="size-full wp-image-1919" /></a><figcaption>Andel der skimmer og læser fordelt på devices</figcaption></figure>
+<figure><a href="{{ '/assets/images/2019/08/Andel-der-skimmer-eller-læser-fordelt-på-devices.png' | relative_url }}"><img src="{{ '/assets/images/2019/08/Andel-der-skimmer-eller-læser-fordelt-på-devices.png' | relative_url }}" alt="Andel der skimmer og læser fordelt på devices" width="1450" height="715" class="size-full wp-image-1919" /></a><figcaption>Andel der skimmer og læser fordelt på devices</figcaption></figure>
 
 <ul>
 <li>Der er altså <strong>26% der kun skimmer et blogindlæg</strong>, mens hele <strong>63% læser blogindlægget</strong> uden at skimme det først. Det er overraskende. Jeg havde egentlig forventet at langt flere startede med at skimme og derefter læse, hvis det så spændende ud - fx. masser af billede og ikke bare wall of text. Men det er faktisk kun 11% der først skimmer og derefter læser indlægget.</li>
@@ -919,7 +919,7 @@ I <code>Product Performance</code> rapporten kan du se <code>Average price</code
 
 Du plotter tallene på et Scatter Plot i Excel og tilføjer en trendlinje, som viser sammenhængen.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Korrelation-mellem-pris-og-konvertering.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Korrelation-mellem-pris-og-konvertering.png" alt="Korrelationen mellem pris og konvertering er -0,32" width="1023" height="703" class="size-full wp-image-1922" /></a><figcaption>Korrelationen mellem pris og konvertering er -0,32</figcaption></figure>
+<figure><a href="{{ '/assets/images/2019/08/Korrelation-mellem-pris-og-konvertering.png' | relative_url }}"><img src="{{ '/assets/images/2019/08/Korrelation-mellem-pris-og-konvertering.png' | relative_url }}" alt="Korrelationen mellem pris og konvertering er -0,32" width="1023" height="703" class="size-full wp-image-1922" /></a><figcaption>Korrelationen mellem pris og konvertering er -0,32</figcaption></figure>
 
 Trendlinjen viser en tydelig nedadgående sammenhæng mellem pris og konvertering, så jo længere blogindlægget er, jo mindre sandsynlighed er der for at det bliver læst til ende.
 
@@ -927,7 +927,7 @@ Trendlinjen viser en tydelig nedadgående sammenhæng mellem pris og konverterin
 
 Du kan også inddele blogindlæggene i buckets af antal ord, fx 0-500, 501-1000, etc. og finde den optimale længde på et blogindlæg hvor brugerne oftest læser det hele.
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/Buy-to-Detail-Rate-vs.-Antal-ord.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/Buy-to-Detail-Rate-vs.-Antal-ord-860x513.jpg" alt="" width="860" height="513" class="alignnone size-large wp-image-2121" /></a>
+<a href="{{ '/assets/images/2019/11/Buy-to-Detail-Rate-vs.-Antal-ord.jpg' | relative_url }}"><img src="{{ '/assets/images/2019/11/Buy-to-Detail-Rate-vs.-Antal-ord-860x513.jpg' | relative_url }}" alt="" width="860" height="513" class="alignnone size-large wp-image-2121" /></a>
 
 Overraskende nok er det de helt korte indlæg på mindre end 500 ord hvor færrest læser det hele. Der er et sweetspot omkring 500-1500 ord og ligesom det ses i ovenstående Scatter Plot, så falder fastholdelsen i de lange indlæg.
 
@@ -937,22 +937,22 @@ Okay, lad os kigge på mine to seneste blogindlæg som eksempler.
 
 Baseret på antal pageviews er de cirka lige populære.
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/retur-vs-aws-pageviews.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/retur-vs-aws-pageviews.jpg" alt="" width="637" height="371" class="alignnone size-full wp-image-2110" /></a>
+<a href="{{ '/assets/images/2019/11/retur-vs-aws-pageviews.jpg' | relative_url }}"><img src="{{ '/assets/images/2019/11/retur-vs-aws-pageviews.jpg' | relative_url }}" alt="" width="637" height="371" class="alignnone size-full wp-image-2110" /></a>
 
 Men pageviews er bare en vanity metric. Den fortæller intet om kvaliteten eller evnen til at fastholde brugeren.
 
 Og de to blogindlæg er meget forskellige.
 
 <ul>
-<li><a href="https://www.jacobworsoe.dk/returvarer-google-analytics/">Tracking af returvarer i Google Analytics (den ultimative guide 2019)</a> er en inspiration, men også noget som er en reference til senere brug og den er på 3668 ord.</li>
-<li><a href="https://www.jacobworsoe.dk/aws-iot-button-google-analytics/">Tracking af kaffeforbrug med AWS IoT Button og Google Analytics</a> er en sjov use-case for Google Analytics, den er rimelig letlæst og man skal læse (eller skimme) det hele for at den er sjov. Den er kun på 1571 ord.</li>
+<li><a href="{{ '/returvarer-google-analytics/' | relative_url }}">Tracking af returvarer i Google Analytics (den ultimative guide 2019)</a> er en inspiration, men også noget som er en reference til senere brug og den er på 3668 ord.</li>
+<li><a href="{{ '/aws-iot-button-google-analytics/' | relative_url }}">Tracking af kaffeforbrug med AWS IoT Button og Google Analytics</a> er en sjov use-case for Google Analytics, den er rimelig letlæst og man skal læse (eller skimme) det hele for at den er sjov. Den er kun på 1571 ord.</li>
 </ul>
 
 <h3>Buy-to-Detail Rate</h3>
 
 Den store forskel på de to blogindlæg ses tydeligt i Buy-to-Detail rate som er 11,69% for returvarer-indlægget mens den er hele 46,26% på AWS IoT-indlægget!
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/retur-vs-aws-buy-to-detail.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/retur-vs-aws-buy-to-detail-860x230.jpg" alt="" width="860" height="230" class="alignnone size-large wp-image-2113" /></a>
+<a href="{{ '/assets/images/2019/11/retur-vs-aws-buy-to-detail.jpg' | relative_url }}"><img src="{{ '/assets/images/2019/11/retur-vs-aws-buy-to-detail-860x230.jpg' | relative_url }}" alt="" width="860" height="230" class="alignnone size-large wp-image-2113" /></a>
 
 Dvs. næsten halvdelen af alle dem som ser indlægget om AWS scroller helt til bunden og er mindst 1 minut på siden.
 
@@ -960,7 +960,7 @@ Men hvornår falder folk fra på returvarer-indlægget?
 
 Men hey! Tabeller med rå data er måske fede for data scientists, men de dur ikke til at gøre data nemme at forstå. Så lad os lige lave en graf inden vi går videre.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/Fastholdelse-af-brugeren-i-et-blogindlæg.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/Fastholdelse-af-brugeren-i-et-blogindlæg-860x437.jpg" alt="Fastholdelse af brugeren i et blogindlæg" width="860" height="437" class="size-large wp-image-2112" /></a><figcaption>Fastholdelse af brugeren i et blogindlæg</figcaption></figure>
+<figure><a href="{{ '/assets/images/2019/11/Fastholdelse-af-brugeren-i-et-blogindlæg.jpg' | relative_url }}"><img src="{{ '/assets/images/2019/11/Fastholdelse-af-brugeren-i-et-blogindlæg-860x437.jpg' | relative_url }}" alt="Fastholdelse af brugeren i et blogindlæg" width="860" height="437" class="size-large wp-image-2112" /></a><figcaption>Fastholdelse af brugeren i et blogindlæg</figcaption></figure>
 
 Meget bedre.
 
@@ -970,19 +970,19 @@ På kaffe-indlægget er der slet ikke samme frafald, så det indlæg fastholder 
 
 <h2>Blog kategorier</h2>
 
-Der er også kæmpe forskel i fastholdelse af brugerne fordelt på kategorier. Indlæg om <a href="https://www.jacobworsoe.dk/category/nethandel/">Nethandel</a> bliver læst meget.
+Der er også kæmpe forskel i fastholdelse af brugerne fordelt på kategorier. Indlæg om <a href="{{ '/category/nethandel/' | relative_url }}">Nethandel</a> bliver læst meget.
 
-Heldigvis bliver mine indlæg om <a href="https://www.jacobworsoe.dk/category/webanalyse/">Webanalyse</a>, som jeg lægger meget arbejde i, også læst meget, hvor 24% læser hele indlægget.
+Heldigvis bliver mine indlæg om <a href="{{ '/category/webanalyse/' | relative_url }}">Webanalyse</a>, som jeg lægger meget arbejde i, også læst meget, hvor 24% læser hele indlægget.
 
-Til gengæld skal jeg vidst tage mig lidt sammen, når jeg skriver om <a href="https://www.jacobworsoe.dk/category/seo/">SEO</a>, som umiddelbart ikke er så interessante indlæg. Her har jeg også lige taget <a href="https://www.jacobworsoe.dk/category/hverdagsstatistik/">Hverdagsstatisk</a> med, som er mit indlæg om <a href="https://www.jacobworsoe.dk/hvor-meget-drikker-gaesterne-til-et-bryllup/">drikkevarer til et bryllup</a>.
+Til gengæld skal jeg vidst tage mig lidt sammen, når jeg skriver om <a href="{{ '/category/seo/' | relative_url }}">SEO</a>, som umiddelbart ikke er så interessante indlæg. Her har jeg også lige taget <a href="{{ '/category/hverdagsstatistik/' | relative_url }}">Hverdagsstatisk</a> med, som er mit indlæg om <a href="{{ '/hvor-meget-drikker-gaesterne-til-et-bryllup/' | relative_url }}">drikkevarer til et bryllup</a>.
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/Buy-to-Detail-rate-for-kategorier.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/Buy-to-Detail-rate-for-kategorier-860x597.jpg" alt="" width="860" height="597" class="alignnone size-large wp-image-2117" /></a>
+<a href="{{ '/assets/images/2019/11/Buy-to-Detail-rate-for-kategorier.jpg' | relative_url }}"><img src="{{ '/assets/images/2019/11/Buy-to-Detail-rate-for-kategorier-860x597.jpg' | relative_url }}" alt="" width="860" height="597" class="alignnone size-large wp-image-2117" /></a>
 
 <h2>Udgivelsesår</h2>
 
 Jeg skrev mit første blogindlæg på denne blog i 2009 og jeg har skrevet 35 indlæg i alt. Lad os se om jeg er blevet bedre til at skrive spændende indlæg igennem årene.
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/Buy-to-Detail-Rate-pr.-udgivelsesår.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/Buy-to-Detail-Rate-pr.-udgivelsesår-860x502.jpg" alt="" width="860" height="502" class="alignnone size-large wp-image-2119" /></a>
+<a href="{{ '/assets/images/2019/11/Buy-to-Detail-Rate-pr.-udgivelsesår.jpg' | relative_url }}"><img src="{{ '/assets/images/2019/11/Buy-to-Detail-Rate-pr.-udgivelsesår-860x502.jpg' | relative_url }}" alt="" width="860" height="502" class="alignnone size-large wp-image-2119" /></a>
 
 Jeg startede ret godt ud i 2009 og 2010 og havde derefter nogle knap så gode år, særligt 2014-2017. Men 2018 og 2019 har begge været rigtig gode år, så jeg skal vidst bare fortsætte med den type indlæg.
 

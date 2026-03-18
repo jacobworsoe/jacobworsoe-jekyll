@@ -28,10 +28,10 @@ Lad os lige se på forskellen mellem client-side og server-side cookies.
     <li>Server-side cookies kommer direkte fra serveren og bliver sat med Set-Cookie i HTTP headeren i det HTTP response der kommer retur fra serveren</li>
 </ul>
 
-Her er hvad der sker når du skriver <a href="https://www.jacobworsoe.dk">jacobworsoe.dk</a> i din browser.
+Her er hvad der sker når du skriver <a href="{{ '/' | relative_url }}">jacobworsoe.dk</a> i din browser.
 
 <ol>
-<li>Browseren sender et HTTP request på en URL til serveren, fx. <a href="https://www.jacobworsoe.dk">jacobworsoe.dk</a></li>
+<li>Browseren sender et HTTP request på en URL til serveren, fx. <a href="{{ '/' | relative_url }}">jacobworsoe.dk</a></li>
 <li>Web serveren sender et HTTP response tilbage med HTML koden for dén URL. Et HTTP response indeholder nogle Headers som fx status koden (200, 301, 404, etc.), om siden skal caches i browseren og hvor længe, osv. Headeren kan også indeholde en Set-Cookie kommando som sætter en cookie i browseren.</li>
 </ol>
 
@@ -64,7 +64,7 @@ Men med server-side cookies, sker der ikke noget uden du er klar over det, så d
 
 <h2>Er workarounds spild af penge?</h2>
 
-Måske. Facebook <a href="https://www.jacobworsoe.dk/ekskluder-facebooks-fbclid-url-parameter-i-google-analytics/" rel="noopener noreferrer">forsøgte med et workaround</a> og det blev stoppet af ITP 2.1.
+Måske. Facebook <a href="{{ '/ekskluder-facebooks-fbclid-url-parameter-i-google-analytics/' | relative_url }}" rel="noopener noreferrer">forsøgte med et workaround</a> og det blev stoppet af ITP 2.1.
 
 Det kan derfor sagtens være at det er spild af penge at implementere workarounds til ITP, som måske bliver blokeret i næste ITP version.
 

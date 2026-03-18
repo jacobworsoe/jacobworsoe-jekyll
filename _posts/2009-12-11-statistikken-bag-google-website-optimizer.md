@@ -8,7 +8,7 @@ categories:
   - Konverteringsoptimering
 ---
 
-Det er efterhånden blevet meget populært at udføre <a title="Danske split-test cases" href="//www.jacobworsoe.dk/danske-split-test-cases/">splittests</a>, men desværre ser jeg alt for ofte at mange ikke har tålmodighed til at køre testen til ende og derfor ender med at træffe beslutninger på et for løst grundlag. Mange vælger at stoppe en test fordi man kan se at den ene variant er bedre end den anden og derfor vil man hurtigst muligt have implementeret "vinderen" for at undgå at bruge taberen længere tid end højst nødvendigt. Det kan også være meget fristende hvis man f.eks. kører en webshop og man kan se at der er mulighed for at hæve omsætningen. Det kan dog være meget farligt at gøre det for tidligt og man kan faktisk risikere at implementere det der i virkeligheden er taberen. Derfor vil jeg her gennemgå statistikken bag en splittest og forklare hvorfor det er vigtigt at have nogle signifikante resultater at konkludere udfra.
+Det er efterhånden blevet meget populært at udføre <a title="Danske split-test cases" href="{{ '/danske-split-test-cases/' | relative_url }}">splittests</a>, men desværre ser jeg alt for ofte at mange ikke har tålmodighed til at køre testen til ende og derfor ender med at træffe beslutninger på et for løst grundlag. Mange vælger at stoppe en test fordi man kan se at den ene variant er bedre end den anden og derfor vil man hurtigst muligt have implementeret "vinderen" for at undgå at bruge taberen længere tid end højst nødvendigt. Det kan også være meget fristende hvis man f.eks. kører en webshop og man kan se at der er mulighed for at hæve omsætningen. Det kan dog være meget farligt at gøre det for tidligt og man kan faktisk risikere at implementere det der i virkeligheden er taberen. Derfor vil jeg her gennemgå statistikken bag en splittest og forklare hvorfor det er vigtigt at have nogle signifikante resultater at konkludere udfra.
 
 <h2>Stikprøve og population</h2>
 
@@ -44,7 +44,7 @@ En mistænkt er som udgangspunkt uskyldig indtil det modsatte er bevist. Derfor 
 
 Udfaldet af retssagen kan derfor opstilles således med to rigtige og to forkerte beslutninger:
 
-<figure><a href="//www.jacobworsoe.dk/wp-content/uploads/Statistik-splittest-retssagen.png"><img class="size-full wp-image-365" alt="Retssagens mulige udfald" src="//www.jacobworsoe.dk/wp-content/uploads/Statistik-splittest-retssagen.png" width="616" height="188" /></a><figcaption>Retssagens mulige udfald</figcaption></figure>
+<figure><a href="{{ '/assets/images/Statistik-splittest-retssagen.png' | relative_url }}"><img class="size-full wp-image-365" alt="Retssagens mulige udfald" src="{{ '/assets/images/Statistik-splittest-retssagen.png' | relative_url }}" width="616" height="188" /></a><figcaption>Retssagens mulige udfald</figcaption></figure>
 
 Af de to forkerte beslutninger er justitsmordet klart det værste der kan ske. Det er langt værre at dømme en uskyldig mand, end at lade en skyldig gå fri. Det vil altså sige at man skal have meget stærke beviser for at forkaste H0, da det er katastrofalt hvis beslutningen er forkert.
 
@@ -60,7 +60,7 @@ I den situation vil man ende med at implementere en farveændring som er helt fo
 
 Nu er det vist på tide at den kedelige statistik skal erstattes af et praktisk eksempel. Vi tager derfor udgangspunkt i nedenstående rapport:
 
-<a style="color: #ff4b33; line-height: 24px;" href="//www.jacobworsoe.dk/wp-content/uploads/statistikken-bag-gwo1.jpg"><img class="alignnone  wp-image-10 no-border" title="statistikken-bag-gwo1" alt="" src="//www.jacobworsoe.dk/wp-content/uploads/statistikken-bag-gwo1.jpg" /></a>
+<a style="color: #ff4b33; line-height: 24px;" href="{{ '/assets/images/statistikken-bag-gwo1.jpg' | relative_url }}"><img class="alignnone  wp-image-10 no-border" title="statistikken-bag-gwo1" alt="" src="{{ '/assets/images/statistikken-bag-gwo1.jpg' | relative_url }}" /></a>
 
 Hvis vi tager udgangspunkt i "Combination 2 - red", så har den en konverteringsrate på 41,5%. Det er det præcise tal der er målt i testen. Som tidligere nævnt er det tal forbundet med noget usikkerhed. I dette eksempel mener værktøjet derfor at hvis man siger 41,5% +/- 11%, så vil den <em>rigtige</em> konverteringsrate ligge indenfor det område i 80% af tilfældene, men mere præcist kan man altså ikke komme det. Man skal altså være opmærksom på at den rigtige konverteringsrate lige så godt kan være 30,5% som den kan være 52,5% - statistisk set. Dette ses desuden visuelt i form af den bar til højre for tallet. Bredden på den bar angiver altså hvor meget usikkerhed der er forbundet med den målte konverteringsrate.
 
@@ -70,7 +70,7 @@ Hvis man på ovenstående billede sammenligner den kombination med "original" s�
 
 Hvis vi derimod kigger på nedenstående billede fra <a href="https://www.v4d5.net/blog/bed-om-mindre-og-faa-mere">en af mine tidligere tests</a>, som har kørt i længere tid, og stikprøven er blevet større (og dermed sandsynligvis mere repræsentativ for populationen), ses det, at vi nu har en variant, som ikke overlapper med originalen, hvilket giver en sandsynlighed på 95% for, at der er forskel på de to. Det vil omvendt sige, at der nu kun er 5% sandsynlighed for, at de i virkeligheden har samme konverteringsrate. Derfor kan vi nu forkaste H0, acceptere vores H1-hypotese og konkludere, at "Combination 1 - KISS" har en konverteringsrate, der er signifikant højere end vores original = Vi har en vinder!
 
-<a href="//www.jacobworsoe.dk/wp-content/uploads/statistikken-bag-gwo2.jpg"><img class="alignnone  wp-image-11 no-border" title="statistikken-bag-gwo2" alt="" src="//www.jacobworsoe.dk/wp-content/uploads/statistikken-bag-gwo2.jpg" /></a>
+<a href="{{ '/assets/images/statistikken-bag-gwo2.jpg' | relative_url }}"><img class="alignnone  wp-image-11 no-border" title="statistikken-bag-gwo2" alt="" src="{{ '/assets/images/statistikken-bag-gwo2.jpg' | relative_url }}" /></a>
 
 <h2> Konklusion</h2>
 

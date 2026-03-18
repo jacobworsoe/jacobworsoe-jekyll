@@ -22,6 +22,8 @@ exclude:
   - scss
   - scripts
   - README.md
+  - .cursor
+  - docs/archive
 
 # Plugins (GitHub Pages uses a whitelist; add here if using more)
 plugins:

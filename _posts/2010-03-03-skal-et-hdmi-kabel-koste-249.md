@@ -8,13 +8,13 @@ categories:
   - Nethandel
 ---
 
-<img class="size-full wp-image-46  alignnone no-border" title="hdmi-1" alt="Googler efter et billigt hdmi kabel" src="//www.jacobworsoe.dk/wp-content/uploads/hdmi-1.jpg" width="546" height="275" />
+<img class="size-full wp-image-46  alignnone no-border" title="hdmi-1" alt="Googler efter et billigt hdmi kabel" src="{{ '/assets/images/hdmi-1.jpg' | relative_url }}" width="546" height="275" />
 
 Hvis man engang imellem ser DR2 programmet So Ein Ding så kan man se værten, Nikolaj Sonne, advare om at købe dyre HDMI-kabler til ens nye fladskærm, selvom ekspedienten prædiker om forgyldte stik og tre-dobbelt isolering. Det har altid været sådan at elektronik butikkerne har meget små avancer på hovedprodukterne og tjener pengene på tilbehøret. Men hvad gør man så hvis man ikke vil betale 249 for et kabel? Man går selvfølgelig på nettet!
 
 Det man skal huske på er at et HDMI kabel overfører et digitalt signal (0 eller 1-taller), og et givent kabel kan ikke overføre et dårligt 1-tal, mens et andet kabel overfører et godt 1-tal. Enten kommer der et 1-tal igennem kablet eller også gør der ikke, eller sagt på dansk: Enten kommer der et perfekt digitalt billede på din fladskærm eller også får du sort skærm, der er ingen mellemvej. Derfor kan der i princippet ikke være forskel på et kabel til <a href="http://www.av-cables.dk/billede_kabler/hdmi_kabel/hdmi_kabler/high_grade_guldbelagt_hdmi_kabel_2_m_1756_da.html">59 kroner</a> og et til <a href="http://www.hifiklubben.dk/produkter/tilbehor/kabel/hdmi-kabel/qed_reference_hdmi-kabel_5-meter.htm" target="_blank" rel="noopener noreferrer">1399 kroner</a>. Så man kan ligeså godt købe det billigste man kan finde. Se f.eks. <a href="http://www.recordere.dk/indhold/templates/design.aspx?articleid=2591&amp;zoneid=1">denne artikel</a>.
 
-<img class="alignleft size-full wp-image-47 no-border" title="hdmi-2" alt="" src="//www.jacobworsoe.dk/wp-content/uploads/hdmi-2.jpg" width="205" height="204" />
+<img class="alignleft size-full wp-image-47 no-border" title="hdmi-2" alt="" src="{{ '/assets/images/hdmi-2.jpg' | relative_url }}" width="205" height="204" />
 
 Det første "resultat" der dukker op er <a href="http://www.av-cables.dk/">av-cables.dk</a> som sælger HDMI kabler til 39 kroner. Det er jo straks en helt anden pris, så den klikker jeg på. Jeg skal bruge et HDMI kabel på cirka 2 meter, og deres billigste kabel i den længde koster 59 kroner + fragt. Av-cables.dk gør det helt rigtige, nemlig at vise fragten som en varelinje i indkøbskurven, så man tydeligt kan se hvad den specifikke ordre vil koste at få sendt. Med en estimeret fragtpris på 25 kroner giver det altså en totalomkostning på 84 kroner. Langt bedre end de 249 kroner, som mange elektronikbutikker forlanger for deres kabel. Men kan det blive endnu billigere?
 
@@ -22,7 +22,7 @@ Det kan være man skal prøve i udlandet. Nethandel har jo gjort verden meget li
 
 Efter 9 dage uden at høre noget som helst, lander der en mail som fortæller at pakken er afsendt. Måske er lang ekspeditionstid nøglen til de billige produkter? Nå, men efter yderligere 11 dages ventetid (på trods af luftpost) landede pakken med mit nye HDMI kabel i min postkasse.
 
-<img class="size-full wp-image-48 alignnone no-border" title="hdmi-3" alt="" src="//www.jacobworsoe.dk/wp-content/uploads/hdmi-3.jpg" width="425" height="326" />
-<img class="size-full wp-image-49 alignnone no-border" title="hdmi-4" alt="" src="//www.jacobworsoe.dk/wp-content/uploads/hdmi-4.jpg" width="425" height="326" />
+<img class="size-full wp-image-48 alignnone no-border" title="hdmi-3" alt="" src="{{ '/assets/images/hdmi-3.jpg' | relative_url }}" width="425" height="326" />
+<img class="size-full wp-image-49 alignnone no-border" title="hdmi-4" alt="" src="{{ '/assets/images/hdmi-4.jpg' | relative_url }}" width="425" height="326" />
 
 Pakken blev ikke taget i tolden, men der er vist også nogle regler med en marginal beløb på 80 kroner hvor man ikke skal betale noget. HDMI kablet er nu taget i brug og leverer perfekte digitale HD billeder til min fladskærm. Så mere behøver det altså ikke at koste, hvis man udnytter internettets muligheder for at handle på tværs af landegrænser og kontinenter, og ikke lige står og skal bruge kablet dagen efter. Den totale leveringstid fra ordren blev lagt i butikken, til det nye HDMI kabel lå i min postkasse, endte med at være 20 dage.

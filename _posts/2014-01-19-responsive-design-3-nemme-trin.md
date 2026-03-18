@@ -24,17 +24,17 @@ Og dem gennemgår vi nu.
 
 I lang tid har webdesign været defineret i præcise størrelser (særligt bredden på siden), for så var man sikker på at websitet altid så ens ud, uanset hvilken skærmopløsning brugerens computer havde. Denne blog har fx i lang tid haft følgende mål.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/fixed-width-design-web.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/fixed-width-design-web.jpg" alt="Website med statisk bredde." width="750" height="447" class="size-full wp-image-415" /></a><figcaption>Website med statisk bredde.</figcaption></figure>
+<figure><a href="{{ '/assets/images/fixed-width-design-web.jpg' | relative_url }}"><img src="{{ '/assets/images/fixed-width-design-web.jpg' | relative_url }}" alt="Website med statisk bredde." width="750" height="447" class="size-full wp-image-415" /></a><figcaption>Website med statisk bredde.</figcaption></figure>
 
 Jeg var dermed sikker på at det design jeg havde lavet altid så ens ud. I en tid hvor browserkompatibilitet ofte var noget der kunne være svært at få styr på, var det lækkert at nogle ting altid var konstante. Tanken bag mine mål var at 99% af alle dem som besøgte denne blog havde en skærmopløsning på minimum 900px (fx 1024*768 eller derover) og derfor ville det give en god brugeroplevelse for langt de fleste brugere.
 
 Men nu sidder 25% af de besøgende på dette site på mobile enheder, og deres skærme er meget mindre end 900px i bredden. Derudover er der også de få brugere som sidder med en lille desktop skærm, som fx vil se en side hvor kun noget er synligt og de skal scrolle horisontalt, for at se resten af siden.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/desktop-856px.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/desktop-856px.png" alt="Siden set med et desktop vindue mindre end 900px." width="856" height="423" class="size-full wp-image-420" /></a><figcaption>Siden set med et desktop vindue mindre end 900px.</figcaption></figure>
+<figure><a href="{{ '/assets/images/desktop-856px.png' | relative_url }}"><img src="{{ '/assets/images/desktop-856px.png' | relative_url }}" alt="Siden set med et desktop vindue mindre end 900px." width="856" height="423" class="size-full wp-image-420" /></a><figcaption>Siden set med et desktop vindue mindre end 900px.</figcaption></figure>
 
 Mobile enheder som fx en iPhone 4S viser dog hele websitet, men det er zoomet så meget ud at teksten er ulæselig, så brugerne er nødt til at zoome ind på teksten = dårlig usability.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2013-11-17-01.32.38.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2013-11-17-01.32.38.png" alt="Siden set med en iPhone 4S." width="640" height="960" class="size-full wp-image-462" /></a><figcaption>Siden set med en iPhone 4S.</figcaption></figure>
+<figure><a href="{{ '/assets/images/2013-11-17-01.32.38.png' | relative_url }}"><img src="{{ '/assets/images/2013-11-17-01.32.38.png' | relative_url }}" alt="Siden set med en iPhone 4S." width="640" height="960" class="size-full wp-image-462" /></a><figcaption>Siden set med en iPhone 4S.</figcaption></figure>
 
 <h3>Løsningen er fluid grids</h3>
 
@@ -42,7 +42,7 @@ For at undgå de forfærdelige horisontale scrollbars er vi nødt til at gøre s
 
 Det nemmeste er at sætte alle dine nuværende width's til max-width og så sætte width til den procentdel, det nu skal være. Min side var 900px bred, og det vil jeg gerne fortsætte med. Jeg sætter derfor at headeren skal have en max-width på 900px og en width på 100%. Derved vil headeren maksimalt være samme bredde som browservinduet og aldrig bredere end 900px. Sitet vil dermed se uforandret ud på store skærme, men på små skærme vil det kunne blive mindre og tilpasse sig brugerens browservindue. Mit content område var 600px i bredden, så 600/900*100 giver 66,66%. Mit nye fluid grid ser nu således ud:
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/fluid-grids-max-width.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/fluid-grids-max-width.jpg" alt="Websitet er nu konverteret til fluid grids." width="750" height="447" class="size-full wp-image-425" /></a><figcaption>Websitet er nu konverteret til fluid grids.</figcaption></figure>
+<figure><a href="{{ '/assets/images/fluid-grids-max-width.jpg' | relative_url }}"><img src="{{ '/assets/images/fluid-grids-max-width.jpg' | relative_url }}" alt="Websitet er nu konverteret til fluid grids." width="750" height="447" class="size-full wp-image-425" /></a><figcaption>Websitet er nu konverteret til fluid grids.</figcaption></figure>
 
 Det der er vigtigt når man konverterer til fluid grids er at <span style="text-decoration: underline;">alt</span> skal være angivet med en width angivet i procent. Det betyder ikke noget med højden, men bredden skal altid være angivet i procent. Dette gælder bl.a. for:
 
@@ -131,7 +131,7 @@ $(document).ready(function(){
 
 Og det var faktisk det. Sitet er nu responsivt, forstået på den måde at det automatisk tilpasser sig til den skærmstørrelse det bliver vist på. Og i princippet skal der faktisk ikke mere til. Et godt eksempel på det er <a title="Sprinklertesten.dk" href="http://sprinklertesten.jacobworsoe.dk/" target="_blank" rel="noopener noreferrer">dette lille site</a> jeg har lavet for nyligt. Det indeholder ingen media queries eller lignende, men er stadig 100% responsivt, alene fordi det er lavet fleksibelt med de teknikker der er beskrevet ovenfor.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/Screenshot-2013-11-12-23.13.12.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/Screenshot-2013-11-12-23.13.12.png" alt="Websitet vil tilpasse sig skærmstørrelsen og er dermed &quot;responsivt&quot;." width="476" height="582" class="size-full wp-image-449" /></a><figcaption>Websitet vil tilpasse sig skærmstørrelsen og er dermed "responsivt".</figcaption></figure>
+<figure><a href="{{ '/assets/images/Screenshot-2013-11-12-23.13.12.png' | relative_url }}"><img src="{{ '/assets/images/Screenshot-2013-11-12-23.13.12.png' | relative_url }}" alt="Websitet vil tilpasse sig skærmstørrelsen og er dermed &quot;responsivt&quot;." width="476" height="582" class="size-full wp-image-449" /></a><figcaption>Websitet vil tilpasse sig skærmstørrelsen og er dermed "responsivt".</figcaption></figure>
 
 Men nu er det tid til at putte lidt icing on the cake i form af media queries.
 
@@ -166,7 +166,7 @@ Men vent... Jeg lovede dig jo at det var nemt at lave responsive webdesign? Bare
 
 Hvis du åbner Developer Tools i Chrome så viser den størrelsen på vinduet i øverste højre hjørne mens du trækker. For mig var det første breakpoint ved 788px hvor jeg synes linjerne begyndte at blive for korte og designet så i det hele taget lidt klemt ud. Det anbefales at holde linjernes længde på mellem 40 og 70 tegn, for at det er nemmest at læse. Hvis de bliver kortere skal man skifte linje for ofte og længere begynder det at blive svært for øjnene at finde tilbage til den rigtige linje ved linjeskift.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/first-breakpoint-788px.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/first-breakpoint-788px.png" alt="Ved 788px begynder designet at se lidt klemt ud." width="787" height="747" class="size-full wp-image-453" /></a><figcaption>Ved 788px begynder designet at se lidt klemt ud.</figcaption></figure>
+<figure><a href="{{ '/assets/images/first-breakpoint-788px.png' | relative_url }}"><img src="{{ '/assets/images/first-breakpoint-788px.png' | relative_url }}" alt="Ved 788px begynder designet at se lidt klemt ud." width="787" height="747" class="size-full wp-image-453" /></a><figcaption>Ved 788px begynder designet at se lidt klemt ud.</figcaption></figure>
 
 Jeg indsætter derfor dette breakpoint som media query:
 
@@ -236,11 +236,11 @@ For at lave dette to-kolonne design om til en kolonne laver jeg en media query s
 
 Sitet ser nu således ud ved 786px. Meget bedre.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/first-media-query-786px.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/first-media-query-786px.jpg" alt="Websitet med en kolonne." width="783" height="625" class="size-full wp-image-456" /></a><figcaption>Websitet med en kolonne.</figcaption></figure>
+<figure><a href="{{ '/assets/images/first-media-query-786px.jpg' | relative_url }}"><img src="{{ '/assets/images/first-media-query-786px.jpg' | relative_url }}" alt="Websitet med en kolonne." width="783" height="625" class="size-full wp-image-456" /></a><figcaption>Websitet med en kolonne.</figcaption></figure>
 
 Sidebaren ligger nu nederst på siden under kommentarerne. Bemærk at den fylder hele bredden ud, men at billedet ikke bliver større end det rigtigt er, hvilket skyldes den måde vi lavede billederne fleksible på tidligere.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/Screenshot-2013-11-16-02.11.50.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/Screenshot-2013-11-16-02.11.50.png" alt="Sidebaren skubbet ned under det primære indhold." width="770" height="649" class="size-full wp-image-457" /></a><figcaption>Sidebaren skubbet ned under det primære indhold.</figcaption></figure>
+<figure><a href="{{ '/assets/images/Screenshot-2013-11-16-02.11.50.png' | relative_url }}"><img src="{{ '/assets/images/Screenshot-2013-11-16-02.11.50.png' | relative_url }}" alt="Sidebaren skubbet ned under det primære indhold." width="770" height="649" class="size-full wp-image-457" /></a><figcaption>Sidebaren skubbet ned under det primære indhold.</figcaption></figure>
 
 Men vi kan godt gøre lidt mere. Min tagline i headeren er blevet skubbet ned på tre linjer og det er ikke så pænt. Derudover begynder hele min header med logo og tagline også at fylde lidt for meget af siden, når sitet bliver set på en så lille skærm. Jeg vil derfor gerne gøre det mindre og mere simpelt, så man kan bruge pladsen til at vise det rigtige indhold. Jeg fjerner derfor min tagline og gør logoet (som bare er en H1 med teksten jacobworsoe.dk) lidt mindre og så skal logoet kunne bruge hele bredden, dvs. width: 100%. Derudover gør jeg også mine H1'ere lidt mindre, så de heller ikke bliver for voldsomme på små skærme. Jeg tilføjer dette til min media query:
 
@@ -263,7 +263,7 @@ h1 {
 
 Derved ser sitet nu sådan ud:
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/Screenshot-2013-11-16-02.16.18.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/Screenshot-2013-11-16-02.16.18.png" alt="Header, logo og tagline tilpasset til små skærme." width="783" height="580" class="size-full wp-image-458" /></a><figcaption>Header, logo og tagline tilpasset til små skærme.</figcaption></figure>
+<figure><a href="{{ '/assets/images/Screenshot-2013-11-16-02.16.18.png' | relative_url }}"><img src="{{ '/assets/images/Screenshot-2013-11-16-02.16.18.png' | relative_url }}" alt="Header, logo og tagline tilpasset til små skærme." width="783" height="580" class="size-full wp-image-458" /></a><figcaption>Header, logo og tagline tilpasset til små skærme.</figcaption></figure>
 
 <h3>Flere media queries?</h3>
 
@@ -273,7 +273,7 @@ Jeg prøver nu at gøre browseren endnu mindre, men synes faktisk at designet vi
 
 Nu har jeg et design som virker på alle enheder, så vi kan da lige prøve at teste det på en iPhone. Desværre er resultatet ikke helt som forventet - mit responsive website virker slet ikke...
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2013-11-17-01.32.38.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2013-11-17-01.32.38.png" alt="Siden set med en iPhone 4S." width="640" height="960" class="size-full wp-image-462" /></a><figcaption>Siden set med en iPhone 4S.</figcaption></figure>
+<figure><a href="{{ '/assets/images/2013-11-17-01.32.38.png' | relative_url }}"><img src="{{ '/assets/images/2013-11-17-01.32.38.png' | relative_url }}" alt="Siden set med en iPhone 4S." width="640" height="960" class="size-full wp-image-462" /></a><figcaption>Siden set med en iPhone 4S.</figcaption></figure>
 
 Grunden til dette er at der - især da iPhonen blev lanceret, men også nu til dags - findes mange websites som ikke er optimeret til mobile enheder, så derfor er enhederne nødt til at lave nogle tricks for at give den bedst mulige brugeroplevelse på alle websites. De mobile enheder viser derfor websites som om de havde en stor desktop skærm, så man kan se hele websitet når man lander på det. Hvis de ikke gjorde det, ville de bare vise det øverste venstre hjørne af websitet. Med dette trick giver de dig det fulde overblik over websitet, hvorefter du så kan zoome ind på den tekst du vil læse.
 
@@ -284,7 +284,7 @@ iPhonen viser fx websitet som om den havde en skærmbredde på 980px og derfor b
 
 Nu vil iPhonen vise websitet med en skærmbredde på 320px og dermed blive påvirket af vores media query, som siger at designet kun har én kolonne. Derudover siger den at der skal være zoomet helt ud og at der ikke må kunne zoomes ind på teksten. Derved ser sitet nu således ud:
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2013-11-27-20.43.01.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2013-11-27-20.43.01.png" alt="Websitet på en iPhone med en bredde på 320px." width="640" height="960" class="size-full wp-image-470" /></a><figcaption>Websitet på en iPhone med en bredde på 320px.</figcaption></figure>
+<figure><a href="{{ '/assets/images/2013-11-27-20.43.01.png' | relative_url }}"><img src="{{ '/assets/images/2013-11-27-20.43.01.png' | relative_url }}" alt="Websitet på en iPhone med en bredde på 320px." width="640" height="960" class="size-full wp-image-470" /></a><figcaption>Websitet på en iPhone med en bredde på 320px.</figcaption></figure>
 
 Og det var faktisk det. Det var de tre trin der skal til for at omdanne websitet til at være 100% responsivt, uanset hvilken enhed det bliver vist på.
 
@@ -315,7 +315,7 @@ Hvis vi lavede designet mobile first, så kunne de mindste enheder nøjes med at
 
 <h2>Det handler ikke kun om små skærme</h2>
 
-I et <a title="Husk 301 når du får ny hjemmeside" href="https://www.jacobworsoe.dk/husk-301-nar-du-far-ny-hjemmeside/" target="_blank" rel="noopener noreferrer">tidligere blogindlæg</a> var jeg lidt ude efter HiFi-Klubben, men det er faktisk et ret lækkert website de har fået lavet hvor de bruger media queries rigtig meget. Responsivt design, handler nemlig ikke kun om at lave mobilvenlige websites, men om hele tiden at udnytte den tilgængelige skærmplads bedst muligt. Et eksempel er at HiFi-Klubben bruger nedenstående media query til vise 5 kolonner med produkter på meget store skærme (over 1611 pixel). Det kunne jeg fx godt lære noget af på denne blog, hvor mit design maksimalt er 900px bredt, hvilket giver en masse spildplads hvis man fx sidder på en Full HD skærm som er 1920 pixels i bredden.
+I et <a title="Husk 301 når du får ny hjemmeside" href="{{ '/husk-301-nar-du-far-ny-hjemmeside/' | relative_url }}" target="_blank" rel="noopener noreferrer">tidligere blogindlæg</a> var jeg lidt ude efter HiFi-Klubben, men det er faktisk et ret lækkert website de har fået lavet hvor de bruger media queries rigtig meget. Responsivt design, handler nemlig ikke kun om at lave mobilvenlige websites, men om hele tiden at udnytte den tilgængelige skærmplads bedst muligt. Et eksempel er at HiFi-Klubben bruger nedenstående media query til vise 5 kolonner med produkter på meget store skærme (over 1611 pixel). Det kunne jeg fx godt lære noget af på denne blog, hvor mit design maksimalt er 900px bredt, hvilket giver en masse spildplads hvis man fx sidder på en Full HD skærm som er 1920 pixels i bredden.
 
 Her er den media query som HiFi-Klubben bruger til at vise 5 kolonner (ved at sætte deres width til 20% er der plads til 5 produkter) på store skærme:
 

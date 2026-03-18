@@ -8,7 +8,7 @@ categories:
   - Analytics
 ---
 
-En af de vigtigste opgaver når man lancerer et nyt website er at få opsat redirects fra alle de gamle URL'er. Det har jeg tidligere skrevet om her: <a href="https://www.jacobworsoe.dk/husk-301-nar-du-far-ny-hjemmeside/" title="Husk 301 når du får ny hjemmeside" target="_blank" rel="noopener noreferrer">Husk redirects når du får nyt website</a>.
+En af de vigtigste opgaver når man lancerer et nyt website er at få opsat redirects fra alle de gamle URL'er. Det har jeg tidligere skrevet om her: <a href="{{ '/husk-301-nar-du-far-ny-hjemmeside/' | relative_url }}" title="Husk 301 når du får ny hjemmeside" target="_blank" rel="noopener noreferrer">Husk redirects når du får nyt website</a>.
 
 Men selvom man har været grundig kan der være svipsere, så derfor er det vigtigt at holde øje med trafikken på 404 sider i timerne efter launch. Når vi launcher et nyt website for en kunde eller os selv i IMPACT sidder jeg altid med et champagneglas i hånden og overvåger 404 siderne i Real-time rapporterne i Google Analytics via mit Real-time 404 tracking system.
 
@@ -27,7 +27,7 @@ Jeg bruger Event Tracking for at indsamle alle oplysningerne i hvert sit felt i 
 
 Jeg starter med at lave den regel som skal styre hvornår mit Event skal affyres. Typisk har 404 siden altid den samme <code><title></code> så den bruger jeg oftest. Ind og kigge i kildekoden og finde dette stykke kode: <code><title>Siden blev ikke fundet - IMPACT</title></code>. Jeg opsætter en regel i Tag Manager som tjekker titlen på siden:</span>
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/404-tracking-reglen.png"><img class="size-full wp-image-676" src="https://www.jacobworsoe.dk/wp-content/uploads/404-tracking-reglen.png" alt="Reglen i Tag Manager." width="515" height="155" /></a><figcaption>Reglen i Tag Manager.</figcaption></figure>
+<figure><a href="{{ '/assets/images/404-tracking-reglen.png' | relative_url }}"><img class="size-full wp-image-676" src="{{ '/assets/images/404-tracking-reglen.png' | relative_url }}" alt="Reglen i Tag Manager." width="515" height="155" /></a><figcaption>Reglen i Tag Manager.</figcaption></figure>
 
 <h2>2. Makroer / variabler</h2>
 
@@ -41,7 +41,7 @@ Den næste kræver lidt arbejde. Jeg skal vide præcis hvilken URL brugeren har 
 
 Jeg opretter derfor følgende makro med en lille JavaScript funktion:
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/404-tracking-makro.png"><img class="size-full wp-image-677" src="https://www.jacobworsoe.dk/wp-content/uploads/404-tracking-makro.png" alt="Makroen som fanger hele URL'en" width="741" height="536" /></a><figcaption>Makroen som fanger hele URL'en</figcaption></figure>
+<figure><a href="{{ '/assets/images/404-tracking-makro.png' | relative_url }}"><img class="size-full wp-image-677" src="{{ '/assets/images/404-tracking-makro.png' | relative_url }}" alt="Makroen som fanger hele URL'en" width="741" height="536" /></a><figcaption>Makroen som fanger hele URL'en</figcaption></figure>
 
 Det er denne kode jeg skriver ind i feltet (du må godt copy/paste den):
 
@@ -55,13 +55,13 @@ return UrlCompletePath;
 
 Så skal informationerne sendes afsted. Det klarer jeg med et Event Tracking tag som sender de to makroer afsted når reglen er opfyldt. Det ser således ud:
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/404-tracking-event-tag.png"><img class="size-full wp-image-678" src="https://www.jacobworsoe.dk/wp-content/uploads/404-tracking-event-tag.png" alt="Event Tracking tag som sender dataene til Google Analytics." width="471" height="290" /></a><figcaption>Event Tracking tag som sender dataene til Google Analytics.</figcaption></figure>
+<figure><a href="{{ '/assets/images/404-tracking-event-tag.png' | relative_url }}"><img class="size-full wp-image-678" src="{{ '/assets/images/404-tracking-event-tag.png' | relative_url }}" alt="Event Tracking tag som sender dataene til Google Analytics." width="471" height="290" /></a><figcaption>Event Tracking tag som sender dataene til Google Analytics.</figcaption></figure>
 
 <h2>Hvad kan jeg så se i Google Analytics?</h2>
 
 Når websitet går i luften sidder jeg i Real-time rapporten i Google Analytics og holder øje med om der er brugere der lander på 404 siden. Hvis de gør det kan jeg øjeblikkeligt se præcis hvilken side de ramte, så jeg kan opsætte en redirect og jeg kan se hvor brugeren kom fra, så jeg kan få rettet linket.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/404-tracking-google-analytics.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/404-tracking-google-analytics-750x491.png" alt="Real-time Google Analytics rapporten viser mig 404 sider når de rammes." width="750" height="491" class="size-medium wp-image-691" /></a><figcaption>Real-time Google Analytics rapporten viser mig 404 sider når de rammes.</figcaption></figure>
+<figure><a href="{{ '/assets/images/404-tracking-google-analytics.png' | relative_url }}"><img src="{{ '/assets/images/404-tracking-google-analytics-750x491.png' | relative_url }}" alt="Real-time Google Analytics rapporten viser mig 404 sider når de rammes." width="750" height="491" class="size-medium wp-image-691" /></a><figcaption>Real-time Google Analytics rapporten viser mig 404 sider når de rammes.</figcaption></figure>
 
 Nemt og mega værdifuldt!
 

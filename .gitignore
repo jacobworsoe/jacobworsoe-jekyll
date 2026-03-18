@@ -12,6 +12,7 @@ scripts/__pycache__/
 
 # Local credentials (never commit)
 scripts/.mysql-credentials
+scripts/.ftp-credentials
 scripts/.env
 
 # WordPress DB import temp output

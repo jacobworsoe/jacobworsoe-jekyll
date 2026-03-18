@@ -10,7 +10,7 @@ categories:
 
 Vi kan lige så godt tage den største fordel først. Statiske websites er lynende hurtige!
 
-<a href="https://tools.pingdom.com/#!/eJQ7vr/http://jacobworsoe.github.io/exchangemycoins-jekyll-blog/"><figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/Jekyll-Pingdom-tools-Github-pages-1.png" alt="Statiske websites er hurtige... meget hurtige!" width="750" height="209" class="size-medium wp-image-991" /><figcaption>Statiske websites er hurtige... meget hurtige!</figcaption></figure></a>
+<a href="https://tools.pingdom.com/#!/eJQ7vr/http://jacobworsoe.github.io/exchangemycoins-jekyll-blog/"><figure><img src="{{ '/assets/images/Jekyll-Pingdom-tools-Github-pages-1.png' | relative_url }}" alt="Statiske websites er hurtige... meget hurtige!" width="750" height="209" class="size-medium wp-image-991" /><figcaption>Statiske websites er hurtige... meget hurtige!</figcaption></figure></a>
 
 <strong>178 ms!</strong>
 
@@ -24,7 +24,7 @@ Og nu tænker du sikkert: "Jamen, er det ikke håbløst gammeldags?!"
 
 Nej, ikke længere. Med en statisk website generator som <a href="https://jekyllrb.com/">Jekyll</a>, er statiske websites blevet smarte igen.
 
-<a href="https://jekyllrb.com/"><img src="https://www.jacobworsoe.dk/wp-content/uploads/jekyll-logo-light-solid.png" alt="jekyll-logo-light-solid" width="960" height="489" class="alignnone size-full wp-image-1005" /></a>
+<a href="https://jekyllrb.com/"><img src="{{ '/assets/images/jekyll-logo-light-solid.png' | relative_url }}" alt="jekyll-logo-light-solid" width="960" height="489" class="alignnone size-full wp-image-1005" /></a>
 
 Vores blog på <a href="https://www.exchangemycoins.com/blog">ExchangeMyCoins.com</a> er drevet af Jekyll og består kun af statiske HTML filer og serveren skal derfor ikke først lave en masse arbejde, før websiden kan sendes til brugeren. Og det gør sitet lynende hurtigt!
 
@@ -40,7 +40,7 @@ I Wordpress og andre CMS’er er alt drevet af templates som dynamisk udfyldes m
 
 Dynamiske websites har altså en masse fordele men det har også en stor ulempe – performance! Fordi alting er dynamisk skal hver side genereres hver gang en bruger vil se en side. På et typisk blogindlæg skal webserveren sammensætte siden med logo, menu, søgefunktion, selve blogindlægget, kommentarer, sidebar, seneste kommentarer, mest populære indlæg, etc. Og alle de informationer skal hentes forskellige steder i databasen. Dette indlæg henter fx data 39 forskellige steder(!) i databasen før siden kan bygges og sendes til browseren:
 
-<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/Wordpress-39-database-queries.png" alt="Wordpress henter indhold 39 steder i databasen, for at kunne vise dette indlæg." width="706" height="347" class="size-full wp-image-981" /><figcaption>Wordpress henter indhold 39 steder i databasen, for at kunne vise dette indlæg.</figcaption></figure>
+<figure><img src="{{ '/assets/images/Wordpress-39-database-queries.png' | relative_url }}" alt="Wordpress henter indhold 39 steder i databasen, for at kunne vise dette indlæg." width="706" height="347" class="size-full wp-image-981" /><figcaption>Wordpress henter indhold 39 steder i databasen, for at kunne vise dette indlæg.</figcaption></figure>
 
 Når alle data er hentet, skal det hele indsættes i templaten og derefter sendes til brugeren som en HTML fil - alt imens brugeren bare sidder og venter – og det kan sagtens tage mere end 5 sekunder at generere en side!
 
@@ -51,16 +51,16 @@ Især hvis der også bruges en lang række plugins, som hver især tilføjer nog
 Ja, det kan sagtens tage 5 sekunder for tunge dynamiske websites at bygge siden inden den er klar til at blive sendt til brugeren. Se fx disse forskelle i time-to-first-byte for forsiden af nogle forskellige sider:
 
 <strong>Statisk site bygget med Jekyll: 43 ms</strong>
-<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/TTFB-Jekyll.png" alt="Statisk site bygget med Jekyll" width="750" height="210" class="size-medium wp-image-983" /><figcaption>Statisk site bygget med Jekyll</figcaption></figure>
+<figure><img src="{{ '/assets/images/TTFB-Jekyll.png' | relative_url }}" alt="Statisk site bygget med Jekyll" width="750" height="210" class="size-medium wp-image-983" /><figcaption>Statisk site bygget med Jekyll</figcaption></figure>
 
 <strong>jacobworsoe.dk (med caching): 46 ms</strong>
-<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/TTFB-Wordpress-med-caching.png" alt="jacobworsoe.dk (med caching)" width="750" height="197" class="size-medium wp-image-986" /><figcaption>jacobworsoe.dk (med caching)</figcaption></figure>
+<figure><img src="{{ '/assets/images/TTFB-Wordpress-med-caching.png' | relative_url }}" alt="jacobworsoe.dk (med caching)" width="750" height="197" class="size-medium wp-image-986" /><figcaption>jacobworsoe.dk (med caching)</figcaption></figure>
 
 <strong>jacobworsoe.dk (uden caching): 763 ms</strong>
-<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/TTFB-Wordpress-uden-caching.png" alt="jacobworsoe.dk (uden caching)" width="750" height="205" class="size-medium wp-image-984" /><figcaption>jacobworsoe.dk (uden caching)</figcaption></figure>
+<figure><img src="{{ '/assets/images/TTFB-Wordpress-uden-caching.png' | relative_url }}" alt="jacobworsoe.dk (uden caching)" width="750" height="205" class="size-medium wp-image-984" /><figcaption>jacobworsoe.dk (uden caching)</figcaption></figure>
 
 <strong>Wordpress Woocommerce webshop (uden caching): 6,53 sekunder!</strong>
-<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/TTFB-Wordpress-Woocommerce.png" alt="Wordpress Woocommerce webshop (uden caching)" width="750" height="250" class="size-medium wp-image-985" /><figcaption>Wordpress Woocommerce webshop (uden caching)</figcaption></figure>
+<figure><img src="{{ '/assets/images/TTFB-Wordpress-Woocommerce.png' | relative_url }}" alt="Wordpress Woocommerce webshop (uden caching)" width="750" height="250" class="size-medium wp-image-985" /><figcaption>Wordpress Woocommerce webshop (uden caching)</figcaption></figure>
 
 <strong>0,043 sekunder vs. 6,53 sekunder!</strong>
 

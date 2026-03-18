@@ -1,42 +1,42 @@
-# WordPress export scripts
+# Export scripts (MySQL)
 
-Run these scripts against your live WordPress site to export content and comments into the Jekyll site.
+Content is exported from the **WordPress MySQL database** (until WP is taken down), not from the live site URL.
 
-## Prerequisites
+## Credentials
 
-- Node.js (for the JavaScript scripts)
-- WordPress site with REST API enabled (default at `https://yoursite.com/wp-json/wp/v2/`)
+Create **`scripts/.mysql-credentials`** (gitignored), e.g.:
 
-## Export posts (and pages)
-
-**Option A: WordPress REST API (Node script)**
-
-```bash
-cd scripts
-npm install
-node export-wp-posts.js --url=https://www.jacobworsoe.dk
+```
+MySQL hostnavn: your-host
+MySQL brugernavn: user
+MySQL adgangskode: pass
+Primær database: dbname
 ```
 
-This fetches all posts (and optionally pages) and writes Markdown files to `../_posts/` with front matter (`title`, `date`, `categories`, `slug`, etc.). Adjust `--url` to your WordPress URL.
-
-**Option B: Jekyll WordPress importer (WXR)**
-
-1. In WordPress: Tools → Export → All content (or Posts). Download the WXR file.
-2. Install the importer: `gem install jekyll-import`
-3. Run (from repo root):
-   ```bash
-   ruby -rubygems -e 'require "jekyll-import"; JekyllImport::Importers::WordPress.run({"source" => "path/to/export.xml"})'
-   ```
-4. Move generated files from `_posts/` if needed and add `slug` to front matter from the post slug in the WXR.
-
-## Export comments
+## Commands (from repo root)
 
 ```bash
-node export-wp-comments.js --url=https://www.jacobworsoe.dk
+pip install pymysql
+python scripts/export_all.py
 ```
 
-Requires WordPress REST API with comments endpoint (public or with auth). Writes `../_data/comments.yml` keyed by post slug. If your API does not expose comments publicly, use Application Passwords or export comments from the database/WXR and convert with a small script.
+Or: `scripts/build.ps1` / `scripts/build.bat` (same as `export_all.py`).
 
-## Post slug and comments key
+- **`export_wp_posts_pages_mysql.py`** — `_posts/`, root pages, `_data/wordpress_settings.yml`, `_config.yml` permalink, rewrites media URLs to `assets/images/…` + Liquid.
+- **`export_wp_comments_mysql.py`** — `_data/comments.yml`.
+- **`rewrite_markdown_off_wordpress.py`** — bulk-rewrite existing Markdown off `www.jacobworsoe.dk` (run after manual edits if needed).
 
-Jekyll post layout expects a `slug` in front matter (used to look up comments in `site.data.comments[slug]`). The export-wp-posts.js script sets `slug` from the WordPress post slug. Ensure your WXR importer or manual exports also set `slug` so comments match.
+## FTP: download referenced images only
+
+Create **`scripts/.ftp-credentials`** (gitignored), one line:
+
+`host user password`
+
+Example host: `linux12.unoeuro.com`. Paths in posts are `/assets/images/YYYY/MM/file.ext`; the script fetches from `public_html/wp-content/uploads/YYYY/MM/file.ext`.
+
+```bash
+python scripts/download_referenced_images_ftp.py
+python scripts/download_referenced_images_ftp.py --favicon
+```
+
+Legacy Node/REST export scripts are not used for this project.

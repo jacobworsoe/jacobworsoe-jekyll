@@ -72,7 +72,7 @@ Når slide-in boxen skal vises, sætter jeg en <code>.open</code> class på den 
 
 Dermed har jeg en simpel slide-in box.
 
-<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/slide-in-box.jpg" alt="Den færdige slide-in box." width="447" height="450" class="size-full wp-image-2510 no-border" /><figcaption>Den færdige slide-in box.</figcaption></figure>
+<figure><img src="{{ '/assets/images/2020/09/slide-in-box.jpg' | relative_url }}" alt="Den færdige slide-in box." width="447" height="450" class="size-full wp-image-2510 no-border" /><figcaption>Den færdige slide-in box.</figcaption></figure>
 
 <h3 id="article-header-id-3">JavaScript</h3>
 
@@ -99,7 +99,7 @@ Slide-in boxen skal kunne åbne på forskellige tidspunkter, så jeg har lavet e
 
 Sådan ser det ud når slide-in boxen bliver synlig.
 
-<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Slide-in-16c-lossy0.gif" alt="Slide-in boxen bliver synlig." width="830" height="467" class="size-full wp-image-2511" /><figcaption>Slide-in boxen bliver synlig.</figcaption></figure>
+<figure><img src="{{ '/assets/images/2020/09/Slide-in-16c-lossy0.gif' | relative_url }}" alt="Slide-in boxen bliver synlig." width="830" height="467" class="size-full wp-image-2511" /><figcaption>Slide-in boxen bliver synlig.</figcaption></figure>
 
 <h2 id="article-header-id-4">Hvornår skal den så vises?</h2>
 
@@ -114,9 +114,9 @@ Jeg tracker detaljeret hvor meget der bliver læst af mine blogindlæg ved at se
 <li>Når brugeren har scrollet 100% af indlæggets længde og været på siden mindst et minut (purchase).</li>
 </ol>
 
-Jeg tracker de events med <a href="https://www.jacobworsoe.dk/indhold-enhanced-ecommerce/">Enhanced Ecommerce hvis du vil læse mere om det</a>.
+Jeg tracker de events med <a href="{{ '/indhold-enhanced-ecommerce/' | relative_url }}">Enhanced Ecommerce hvis du vil læse mere om det</a>.
 
-Jeg vil gerne tracke det optimale tidspunkt at vise en slide-in på af de 6 ovenstående tidspunkter. Både for at øge konverteringen og få flest mulige tilmeldinger til mit <a href="https://www.jacobworsoe.dk/nyhedsbrev/">nyhedsbrev</a>. Men også for at undgå at irritere brugeren, så de forlader siden uden at læse indlægget færdigt.
+Jeg vil gerne tracke det optimale tidspunkt at vise en slide-in på af de 6 ovenstående tidspunkter. Både for at øge konverteringen og få flest mulige tilmeldinger til mit <a href="{{ '/nyhedsbrev/' | relative_url }}">nyhedsbrev</a>. Men også for at undgå at irritere brugeren, så de forlader siden uden at læse indlægget færdigt.
 
 <h3 id="article-header-id-5">Vis på et tilfældigt tidspunkt</h3>
 
@@ -142,7 +142,7 @@ Lad os starte med konverteringer.
 
 Okay, vi kan lige så godt tage den med det samme. Min slide-in konverterer ikke. Slet ikke.
 
-<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Slide-in-conversion-events-dark-860x435.jpg" alt="22.161 visninger af slide-in og kun 29 tilmeldinger." width="860" height="435" class="size-large wp-image-2540" /><figcaption>22.161 visninger af slide-in og kun 29 tilmeldinger.</figcaption></figure>
+<figure><img src="{{ '/assets/images/2020/09/Slide-in-conversion-events-dark-860x435.jpg' | relative_url }}" alt="22.161 visninger af slide-in og kun 29 tilmeldinger." width="860" height="435" class="size-large wp-image-2540" /><figcaption>22.161 visninger af slide-in og kun 29 tilmeldinger.</figcaption></figure>
 
 Slide-in boxen er i alt blevet vist 22.161 gange og den er blevet lukket 15.490 gange. Men den har kun fået 29 tilmeldinger.
 
@@ -168,17 +168,17 @@ Denne er lidt ligeyldig fordi min slide-in tidligst bliver vist på det tidspunk
 
 De fem søjler er de fem tidspunkter slide-in boxen bliver vist på. Ikke overraskende er konverteringsraten næsten den samme for alle grupper.
 
-<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Add-to-Cart-konvertering.jpg" alt="Ikke overraskende er konverteringsraten næsten den samme for alle grupper." width="1035" height="578" class="size-full wp-image-2530" /><figcaption>Ikke overraskende er konverteringsraten næsten den samme for alle grupper.</figcaption></figure>
+<figure><img src="{{ '/assets/images/2020/09/Add-to-Cart-konvertering.jpg' | relative_url }}" alt="Ikke overraskende er konverteringsraten næsten den samme for alle grupper." width="1035" height="578" class="size-full wp-image-2530" /><figcaption>Ikke overraskende er konverteringsraten næsten den samme for alle grupper.</figcaption></figure>
 
 <h3 id="article-header-id-8">Læst 33%</h3>
 
 Det næste event er dem som har scrollet 33% af indlægget og her vil den første gruppe altså have set slide-in boxen, mens de andre ikke har set den endnu.
 
-<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Laest-33p-konvertering.jpg" alt="Ikke den store forskel på dem der har set slide-in boxen." width="1033" height="580" class="size-full wp-image-2531" /><figcaption>Ikke den store forskel på dem der har set slide-in boxen.</figcaption></figure>
+<figure><img src="{{ '/assets/images/2020/09/Laest-33p-konvertering.jpg' | relative_url }}" alt="Ikke den store forskel på dem der har set slide-in boxen." width="1033" height="580" class="size-full wp-image-2531" /><figcaption>Ikke den store forskel på dem der har set slide-in boxen.</figcaption></figure>
 
 Add to Cart har en anelse lavere konverteringsrate end Læst 33% men forskellen er meget lille og med en p-værdi på 0,1572 er den ikke signifikant.
 
-<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/significance-test-860x413.jpg" alt="&lt;a href=&quot;https://www.surveymonkey.com/mp/ab-testing-significance-calculator/&quot;&gt;SurveyMonkey&lt;/a&gt; har en god signifikans test." width="860" height="413" class="size-large wp-image-2543" /> <a href="https://www.surveymonkey.com/mp/ab-testing-significance-calculator/">SurveyMonkey</a><figcaption>har en god signifikans test.</figcaption></figure>
+<figure><img src="{{ '/assets/images/2020/09/significance-test-860x413.jpg' | relative_url }}" alt="&lt;a href=&quot;https://www.surveymonkey.com/mp/ab-testing-significance-calculator/&quot;&gt;SurveyMonkey&lt;/a&gt; har en god signifikans test." width="860" height="413" class="size-large wp-image-2543" /> <a href="https://www.surveymonkey.com/mp/ab-testing-significance-calculator/">SurveyMonkey</a><figcaption>har en god signifikans test.</figcaption></figure>
 
 Man kan også se at Læst 100% har en konverteringsrate der er endnu lavere end Add to Cart og Læst 100% har altså ikke set slide-in boxen endnu, så det er bare naturlig varians.
 
@@ -188,7 +188,7 @@ Indtil videre påvirker det altså ikke konverteringsraten.
 
 Ved 66% læst er der heller ingen markant forskel og faktisk er det de to øverste grupper (som på dette tidspunkt har set slide-in boxen) der har den højeste konvertering.
 
-<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Laest-66p-konvertering.jpg" alt="Ved 66% læst er der heller ikke forskel." width="1032" height="578" class="size-full wp-image-2532" /><figcaption>Ved 66% læst er der heller ikke forskel.</figcaption></figure>
+<figure><img src="{{ '/assets/images/2020/09/Laest-66p-konvertering.jpg' | relative_url }}" alt="Ved 66% læst er der heller ikke forskel." width="1032" height="578" class="size-full wp-image-2532" /><figcaption>Ved 66% læst er der heller ikke forskel.</figcaption></figure>
 
 Så stadig ingen påvirkning.
 
@@ -196,15 +196,15 @@ Så stadig ingen påvirkning.
 
 Ved 100% læst er det dermed de øverste 3 grupper der har fået vist slide-in boxen - men det har stadig ingen betydning.
 
-<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Laest-100p-konvertering.jpg" alt="Samme billede ved 100% læst." width="1030" height="577" class="size-full wp-image-2533" /><figcaption>Samme billede ved 100% læst.</figcaption></figure>
+<figure><img src="{{ '/assets/images/2020/09/Laest-100p-konvertering.jpg' | relative_url }}" alt="Samme billede ved 100% læst." width="1030" height="577" class="size-full wp-image-2533" /><figcaption>Samme billede ved 100% læst.</figcaption></figure>
 
 Videre til sidste event.
 
 <h3 id="article-header-id-11">Læst 100% + 1 minut</h3>
 
-Det sidste event er dem som har scrollet 100% og været på siden mindst 1 minut - det er dem hvor jeg antager at de faktisk har læst hele blogindlægget (<a href="https://www.jacobworsoe.dk/indhold-enhanced-ecommerce/">og dem jeg tracker som et transaktion i Enhanced Ecommerce</a>).
+Det sidste event er dem som har scrollet 100% og været på siden mindst 1 minut - det er dem hvor jeg antager at de faktisk har læst hele blogindlægget (<a href="{{ '/indhold-enhanced-ecommerce/' | relative_url }}">og dem jeg tracker som et transaktion i Enhanced Ecommerce</a>).
 
-<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Laest-100p-1-minut-konvertering.jpg" alt="Heller ikke ved 100% læst + 1 minut på siden er der nogen entydig forskel." width="1030" height="577" class="size-full wp-image-2534" /><figcaption>Heller ikke ved 100% læst + 1 minut på siden er der nogen entydig forskel.</figcaption></figure>
+<figure><img src="{{ '/assets/images/2020/09/Laest-100p-1-minut-konvertering.jpg' | relative_url }}" alt="Heller ikke ved 100% læst + 1 minut på siden er der nogen entydig forskel." width="1030" height="577" class="size-full wp-image-2534" /><figcaption>Heller ikke ved 100% læst + 1 minut på siden er der nogen entydig forskel.</figcaption></figure>
 
 Men heller ikke her er der nogen entydig forskel som skulle indikere at brugerne bliver irriteret af en slide-in og dermed er mere tilbøjelige til at forlade sitet eller mindre tilbøjelige til at læse blogindlægget færdig.
 
@@ -214,4 +214,4 @@ Konklusionen er derfor at min slide-in ikke er irriterende for brugerne - i hver
 
 I dette blogindlæg har jeg brugt Google Analytics og Google Tag Manager til at indsamle det nødvendige data til at teste hypotesen om at slide-ins ødelægger konverteringsraten. Min konklusion gælder ikke for alle sites og alle brancher - sådan noget skal altid testes på det enkelte site. Men jeg håber at ovenstående kan give noget inspiration til hvordan man kan opstille en hypotese, indsamle den nødvendige data og analysere det, så der kan træffes en beslutning på baggrund af data.
 
-Tilbage er der blot at få lavet en ordentlig content upgrade, så jeg kan lave en slide-in der faktisk kan give nogle tilmeldinger til mit <a href="https://www.jacobworsoe.dk/nyhedsbrev/">nyhedsbrev</a>.
+Tilbage er der blot at få lavet en ordentlig content upgrade, så jeg kan lave en slide-in der faktisk kan give nogle tilmeldinger til mit <a href="{{ '/nyhedsbrev/' | relative_url }}">nyhedsbrev</a>.

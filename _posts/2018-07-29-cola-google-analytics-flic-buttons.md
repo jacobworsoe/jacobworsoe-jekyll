@@ -12,7 +12,7 @@ Measurement Protocol som kom i Universal Analytics er super fedt, fordi det give
 
 Her vil jeg vise dig hvordan man kan bruge det til at tracke "offline" events, som fx når man tager en sodavand i køleskabet.
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/flic-analytics-featured-image.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/flic-analytics-featured-image.jpg" alt="" width="900" height="615" class="alignnone size-full wp-image-1389" /></a>
+<a href="{{ '/assets/images/flic-analytics-featured-image.jpg' | relative_url }}"><img src="{{ '/assets/images/flic-analytics-featured-image.jpg' | relative_url }}" alt="" width="900" height="615" class="alignnone size-full wp-image-1389" /></a>
 
 <h2>Indhold</h2>
 
@@ -53,15 +53,15 @@ For at kunne tracke når nogen tager en sodavand i Google Analytics via deres AP
 
 Jeg fik for nyligt en <a href="https://flic.io/flic-hub-3-flics">Flic Hub</a> ind af døren, som seneste nye gadget i mit Smart Home. Med <a href="https://flic.io/">Flic</a> har jeg <a href="https://flic.io/shop/flic-4pack">små knapper</a> rundt omkring i huset til at styre forskellige "smart" dimser, fx mit Philips Hue lys.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/flic-hub.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/flic-hub.jpg" alt="Billede fra: flic.io" width="620" height="350" class="size-full wp-image-1364" /></a><figcaption>Flic Hub - billede fra: flic.io</figcaption></figure>
+<figure><a href="{{ '/assets/images/flic-hub.jpg' | relative_url }}"><img src="{{ '/assets/images/flic-hub.jpg' | relative_url }}" alt="Billede fra: flic.io" width="620" height="350" class="size-full wp-image-1364" /></a><figcaption>Flic Hub - billede fra: flic.io</figcaption></figure>
 
 Vi har en lille knap under sofabordet som kan tænde alle Philips Hue lamper i stuen i forskellige indstillinger, fx dæmpet varmt lys, når der skal ses film.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/flic_turquoise.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/flic_turquoise.png" alt="Billede fra: flic.io" width="500" height="500" class="size-full wp-image-1365" /></a><figcaption>Flic button - billede fra: flic.io</figcaption></figure>
+<figure><a href="{{ '/assets/images/flic_turquoise.png' | relative_url }}"><img src="{{ '/assets/images/flic_turquoise.png' | relative_url }}" alt="Billede fra: flic.io" width="500" height="500" class="size-full wp-image-1365" /></a><figcaption>Flic button - billede fra: flic.io</figcaption></figure>
 
 Knappen kan tre ting: 1 klik, 2 klik og langt klik.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/flic-analytics-three-button-events.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/flic-analytics-three-button-events-690x755.png" alt="1 klik, 2 klik og langt klik - simpelt og nemt." width="690" height="755" class="size-medium wp-image-1372" /></a><figcaption>1 klik, 2 klik og langt klik - simpelt og nemt.</figcaption></figure>
+<figure><a href="{{ '/assets/images/flic-analytics-three-button-events.png' | relative_url }}"><img src="{{ '/assets/images/flic-analytics-three-button-events-690x755.png' | relative_url }}" alt="1 klik, 2 klik og langt klik - simpelt og nemt." width="690" height="755" class="size-medium wp-image-1372" /></a><figcaption>1 klik, 2 klik og langt klik - simpelt og nemt.</figcaption></figure>
 
 Hvert klik kan indstilles til at gøre en bestemt ting. Alt fra Spotify, Philips Hue, IFTTT, Slack, Zapier, Chromecast, etc.
 
@@ -71,7 +71,7 @@ Dvs. snakke sammen med en masse forudbestemte services.
 
 Flic har også muligheden for at kalde en given URL og dermed kan du kalde et hvilket som helst API eller lave dine egne endpoints som kan udføre en hvilken som helst handling - kun fantasien sætter grænser.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/flic-analytics-internet-request.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/flic-analytics-internet-request-690x1058.png" alt="Flic kan kalde en URL når man trykker på knappen." width="690" height="1058" class="size-medium wp-image-1366" /></a><figcaption>Flic kan kalde en URL når man trykker på knappen.</figcaption></figure>
+<figure><a href="{{ '/assets/images/flic-analytics-internet-request.png' | relative_url }}"><img src="{{ '/assets/images/flic-analytics-internet-request-690x1058.png' | relative_url }}" alt="Flic kan kalde en URL når man trykker på knappen." width="690" height="1058" class="size-medium wp-image-1366" /></a><figcaption>Flic kan kalde en URL når man trykker på knappen.</figcaption></figure>
 
 Et eksempel på en URL man kan kalde er Google Analytics API - Measurement Protocol - og dermed sende hits til Google Analytics når man klikker på knappen.
 
@@ -81,7 +81,7 @@ Google Analytics har en super smart <a href="https://ga-dev-tools.appspot.com/hi
 
 Der findes også en <a href="https://developers.google.com/analytics/devguides/collection/protocol/v1/devguide#commonhits">række eksempler</a> på data man typisk sender, som man kan bruge som udgangspunkt. Her vil jeg sende et Event til Google, når nogen tager en cola.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/flic-analytics-event-build.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/flic-analytics-event-build.png" alt="Eventet bygges nemt i Hit Builder." width="667" height="591" class="size-full wp-image-1367" /></a><figcaption>Eventet bygges nemt i Hit Builder.</figcaption></figure>
+<figure><a href="{{ '/assets/images/flic-analytics-event-build.png' | relative_url }}"><img src="{{ '/assets/images/flic-analytics-event-build.png' | relative_url }}" alt="Eventet bygges nemt i Hit Builder." width="667" height="591" class="size-full wp-image-1367" /></a><figcaption>Eventet bygges nemt i Hit Builder.</figcaption></figure>
 
 Der er en række parametre der skal sættes:
 
@@ -98,7 +98,7 @@ Der er en række parametre der skal sættes:
 
 Hit Builder kan validere den endelige URL og tjekke om alle værdier er udfyldt korrekt.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/flic-analytics-event-validate-hit.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/flic-analytics-event-validate-hit.png" alt="Hit Builder gør det nemt at tjekke om et hit indeholder de korrekte værdier." width="929" height="507" class="size-full wp-image-1371" /></a><figcaption>Hit Builder gør det nemt at tjekke om et hit indeholder de korrekte værdier.</figcaption></figure>
+<figure><a href="{{ '/assets/images/flic-analytics-event-validate-hit.png' | relative_url }}"><img src="{{ '/assets/images/flic-analytics-event-validate-hit.png' | relative_url }}" alt="Hit Builder gør det nemt at tjekke om et hit indeholder de korrekte værdier." width="929" height="507" class="size-full wp-image-1371" /></a><figcaption>Hit Builder gør det nemt at tjekke om et hit indeholder de korrekte værdier.</figcaption></figure>
 
 Den endelige URL som skal kaldes fåes ved at sætte <code>https://www.google-analytics.com/collect?</code> foran den URL (Hit Payload) som Hit Builder genererer.
 
@@ -117,7 +117,7 @@ Jeg laver i alt tre URL'er til de tre ting knappen kan:
 
 Inde i app'en sætter jeg de tre URL'er:
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/flic-analytics-three-button-events-configured.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/flic-analytics-three-button-events-configured-690x1045.png" alt="Hver type klik kalder en bestemt URL, som sender de korrekte event data." width="690" height="1045" class="size-medium wp-image-1373" /></a><figcaption>Hver type klik kalder en bestemt URL, som sender de korrekte event data.</figcaption></figure>
+<figure><a href="{{ '/assets/images/flic-analytics-three-button-events-configured.png' | relative_url }}"><img src="{{ '/assets/images/flic-analytics-three-button-events-configured-690x1045.png' | relative_url }}" alt="Hver type klik kalder en bestemt URL, som sender de korrekte event data." width="690" height="1045" class="size-medium wp-image-1373" /></a><figcaption>Hver type klik kalder en bestemt URL, som sender de korrekte event data.</figcaption></figure>
 
 <h3 id="article-header-id-5">Test af knappen i Real-time Analytics</h3>
 
@@ -131,13 +131,13 @@ Så skal der testes!
 
 Og så skal knappen bare monteres, så man husker at trykke, når man tager en sodavand.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/flic-button-koeleskab.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/flic-button-koeleskab.jpg" alt="Flic knappen er rimelig diskret og kan let placeres alle mulige steder." width="900" height="615" class="size-full wp-image-1375" /></a><figcaption>Flic knappen er rimelig diskret og kan let placeres alle mulige steder.</figcaption></figure>
+<figure><a href="{{ '/assets/images/flic-button-koeleskab.jpg' | relative_url }}"><img src="{{ '/assets/images/flic-button-koeleskab.jpg' | relative_url }}" alt="Flic knappen er rimelig diskret og kan let placeres alle mulige steder." width="900" height="615" class="size-full wp-image-1375" /></a><figcaption>Flic knappen er rimelig diskret og kan let placeres alle mulige steder.</figcaption></figure>
 
 <h3 id="article-header-id-6">Se de nye data i Google Analytics</h3>
 
 Derefter kan følgende data ses i Google Analytics.
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/flic-analytics-google-analytics-event-report.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/flic-analytics-google-analytics-event-report.png" alt="" width="1352" height="378" class="alignnone size-full wp-image-1359" /></a>
+<a href="{{ '/assets/images/flic-analytics-google-analytics-event-report.png' | relative_url }}"><img src="{{ '/assets/images/flic-analytics-google-analytics-event-report.png' | relative_url }}" alt="" width="1352" height="378" class="alignnone size-full wp-image-1359" /></a>
 
 Meget sjovt, men lidt federe hvis vi tilføjer lidt grafer.
 
@@ -145,7 +145,7 @@ Meget sjovt, men lidt federe hvis vi tilføjer lidt grafer.
 
 Ved at udnytte de indbyggede dimensioner i Google Analytics til at bryde Events op på timer og dage, kan man se hvornår på ugen og døgnet vi er mest tilbøjelige til at snuppe en kold cola.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/flic-analytics-data-studio-dimensions-metrics-sorting.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/flic-analytics-data-studio-dimensions-metrics-sorting.png" alt="Dimensioner, metrics og sortering i Data Studio." width="279" height="532" class="size-full wp-image-1376" /></a><figcaption>Dimensioner, metrics og sortering i Data Studio.</figcaption></figure>
+<figure><a href="{{ '/assets/images/flic-analytics-data-studio-dimensions-metrics-sorting.png' | relative_url }}"><img src="{{ '/assets/images/flic-analytics-data-studio-dimensions-metrics-sorting.png' | relative_url }}" alt="Dimensioner, metrics og sortering i Data Studio." width="279" height="532" class="size-full wp-image-1376" /></a><figcaption>Dimensioner, metrics og sortering i Data Studio.</figcaption></figure>
 
 Bemærk at "Total events" på engelsk hedder "Al aktivitet" på dansk. Ikke den bedste oversættelse.
 
@@ -153,30 +153,30 @@ Bemærk at "Total events" på engelsk hedder "Al aktivitet" på dansk. Ikke den 
 
 Men der har været sommerferie, så grafen er ikke helt retvisende endnu - men den opdateres automatisk med nye data, så kig endelig forbi igen om et par uger.
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/2018/07/Google-data-studio-cola-fordelt-på-ugedage.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2018/07/Google-data-studio-cola-fordelt-på-ugedage.png" alt="" width="1371" height="820" class="alignnone size-full wp-image-1914" /></a>
+<a href="{{ '/assets/images/2018/07/Google-data-studio-cola-fordelt-på-ugedage.png' | relative_url }}"><img src="{{ '/assets/images/2018/07/Google-data-studio-cola-fordelt-på-ugedage.png' | relative_url }}" alt="" width="1371" height="820" class="alignnone size-full wp-image-1914" /></a>
 
 <h3 id="article-header-id-9">Kl. 20 er Prime Time for cola</h3>
 
 Det er tydeligt at behovet for en kold cola peaker når vores datter er puttet og der skal slappes af i sofaen.
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/2018/07/Google-data-studio-cola-fordelt-på-døgnet.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2018/07/Google-data-studio-cola-fordelt-på-døgnet.png" alt="" width="1377" height="845" class="alignnone size-full wp-image-1913" /></a>
+<a href="{{ '/assets/images/2018/07/Google-data-studio-cola-fordelt-på-døgnet.png' | relative_url }}"><img src="{{ '/assets/images/2018/07/Google-data-studio-cola-fordelt-på-døgnet.png' | relative_url }}" alt="" width="1377" height="845" class="alignnone size-full wp-image-1913" /></a>
 
 Og hvad skal man så se i fjernsynet, når man ligger på sofaen? Man kunne jo Chromecaste dashboardet fra Data Studio til TV'et.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/flic-analytics-chromecast-dashboard.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/flic-analytics-chromecast-dashboard.jpg" alt="Data Studio dashboard på TV via Google Chromecast." width="900" height="506" class="size-full wp-image-1363" /></a><figcaption>Data Studio dashboard på TV via Google Chromecast.</figcaption></figure>
+<figure><a href="{{ '/assets/images/flic-analytics-chromecast-dashboard.jpg' | relative_url }}"><img src="{{ '/assets/images/flic-analytics-chromecast-dashboard.jpg' | relative_url }}" alt="Data Studio dashboard på TV via Google Chromecast." width="900" height="506" class="size-full wp-image-1363" /></a><figcaption>Data Studio dashboard på TV via Google Chromecast.</figcaption></figure>
 
 <h3 id="article-header-id-10">Flic button ved puslebordet?</h3>
 
 Jeg elsker at indsamle data til at træffe beslutninger (eller afgøre væddemål). Derfor har vi naturligvis også en Flic button ved puslebordet.
 
-<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/flic-button-puslebord.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/flic-button-puslebord.jpg" alt="Flic button ved puslebordet." width="900" height="506" class="size-full wp-image-1378" /></a><figcaption>Flic button ved puslebordet.</figcaption></figure>
+<figure><a href="{{ '/assets/images/flic-button-puslebord.jpg' | relative_url }}"><img src="{{ '/assets/images/flic-button-puslebord.jpg' | relative_url }}" alt="Flic button ved puslebordet." width="900" height="506" class="size-full wp-image-1378" /></a><figcaption>Flic button ved puslebordet.</figcaption></figure>
 
 Så skulle den diskussion være afgjort - desværre ikke til min fordel :)
 
-<a href="https://www.jacobworsoe.dk/wp-content/uploads/2018/07/Google-data-studio-bleskift-fordelt-på-personner.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2018/07/Google-data-studio-bleskift-fordelt-på-personner.png" alt="" width="1382" height="830" class="alignnone size-full wp-image-1912" /></a>
+<a href="{{ '/assets/images/2018/07/Google-data-studio-bleskift-fordelt-på-personner.png' | relative_url }}"><img src="{{ '/assets/images/2018/07/Google-data-studio-bleskift-fordelt-på-personner.png' | relative_url }}" alt="" width="1382" height="830" class="alignnone size-full wp-image-1912" /></a>
 
 <h2 id="article-header-id-11">Hvor kan man købe Flic buttons?</h2>
 
 Flic knapper <a href="https://www.partner-ads.com/dk/klikbanner.php?partnerid=16938&bannerid=48783&htmlurl=https://wifi-butikken.dk/produkt-kategori/flic/">kan købes separat</a> og skal kobles sammen med din telefon eller tablet via Bluetooth for at sende data. Det giver nogle udfordringer som <a href="http://www.gizmodo.co.uk/2018/05/flic-hub-fixes-the-one-big-problem-with-the-original-flic-buttons/">Gizmodo har beskrevet her</a> - fx kræver det at din telefon altid er i nærheden, hvilket ikke er så smart i et privat hjem. Flic har derfor lanceret en Flic Hub, som knapperne kobles sammen med, så det ikke er afhængigt af at din telefon er i nærheden. Jeg købte min Flic Hub gennem en <a href="https://www.indiegogo.com/projects/flic-hub-simplify-home-control-with-smart-buttons#/">Indiegogo kampagne</a> og så vidt jeg kan se kan Flic Hub ikke købes i danske webshops endnu, men kun via <a href="https://flic.io/flic-hub-3-flics">Flics egen webshop</a>.
 
-Bonus: Jeg har tidligere skrevet om hvordan man kan bruge Measurement Protocol til at <a href="https://www.jacobworsoe.dk/6-google-analytics-hacks-og-de-fede-data-de-giver/#send-data-forsinket">tracke transaktioner efter brugerne har forladt sitet</a> og til at <a href="https://www.jacobworsoe.dk/6-google-analytics-hacks-og-de-fede-data-de-giver/#send-hemmelige-data">sende hemmelige data (fx din avance)</a> til Google Analytics, uden at brugerne kan se din avance.
+Bonus: Jeg har tidligere skrevet om hvordan man kan bruge Measurement Protocol til at <a href="{{ '/6-google-analytics-hacks-og-de-fede-data-de-giver/#send-data-forsinket' | relative_url }}">tracke transaktioner efter brugerne har forladt sitet</a> og til at <a href="{{ '/6-google-analytics-hacks-og-de-fede-data-de-giver/#send-hemmelige-data' | relative_url }}">sende hemmelige data (fx din avance)</a> til Google Analytics, uden at brugerne kan se din avance.
