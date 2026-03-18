@@ -44,7 +44,7 @@ Til gengæld kan man altid se den forrige side, via <code>document.referrer</cod
 
 Tricket til at se den næste side efter forsiden er derfor at lave en rapport som kigger på alle sider og filtrere så du kun ser de sider hvor den <em>forrige</em> side er forsiden. Det kan nemt laves i en custom report sådan her:
 
-[caption id="attachment_2138" align="alignnone" width="860"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/custom-report-previous-page-og-page-settings.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/custom-report-previous-page-og-page-settings-860x285.jpg" alt="Custom Report filtreret så Previous Page er forsiden." width="860" height="285" class="size-large wp-image-2138" /></a> Custom Report filtreret så Previous Page er forsiden.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/custom-report-previous-page-og-page-settings.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/custom-report-previous-page-og-page-settings-860x285.jpg" alt="Custom Report filtreret så Previous Page er forsiden." width="860" height="285" class="size-large wp-image-2138" /></a><figcaption>Custom Report filtreret så Previous Page er forsiden.</figcaption></figure>
 
 Og dermed får du den ønskede oversigt:
 

@@ -77,13 +77,13 @@ Jeg bruger altid den samme navngivning når jeg opretter Tags, Variabler eller T
 
 Den her kalder jeg "JS - Time to event".
 
-[caption id="attachment_1981" align="alignnone" width="725"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/GTM-variabel-JS-time-to-event.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/GTM-variabel-JS-time-to-event-725x337.jpg" alt="GTM variabel: JS - Time to event" width="725" height="337" class="size-large wp-image-1981" /></a> GTM variabel: JS - Time to event[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/GTM-variabel-JS-time-to-event.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/GTM-variabel-JS-time-to-event-725x337.jpg" alt="GTM variabel: JS - Time to event" width="725" height="337" class="size-large wp-image-1981" /></a><figcaption>GTM variabel: JS - Time to event</figcaption></figure>
 
 <h2>Event Tag med tiden som værdi</h2>
 
 Du kan derefter indsætte den nye variabel som Værdi i dine Event tracking Tags.
 
-[caption id="attachment_1980" align="alignnone" width="740"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/GTM-tag-JavaScript-error-configuration.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/GTM-tag-JavaScript-error-configuration.jpg" alt="Indsæt &quot;JS - time to event&quot; som Event Value." width="740" height="702" class="size-full wp-image-1980" /></a> Indsæt "JS - time to event" som Event Value.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/GTM-tag-JavaScript-error-configuration.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/GTM-tag-JavaScript-error-configuration.jpg" alt="Indsæt &quot;JS - time to event&quot; som Event Value." width="740" height="702" class="size-full wp-image-1980" /></a><figcaption>Indsæt "JS - time to event" som Event Value.</figcaption></figure>
 
 Det fede ved at tracke tiden som værdien for et Event er at Google Analytics udregner et gennemsnit ud-af-boksen. Dermed får du et hurtigt overblik over hvor hurtigt et Event sker i gennemsnit.
 
@@ -91,7 +91,7 @@ Det fede ved at tracke tiden som værdien for et Event er at Google Analytics ud
 
 En af de ting jeg altid sætter op i GTM er tracking af JavaScript fejl. Det er mega nemt og værdifuldt, fordi det er indbygget i GTM, så der skal ikke kodes noget.
 
-[caption id="attachment_1982" align="alignnone" width="725"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/JavaScript-error-events-with-time.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/JavaScript-error-events-with-time-725x352.jpg" alt="JavaScript error event med tiden som værdi." width="725" height="352" class="size-large wp-image-1982" /></a> JavaScript error event med tiden som værdi.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/JavaScript-error-events-with-time.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/JavaScript-error-events-with-time-725x352.jpg" alt="JavaScript error event med tiden som værdi." width="725" height="352" class="size-large wp-image-1982" /></a><figcaption>JavaScript error event med tiden som værdi.</figcaption></figure>
 
 Ved at tracke tiden indtil der sker en JavaScript fejl, er det meget nemt at se hvilke fejl der sker ved pageload og hvilke der først sker efter brugeren er begyndt at bruge siden. Dét gør det tit meget nemmere at debugge en JavaScript fejl og forstå hvad der gik galt.
 
@@ -99,7 +99,7 @@ Ved at tracke tiden indtil der sker en JavaScript fejl, er det meget nemt at se 
 
 Jeg tracker min blog med Enhanced Ecommerce, som du kan <a href="https://www.jacobworsoe.dk/indhold-enhanced-ecommerce/">læse meget mere om her</a>. Jeg tracker en række events når brugeren har læst hhv. 33%, 66% samt 100% af et blogindlæg. Her bruger jeg også tiden, til at se hvor hurtigt brugerne læser indholdet og hvor lang tid det tager dem at nå til bunden af siden.
 
-[caption id="attachment_1984" align="alignnone" width="860"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Content-with-ecommerce-time-to-events.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Content-with-ecommerce-time-to-events-860x313.jpg" alt="Den gennemsnitlige tid det tager brugerne af scrolle igennem et blogindlæg." width="860" height="313" class="size-large wp-image-1984" /></a> Den gennemsnitlige tid det tager brugerne af scrolle igennem et blogindlæg.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Content-with-ecommerce-time-to-events.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Content-with-ecommerce-time-to-events-860x313.jpg" alt="Den gennemsnitlige tid det tager brugerne af scrolle igennem et blogindlæg." width="860" height="313" class="size-large wp-image-1984" /></a><figcaption>Den gennemsnitlige tid det tager brugerne af scrolle igennem et blogindlæg.</figcaption></figure>
 
 Jeg tracker et "add to cart" event, når brugeren begynder at scrolle ned af indlægget. Det er overraskende at det igennemsnit tager 26,52 sekunder før brugerne begynder at scrolle, men det tager 51,97 sekunder at nå 33% ned gennem indlægget (checkout step 1).
 
@@ -109,11 +109,11 @@ Mange websites tracker hvad brugeren klikker på i menuen. Særligt i en mega-me
 
 Her på bloggen har jeg en hamburger menu, hvor jeg tracker når den åbnes og lukkes.
 
-[caption id="attachment_1986" align="alignnone" width="860"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Hamburger-menu-open-close.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Hamburger-menu-open-close-860x246.jpg" alt="I gennemsnit åbnes hamburger menuen efter 116 sekunder og lukkes efter 147 sekunder." width="860" height="246" class="size-large wp-image-1986" /></a> I gennemsnit åbnes hamburger menuen efter 116 sekunder og lukkes efter 147 sekunder.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Hamburger-menu-open-close.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Hamburger-menu-open-close-860x246.jpg" alt="I gennemsnit åbnes hamburger menuen efter 116 sekunder og lukkes efter 147 sekunder." width="860" height="246" class="size-large wp-image-1986" /></a><figcaption>I gennemsnit åbnes hamburger menuen efter 116 sekunder og lukkes efter 147 sekunder.</figcaption></figure>
 
 Jeg tracker også når brugeren klikker i menuen. Her er det interessant at se hvor stor forskel der er på hvor hurtigt brugerne klikker på de forskellige kategorier af indlæg. Bemærk at dette er tiden efter siden blev indlæst og ikke tiden efter menuen blev åbnet.
 
-[caption id="attachment_1987" align="alignnone" width="860"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Klik-i-hamburger-menuen.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Klik-i-hamburger-menuen-860x499.jpg" alt="Tid før klik på de forskellige kategorier i menuen." width="860" height="499" class="size-large wp-image-1987" /></a> Tid før klik på de forskellige kategorier i menuen.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Klik-i-hamburger-menuen.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Klik-i-hamburger-menuen-860x499.jpg" alt="Tid før klik på de forskellige kategorier i menuen." width="860" height="499" class="size-large wp-image-1987" /></a><figcaption>Tid før klik på de forskellige kategorier i menuen.</figcaption></figure>
 
 Jeg har efterfølgende lavet et stort redesign af min blog og alle beslutningerne var baseret på data, fx at fjerne menuen. <a href="https://www.jacobworsoe.dk/datadrevet-redesign/">Det kan du læse mere om her</a>.
 

@@ -8,7 +8,7 @@ lang: "da-DK"
 # Build
 markdown: kramdown
 highlighter: rouge
-# Match WordPress permalink_structure (from wp_options): /%postname%/
+# Match WordPress permalink_structure (from wp_options)
 permalink: /:title/
 
 # Exclude from processing

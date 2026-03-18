@@ -72,7 +72,7 @@ Når slide-in boxen skal vises, sætter jeg en <code>.open</code> class på den 
 
 Dermed har jeg en simpel slide-in box.
 
-[caption id="attachment_2510" align="aligncenter" width="447"]<img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/slide-in-box.jpg" alt="Den færdige slide-in box." width="447" height="450" class="size-full wp-image-2510 no-border" /> Den færdige slide-in box.[/caption]
+<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/slide-in-box.jpg" alt="Den færdige slide-in box." width="447" height="450" class="size-full wp-image-2510 no-border" /><figcaption>Den færdige slide-in box.</figcaption></figure>
 
 <h3 id="article-header-id-3">JavaScript</h3>
 
@@ -99,7 +99,7 @@ Slide-in boxen skal kunne åbne på forskellige tidspunkter, så jeg har lavet e
 
 Sådan ser det ud når slide-in boxen bliver synlig.
 
-[caption id="attachment_2511" align="aligncenter" width="830"]<img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Slide-in-16c-lossy0.gif" alt="Slide-in boxen bliver synlig." width="830" height="467" class="size-full wp-image-2511" /> Slide-in boxen bliver synlig.[/caption]
+<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Slide-in-16c-lossy0.gif" alt="Slide-in boxen bliver synlig." width="830" height="467" class="size-full wp-image-2511" /><figcaption>Slide-in boxen bliver synlig.</figcaption></figure>
 
 <h2 id="article-header-id-4">Hvornår skal den så vises?</h2>
 
@@ -142,7 +142,7 @@ Lad os starte med konverteringer.
 
 Okay, vi kan lige så godt tage den med det samme. Min slide-in konverterer ikke. Slet ikke.
 
-[caption id="attachment_2540" align="aligncenter" width="860"]<img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Slide-in-conversion-events-dark-860x435.jpg" alt="22.161 visninger af slide-in og kun 29 tilmeldinger." width="860" height="435" class="size-large wp-image-2540" /> 22.161 visninger af slide-in og kun 29 tilmeldinger.[/caption]
+<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Slide-in-conversion-events-dark-860x435.jpg" alt="22.161 visninger af slide-in og kun 29 tilmeldinger." width="860" height="435" class="size-large wp-image-2540" /><figcaption>22.161 visninger af slide-in og kun 29 tilmeldinger.</figcaption></figure>
 
 Slide-in boxen er i alt blevet vist 22.161 gange og den er blevet lukket 15.490 gange. Men den har kun fået 29 tilmeldinger.
 
@@ -168,17 +168,17 @@ Denne er lidt ligeyldig fordi min slide-in tidligst bliver vist på det tidspunk
 
 De fem søjler er de fem tidspunkter slide-in boxen bliver vist på. Ikke overraskende er konverteringsraten næsten den samme for alle grupper.
 
-[caption id="attachment_2530" align="aligncenter" width="1035"]<img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Add-to-Cart-konvertering.jpg" alt="Ikke overraskende er konverteringsraten næsten den samme for alle grupper." width="1035" height="578" class="size-full wp-image-2530" /> Ikke overraskende er konverteringsraten næsten den samme for alle grupper.[/caption]
+<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Add-to-Cart-konvertering.jpg" alt="Ikke overraskende er konverteringsraten næsten den samme for alle grupper." width="1035" height="578" class="size-full wp-image-2530" /><figcaption>Ikke overraskende er konverteringsraten næsten den samme for alle grupper.</figcaption></figure>
 
 <h3 id="article-header-id-8">Læst 33%</h3>
 
 Det næste event er dem som har scrollet 33% af indlægget og her vil den første gruppe altså have set slide-in boxen, mens de andre ikke har set den endnu.
 
-[caption id="attachment_2531" align="aligncenter" width="1033"]<img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Laest-33p-konvertering.jpg" alt="Ikke den store forskel på dem der har set slide-in boxen." width="1033" height="580" class="size-full wp-image-2531" /> Ikke den store forskel på dem der har set slide-in boxen.[/caption]
+<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Laest-33p-konvertering.jpg" alt="Ikke den store forskel på dem der har set slide-in boxen." width="1033" height="580" class="size-full wp-image-2531" /><figcaption>Ikke den store forskel på dem der har set slide-in boxen.</figcaption></figure>
 
 Add to Cart har en anelse lavere konverteringsrate end Læst 33% men forskellen er meget lille og med en p-værdi på 0,1572 er den ikke signifikant.
 
-[caption id="attachment_2543" align="aligncenter" width="860"]<img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/significance-test-860x413.jpg" alt="&lt;a href=&quot;https://www.surveymonkey.com/mp/ab-testing-significance-calculator/&quot;&gt;SurveyMonkey&lt;/a&gt; har en god signifikans test." width="860" height="413" class="size-large wp-image-2543" /> <a href="https://www.surveymonkey.com/mp/ab-testing-significance-calculator/">SurveyMonkey</a> har en god signifikans test.[/caption]
+<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/significance-test-860x413.jpg" alt="&lt;a href=&quot;https://www.surveymonkey.com/mp/ab-testing-significance-calculator/&quot;&gt;SurveyMonkey&lt;/a&gt; har en god signifikans test." width="860" height="413" class="size-large wp-image-2543" /> <a href="https://www.surveymonkey.com/mp/ab-testing-significance-calculator/">SurveyMonkey</a><figcaption>har en god signifikans test.</figcaption></figure>
 
 Man kan også se at Læst 100% har en konverteringsrate der er endnu lavere end Add to Cart og Læst 100% har altså ikke set slide-in boxen endnu, så det er bare naturlig varians.
 
@@ -188,7 +188,7 @@ Indtil videre påvirker det altså ikke konverteringsraten.
 
 Ved 66% læst er der heller ingen markant forskel og faktisk er det de to øverste grupper (som på dette tidspunkt har set slide-in boxen) der har den højeste konvertering.
 
-[caption id="attachment_2532" align="aligncenter" width="1032"]<img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Laest-66p-konvertering.jpg" alt="Ved 66% læst er der heller ikke forskel." width="1032" height="578" class="size-full wp-image-2532" /> Ved 66% læst er der heller ikke forskel.[/caption]
+<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Laest-66p-konvertering.jpg" alt="Ved 66% læst er der heller ikke forskel." width="1032" height="578" class="size-full wp-image-2532" /><figcaption>Ved 66% læst er der heller ikke forskel.</figcaption></figure>
 
 Så stadig ingen påvirkning.
 
@@ -196,7 +196,7 @@ Så stadig ingen påvirkning.
 
 Ved 100% læst er det dermed de øverste 3 grupper der har fået vist slide-in boxen - men det har stadig ingen betydning.
 
-[caption id="attachment_2533" align="aligncenter" width="1030"]<img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Laest-100p-konvertering.jpg" alt="Samme billede ved 100% læst." width="1030" height="577" class="size-full wp-image-2533" /> Samme billede ved 100% læst.[/caption]
+<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Laest-100p-konvertering.jpg" alt="Samme billede ved 100% læst." width="1030" height="577" class="size-full wp-image-2533" /><figcaption>Samme billede ved 100% læst.</figcaption></figure>
 
 Videre til sidste event.
 
@@ -204,7 +204,7 @@ Videre til sidste event.
 
 Det sidste event er dem som har scrollet 100% og været på siden mindst 1 minut - det er dem hvor jeg antager at de faktisk har læst hele blogindlægget (<a href="https://www.jacobworsoe.dk/indhold-enhanced-ecommerce/">og dem jeg tracker som et transaktion i Enhanced Ecommerce</a>).
 
-[caption id="attachment_2534" align="aligncenter" width="1030"]<img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Laest-100p-1-minut-konvertering.jpg" alt="Heller ikke ved 100% læst + 1 minut på siden er der nogen entydig forskel." width="1030" height="577" class="size-full wp-image-2534" /> Heller ikke ved 100% læst + 1 minut på siden er der nogen entydig forskel.[/caption]
+<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/09/Laest-100p-1-minut-konvertering.jpg" alt="Heller ikke ved 100% læst + 1 minut på siden er der nogen entydig forskel." width="1030" height="577" class="size-full wp-image-2534" /><figcaption>Heller ikke ved 100% læst + 1 minut på siden er der nogen entydig forskel.</figcaption></figure>
 
 Men heller ikke her er der nogen entydig forskel som skulle indikere at brugerne bliver irriteret af en slide-in og dermed er mere tilbøjelige til at forlade sitet eller mindre tilbøjelige til at læse blogindlægget færdig.
 

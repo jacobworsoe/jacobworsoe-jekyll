@@ -20,7 +20,7 @@ Der er skrevet meget om ITP, men lad mig lige starte med at opridse de store mil
 
 Sådan ser udrulningen af de forskellige ITP-versioner ud på <a href="https://www.googlemerchandisestore.com/" rel="noopener noreferrer">Google Merchandise Store</a>. Det er interessant at ITP 1.1 kun blev rullet ud til desktop brugere, mens mobile fortsatte på ITP 1.0.
 
-[caption id="attachment_2446" align="alignnone" width="860"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/itp-rollout.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/itp-rollout-860x456.jpg" alt="ITP roll-out: Ugentlige besøg pr. ITP version" width="860" height="456" class="size-large wp-image-2446" /></a> ITP roll-out: Ugentlige besøg pr. ITP version[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/itp-rollout.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/itp-rollout-860x456.jpg" alt="ITP roll-out: Ugentlige besøg pr. ITP version" width="860" height="456" class="size-large wp-image-2446" /></a><figcaption>ITP roll-out: Ugentlige besøg pr. ITP version</figcaption></figure>
 
 <ol>
 <li>parts cookies har med ITP 2.1 en levetid på 7 dage - men kun hvis de sættes client-side med JavaScript via <code>document.cookie</code>.</li>
@@ -49,7 +49,7 @@ Som det kan ses herover er der stor forskel på hvor længe ITP-versionerne har 
 
 Jeg har derefter taget gennemsnittet af alle ugerne. Bemærk at <a href="https://www.youtube.com/watch?v=14VYnFhBKcY">Y-aksen ikke starter ved 0</a>.
 
-[caption id="attachment_1965" align="alignnone" width="1170"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/09/Andel-nye-besgøende-pr.-ITP-version.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/09/Andel-nye-besgøende-pr.-ITP-version.jpg" alt="Andel nye besgøende pr. ITP-version" width="1170" height="652" class="size-full wp-image-1965" /></a> Andel nye besgøende pr. ITP-version[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/09/Andel-nye-besgøende-pr.-ITP-version.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/09/Andel-nye-besgøende-pr.-ITP-version.jpg" alt="Andel nye besgøende pr. ITP-version" width="1170" height="652" class="size-full wp-image-1965" /></a><figcaption>Andel nye besgøende pr. ITP-version</figcaption></figure>
 
 Forventningen er at der sker en markant stigning ved ITP 2.1, men som det ses herover er det ikke tilfældet.
 
@@ -59,7 +59,7 @@ Fra ITP 1.1 og frem stiger andelen af nye besøg ved hver ny ITP version, men al
 
 Det ændrer sig dog markant, når jeg bryder det ned på device.
 
-[caption id="attachment_1966" align="alignnone" width="1106"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Andel-nye-besgøende-pr.-ITP-version-og-device.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Andel-nye-besgøende-pr.-ITP-version-og-device.jpg" alt="Andel nye besgøende pr. ITP-version og device" width="1106" height="568" class="size-full wp-image-1966" /></a> Andel nye besgøende pr. ITP-version og device[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Andel-nye-besgøende-pr.-ITP-version-og-device.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Andel-nye-besgøende-pr.-ITP-version-og-device.jpg" alt="Andel nye besgøende pr. ITP-version og device" width="1106" height="568" class="size-full wp-image-1966" /></a><figcaption>Andel nye besgøende pr. ITP-version og device</figcaption></figure>
 
 Her stiger andelen af nye besøgende meget mere i de nyeste ITP-versioner. Men kun på desktop!
 
@@ -75,7 +75,7 @@ Samtidig betyder det at antallet af sessioner pr. bruger blive lavere end det i 
 
 Det ser sådan her ud pr. ITP-version og device.
 
-[caption id="attachment_1970" align="alignnone" width="909"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Sessioner-pr.-bruger-fordelt-på-ITP-version-og-device.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Sessioner-pr.-bruger-fordelt-på-ITP-version-og-device.jpg" alt="Sessioner pr. bruger fordelt på ITP-version og device" width="909" height="462" class="size-full wp-image-1970" /></a> Sessioner pr. bruger fordelt på ITP-version og device[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Sessioner-pr.-bruger-fordelt-på-ITP-version-og-device.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Sessioner-pr.-bruger-fordelt-på-ITP-version-og-device.jpg" alt="Sessioner pr. bruger fordelt på ITP-version og device" width="909" height="462" class="size-full wp-image-1970" /></a><figcaption>Sessioner pr. bruger fordelt på ITP-version og device</figcaption></figure>
 
 Bemærk igen hvordan mobile og desktop påvirkes forskellige i de nyeste ITP-versioner.
 
@@ -103,7 +103,7 @@ Det kan du formentlig godt på desktop trafik, hvor Safari udgør en rimelig lil
 
 Lad os lige trække nogle friske tal på browsernes markedsandele på desktop og mobile for september 2019.
 
-[caption id="attachment_1971" align="alignnone" width="901"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Browser-markedsandele-pr.-device.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Browser-markedsandele-pr.-device.jpg" alt="Browser markedsandele pr. device" width="901" height="425" class="size-full wp-image-1971" /></a> Browser markedsandele pr. device[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Browser-markedsandele-pr.-device.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Browser-markedsandele-pr.-device.jpg" alt="Browser markedsandele pr. device" width="901" height="425" class="size-full wp-image-1971" /></a><figcaption>Browser markedsandele pr. device</figcaption></figure>
 
 Safari har kun 5% markedsandel på desktop, så der kan du nok godt klare dig, ved at lave analysen på de resterende 95%.
 
@@ -115,7 +115,7 @@ De ovenstående tal er som nævnt fra <a href="https://www.googlemerchandisestor
 
 Det er altså en stor del af trafikken, hvor data nu er forkerte!
 
-[caption id="attachment_2620" align="aligncenter" width="860"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/Browser-markedsandele-pr.-device-jacobworsoe.dk_.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/Browser-markedsandele-pr.-device-jacobworsoe.dk_-860x441.jpg" alt="Browser markedsandele pr. device (jacobworsoe.dk)" width="860" height="441" class="size-large wp-image-2620" /></a> Browser markedsandele pr. device (jacobworsoe.dk)[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/Browser-markedsandele-pr.-device-jacobworsoe.dk_.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/Browser-markedsandele-pr.-device-jacobworsoe.dk_-860x441.jpg" alt="Browser markedsandele pr. device (jacobworsoe.dk)" width="860" height="441" class="size-large wp-image-2620" /></a><figcaption>Browser markedsandele pr. device (jacobworsoe.dk)</figcaption></figure>
 
 <h3>4. Målgrupper til annoncering</h3>
 
@@ -133,7 +133,7 @@ På sitet fanger jeg brugerens Client ID (Cookie ID) og gemmer det i en custom d
 
 Resultatet ser således ud. Jeg har lavet 7 besøg fra 10. juli til 2. oktober og der er mindst 7 dage mellem alle besøgene. Client ID forbliver det samme, så cookien slettes ikke.
 
-[caption id="attachment_1973" align="alignnone" width="1397"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/GA-cookie-bevares-mellem-7-dage-besøg.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/GA-cookie-bevares-mellem-7-dage-besøg.jpg" alt="GA cookie bevares mellem besøg." width="1397" height="401" class="size-full wp-image-1973" /></a> GA cookie bevares mellem besøg.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/GA-cookie-bevares-mellem-7-dage-besøg.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/GA-cookie-bevares-mellem-7-dage-besøg.jpg" alt="GA cookie bevares mellem besøg." width="1397" height="401" class="size-full wp-image-1973" /></a><figcaption>GA cookie bevares mellem besøg.</figcaption></figure>
 
 Lad os tjekke hvad cookiens levetid bliver sat til.
 
@@ -141,7 +141,7 @@ Ved at koble din iPhone sammen med din Mac med et kabel, kan du bruge Developer 
 
 Herunder ses et flot stykke grafisk arbejde, som viser levetiden på _ga cookien på hhv. Mac (2 år) og iPhone (7 dage). Bemærk at "Prevent Cross-Site Tracking" er aktiveret på iPhonen, som er det der aktiverer ITP.
 
-[caption id="attachment_1974" align="alignnone" width="1144"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/ITP-iOS-safari-2-years-cookie-expiry.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/ITP-iOS-safari-2-years-cookie-expiry.png" alt="_ga cookien levetid på hhv. Mac og iPhone." width="1144" height="747" class="size-full wp-image-1974" /></a> _ga cookien levetid på hhv. Mac og iPhone.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/ITP-iOS-safari-2-years-cookie-expiry.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/ITP-iOS-safari-2-years-cookie-expiry.png" alt="_ga cookien levetid på hhv. Mac og iPhone." width="1144" height="747" class="size-full wp-image-1974" /></a><figcaption>_ga cookien levetid på hhv. Mac og iPhone.</figcaption></figure>
 
 Lad os lige opsummere.
 

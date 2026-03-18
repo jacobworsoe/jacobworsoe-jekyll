@@ -3,6 +3,7 @@ layout: page
 title: Jagttegn noter 2018
 date: 2018-06-29 09:44:36
 slug: jagttegn-noter
+wordpress_id: 1335
 ---
 
 <h2>Lovgivning</h2>

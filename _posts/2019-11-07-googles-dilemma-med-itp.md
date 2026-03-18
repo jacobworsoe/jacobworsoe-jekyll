@@ -20,7 +20,7 @@ Lad os lige tage de store spillere i ITP set ud fra et web analytics perspektiv.
 
 Google vil gerne beskytte brugernes privatliv, fx ved at skjule organiske søgeord (not provided) eller muligheden for at Google automatisk løbende sletter ens aktivitetsdata.
 
-[caption id="attachment_1975" align="alignnone" width="651"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Choose-how-long-to-keep-your-Web-app-activity.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Choose-how-long-to-keep-your-Web-app-activity.jpg" alt="Google kan automatisk løbende slette dine aktivitetsdata." width="651" height="624" class="size-full wp-image-1975" /></a> Google kan automatisk løbende slette dine aktivitetsdata.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Choose-how-long-to-keep-your-Web-app-activity.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/Choose-how-long-to-keep-your-Web-app-activity.jpg" alt="Google kan automatisk løbende slette dine aktivitetsdata." width="651" height="624" class="size-full wp-image-1975" /></a><figcaption>Google kan automatisk løbende slette dine aktivitetsdata.</figcaption></figure>
 
 Det er godt for deres image og godt for udbredelsen af Chrome, når de tager brugernes privatliv seriøst. Det er derfor ikke utænkeligt at Google vil introducere noget der minder om ITP i Chrome.
 

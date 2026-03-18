@@ -44,7 +44,7 @@ En mistænkt er som udgangspunkt uskyldig indtil det modsatte er bevist. Derfor 
 
 Udfaldet af retssagen kan derfor opstilles således med to rigtige og to forkerte beslutninger:
 
-[caption id="attachment_365" align="alignnone" width="616"]<a href="//www.jacobworsoe.dk/wp-content/uploads/Statistik-splittest-retssagen.png"><img class="size-full wp-image-365" alt="Retssagens mulige udfald" src="//www.jacobworsoe.dk/wp-content/uploads/Statistik-splittest-retssagen.png" width="616" height="188" /></a> Retssagens mulige udfald[/caption]
+<figure><a href="//www.jacobworsoe.dk/wp-content/uploads/Statistik-splittest-retssagen.png"><img class="size-full wp-image-365" alt="Retssagens mulige udfald" src="//www.jacobworsoe.dk/wp-content/uploads/Statistik-splittest-retssagen.png" width="616" height="188" /></a><figcaption>Retssagens mulige udfald</figcaption></figure>
 
 Af de to forkerte beslutninger er justitsmordet klart det værste der kan ske. Det er langt værre at dømme en uskyldig mand, end at lade en skyldig gå fri. Det vil altså sige at man skal have meget stærke beviser for at forkaste H0, da det er katastrofalt hvis beslutningen er forkert.
 

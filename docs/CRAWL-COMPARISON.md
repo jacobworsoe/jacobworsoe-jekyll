@@ -1,5 +1,7 @@
 # Crawl comparison: WordPress vs Jekyll (GitHub Pages)
 
+*Historical reference: migration is complete; this doc was used to align Jekyll with the live WordPress site.*
+
 **Compared:** [https://www.jacobworsoe.dk/](https://www.jacobworsoe.dk/) (WordPress) vs [https://jacobworsoe.github.io/jacobworsoe-jekyll/](https://jacobworsoe.github.io/jacobworsoe-jekyll/) (Jekyll).
 
 ---

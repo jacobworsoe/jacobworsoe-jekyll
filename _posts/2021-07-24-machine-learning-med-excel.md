@@ -18,11 +18,11 @@ Interessen for Machine Learning er steget markant i løbet af de sidste år, men
 
 Som eksempel på machine learning der kan laves i Excel, vil jeg analysere forholdet mellem længden på blogindlæg og mængden af organisk SEO trafik. Sammenhængen er bevist flere gange tidligere, fx af Backlinko:
 
-[caption id="attachment_1297" align="alignnone" width="690"]<a href="http://www.jacobworsoe.dk/wp-content/uploads/backlinko-content-total-word-count.png"><img src="http://www.jacobworsoe.dk/wp-content/uploads/backlinko-content-total-word-count-690x475.png" alt="Kilde: https://backlinko.com/search-engine-ranking" width="690" height="475" class="size-medium wp-image-1297" /></a> Kilde: <a href="https://backlinko.com/search-engine-ranking">https://backlinko.com/search-engine-ranking</a>[/caption]
+<figure><a href="http://www.jacobworsoe.dk/wp-content/uploads/backlinko-content-total-word-count.png"><img src="http://www.jacobworsoe.dk/wp-content/uploads/backlinko-content-total-word-count-690x475.png" alt="Kilde: https://backlinko.com/search-engine-ranking" width="690" height="475" class="size-medium wp-image-1297" /></a> Kilde: <a href="https://backlinko.com/search-engine-ranking">https://backlinko.com/search-engine-ranking</a></figure>
 
 Rand Fiskin har dog et helt andet take på det i denne Whiteboard Friday:
 
-[caption id="attachment_1297" align="alignnone" width="690"]<a href="https://moz.com/blog/blog-post-length-frequency?wvideo=vhkmto6gk4"><img src="https://embedwistia-a.akamaihd.net/deliveries/e39d34732ebc9dda5f64d76e5e4d4a60b97e6703.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=2299dbe0" alt="The perfect blog post length and frequency is bullshit" width="690" height="475" class="size-medium wp-image-1297" /></a> The perfect blog post length and frequency is bullshit[/caption]
+<figure><a href="https://moz.com/blog/blog-post-length-frequency?wvideo=vhkmto6gk4"><img src="https://embedwistia-a.akamaihd.net/deliveries/e39d34732ebc9dda5f64d76e5e4d4a60b97e6703.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=2299dbe0" alt="The perfect blog post length and frequency is bullshit" width="690" height="475" class="size-medium wp-image-1297" /></a><figcaption>The perfect blog post length and frequency is bullshit</figcaption></figure>
 
 Her vil jeg derfor analysere hvor meget længden af indlægget betyder for trafikken på min personlige blog og endnu mere spændende: Om man kan forudsige hvor meget trafik et blogindlæg vil få, baseret på antal ord = prædiktiv analyse.
 
@@ -47,11 +47,11 @@ dataLayer.push({
 
 I Google Analytics har jeg så opsat en hit-scoped Custom Dimension, hvor jeg kan opsamle antal ord for blogindlægget, når det bliver besøgt.
 
-[caption id="attachment_1307" align="alignnone" width="481"]<a href="http://www.jacobworsoe.dk/wp-content/uploads/word-count-hit-scoped-custom-dimension.png"><img src="http://www.jacobworsoe.dk/wp-content/uploads/word-count-hit-scoped-custom-dimension.png" alt="Antal ord i hit-scoped custom dimension" width="481" height="330" class="size-full wp-image-1307" /></a> Antal ord i hit-scoped custom dimension[/caption]
+<figure><a href="http://www.jacobworsoe.dk/wp-content/uploads/word-count-hit-scoped-custom-dimension.png"><img src="http://www.jacobworsoe.dk/wp-content/uploads/word-count-hit-scoped-custom-dimension.png" alt="Antal ord i hit-scoped custom dimension" width="481" height="330" class="size-full wp-image-1307" /></a><figcaption>Antal ord i hit-scoped custom dimension</figcaption></figure>
 
 Derefter vælger jeg rapporten Acquisition -> All traffic -> Channels og vælger Organic Search. Jeg vælger Landing Page som primær dimension og den nye custom dimension Word Count, som sekundær dimension og får dermed dette udtræk, som eksporteres til Excel.
 
-[caption id="attachment_1308" align="alignnone" width="677"]<a href="http://www.jacobworsoe.dk/wp-content/uploads/word-count-secondary-dimension.png"><img src="http://www.jacobworsoe.dk/wp-content/uploads/word-count-secondary-dimension.png" alt="Datasættet med landingpage, antal ord og organiske sessioner." width="677" height="432" class="size-full wp-image-1308" /></a> Datasættet med landingpage, antal ord og organiske sessioner.[/caption]
+<figure><a href="http://www.jacobworsoe.dk/wp-content/uploads/word-count-secondary-dimension.png"><img src="http://www.jacobworsoe.dk/wp-content/uploads/word-count-secondary-dimension.png" alt="Datasættet med landingpage, antal ord og organiske sessioner." width="677" height="432" class="size-full wp-image-1308" /></a><figcaption>Datasættet med landingpage, antal ord og organiske sessioner.</figcaption></figure>
 
 <div class="attention"><strong>Bemærk:</strong> Det er vigtigt at vælge en tidsperiode hvor alle blogindlæg har været online i hele perioden. Hvis der kigges tilbage på det sidste år (for at få et godt datagrundlag) men nogle blogindlæg, kun har været online den sidste uge, vil det give et forkert billede på, hvor meget trafik de blogindlæg har fået, sammenlignet med de andre.</div>
 
@@ -79,7 +79,7 @@ Det kan være svært at se om der er en sammenhæng ud fra en tabel med data, s�
 
 Hver prik er et blogindlæg og akserne er hhv. antal ord i artikel og organisk trafik til blogindlægget.
 
-[caption id="attachment_1677" align="alignnone" width="1054"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-organisk-trafik-scatter.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-organisk-trafik-scatter.png" alt="Scatter plot af alle mine indlæg." width="1054" height="601" class="size-full wp-image-1677" /></a> Scatter plot af alle mine indlæg.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-organisk-trafik-scatter.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-organisk-trafik-scatter.png" alt="Scatter plot af alle mine indlæg." width="1054" height="601" class="size-full wp-image-1677" /></a><figcaption>Scatter plot af alle mine indlæg.</figcaption></figure>
 
 I første omgang er det svært at se om der er en sammenhæng, da de fleste er klumpet sammen nede i hjørnet. Det skyldes <code>outliers</code>, dvs. observationer i datasættet, som ligger markant uden for normalen. Ekstreme tilfælde er svære at arbejde med, da de vil få alt for stor indflydelse på modellen. Vi ønsker primært at arbejde med data indenfor normal-området.
 
@@ -89,15 +89,15 @@ De to outliers er:
 
 2) Den anden outlier er mit indlæg om <a href="https://www.jacobworsoe.dk/responsive-design-3-nemme-trin/">responsivt web design i 3 nemme trin</a> som er på 4253 ord, som er markant længere end mine øvrige indlæg, så derfor fjerner jeg også den.
 
-[caption id="attachment_1679" align="alignnone" width="1053"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-outliers.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-outliers.png" alt="De to outliers der forvrænger data." width="1053" height="597" class="size-full wp-image-1679" /></a> De to outliers der forvrænger data.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-outliers.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-outliers.png" alt="De to outliers der forvrænger data." width="1053" height="597" class="size-full wp-image-1679" /></a><figcaption>De to outliers der forvrænger data.</figcaption></figure>
 
 Nu er det mere tydeligt at se en sammenhæng, hvor blogindlæg med flere ord også har mere organisk trafik.
 
-[caption id="attachment_1680" align="alignnone" width="1050"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-outliers-fjernet.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-outliers-fjernet.png" alt="Scatter plot uden outliers." width="1050" height="596" class="size-full wp-image-1680" /></a> Scatter plot uden outliers.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-outliers-fjernet.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-outliers-fjernet.png" alt="Scatter plot uden outliers." width="1050" height="596" class="size-full wp-image-1680" /></a><figcaption>Scatter plot uden outliers.</figcaption></figure>
 
 Vi kan gøre det lidt tydeligere, ved at tilføje en tendenslinje.
 
-[caption id="attachment_1681" align="alignnone" width="1049"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-tendenslinje.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-tendenslinje.png" alt="En tendenslinje fremhæver sammenhængen." width="1049" height="599" class="size-full wp-image-1681" /></a> En tendenslinje fremhæver sammenhængen.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-tendenslinje.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-tendenslinje.png" alt="En tendenslinje fremhæver sammenhængen." width="1049" height="599" class="size-full wp-image-1681" /></a><figcaption>En tendenslinje fremhæver sammenhængen.</figcaption></figure>
 
 En tendenslinje gør for det første sammenhængen tydeligere, men den viser også hvor konsistent sammenhængen er i datasættet. Jo tættere alle prikkerne er på linjen, jo mere konsistent er relationen mellem tekstlængden og trafikken. Jo længere prikkerne er fra linjen, jo mere tilfældigt er det og dermed vil dataene typisk ikke være gode at bygge en model på.
 
@@ -111,19 +111,19 @@ Lad os tage et par eksempler.
 
 Her er først et datasæt med en korrelation på 1, dvs. når den ene stiger, så stiger den anden også.
 
-[caption id="attachment_1682" align="alignnone" width="594"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-korrelation-1.00.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-korrelation-1.00.png" alt="Datasæt med korrelation på 1." width="594" height="357" class="size-full wp-image-1682" /></a> Datasæt med korrelation på 1.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-korrelation-1.00.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-korrelation-1.00.png" alt="Datasæt med korrelation på 1." width="594" height="357" class="size-full wp-image-1682" /></a><figcaption>Datasæt med korrelation på 1.</figcaption></figure>
 
 Det kan for eksempel være personers højde og vægt som ofte følges ad. I den virkelige verden vil man dog typisk aldrig opnå en korrelation på 1,0  da der vil altid være outliers.
 
 Den omvendte er et datasæt med en korrelation på -1, dvs. en negativ korrelation. Det vil altså sige når den ene stiger, så falder en anden.
 
-[caption id="attachment_1687" align="alignnone" width="593"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-korrelation-minus-1.00.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-korrelation-minus-1.00.png" alt="Datasæt med korrelation på -1." width="593" height="356" class="size-full wp-image-1687" /></a> Datasæt med korrelation på -1.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-korrelation-minus-1.00.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-korrelation-minus-1.00.png" alt="Datasæt med korrelation på -1." width="593" height="356" class="size-full wp-image-1687" /></a><figcaption>Datasæt med korrelation på -1.</figcaption></figure>
 
 Det kan fx være sammenhængen mellem hvor koldt det er og hvor mange penge man bruger på at opvarme sit hus.
 
 Det sidste eksempel er et datasæt med en korrelation tæt på 0, dvs. der er ingen sammenhæng mellem de to variabler. Dermed er det umuligt at forudsige hvad den ene værdi vil være hvis man kender den anden værdi.
 
-[caption id="attachment_1688" align="alignnone" width="593"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-korrelation-0.03.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-korrelation-0.03.png" alt="Datasæt med korrelation på 0,03." width="593" height="354" class="size-full wp-image-1688" /></a> Datasæt med korrelation på 0,03.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-korrelation-0.03.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-korrelation-0.03.png" alt="Datasæt med korrelation på 0,03." width="593" height="354" class="size-full wp-image-1688" /></a><figcaption>Datasæt med korrelation på 0,03.</figcaption></figure>
 
 Det kan fx være en persons højde og karakter i skolen, hvor der formentlig ikke er nogen som helst sammenhæng, og det er dermed helt tilfældigt hvor prikkerne er placeret, som det ses herover.
 
@@ -131,7 +131,7 @@ Det kan fx være en persons højde og karakter i skolen, hvor der formentlig ikk
 
 I disse data er korrelationen mellem antal ord og organisk trafik på 0,63.
 
-[caption id="attachment_1681" align="alignnone" width="1049"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-tendenslinje.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-tendenslinje.png" alt="Korrelation på 0,63." width="1049" height="599" class="size-full wp-image-1681" /></a> Korrelation på 0,63.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-tendenslinje.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-tendenslinje.png" alt="Korrelation på 0,63." width="1049" height="599" class="size-full wp-image-1681" /></a><figcaption>Korrelation på 0,63.</figcaption></figure>
 
 <h3>Årsag eller sammenhæng?</h3>
 
@@ -175,7 +175,7 @@ For at lave en model som kan forudsige organisk trafik baseret på antal ord kan
 
 En regressionsanalyse kan laves <a href="https://statisticsbyjim.com/regression/regression-analysis-excel/">direkte i Excel</a> og giver følgende resultat for vores data.
 
-[caption id="attachment_1692" align="alignnone" width="1151"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-linear-regression.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-linear-regression.png" alt="Resultatet af den linære regression." width="1151" height="446" class="size-full wp-image-1692" /></a> Resultatet af den linære regression.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-linear-regression.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-linear-regression.png" alt="Resultatet af den linære regression." width="1151" height="446" class="size-full wp-image-1692" /></a><figcaption>Resultatet af den linære regression.</figcaption></figure>
 
 Den blå kasse hedder R squared på engelsk, også kaldet forklaringsgraden. Den viser at 17,5% af variationen i den afhængige variabel (organisk trafik) kan forklares af modellen. Og eftersom der kun er én uafhængig variabel i modellen (antal ord), så kan vi altså sige at antal ord forklarer 17,5% af variationen i organisk trafik. Eller sagt på lidt mere dansk: Antal ord forklarer 17,5% af den organiske trafik et blogindlæg har. Resten af variationen (82,5%) kan ikke forklares af modellen, og skyldes dermed andre faktorer, som er alle de andre ting Google kigger på, når de ranker indhold.
 
@@ -193,11 +193,11 @@ Hvor A er hældningen på linjen og B er skæringen med Y-aksen. Det er de to ta
 
 Når vi kander A og B kan vi indsætte antal ord som X og udregne den forventede organisk trafik. Vi skal derfor have linjens ligning for tendenslinjen herunder.
 
-[caption id="attachment_1681" align="alignnone" width="1049"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-tendenslinje.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-tendenslinje.png" alt="Linjens ligning for tendenslinje kan forudsige trafikken." width="1049" height="599" class="size-full wp-image-1681" /></a> Linjens ligning for tendenslinje kan forudsige trafikken.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-tendenslinje.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-scatter-tendenslinje.png" alt="Linjens ligning for tendenslinje kan forudsige trafikken." width="1049" height="599" class="size-full wp-image-1681" /></a><figcaption>Linjens ligning for tendenslinje kan forudsige trafikken.</figcaption></figure>
 
 De to tal vi skal bruge til at indsætte istedet for A og B i ligningen får vi altså som en del af resultatet af den linære regression. Det er de to tal i den orange boks.
 
-[caption id="attachment_1692" align="alignnone" width="1151"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-linear-regression.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-linear-regression.png" alt="De to orange tal er A og B i linjens ligning." width="1151" height="446" class="size-full wp-image-1692" /></a> De to orange tal er A og B i linjens ligning.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-linear-regression.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/machine-learning-linear-regression.png" alt="De to orange tal er A og B i linjens ligning." width="1151" height="446" class="size-full wp-image-1692" /></a><figcaption>De to orange tal er A og B i linjens ligning.</figcaption></figure>
 
 Det første tal er skæringen med Y-aksen som er -13,95.
 

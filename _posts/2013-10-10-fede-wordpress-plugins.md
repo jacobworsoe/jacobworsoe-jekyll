@@ -26,7 +26,7 @@ Sikkerheden skal være på plads, så du ikke skal spilde din dyrebare tid med h
 
 Hvis du har mere end 10 indlæg vil Wordpress lave paginering på forsiden, istedet for at have alle indlæggene på en lang liste. Wordpress har dog som standard kun et link til næste og forrige side. Dette plugin indsætter direkte links til alle siderne. Både brugerne og Google vil elske at de kan hoppe direkte til fx side 18 istedet for at skulle klikke sig vej gennem 17 andre sider først.
 
-[caption id="attachment_372" align="alignnone" width="329"]<a href="//www.jacobworsoe.dk/wp-content/uploads/Skærmbillede-2013-10-09-kl.-23.17.52.png"><img class="size-full wp-image-372" alt="Hurtig adgang til specifikke sider." src="//www.jacobworsoe.dk/wp-content/uploads/Skærmbillede-2013-10-09-kl.-23.17.52.png" width="329" height="53" /></a> Hurtig adgang til specifikke sider.[/caption]
+<figure><a href="//www.jacobworsoe.dk/wp-content/uploads/Skærmbillede-2013-10-09-kl.-23.17.52.png"><img class="size-full wp-image-372" alt="Hurtig adgang til specifikke sider." src="//www.jacobworsoe.dk/wp-content/uploads/Skærmbillede-2013-10-09-kl.-23.17.52.png" width="329" height="53" /></a><figcaption>Hurtig adgang til specifikke sider.</figcaption></figure>
 
 <strong>3. <a href="http://wordpress.org/plugins/wp-updates-notifier/" target="_blank" rel="noopener">WP Updates Notifier</a></strong>
 
@@ -36,7 +36,7 @@ Dette plugin sender dig en mail når der kommer en opdatering til et plugin, the
 
 Hvis du arbejder med Wordpress sites på dansk, er du sikkert ofte stødt på små tekststykker rundt omkring som enten er dårligt oversat eller ikke er oversat. Dette er især tilfældet med plugins, men themes vil også ofte have nogle småting der skal oversættes. Med dette plugin er det super let at finde de stumper tekst der skal oversættes/omskrives via en super hurtig search-as-you-type funktion. Altsammen styret fra Wordpress administrationen uden at rode med filer.
 
-[caption id="attachment_373" align="alignnone" width="640"]<a href="//www.jacobworsoe.dk/wp-content/uploads/Skærmbillede-2013-10-09-kl.-23.21.53.png"><img class="size-medium wp-image-373" alt="Find hurtigt det du skal oversætte." src="//www.jacobworsoe.dk/wp-content/uploads/Skærmbillede-2013-10-09-kl.-23.21.53-640x140.png" width="640" height="140" /></a> Find hurtigt det du skal oversætte.[/caption]
+<figure><a href="//www.jacobworsoe.dk/wp-content/uploads/Skærmbillede-2013-10-09-kl.-23.21.53.png"><img class="size-medium wp-image-373" alt="Find hurtigt det du skal oversætte." src="//www.jacobworsoe.dk/wp-content/uploads/Skærmbillede-2013-10-09-kl.-23.21.53-640x140.png" width="640" height="140" /></a><figcaption>Find hurtigt det du skal oversætte.</figcaption></figure>
 
 <strong>5. <a href="http://wordpress.org/plugins/wp-resized-image-quality/" target="_blank" rel="noopener">WP Resized Image Quality</a></strong>
 
@@ -54,15 +54,15 @@ Hvis du har noget spændende data som fortjener at blive præsenteret i en overs
 
 TablePress har desuden nogle <a href="http://tablepress.org/extensions/" target="_blank" rel="noopener">fede extensions</a> (dvs. selvstændige plugins som udvider TablePress funktionaliteten når de installeres). De kunne egentlig ligeså godt have været indbyggede options, men jeg tror måske de er lavet som extensions, for at han kan få lidt penge/donationer for dem. Et eksempel er <a href="http://tablepress.org/extensions/responsive-tables/" target="_blank" rel="noopener">Responsive Tables</a> som gør store tabeller mobil-venlige. Det har jeg brugt i <a title="Danske linkkataloger 2013" href="//www.jacobworsoe.dk/danske-linkkataloger-2013/">tabellen med alle linkkatalogerne her</a>. Hvis du ikke lige har din iPhone ved hånden, så bare gør dit browservindue mindre, så kan du se tabellen ændre sig og får en horisontal scroll funktion, så hele indholdet stadig kan ses på en lille skærm.
 
-[caption id="attachment_369" align="alignnone" width="640"]<a href="//www.jacobworsoe.dk/wp-content/uploads/Skærmbillede-2013-10-09-kl.-23.12.00.png"><img class="size-medium wp-image-369" alt="Tabellen på desktop. Fin på desktop, men for bred til mobil." src="//www.jacobworsoe.dk/wp-content/uploads/Skærmbillede-2013-10-09-kl.-23.12.00-640x292.png" width="640" height="292" /></a> Tabellen på desktop. Fin på desktop, men for bred til mobil.[/caption]
+<figure><a href="//www.jacobworsoe.dk/wp-content/uploads/Skærmbillede-2013-10-09-kl.-23.12.00.png"><img class="size-medium wp-image-369" alt="Tabellen på desktop. Fin på desktop, men for bred til mobil." src="//www.jacobworsoe.dk/wp-content/uploads/Skærmbillede-2013-10-09-kl.-23.12.00-640x292.png" width="640" height="292" /></a><figcaption>Tabellen på desktop. Fin på desktop, men for bred til mobil.</figcaption></figure>
 
-[caption id="attachment_370" align="alignnone" width="640"]<a href="//www.jacobworsoe.dk/wp-content/uploads/2013-10-09-23.03.38.png"><img class="size-medium wp-image-370" alt="På mobil bliver tabellen roteret 90 grader, og der bliver indsat scroll, så man altid kan se tabellens overskrifter, mens man scroller ned (eller hen) gennem tabellen." src="//www.jacobworsoe.dk/wp-content/uploads/2013-10-09-23.03.38-640x426.png" width="640" height="426" /></a> På mobil bliver tabellen roteret 90 grader, og der bliver indsat scroll, så man altid kan se tabellens overskrifter, mens man scroller ned (eller hen) gennem tabellen.[/caption]
+<figure><a href="//www.jacobworsoe.dk/wp-content/uploads/2013-10-09-23.03.38.png"><img class="size-medium wp-image-370" alt="På mobil bliver tabellen roteret 90 grader, og der bliver indsat scroll, så man altid kan se tabellens overskrifter, mens man scroller ned (eller hen) gennem tabellen." src="//www.jacobworsoe.dk/wp-content/uploads/2013-10-09-23.03.38-640x426.png" width="640" height="426" /></a><figcaption>På mobil bliver tabellen roteret 90 grader, og der bliver indsat scroll, så man altid kan se tabellens overskrifter, mens man scroller ned (eller hen) gennem tabellen.</figcaption></figure>
 
 <strong>8. <a href="http://wordpress.org/plugins/the-events-calendar/" target="_blank" rel="noopener">The Events Calendar</a></strong>
 
 Der findes et hav af kalendre til Wordpress, men denne er en af de bedste jeg har prøvet. Den er nem at bruge for ikke-nørder, den laver selv Google Maps ud fra adresseoplysningerne, det hele bliver præsenteret på en overskuelig liste og så er alt formateret med microformats, så du får Rich Snippets ude i søgeresultaterne.
 
-[caption id="attachment_368" align="alignnone" width="481"]<a href="//www.jacobworsoe.dk/wp-content/uploads/Skærmbillede-2013-10-09-kl.-22.32.15.png"><img class="size-full wp-image-368" alt="Rich Snippets i søgeresultaterne." src="//www.jacobworsoe.dk/wp-content/uploads/Skærmbillede-2013-10-09-kl.-22.32.15.png" width="481" height="109" /></a> Rich Snippets i søgeresultaterne.[/caption]
+<figure><a href="//www.jacobworsoe.dk/wp-content/uploads/Skærmbillede-2013-10-09-kl.-22.32.15.png"><img class="size-full wp-image-368" alt="Rich Snippets i søgeresultaterne." src="//www.jacobworsoe.dk/wp-content/uploads/Skærmbillede-2013-10-09-kl.-22.32.15.png" width="481" height="109" /></a><figcaption>Rich Snippets i søgeresultaterne.</figcaption></figure>
 
 <strong>9. <a href="http://wordpress.org/plugins/woocommerce/" target="_blank" rel="noopener">WooCommerce</a></strong>
 

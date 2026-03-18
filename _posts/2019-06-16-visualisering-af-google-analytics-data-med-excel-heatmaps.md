@@ -10,11 +10,11 @@ categories:
 
 Lige siden Google Analytics app'en udkom, har den haft en fed måde at visualisere sessioner fordelt på dage og timer.
 
-[caption id="attachment_2018" align="alignnone" width="690"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/GA-mobile-app-sessioner-fordelt-på-dage-timer-v2.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/GA-mobile-app-sessioner-fordelt-på-dage-timer-v2-690x1057.png" alt="Google Analytics app&#039;en har altid haft en fed oversigt over timer og dage." width="690" height="1057" class="size-medium wp-image-2018" /></a> Google Analytics app'en har altid haft en fed oversigt over timer og dage.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/GA-mobile-app-sessioner-fordelt-på-dage-timer-v2.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/GA-mobile-app-sessioner-fordelt-på-dage-timer-v2-690x1057.png" alt="Google Analytics app&#039;en har altid haft en fed oversigt over timer og dage." width="690" height="1057" class="size-medium wp-image-2018" /></a><figcaption>Google Analytics app'en har altid haft en fed oversigt over timer og dage.</figcaption></figure>
 
 Den har jeg længe savnet i det normale Google Analytics interface og først for nyligt er der kommet mulighed for at se besøgende fordelt på ugen med den nye startside i Google Analytics.
 
-[caption id="attachment_1490" align="alignnone" width="429"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/GA-web-view-sessioner-fordelt-på-dage-timer.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/GA-web-view-sessioner-fordelt-på-dage-timer.png" alt="Besøgende fordelt på ugen i det normale Google Analytics web interface." width="429" height="704" class="size-full wp-image-1490" /></a> Besøgende fordelt på ugen i det normale Google Analytics web interface.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/GA-web-view-sessioner-fordelt-på-dage-timer.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/GA-web-view-sessioner-fordelt-på-dage-timer.png" alt="Besøgende fordelt på ugen i det normale Google Analytics web interface." width="429" height="704" class="size-full wp-image-1490" /></a><figcaption>Besøgende fordelt på ugen i det normale Google Analytics web interface.</figcaption></figure>
 
 Men besøg er kun én af de vigtige metrics på et website. Der findes mange andre, fx konverteringsrate og basket size, som også er værdifulde at analysere på samme måde. Derfor har jeg lavet en template i Excel som kan vise præcis de tal jeg ønsker - og til sidst i indlægget får du mit Excel ark, så du selv kan få det unikke overblik.
 
@@ -37,7 +37,7 @@ Men besøg er kun én af de vigtige metrics på et website. Der findes mange and
 <li><a href="#article-header-id-10"> Tak til Bjarke Bekhøj</a></li>
 </ul>
 
-[caption id="attachment_1491" align="alignnone" width="846"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/one-year-sessions-2.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/one-year-sessions-2.png" alt="Mit eget Excel ark, som viser besøgende (og meget mere) fordelt på ugen." width="846" height="685" class="size-full wp-image-1491" /></a> Mit eget Excel ark, som viser besøgende (og meget mere) fordelt på ugen.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/one-year-sessions-2.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/one-year-sessions-2.png" alt="Mit eget Excel ark, som viser besøgende (og meget mere) fordelt på ugen." width="846" height="685" class="size-full wp-image-1491" /></a><figcaption>Mit eget Excel ark, som viser besøgende (og meget mere) fordelt på ugen.</figcaption></figure>
 
 Excel arket giver dig mulighed for at se 5 vigtige metrics fordelt på dage og timer:
 
@@ -51,21 +51,21 @@ Excel arket giver dig mulighed for at se 5 vigtige metrics fordelt på dage og t
 
 Det hele er opstillet og farvekodet, så du meget nemt kan spotte udsving i dine vigtigste metrics. Ofte er der nemlig nogle helt faste mønstre i hvornår på dagen og ugen kunderne er mest tilbøjelige til at besøge sitet eller udfører bestemte handlinger, fx køb. Jeg har lavet to tabeller med forskellige farvekodning. Den første viser hvor tallene er størst og mindst baseret på hele ugen. Den anden kigger kun på de enkelte dage.
 
-[caption id="attachment_1495" align="alignnone" width="1097"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/one-year-sessions-begge-tabeller-1.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/one-year-sessions-begge-tabeller-1.png" alt="De to tabeller, som viser højeste tal på hele ugen og de enkelte dage." width="1097" height="555" class="size-full wp-image-1495" /></a> De to tabeller, som viser højeste tal på hele ugen og de enkelte dage.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/one-year-sessions-begge-tabeller-1.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/one-year-sessions-begge-tabeller-1.png" alt="De to tabeller, som viser højeste tal på hele ugen og de enkelte dage." width="1097" height="555" class="size-full wp-image-1495" /></a><figcaption>De to tabeller, som viser højeste tal på hele ugen og de enkelte dage.</figcaption></figure>
 
 Det er rigtig smart hvis du fx har et B2B website, hvor trafikken er meget lavere i weekenden, men du stadig gerne vil kunne se hvornår i weekenden der er flest på websitet. I eksemplet herover er det nemt at se at din kundeservice skal være åben mandag-fredag kl. 7-16, men på fredage kan nogle af dem i kundeservice godt få fri kl. 15. Derudover kan du se at det vil være en god idé at holde øje med mailen lørdag kl. 7-11, samt søndag kl. 9-15. Derefter kan du godt holde weekend :)
 
 Her er et andet eksempel fra en B2C webshop, hvor trafikken tydeligt ligger senere på dagen og om aftenen, dog ikke fredag og lørdag aften, som giver meget god mening. Men også rigtig meget trafik søndag eftermiddag og aften.
 
-[caption id="attachment_1586" align="alignnone" width="832"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/one-year-sessions-5.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/one-year-sessions-5.png" alt="Besøg på en B2C webshop." width="832" height="633" class="size-full wp-image-1586" /></a> Besøg på en B2C webshop.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/one-year-sessions-5.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/one-year-sessions-5.png" alt="Besøg på en B2C webshop." width="832" height="633" class="size-full wp-image-1586" /></a><figcaption>Besøg på en B2C webshop.</figcaption></figure>
 
 Et andet eksempel er dette website som oftest bruges tidligt om morgenen og igen om eftermiddagen.
 
-[caption id="attachment_1584" align="alignnone" width="844"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/one-year-sessions-4.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/one-year-sessions-4.png" alt="Mest trafik tidlig morgen og eftermiddag." width="844" height="634" class="size-full wp-image-1584" /></a> Mest trafik tidlig morgen og eftermiddag.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/one-year-sessions-4.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/one-year-sessions-4.png" alt="Mest trafik tidlig morgen og eftermiddag." width="844" height="634" class="size-full wp-image-1584" /></a><figcaption>Mest trafik tidlig morgen og eftermiddag.</figcaption></figure>
 
 Ved at summere antal sessions på hhv. ugedage og timer kan jeg se de dage og tidspunkter hvor der er flest besøg på min blog. Det kan jeg bruge til at udgive nyt indhold på de dage hvor mine læsere typisk besøger sitet alligevel. Bliver mit indhold om Google Analytics typisk læst i ugedagene eller i weekenden? Det kan jeg bruge til at poste mine nye indlæg på de sociale medier på de bedste dage.
 
-[caption id="attachment_1989" align="alignnone" width="833"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/Mest-besøgte-dage-og-timer-på-jacobworsoe.dk_.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/Mest-besøgte-dage-og-timer-på-jacobworsoe.dk_.jpg" alt="Der er flest besøgende på min blog mandag og tirsdag." width="833" height="578" class="size-full wp-image-1989" /></a> Der er flest besøgende på min blog mandag og tirsdag.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/Mest-besøgte-dage-og-timer-på-jacobworsoe.dk_.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/Mest-besøgte-dage-og-timer-på-jacobworsoe.dk_.jpg" alt="Der er flest besøgende på min blog mandag og tirsdag." width="833" height="578" class="size-full wp-image-1989" /></a><figcaption>Der er flest besøgende på min blog mandag og tirsdag.</figcaption></figure>
 
 Den nederste række på dette heatmap viser at der er færrest besøgende på min blog i weekenden. Det er bedst at poste nye blogindlæg mandag eller tirsdag.
 
@@ -93,7 +93,7 @@ Her er et andet eksempel for en B2B webshop, hvor konverteringen er højest kl. 
 
 En anden vigtig KPI er basket size, som også kan variere i løbet af ugen. I eksemplet herunder er basket size markant højere onsdag aften, så her kan man også køre med en lidt højere klikpris end normalt og stadig holde en god ROAS. Det er også interessant at se at selvom der typisk ikke bliver købt så meget om natten, så er det faktisk nogle store ordre der bliver lagt om natten.
 
-[caption id="attachment_1573" align="alignnone" width="850"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/one-year-basket-size.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/one-year-basket-size.png" alt="Basket size er størst onsdag aften." width="850" height="687" class="size-full wp-image-1573" /></a> Basket size er størst onsdag aften.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/one-year-basket-size.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/one-year-basket-size.png" alt="Basket size er størst onsdag aften." width="850" height="687" class="size-full wp-image-1573" /></a><figcaption>Basket size er størst onsdag aften.</figcaption></figure>
 
 <h2 id="article-header-id-2">Omsætning</h2>
 
@@ -111,11 +111,11 @@ Afhængigt af ordrestørrelsen er det ikke nødvendigvis samme time hvor der er 
 
 Indtil nu har jeg kigget på data for et helt år for at se på de store tendenser, renset for sæsonudsving. Men det kan også være interessant at zoome ind på fx perioden omkring Black Friday. Herunder ses et typisk eksempel jeg har set på mange shops hvor konverteringen er helt i bund i ugen op til Black Friday men tårnhøj hele fredagen og især i de sidste timer, hvor det er ved at være sidste chance for at få et godt tilbud.
 
-[caption id="attachment_1590" align="alignnone" width="855"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/black-friday-week-conversion-2.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/black-friday-week-conversion-2.png" alt="Konvertering i Black Friday ugen." width="855" height="688" class="size-full wp-image-1590" /></a> Konvertering i Black Friday ugen.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/black-friday-week-conversion-2.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/black-friday-week-conversion-2.png" alt="Konvertering i Black Friday ugen." width="855" height="688" class="size-full wp-image-1590" /></a><figcaption>Konvertering i Black Friday ugen.</figcaption></figure>
 
 I forhold til at få serverne til at holde til presset fra de mange besøgende, så er det interessant at den time med flest besøg faktisk er torsdag aften, hvor kunderne ser om tilbudene er offentliggjort. Det er vildt at se at trafikken på en enkelt time er mere end 5 gange højere end de andre "normale" aftener på ugen! Så der er pres på serverne allerede om torsdagen.
 
-[caption id="attachment_1591" align="alignnone" width="852"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/black-friday-week-sessions.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/black-friday-week-sessions.png" alt="Der er mange besøg på sitet torsdag før Black Friday." width="852" height="689" class="size-full wp-image-1591" /></a> Der er mange besøg på sitet torsdag før Black Friday.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/black-friday-week-sessions.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/black-friday-week-sessions.png" alt="Der er mange besøg på sitet torsdag før Black Friday." width="852" height="689" class="size-full wp-image-1591" /></a><figcaption>Der er mange besøg på sitet torsdag før Black Friday.</figcaption></figure>
 
 <h2 id="article-header-id-5">Få overblikket over dine egne data</h2>
 
@@ -133,15 +133,15 @@ For at få overblikket over dine egne data, skal der gøres følgende:
 
 Her er den custom report der skal laves for at kunne eksportere de data der skal bruges. Det er vigtigt at metrics står i samme rækkefølge som herunder, for at Excel skabelonen virker.
 
-[caption id="attachment_1634" align="alignnone" width="1184"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/Custom-report-settings-1.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/Custom-report-settings-1.png" alt="Custom Report med de data der skal bruges." width="1184" height="536" class="size-full wp-image-1634" /></a> Custom Report med de data der skal bruges.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/Custom-report-settings-1.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/Custom-report-settings-1.png" alt="Custom Report med de data der skal bruges." width="1184" height="536" class="size-full wp-image-1634" /></a><figcaption>Custom Report med de data der skal bruges.</figcaption></figure>
 
 På dansk hedder felterne det her (Tak til RNA for at forslå dette i kommentarerne):
 
-[caption id="attachment_1661" align="alignnone" width="1020"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/Custom-report-settings-da.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/Custom-report-settings-da.png" alt="Felternes danske navne i Custom Reports." width="1020" height="466" class="size-full wp-image-1661" /></a> Felternes danske navne i Custom Reports.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/Custom-report-settings-da.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/06/Custom-report-settings-da.png" alt="Felternes danske navne i Custom Reports." width="1020" height="466" class="size-full wp-image-1661" /></a><figcaption>Felternes danske navne i Custom Reports.</figcaption></figure>
 
 I rapporten vælger du "Hour" eller "Time" på dansk som Secondary Dimension. Derefter skulle der gerne komme 168 rækker (7 dage x 24 timer). Derfor skal du vælge at vise 250 rækker i bunden, for at alle rækkerne kommer med når du eksporterer til Excel.
 
-[caption id="attachment_1502" align="alignnone" width="1533"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/custom-report-secondary-dimension-rows.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/custom-report-secondary-dimension-rows.png" alt="Vælg 250 rows i bunden, for at se alle 168 rækker med data for alle timer på alle dage." width="1533" height="757" class="size-full wp-image-1502" /></a> Vælg 250 rows i bunden, for at se alle 168 rækker med data for alle timer på alle dage.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/custom-report-secondary-dimension-rows.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/custom-report-secondary-dimension-rows.png" alt="Vælg 250 rows i bunden, for at se alle 168 rækker med data for alle timer på alle dage." width="1533" height="757" class="size-full wp-image-1502" /></a><figcaption>Vælg 250 rows i bunden, for at se alle 168 rækker med data for alle timer på alle dage.</figcaption></figure>
 
 Som udgangspunkt kan du vælge data for et helt år, for at undgå sæsonudsving. Det vigtige er at du vælger en periode på et helt antal uger, så der er lige mange mandage, tirsdage, etc. i datasættet.
 
@@ -167,6 +167,6 @@ Derefter kan du se de forskellige KPI'er i de efterfølgende faner og forhåbent
 
 Inspirationen til denne Excel template kommer fra min gode ven og tidligere kollega <a href="https://www.linkedin.com/in/bjarkebekhoj/" rel="noopener noreferrer" target="_blank">Bjarke Bekhøj</a>. På <a href="http://dmkonf.dk/" rel="noopener noreferrer" target="_blank">Digital Markedsføring 2014 i Holstebro</a> lavede han et super fedt indlæg med "37 konkrete tips til webshoppen" og tip nummer 3 så således ud:
 
-[caption id="attachment_1503" align="alignnone" width="959"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/bjarke-bekhøj-tip-3.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/bjarke-bekhøj-tip-3.png" alt="Bjarke Bekhøjs tip nummer 3 som inspirerede dette indlæg." width="959" height="686" class="size-full wp-image-1503" /></a> Bjarke Bekhøjs tip nummer 3 som inspirerede dette indlæg.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/bjarke-bekhøj-tip-3.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/bjarke-bekhøj-tip-3.png" alt="Bjarke Bekhøjs tip nummer 3 som inspirerede dette indlæg." width="959" height="686" class="size-full wp-image-1503" /></a><figcaption>Bjarke Bekhøjs tip nummer 3 som inspirerede dette indlæg.</figcaption></figure>
 
 Super god idé fra den altid kreative Bjarke. Her har jeg taget den idé og udvidet med nogle flere metrics, samt gjort det utrolig nemt for dig at få det samme overblik.

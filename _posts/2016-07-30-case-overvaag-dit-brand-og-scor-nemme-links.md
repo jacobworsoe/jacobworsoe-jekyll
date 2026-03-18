@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Case: Overvåg dit brand og scor nemme links
+title: "Case: Overvåg dit brand og scor nemme links"
 date: 2016-07-30 12:24:24
 slug: case-overvaag-dit-brand-og-scor-nemme-links
 wordpress_id: 942
@@ -36,7 +36,7 @@ Så selvom Talkwalker.com ikke finder meget, så finder den stadig nogle ting, s
 
 Når nogen har omtalt os, men uden at linke til os, er det det nemmeste link at få. Langt de fleste har bare glemt at gøre linket klikbart, så de tager det kun som en service at man kontakter dem. En dag fik jeg denne mail med omtale af vores website:
 
-[caption id="attachment_943" align="alignnone" width="568"]<img class="wp-image-943 size-full" src="//www.jacobworsoe.dk/wp-content/uploads/mention.com-omtale-af-exchangemycoins.png" alt="mention.com omtale af exchangemycoins.com" width="568" height="391" /> Alert mail fra Mention.com[/caption]
+<figure><img class="wp-image-943 size-full" src="//www.jacobworsoe.dk/wp-content/uploads/mention.com-omtale-af-exchangemycoins.png" alt="mention.com omtale af exchangemycoins.com" width="568" height="391" /><figcaption>Alert mail fra Mention.com</figcaption></figure>
 
 En blog har skrevet om os, men endnu ikke prøvet vores service. Bloggen har lavet et nofollow link til vores site. Jeg skriver en kommentar på bloggen, hvor jeg takker for interessen for vores service og spørger om han vil prøve den gratis, så han kan lave en anmeldelse af vores website. Jeg overfører 4000 dogecoins (cirka 5 kroner) til ham og dagen efter kommer der en anmeldelse på bloggen. Dog uden link, så jeg spørger pænt om han vil tilføje et link til vores website og så fik vi et redaktionelt dofollow link til vores website. Med kun 5 minutters arbejde og 5 kroner i omkostning. Det er en god forretning!
 

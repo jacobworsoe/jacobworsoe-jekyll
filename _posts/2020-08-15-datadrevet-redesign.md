@@ -330,7 +330,7 @@ Her er mine top 3 fedeste ting ved Sass.
 
 <strong>1) Variabler.</strong> Jeg kan definere variabler, fx til farvekoder som er brugt mange steder i koden. Dermed kan du nemt skifte farven overalt i din kode, blot ved at ændre én variabel. Da facebook valgte at rydde op i deres CSS, fandt de 800 næsten ens blå farver i koden. Det sker ikke med Sass.
 
-[caption id="attachment_2372" align="alignnone" width="640"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Sass-vars-farver.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Sass-vars-farver.jpg" alt="Websitets farver defineret i Sass variabler." width="640" height="420" class="size-full wp-image-2372" /></a> Websitets farver defineret i Sass variabler.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Sass-vars-farver.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Sass-vars-farver.jpg" alt="Websitets farver defineret i Sass variabler." width="640" height="420" class="size-full wp-image-2372" /></a><figcaption>Websitets farver defineret i Sass variabler.</figcaption></figure>
 
 <strong>2) Imports.</strong> Jeg kan splitte Sass koden op i mindre filer som tilhører en bestemt side eller sektion af sitet. Det hele kan samles til én fil, så browseren stadig kun skal lave et request.
 
@@ -404,13 +404,13 @@ Normalt er det best practice at have CSS i en ekstern fil, så den kan caches i 
 
 På første sidevisning vil det nemlig være en ulempe at have CSS i en ekstern fil, da der skal laves et request mere. Men på efterfølgende sider vil filen være cachet og skal ikke hentes igen.
 
-[caption id="attachment_2300" align="alignnone" width="886"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent.jpg" alt="Bounce rate på 85% og 1,17 sider pr. session" width="886" height="286" class="size-full wp-image-2300" /></a> Bounce rate på 85% og 1,17 sider pr. session[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent.jpg" alt="Bounce rate på 85% og 1,17 sider pr. session" width="886" height="286" class="size-full wp-image-2300" /></a><figcaption>Bounce rate på 85% og 1,17 sider pr. session</figcaption></figure>
 
 I løbet af det sidste år har der været en bounce rate på 85% på sitet, dvs. langt de fleste læser kun et enkelt blogindlæg. Der bliver også kun set 1,17 sider pr. session. Det betyder altså at 85% af de besøgende ikke ser en efterfølgende side og dermed ikke får gevinsten af en cachet CSS fil.
 
 I hvert fald ikke i det samme besøg. Men det kan jo være de kommer tilbage på sitet igen og dermed stadig har CSS filen i deres cache.
 
-[caption id="attachment_2094" align="alignnone" width="630"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/new-vs.-returning-visitors.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/new-vs.-returning-visitors.jpg" alt="25% af de besøgende har været på sitet før." width="630" height="453" class="size-full wp-image-2094" /></a> 25% af de besøgende har været på sitet før.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/new-vs.-returning-visitors.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/11/new-vs.-returning-visitors.jpg" alt="25% af de besøgende har været på sitet før." width="630" height="453" class="size-full wp-image-2094" /></a><figcaption>25% af de besøgende har været på sitet før.</figcaption></figure>
 
 Det er kun 25% af de besøgende der har været på sitet før, så langt de fleste vil ikke have CSS filen cachet.
 
@@ -424,11 +424,11 @@ Når man har CSS i en ekstern fil som bliver cachet giver det typisk bedst menin
 
 Min forside er rimelig simpel. I mit tilfælde er det bare en liste af mine blogindlæg med titel, dato og antal kommentarer.
 
-[caption id="attachment_2473" align="aligncenter" width="400"]<img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/50466523-B08F-45FF-AE69-A85876863517.jpg" alt="Forsiden er meget simpel." width="400" height="437" class="size-full wp-image-2473" /> Forsiden er meget simpel.[/caption]
+<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/50466523-B08F-45FF-AE69-A85876863517.jpg" alt="Forsiden er meget simpel." width="400" height="437" class="size-full wp-image-2473" /><figcaption>Forsiden er meget simpel.</figcaption></figure>
 
 Et blogindlæg har både billeder og video i indlægget, den har en anderledes header med titlen på indlægget. I bunden er der links til sociale medier, tilmelding til nyhedsbrev og så er der hele kommentar sektionen, som kræver en masse CSS kode.
 
-[caption id="attachment_2474" align="aligncenter" width="400"]<img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/716B5771-D030-4214-BF2C-4B0A8DA036D3.jpg" alt="Et blogindlæg kræver noget mere CSS." width="400" height="560" class="size-full wp-image-2474" /> Et blogindlæg kræver noget mere CSS.[/caption]
+<figure><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/716B5771-D030-4214-BF2C-4B0A8DA036D3.jpg" alt="Et blogindlæg kræver noget mere CSS." width="400" height="560" class="size-full wp-image-2474" /><figcaption>Et blogindlæg kræver noget mere CSS.</figcaption></figure>
 
 Der er altså en masse CSS kode som er helt overflødig at loade på forsiden og vice versa.
 
@@ -526,7 +526,7 @@ Der er forskellige måder at indsætte et SVG billede på og jeg lytter til <a h
 
 Jeg har alle mine SVG filer liggende i koden og selve koden til grafen i logoet kan ses herunder. Den fylder kun 848 bytes som SVG fil.
 
-[caption id="attachment_2060" align="alignnone" width="860"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/SVG-filer.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/SVG-filer-860x247.jpg" alt="SVG koden til grafen som fylder under 1 KB" width="860" height="247" class="size-large wp-image-2060" /></a> SVG koden til grafen som fylder under 1 KB[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/SVG-filer.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/10/SVG-filer-860x247.jpg" alt="SVG koden til grafen som fylder under 1 KB" width="860" height="247" class="size-large wp-image-2060" /></a><figcaption>SVG koden til grafen som fylder under 1 KB</figcaption></figure>
 
 Indholdet af SVG filen indsætter jeg i <code>header.php</code> med følgende kode. Når SVG filen ligger i koden, skal der ikke laves et ekstra request for at hente den og færre requests er med til at gøre sitet hurtigt.
 
@@ -556,15 +556,15 @@ Jeg kan i øvrigt anbefale <a href="https://css-tricks.com/posting-code-blocks-w
 
 Jeg har brugt Yet Another Related Posts Plugin til at vise relaterede indlæg i bunden af hvert blogindlæg.
 
-[caption id="attachment_1829" align="alignnone" width="941"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Relaterede-blogindlæg.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Relaterede-blogindlæg.png" alt="I bunden af alle blogindlæg vises links til relaterede blogindlæg." width="941" height="595" class="size-full wp-image-1829" /></a> I bunden af alle blogindlæg vises links til relaterede blogindlæg.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Relaterede-blogindlæg.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Relaterede-blogindlæg.png" alt="I bunden af alle blogindlæg vises links til relaterede blogindlæg." width="941" height="595" class="size-full wp-image-1829" /></a><figcaption>I bunden af alle blogindlæg vises links til relaterede blogindlæg.</figcaption></figure>
 
 Jeg brugte Enhanced Ecommerce til at tracke impressions og clicks på dem og fandt ud af at de links havde en CTR på 0,42% så for 99,58% var de bare ligegyldigt støj på siden. Så jeg fjernede dem inklusiv det plugin.
 
-[caption id="attachment_1830" align="alignnone" width="1094"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Product-list-performance-nyeste-og-relaterede-indlæg.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Product-list-performance-nyeste-og-relaterede-indlæg.png" alt="CTR på 0,42% viser at meget få klikker på de links." width="1094" height="485" class="size-full wp-image-1830" /></a> CTR på 0,42% viser at meget få klikker på de links.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Product-list-performance-nyeste-og-relaterede-indlæg.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Product-list-performance-nyeste-og-relaterede-indlæg.png" alt="CTR på 0,42% viser at meget få klikker på de links." width="1094" height="485" class="size-full wp-image-1830" /></a><figcaption>CTR på 0,42% viser at meget få klikker på de links.</figcaption></figure>
 
 Jeg fjernede i øvrigt også links til de seneste blogindlæg, da de havde en endnu lavere CTR på 0,05% - disse blev ikke lavet med et plugin, men det er altid godt at få fjernet unødvendigt støj.
 
-[caption id="attachment_1828" align="alignnone" width="1270"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Nyeste-blogindlæg-imressions-clicks-CTR.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Nyeste-blogindlæg-imressions-clicks-CTR.png" alt="Sidebar med nyeste blogindlæg." width="1270" height="526" class="size-full wp-image-1828" /></a> Sidebar med nyeste blogindlæg.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Nyeste-blogindlæg-imressions-clicks-CTR.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2019/08/Nyeste-blogindlæg-imressions-clicks-CTR.png" alt="Sidebar med nyeste blogindlæg." width="1270" height="526" class="size-full wp-image-1828" /></a><figcaption>Sidebar med nyeste blogindlæg.</figcaption></figure>
 
 <h2 id="article-header-id-18">Loadtid og konvertering</h2>
 
@@ -574,17 +574,17 @@ Okay, det var en lang teknisk snak. Nu skal vi se om det har givet de ønskede r
 
 Det gamle design havde en pagespeed score på 86 for desktop. <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.jacobworsoe.dk%2F&tab=desktop" rel="noopener noreferrer" target="_blank">Den er nu 99</a>.
 
-[caption id="attachment_2337" align="alignnone" width="701"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/pagespeed_score_99_desktop.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/pagespeed_score_99_desktop.jpg" alt="Pagespeed score på 99 for desktop." width="701" height="467" class="size-full wp-image-2337" /></a> Pagespeed score på 99 for desktop.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/pagespeed_score_99_desktop.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/pagespeed_score_99_desktop.jpg" alt="Pagespeed score på 99 for desktop." width="701" height="467" class="size-full wp-image-2337" /></a><figcaption>Pagespeed score på 99 for desktop.</figcaption></figure>
 
 Den vigtige metric er dog mobile nu og <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.jacobworsoe.dk%2F&tab=mobile" rel="noopener noreferrer" target="_blank">den er 96</a>.
 
-[caption id="attachment_2338" align="alignnone" width="687"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/pagespeed_score_96_mobile.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/pagespeed_score_96_mobile.jpg" alt="Pagespeed score på 96 for mobile." width="687" height="477" class="size-full wp-image-2338" /></a> Pagespeed score på 96 for mobile.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/pagespeed_score_96_mobile.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/pagespeed_score_96_mobile.jpg" alt="Pagespeed score på 96 for mobile." width="687" height="477" class="size-full wp-image-2338" /></a><figcaption>Pagespeed score på 96 for mobile.</figcaption></figure>
 
 <h3 id="article-header-id-19">Er sitet så blevet hurtigere?</h3>
 
 Ja, det er det. I gennemsnit er loadtiden blevet forbedret 29%.
 
-[caption id="attachment_2367" align="alignnone" width="592"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Average-pageload-times.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Average-pageload-times.jpg" alt="Den gennemsnitlige loadtid er forbedret 29%." width="592" height="327" class="size-full wp-image-2367" /></a> Den gennemsnitlige loadtid er forbedret 29%.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Average-pageload-times.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Average-pageload-times.jpg" alt="Den gennemsnitlige loadtid er forbedret 29%." width="592" height="327" class="size-full wp-image-2367" /></a><figcaption>Den gennemsnitlige loadtid er forbedret 29%.</figcaption></figure>
 
 Men gennemsnit kan snyde meget og skjule sandheden.
 
@@ -596,7 +596,7 @@ Især det faktum at de har meget forskellige antal sidevisninger gør at de fyld
 
 Lad os derfor kigge på top 10 mest populære sider hver for sig, samt et vægtet gennemsnit for de sider. Alle top 10 sider er blevet hurtigere, men der er stor forskel på hvor meget de er forbedret.
 
-[caption id="attachment_2368" align="alignnone" width="860"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-loadtid-top-10-sider.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-loadtid-top-10-sider-860x496.jpg" alt="Top 10 sider er i gennemsnit blevet 22% hurtigere - men der er store forskelle!" width="860" height="496" class="size-large wp-image-2368" /></a> Top 10 sider er i gennemsnit blevet 22% hurtigere - men der er store forskelle![/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-loadtid-top-10-sider.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-loadtid-top-10-sider-860x496.jpg" alt="Top 10 sider er i gennemsnit blevet 22% hurtigere - men der er store forskelle!" width="860" height="496" class="size-large wp-image-2368" /></a><figcaption>Top 10 sider er i gennemsnit blevet 22% hurtigere - men der er store forskelle!</figcaption></figure>
 
 22% er et mere retvisende gennemsnit for udviklingen i loadtid.
 
@@ -612,11 +612,11 @@ På trods af at loadtiden er markant forbedret for alle blogindlæg, så er konv
 
 Jeg tror den store årsag til den lavere konvertering skyldes designet. Jeg har skruet op for <code>font-size</code> fra <code>17px</code> til <code>20px</code> i det nye design og gjort overskrifter markant større og givet det hele lidt mere "luft". Det gør det nemmere at læse, men siden bliver også markant længere. Måske føles det som et længere blogindlæg at tygge sig igennem?
 
-[caption id="attachment_2377" align="alignnone" width="1058"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-konvertering-top-10-sider.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-konvertering-top-10-sider.jpg" alt="Udvikling i konvertering - top 10 sider" width="1058" height="645" class="size-full wp-image-2377" /></a> Udvikling i konvertering - top 10 sider[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-konvertering-top-10-sider.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Udvikling-i-konvertering-top-10-sider.jpg" alt="Udvikling i konvertering - top 10 sider" width="1058" height="645" class="size-full wp-image-2377" /></a><figcaption>Udvikling i konvertering - top 10 sider</figcaption></figure>
 
 Bounce Rate er ligeledes uændret, på trods af den hurtigere loadtid.
 
-[caption id="attachment_2378" align="alignnone" width="915"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Bounce-Rate-comparison.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Bounce-Rate-comparison.jpg" alt="Bounce Rate før/efter designet." width="915" height="497" class="size-full wp-image-2378" /></a> Bounce Rate før/efter designet.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Bounce-Rate-comparison.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Bounce-Rate-comparison.jpg" alt="Bounce Rate før/efter designet." width="915" height="497" class="size-full wp-image-2378" /></a><figcaption>Bounce Rate før/efter designet.</figcaption></figure>
 
 Så det nye design har ikke haft den ønskede effekt på konverteringen. Det må jeg gøre bedre i næste design.
 
@@ -624,21 +624,21 @@ Så det nye design har ikke haft den ønskede effekt på konverteringen. Det må
 
 Jeg har læst <a href="https://www.saxo.com/dk/dont-make-me-think-revisited_steve-krug_paperback_9780321965516">Don't Make Me Think</a> mange gange og den kan anbefales til alle der arbejder med noget digitalt.
 
-[caption id="attachment_2383" align="alignnone" width="622"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Dont_make_me_think.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Dont_make_me_think.jpg" alt="Don&#039;t Make Me Think af Steve Krug" width="622" height="622" class="size-full wp-image-2383" /></a> Don't Make Me Think af Steve Krug[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Dont_make_me_think.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Dont_make_me_think.jpg" alt="Don&#039;t Make Me Think af Steve Krug" width="622" height="622" class="size-full wp-image-2383" /></a><figcaption>Don't Make Me Think af Steve Krug</figcaption></figure>
 
 Her er en god pointe fra bogen omkring navigation.
 
-[caption id="attachment_2384" align="alignnone" width="860"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/The-overlooked-purpose-of-navigation.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/The-overlooked-purpose-of-navigation-860x486.jpg" alt="Navigation reveals content!" width="860" height="486" class="size-large wp-image-2384" /></a> Navigation reveals content![/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/The-overlooked-purpose-of-navigation.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/The-overlooked-purpose-of-navigation-860x486.jpg" alt="Navigation reveals content!" width="860" height="486" class="size-large wp-image-2384" /></a><figcaption>Navigation reveals content!</figcaption></figure>
 
 Som tidligere vist, så har sitet en Bounce Rate på 85% og der bliver kun set 1,17 sider pr. session.
 
-[caption id="attachment_2300" align="alignnone" width="886"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent.jpg" alt="Bounce rate på 85% og 1,17 sider pr. session" width="886" height="286" class="size-full wp-image-2300" /></a> Bounce rate på 85% og 1,17 sider pr. session[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/07/Bounce-rate-på-85-procent.jpg" alt="Bounce rate på 85% og 1,17 sider pr. session" width="886" height="286" class="size-full wp-image-2300" /></a><figcaption>Bounce rate på 85% og 1,17 sider pr. session</figcaption></figure>
 
 Jeg vil gerne at brugerne fortsætter rundt på sitet og ser nogle flere blogindlæg.
 
 Det gamle design havde ikke en menu, så jeg tilføjede en burger menu som viser sitets kategorier, som Steve Krug anbefaler i Don't Make Me Think.
 
-[caption id="attachment_2386" align="alignnone" width="798"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/burger-menu-open.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/burger-menu-open.jpg" alt="Burger menu med kategorier." width="798" height="552" class="size-full wp-image-2386" /></a> Burger menu med kategorier.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/burger-menu-open.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/burger-menu-open.jpg" alt="Burger menu med kategorier." width="798" height="552" class="size-full wp-image-2386" /></a><figcaption>Burger menu med kategorier.</figcaption></figure>
 
 Jeg tracker både hvor mange der åbner burger menuen og hvor mange der klikker i den.
 
@@ -649,11 +649,11 @@ Jeg tracker både hvor mange der åbner burger menuen og hvor mange der klikker 
 
 Her er de kategorier der bliver klikket på.
 
-[caption id="attachment_2385" align="alignnone" width="762"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Click-in-hamburger-navigation.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Click-in-hamburger-navigation.jpg" alt="Mest klikkede kategorier i burger menuen." width="762" height="587" class="size-full wp-image-2385" /></a> Mest klikkede kategorier i burger menuen.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Click-in-hamburger-navigation.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Click-in-hamburger-navigation.jpg" alt="Mest klikkede kategorier i burger menuen." width="762" height="587" class="size-full wp-image-2385" /></a><figcaption>Mest klikkede kategorier i burger menuen.</figcaption></figure>
 
 Umiddelbart en ret lav konverteringsrate og sider pr. besøg er dog også uændret.
 
-[caption id="attachment_2388" align="alignnone" width="463"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Pages-per-session.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Pages-per-session.jpg" alt="Pages per session er uændret." width="463" height="266" class="size-full wp-image-2388" /></a> Pages per session er uændret.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Pages-per-session.jpg"><img src="https://www.jacobworsoe.dk/wp-content/uploads/2020/08/Pages-per-session.jpg" alt="Pages per session er uændret." width="463" height="266" class="size-full wp-image-2388" /></a><figcaption>Pages per session er uændret.</figcaption></figure>
 
 Så selvom Steve Krug har ret i mange ting, så virker en burger menu altså ikke på dette site. Jeg må i tænkeboks.
 

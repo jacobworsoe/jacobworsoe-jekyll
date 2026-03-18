@@ -1,43 +1,13 @@
 #!/usr/bin/env python3
 """
 Export WordPress comments from MySQL to Jekyll _data/comments.yml.
-Uses the same DB as the Jekyll WordPress importer; produces the same format as export_wp_comments.js.
-Reads credentials from scripts/.mysql-credentials (gitignored).
+Uses shared credentials from wp_mysql_credentials (scripts/.mysql-credentials, gitignored).
 Usage: python scripts/export_wp_comments_mysql.py
 """
 import re
 from pathlib import Path
 
-def load_credentials():
-    cred_path = Path(__file__).resolve().parent / ".mysql-credentials"
-    if not cred_path.exists():
-        raise SystemExit("Create scripts/.mysql-credentials with MySQL hostnavn, brugernavn, adgangskode, database.")
-    lines = cred_path.read_text(encoding="utf-8").splitlines()
-    creds = {}
-    for line in lines:
-        line = line.strip()
-        if not line or line.startswith("#"):
-            continue
-        if ":" in line:
-            key, _, val = line.partition(":")
-            key = key.strip().lower().replace(" ", "_")
-            val = val.strip()
-            if key == "mysql_hostnavn":
-                creds["host"] = val
-            elif key == "mysql_port":
-                creds["port"] = int(val) if val.isdigit() else 3306
-            elif key == "mysql_brugernavn":
-                creds["user"] = val
-            elif key == "mysql_adgangskode":
-                creds["password"] = val
-            elif "database" in key and "primær" in key:
-                creds["database"] = val
-            elif key == "primær_database":
-                creds["database"] = val
-    if not creds.get("host") or not creds.get("user") or not creds.get("password") or not creds.get("database"):
-        raise SystemExit(".mysql-credentials must contain MySQL hostnavn, brugernavn, adgangskode, Primær database.")
-    creds.setdefault("port", 3306)
-    return creds
+from wp_mysql_credentials import load_credentials
 
 def escape_yaml_quoted(s):
     if s is None:
@@ -124,7 +94,7 @@ def main():
     repo_root = Path(__file__).resolve().parent.parent
     out_path = repo_root / "_data" / "comments.yml"
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    lines = ["# WordPress comments from MySQL (jekyll-import DB)", ""]
+    lines = ["# WordPress comments from MySQL export", ""]
     for slug in sorted(by_slug.keys()):
         lines.append(f"{slug}:")
         for item in by_slug[slug]:

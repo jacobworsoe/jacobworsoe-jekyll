@@ -16,7 +16,7 @@ I dette indlæg vil jeg forklare, hvorfor julen er så hammer vigtig at have sty
 Julen 2013 gav mig en rigtig god case med et program, jeg kører på et af mine affiliate sites. Det drejer sig om en webshop, hvor jeg får en procentdel af salget. Mit website henter automatisk produkter ind, så jeg skal alene fokusere på optimeringen af websitet.
 Inden jeg går videre, vil jeg vise indtjeningen på programmet fordelt pr. måned for dette website:
 
-[caption id="attachment_497" align="alignnone" width="600"]<a href="//www.jacobworsoe.dk/wp-content/uploads/image00.png"><img class="size-full wp-image-497" alt="Indtjeningen på programmet fordelt pr. måned" src="//www.jacobworsoe.dk/wp-content/uploads/image00.png" width="600" height="371" /></a> Indtjeningen på programmet fordelt pr. måned[/caption]
+<figure><a href="//www.jacobworsoe.dk/wp-content/uploads/image00.png"><img class="size-full wp-image-497" alt="Indtjeningen på programmet fordelt pr. måned" src="//www.jacobworsoe.dk/wp-content/uploads/image00.png" width="600" height="371" /></a><figcaption>Indtjeningen på programmet fordelt pr. måned</figcaption></figure>
 
 Som det ses ligger indtjeningen jævnt på cirka 3000 kr, indtil november hvor den stiger til 4000 kr. I december stikker det positivt af, og den hamrer ind på hele 14.000 kr. Kigger vi nærmere på tallene kan vi altså konstatere, at hele 33% af min affiliate indtjening for dette program i 2013 stammer fra december måned.
 December-optimering

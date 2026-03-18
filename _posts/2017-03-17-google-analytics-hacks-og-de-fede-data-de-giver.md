@@ -122,19 +122,19 @@ Og når brugeren gennemfører vekslingen, registrerer vi at produktet er købt. 
 
 Derved har vi et fuldt overblik over produkterne, hele vejen gennem websitet:
 
-[caption id="attachment_1085" align="alignnone" width="1714"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/ga-product-performance.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/ga-product-performance.png" alt="Se også de to sidste kolonner med rates som gør produkterne sammenlignelige!" width="1714" height="728" class="size-full wp-image-1085" /></a> Se også de to sidste kolonner med rates som gør produkterne sammenlignelige![/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/ga-product-performance.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/ga-product-performance.png" alt="Se også de to sidste kolonner med rates som gør produkterne sammenlignelige!" width="1714" height="728" class="size-full wp-image-1085" /></a><figcaption>Se også de to sidste kolonner med rates som gør produkterne sammenlignelige!</figcaption></figure>
 
 Bemærk især de to sidste kolonner herover, som viser hvor tit produkterne lægges i kurv og købes i forhold til hvor tit de bliver set ude på forsiden. Med de to tal, kan vi meget nemt se hvilke produkter vi har en god og mindre god vekselkurs på.
 
 Vi får også en overskuelig oversigt over frafaldet på hvert trin i købsrejsen gennem sitet:
 
-[caption id="attachment_1158" align="alignnone" width="837"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/EMC-shopping-behavior.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/EMC-shopping-behavior.png" alt="39% af alle besøg ser produkter og 25% af dem lægger et produkt i kurven." width="837" height="481" class="size-full wp-image-1158" /></a> 39% af alle besøg ser produkter og 25% af dem lægger et produkt i kurven.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/EMC-shopping-behavior.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/EMC-shopping-behavior.png" alt="39% af alle besøg ser produkter og 25% af dem lægger et produkt i kurven." width="837" height="481" class="size-full wp-image-1158" /></a><figcaption>39% af alle besøg ser produkter og 25% af dem lægger et produkt i kurven.</figcaption></figure>
 
 <h2>6. Mest populære FAQ spørgsmål</h2>
 
 Fra starten har vi haft fokus på at lave alting så automatisk som muligt. Hver gang vi modtager et generelt spørgsmål på vores supportmail, opretter vi en FAQ på spørgsmålet, så vi ikke skal bruge tid på at svare på de samme spørgsmål igen og igen. Vi har derfor en grundig FAQ sektion og vi tracker selvfølgelig hvilke FAQ spørgsmål der er mest populære.
 
-[caption id="attachment_1076" align="alignnone" width="997"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/exchangemycoins-faq.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/exchangemycoins-faq.png" alt="En del af FAQ sektionen på sitet." width="997" height="653" class="size-full wp-image-1076" /></a> En del af FAQ sektionen på sitet.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/exchangemycoins-faq.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/exchangemycoins-faq.png" alt="En del af FAQ sektionen på sitet." width="997" height="653" class="size-full wp-image-1076" /></a><figcaption>En del af FAQ sektionen på sitet.</figcaption></figure>
 
 Med følgende simple kode tracker vi automatisk alle klik på FAQ spørgsmål. Koden tager ankerteksten og sender som Event til Google Analytics.
 
@@ -146,6 +146,6 @@ Med følgende simple kode tracker vi automatisk alle klik på FAQ spørgsmål. K
 
 Voila!
 
-[caption id="attachment_1074" align="alignnone" width="1067"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/ga-event-most-clicked-faq.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/ga-event-most-clicked-faq.png" alt="De mest populære FAQ spørgsmål på sitet." width="1067" height="554" class="size-full wp-image-1074" /></a> De mest populære FAQ spørgsmål på sitet.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/ga-event-most-clicked-faq.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/ga-event-most-clicked-faq.png" alt="De mest populære FAQ spørgsmål på sitet." width="1067" height="554" class="size-full wp-image-1074" /></a><figcaption>De mest populære FAQ spørgsmål på sitet.</figcaption></figure>
 
 Så standardrapporterne kan sagtens bruges, selvom man ikke er en webshop! De skal bare hackes lidt.

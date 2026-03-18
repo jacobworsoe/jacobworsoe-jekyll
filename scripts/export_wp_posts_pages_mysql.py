@@ -1,44 +1,15 @@
 #!/usr/bin/env python3
 """
 Export WordPress posts and pages from MySQL to Jekyll.
-Uses same DB and credentials as export_wp_comments_mysql.py.
-Preserves WordPress URL structure: posts -> /:year/:month/:day/:title/ (slug = post_name),
-pages -> /:slug/ (via root .md files). Requires _config.yml permalink: /:year/:month/:day/:title/
-Reads credentials from scripts/.mysql-credentials (gitignored).
+Reads wp_options (permalink_structure, blogname, siteurl, etc.) and writes _data/wordpress_settings.yml;
+updates _config.yml permalink from permalink_structure so no manual permalink config is required.
+Uses shared credentials from wp_mysql_credentials (scripts/.mysql-credentials, gitignored).
 Usage: python scripts/export_wp_posts_pages_mysql.py
 """
 import re
 from pathlib import Path
 
-
-def load_credentials():
-    cred_path = Path(__file__).resolve().parent / ".mysql-credentials"
-    if not cred_path.exists():
-        raise SystemExit("Create scripts/.mysql-credentials with MySQL hostnavn, brugernavn, adgangskode, database.")
-    lines = cred_path.read_text(encoding="utf-8").splitlines()
-    creds = {}
-    for line in lines:
-        line = line.strip()
-        if not line or line.startswith("#"):
-            continue
-        if ":" in line:
-            key, _, val = line.partition(":")
-            key = key.strip().lower().replace(" ", "_")
-            val = val.strip()
-            if key == "mysql_hostnavn":
-                creds["host"] = val
-            elif key == "mysql_port":
-                creds["port"] = int(val) if val.isdigit() else 3306
-            elif key == "mysql_brugernavn":
-                creds["user"] = val
-            elif key == "mysql_adgangskode":
-                creds["password"] = val
-            elif key == "primær_database":
-                creds["database"] = val
-    if not creds.get("host") or not creds.get("user") or not creds.get("password") or not creds.get("database"):
-        raise SystemExit(".mysql-credentials must contain MySQL hostnavn, brugernavn, adgangskode, Primær database.")
-    creds.setdefault("port", 3306)
-    return creds
+from wp_mysql_credentials import load_credentials
 
 
 def escape_liquid(content):
@@ -88,7 +59,8 @@ def escape_yaml(s):
     if s is None:
         return ""
     s = str(s)
-    if "\n" in s or '"' in s or s.strip().startswith(("@", "#", "{", "[", "&", "*", "!", "|", ">", "'", "-")):
+    # Quote if contains colon (YAML treats unquoted colon as key separator), newline, or special start
+    if ":" in s or "\n" in s or '"' in s or s.strip().startswith(("@", "#", "{", "[", "&", "*", "!", "|", ">", "'", "-")):
         return '"' + s.replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n") + '"'
     return s
 
@@ -183,10 +155,10 @@ def main():
         """)
         posts = cur.fetchall()
 
-    # Published pages: post_title, post_name, post_content, post_date
+    # Published pages: ID, post_title, post_name, post_content, post_date
     with conn.cursor() as cur:
         cur.execute(f"""
-            SELECT post_title, post_name, post_content, post_date
+            SELECT ID, post_title, post_name, post_content, post_date
             FROM {table_prefix}posts
             WHERE post_type = 'page' AND post_status = 'publish'
             ORDER BY post_name
@@ -242,7 +214,7 @@ def main():
 
     pages_written = 0
     for row in pages:
-        post_title, post_name, post_content, post_date = row
+        page_id, post_title, post_name, post_content, post_date = row
         post_name = (post_name or "").strip().lstrip("0123456789-")
         if not post_name or post_name in skip_page_slugs:
             continue
@@ -261,6 +233,7 @@ def main():
             "title: %s" % escape_yaml(post_title),
             "date: %s" % date_fm,
             "slug: %s" % post_name,
+            "wordpress_id: %s" % page_id,
             "---",
             "",
             post_content.strip(),

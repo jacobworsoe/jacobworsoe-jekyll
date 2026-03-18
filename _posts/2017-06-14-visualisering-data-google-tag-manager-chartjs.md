@@ -172,13 +172,13 @@ $.when(chartJsPromise, momentJsPromise, dataPromise).done(function(chartJsData, 
 
 I Google Tag Manager indsættes koden via et Custom HTML Tag.
 
-[caption id="attachment_1142" align="alignnone" width="929"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/gtm-chartjs-custom-html.tag_.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/gtm-chartjs-custom-html.tag_.png" alt="Custom HTML Tag med alt koden." width="929" height="692" class="size-full wp-image-1142" /></a> Custom HTML Tag med alt koden.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/gtm-chartjs-custom-html.tag_.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/gtm-chartjs-custom-html.tag_.png" alt="Custom HTML Tag med alt koden." width="929" height="692" class="size-full wp-image-1142" /></a><figcaption>Custom HTML Tag med alt koden.</figcaption></figure>
 
 Som trigger vælges den side grafen skal indsættes på, så koden og de eksterne filer kun indlæses på den ene side, og ikke sløver hele sitet.
 
 Jeg har derfor lavet en trigger med URL'en for denne side: <strong>/visualisering-data-google-tag-manager-chartjs</strong>
 
-[caption id="attachment_1148" align="alignnone" width="1381"]<a href="https://www.jacobworsoe.dk/wp-content/uploads/gtm-chartjs-trigger.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/gtm-chartjs-trigger.png" alt="Trigger i GTM som kun affyrer koden på denne side." width="1381" height="546" class="size-full wp-image-1148" /></a> Trigger i GTM som kun affyrer koden på denne side.[/caption]
+<figure><a href="https://www.jacobworsoe.dk/wp-content/uploads/gtm-chartjs-trigger.png"><img src="https://www.jacobworsoe.dk/wp-content/uploads/gtm-chartjs-trigger.png" alt="Trigger i GTM som kun affyrer koden på denne side." width="1381" height="546" class="size-full wp-image-1148" /></a><figcaption>Trigger i GTM som kun affyrer koden på denne side.</figcaption></figure>
 
 Bemærk at triggeren kører på DOM ready og ikke når siden indlæses. GTM scriptet bliver indlæst i toppen af siden, så hvis triggeren kører når siden indlæses er det ikke sikkert at HTML elementet som grafen skal indsættes efter findes endnu og så vil koden fejle. Når triggeren kører på DOM ready er man sikker på at hele DOM'en er indlæst og HTML elementet er tilstede i koden.
 

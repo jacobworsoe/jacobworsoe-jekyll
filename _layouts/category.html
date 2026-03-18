@@ -7,6 +7,7 @@ style: homepage
   {% assign this_year = '' %}
   {% assign position = 1 %}
   {% for post in site.categories[page.category] %}
+  {% if post.title and post.title != "" %}
   <div class="home-post">
     {% assign year = post.date | date: '%Y' %}
     {% if this_year != year %}
@@ -28,6 +29,7 @@ style: homepage
     <span class="home-post-date">{% include date-da.html date=post.date %}</span>
   </div>
   {% assign position = position | plus: 1 %}
+  {% endif %}
   {% endfor %}
 </div>
 

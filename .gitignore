@@ -7,6 +7,9 @@ node_modules/
 assets/js/bundle.js
 *.log
 
+# Python
+scripts/__pycache__/
+
 # Local credentials (never commit)
 scripts/.mysql-credentials
 scripts/.env
