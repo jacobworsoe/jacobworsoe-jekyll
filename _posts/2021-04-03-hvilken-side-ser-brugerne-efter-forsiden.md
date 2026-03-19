@@ -12,7 +12,7 @@ Et af de spørgsmål som mange stiller er:
 
 <blockquote><p>Kan vi se hvad brugerne gør efter de ser forsiden?</p></blockquote>
 
-<p>Det er et godt spørgsmål!
+Det er et godt spørgsmål!
 
 Men umiddelbart ikke så nemt at svare på...
 
