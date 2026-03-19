@@ -119,7 +119,8 @@ Du skal fx ikke smide et kæmpe 4000*3000px billede ind, direkte fra dit kamera 
 
 Så har vi styr på billederne, det var jo nemt nok. Så gælder det videoerne, og det er faktisk endnu nemmere! For uanset om du har embedded videoer fra Youtube, Vimeo eller noget helt tredje, så klarer <a href="http://fitvidsjs.com" target="_blank" rel="noopener noreferrer">FitVids.js</a> det hele for dig. Det er et jQuery plugin, som du henter og indsætter på dit site. Derefter fortæller du hvilket element videoerne er placeret i og dermed hvilket element de skal holde sig inden for og så tilpasser de selv størrelsen. Koden du skal indsætte på sitet ser således ud.
 
-<pre><code class="language-html"><script src="path/to/jquery.min.js" type="text/javascript"></script>
+```html
+<script src="path/to/jquery.min.js" type="text/javascript"></script>
 <script src="path/to/jquery.fitvids.js" type="text/javascript"></script>
 <script type="text/javascript">// <![CDATA[
 $(document).ready(function(){
@@ -127,7 +128,7 @@ $(document).ready(function(){
     $("#thing-with-videos").fitVids();
   });
 // ]]></script>
-</code></pre>
+```
 
 Og det var faktisk det. Sitet er nu responsivt, forstået på den måde at det automatisk tilpasser sig til den skærmstørrelse det bliver vist på. Og i princippet skal der faktisk ikke mere til. Et godt eksempel på det er <a title="Sprinklertesten.dk" href="http://sprinklertesten.jacobworsoe.dk/" target="_blank" rel="noopener noreferrer">dette lille site</a> jeg har lavet for nyligt. Det indeholder ingen media queries eller lignende, men er stadig 100% responsivt, alene fordi det er lavet fleksibelt med de teknikker der er beskrevet ovenfor.
 
@@ -279,8 +280,9 @@ Grunden til dette er at der - især da iPhonen blev lanceret, men også nu til d
 
 iPhonen viser fx websitet som om den havde en skærmbredde på 980px og derfor bliver den ikke påvirket af vores media query. Men nu har vi lavet et website som er optimeret til alle slags enheder, og vi kan dermed fortælle browseren at den skal vise siden i den størrelse som enheden i virkeligheden har. Dette gøres ved at indsætte dette tag i din header:
 
-<pre><code class="language-html"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-</code></pre>
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+```
 
 Nu vil iPhonen vise websitet med en skærmbredde på 320px og dermed blive påvirket af vores media query, som siger at designet kun har én kolonne. Derudover siger den at der skal være zoomet helt ud og at der ikke må kunne zoomes ind på teksten. Derved ser sitet nu således ud:
 

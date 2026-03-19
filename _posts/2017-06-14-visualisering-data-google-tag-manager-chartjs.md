@@ -122,7 +122,8 @@ Canvas elementet er indsat på siden, så nu skal grafen bare bygges og indsætt
 
 Den samlede kode som skal indsættes på sitet via GTM ser sådan ud:
 
-<pre><code class="language-javascript"><script>
+```javascript
+<script>
 // De to eksterne filer, samt data i JSON format hentes
 var chartJsPromise = $.getScript("https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js");
 var momentJsPromise = $.getScript("https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js");
@@ -166,7 +167,7 @@ $.when(chartJsPromise, momentJsPromise, dataPromise).done(function(chartJsData, 
   });
 });
 </script>
-</code></pre>
+```
 
 <h2>Indsæt koden på sitet via GTM</h2>
 

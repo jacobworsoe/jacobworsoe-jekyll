@@ -67,7 +67,8 @@ Nu hvor vi har de grundlæggende elementer i Google Tag Manager på plads, vil j
 
 Det første, der skal opsættes, er container scriptet, som din programmør skal indsætte på alle sider på sitet. Scriptet ser således ud:
 
-<pre><code class="language-html"><!-- Google Tag Manager -->
+```html
+<!-- Google Tag Manager -->
 <noscript>
 <iframe src="//www.googletagmanager.com/ns.html?id=GTM-XXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
@@ -84,7 +85,7 @@ f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-XXXXXX');
 </script>
 <!-- End Google Tag Manager -->
-</code></pre>
+```
 
 Derefter kan vi begynde at opsætte Tags og regler i Tag Managers webinterface.
 

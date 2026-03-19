@@ -109,10 +109,11 @@ Det er ikke så vigtigt efter HTTP2 blev lanceret, men det er stadig best practi
 
 JS filen caches i browseren i 1 år ved at sætte expire-headers til 1 år i <code>.htaccess</code>. Jeg har brugt de anbefalede settings fra <a href="https://html5boilerplate.com/" rel="noopener noreferrer" target="_blank">html5boilerplate</a>.
 
-<pre><code class="language-html">ExpiresByType application/javascript                "access plus 1 year"
+```apache
+ExpiresByType application/javascript                "access plus 1 year"
 ExpiresByType application/x-javascript              "access plus 1 year"
 ExpiresByType text/javascript                       "access plus 1 year"
-</code></pre>
+```
 
 GruntJS laver et hash baseret på indholdet i filen og det hash bliver tilføjet til filnavnet.
 
@@ -470,7 +471,8 @@ Jeg har i alt 19 KB CSS kode.
 
 I WordPress inkluderer jeg de to CSS filer så de ligger inline, baseret på et check for om siden er <code>single.php</code> eller andre sider.
 
-<pre><code class="language-php"><style>
+```php
+<style>
 <?php if ( is_single() || is_page() ) {
     include("css/single.css");
 } else {
@@ -478,7 +480,7 @@ I WordPress inkluderer jeg de to CSS filer så de ligger inline, baseret på et 
 }
 ?>
 </style>
-</code></pre>
+```
 
 <h3 id="article-header-id-11">CSS reduceret med 45%</h3>
 
@@ -531,11 +533,12 @@ Jeg har alle mine SVG filer liggende i koden og selve koden til grafen i logoet 
 
 Indholdet af SVG filen indsætter jeg i <code>header.php</code> med følgende kode. Når SVG filen ligger i koden, skal der ikke laves et ekstra request for at hente den og færre requests er med til at gøre sitet hurtigt.
 
-<pre><code class="language-php"><a href="https://www.jacobworsoe.dk/" title="jacobworsoe.dk" rel="home" class="blog-title">
+```php
+<a href="https://www.jacobworsoe.dk/" title="jacobworsoe.dk" rel="home" class="blog-title">
    <span class="logo"><?php include("svg/logo.svg"); ?></span>
    <span class="title"><?php bloginfo( 'name' ); ?></span>
 </a>
-</code></pre>
+```
 
 <h2 id="article-header-id-14">WordPress</h2>
 

@@ -2,13 +2,15 @@
 
 ## Rules of thumb
 
-- **HTML samples in posts:** Do not put tags like `<div>` inside raw `<pre><code>` in Markdown—Kramdown will parse them as real HTML (and `<div>` is not valid inside `<code>`). Use a **fenced block** instead so the source is escaped and Prism still highlights it:
+- **Code samples with angle brackets (`<…>`) in posts:** Do not use raw `<pre><code class="language-…">` followed immediately by `<` in Markdown. Kramdown parses those as real HTML. Use a **fenced block** (` ```html `, ` ```php `, ` ```javascript `, etc.) so the source is escaped and Prism still highlights it. This applies to **`language-html`**, mixed **PHP + `<style>` / `<a>`**, and **`<script>`…`</script>`** samples labeled as JavaScript.
 
   ````markdown
   ```html
   <div>...</div>
   ```
   ````
+
+- **Liquid in samples:** If a fence must show `{%` / `{{`, either keep **HTML entities** (`&#123;` …) as in the original export, or wrap with `{% raw %}…{% endraw %}`—otherwise Jekyll may execute Liquid inside the Markdown file.
 
 - **`<p>` is only for phrasing content.** Close `</p>` before block-level siblings: headings (`<h1>`–`<h6>`), `<figure>`, `<blockquote>`, `<pre>`, lists (`<ul>`/`<ol>` when outer), `<div>`, etc.
 - **Prefer Markdown paragraphs** (blank-line separated text) over a single opening `<p>` that runs to the end of the article—Kramdown will emit valid `<p>` boundaries.

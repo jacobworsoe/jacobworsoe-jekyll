@@ -201,7 +201,8 @@ Den næste laver et Enhanced Ecommerce product object med de relevante produktda
 
 Produktdataene er placeret i data attributter i HTML koden.
 
-<pre><code class="language-html"><h1 class="home-post-headline">
+```html
+<h1 class="home-post-headline">
     <a href="https://www.jacobworsoe.dk/returvarer-google-analytics/" 
         data-title="Tracking af returvarer i Google Analytics (den ultimative guide)" 
         data-id="1597" 
@@ -214,7 +215,7 @@ Produktdataene er placeret i data attributter i HTML koden.
         Tracking af returvarer i Google Analytics (den ultimative guide)            
     </a>
 </h1>
-</code></pre>
+```
 
 Den tredje funktion sender impressions til Google Analytics.
 

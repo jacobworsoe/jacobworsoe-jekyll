@@ -82,14 +82,15 @@ Det rigtig smarte ved værktøjer som Jekyll, er at man stadig kan arbejde med t
 
 Templates i Jekyll er drevet af Liquid som er et template-sprog udviklet af Shopify og gør det mega nemt at opsætte templates. Herunder ses et eksempel på den template som bruges til at vise blogindlæg.
 
-<pre><code class="language-html">&#123;% include header.html %&#125;
+```html
+&#123;% include header.html %&#125;
 <article id="&#123;&#123; page.id &#125;&#125;" class="&#123;&#123; page.id &#125;&#125;">
        <h1>&#123;&#123; page.title &#125;&#125;</h1>
        <p class="post-date">&#123;&#123; page.date | date: '%B %d, %Y' &#125;&#125;</p>
        &#123;&#123; content &#125;&#125;
 </article>
 &#123;% include footer.html %&#125;
-</code></pre>
+```
 
 <h2>Fordel #2: Det tunge arbejde laves ved ændringer – ikke læsninger</h2>
 
@@ -155,14 +156,15 @@ En af grundene til at jeg valgte at bruge Jekyll til vores blog var at mit foret
 
 Og der er masser af <a href="https://jekyllrb.com/docs/templates/">smarte funktioner</a>, fx til at generere meta descriptions. Hvis der er skrevet en excerpt til siden, så bliver den brugt. Ellers tager den de første 155 tegn fra selve indholdet, fjernet for html koder og linjeskift.
 
-<pre><code class="language-html"><meta name="description" content="
+```html
+<meta name="description" content="
 &#123;% if page.excerpt %&#125;
 &#123;&#123; page.excerpt &#125;&#125;
 &#123;% else %&#125;
 &#123;&#123; page.content | strip_html | strip_newlines | truncate: 155 &#125;&#125;
 &#123;% endif %&#125;
 ">
-</code></pre>
+```
 
 Så bare fordi sitet er statisk, kan det stadig lave alt det hårde arbejde for dig.
 

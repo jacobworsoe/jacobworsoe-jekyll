@@ -38,11 +38,12 @@ Med de nye data kan vi bygge en Custom Report, som viser fordelingen og dermed k
 
 Det er at bruge srcset til at angive de forskellige størrelser af billedet. Sådan her:
 
-<pre><code class="language-html"><img src="picture-1x.jpg"
+```html
+<img src="picture-1x.jpg"
      srcset="picture-2x.jpg 2x,
              picture-1x.jpg 1x"
      sizes="100%"
      alt="">
-</code></pre>
+```
 
 På den måde kan browsere selv vælge at hente det store retina optimerede billede, hvis skærmen er 2x men den kan også vælge at hente det almindelige billede, hvis den er på en langsom 3G forbindelse. Skide smart!

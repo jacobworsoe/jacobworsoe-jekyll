@@ -50,15 +50,17 @@ På mit linkkatalog har jeg lagt min menu i en seperat fil som jeg så inkludere
 
 Da dette køres som en multivariate test, skal man også markere de sektioner man gerne vil teste. Jeg har gjort det ved at GWO udskifter knappen's CSS class. Derfor indsætter jeg <code><script>utmx_section("menu-button")</script></code> og <code></noscript></code> rundt om linket i menuen. Den kode som jeg inkluderer på samtlige sider ser derved således ud:
 
-<pre><code class="language-html"><script>utmx_section("menu-button")</script>
+```html
+<script>utmx_section("menu-button")</script>
 <a href="http://www.justlaunched.dk/tilmeld-link">
-</code></pre>
+```
 
 Inde i GWO har jeg så sat to varianter op:
 
-<pre><code class="language-html"><a href="http://www.justlaunched.dk/tilmeld-link">
+```html
 <a href="http://www.justlaunched.dk/tilmeld-link">
-</code></pre>
+<a href="http://www.justlaunched.dk/tilmeld-link">
+```
 
 Det vil altså sige at hver gang Control Scriptet bliver kaldt, så udskifter GWO den originale linje med en af de to ovenstående linjer hvis der skal vises en variant, ellers viser den originale. Hvis GWO viser den linje der indeholder <code>class="submit-red"</code>, bliver knappen rød og ligeledes med den grønne - og det gælder altså uanset hvilken side <em>Control Scriptet</em> bliver kaldt fra - nu har du vist forstået det :)
 
