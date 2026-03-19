@@ -22,7 +22,7 @@ Som eksempel på machine learning der kan laves i Excel, vil jeg analysere forho
 
 Rand Fiskin har dog et helt andet take på det i denne Whiteboard Friday:
 
-<figure><a href="https://moz.com/blog/blog-post-length-frequency?wvideo=vhkmto6gk4"><img src="{{ '/assets/5995f3471cf5f3.webp' | relative_url }}" alt="The perfect blog post length and frequency is bullshit" width="690" height="475" class="size-medium wp-image-1297" /></a><figcaption>The perfect blog post length and frequency is bullshit</figcaption></figure>
+<figure><a href="https://moz.com/blog/blog-post-length-frequency?wvideo=vhkmto6gk4"><img src="{{ '/assets/images/5995f3471cf5f3.webp' | relative_url }}" alt="The perfect blog post length and frequency is bullshit" width="690" height="475" class="size-medium wp-image-1297" /></a><figcaption>The perfect blog post length and frequency is bullshit</figcaption></figure>
 
 Her vil jeg derfor analysere hvor meget længden af indlægget betyder for trafikken på min personlige blog og endnu mere spændende: Om man kan forudsige hvor meget trafik et blogindlæg vil få, baseret på antal ord = prædiktiv analyse.
 
