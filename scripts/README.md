@@ -29,6 +29,7 @@ Or: `scripts/build.ps1` / `scripts/build.bat` (same as `export_all.py`).
 WordPress may store **third-party image URLs** (e.g. Wistia video poster on Akamai) in `post_content`. Those are rewritten to **repo files** after each export via `_STATIC_IMAGE_OVERRIDES` in `export_wp_posts_pages_mysql.py` (function `rewrite_external_images_to_static_repo`). When you replace another embed with a file under `assets/images/`, add a regex + Liquid `relative_url` pair there so future `export_all.py` runs keep the Jekyll site self-hosted.
 - **`export_wp_comments_mysql.py`** — `_data/comments.yml`.
 - **`rewrite_markdown_off_wordpress.py`** — bulk-rewrite existing Markdown off `www.jacobworsoe.dk` (run after manual edits if needed).
+- **`check_post_html5.py`** — heuristic: detect `<p>` that wraps block-level tags; see `docs/CONTENT_HTML5.md`.
 
 ## FTP: download referenced images only
 

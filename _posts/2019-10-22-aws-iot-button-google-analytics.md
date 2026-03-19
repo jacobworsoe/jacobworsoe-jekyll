@@ -54,7 +54,7 @@ Amazon siger selv at IoT knappen er lavet til at udviklere kan have en nem måde
 
 <h2>Funktioner i AWS</h2>
 
-<p>Knappen kan trigger en lang række funktioner i AWS. Når knappen er koblet på Wifi via app'en, får du en liste med eksempler på små funktioner som knappen kan trigger.
+Knappen kan trigger en lang række funktioner i AWS. Når knappen er koblet på Wifi via app'en, får du en liste med eksempler på små funktioner som knappen kan trigger.
 
 <figure><a href="{{ '/assets/images/2019/10/Eksempler-AWS-functions.png' | relative_url }}"><img src="{{ '/assets/images/2019/10/Eksempler-AWS-functions.png' | relative_url }}" alt="Eksempler på AWS funktioner." width="744" height="1160" class="size-full wp-image-2009" /></a><figcaption>Eksempler på AWS funktioner.</figcaption></figure>
 

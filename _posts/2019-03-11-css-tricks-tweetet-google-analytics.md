@@ -14,7 +14,7 @@ I januar skrev Chris Coyier, som driver sitet, at han ærgrede sig lidt over han
 
 <blockquote><p>I almost wish our URLs had years in them because I still don't have a way to scope analytic data to only show me data from content published this year. I can see the most popular stuff from the year, but that's regardless of when it was published, and that's dominated by the big guides we've had for years and keep updated.<cite><a href="https://css-tricks.com/thank-you-2018-edition/" rel="noopener noreferrer">Chris Coyier</a></cite></p></blockquote>
 
-<p>Han ville gerne kunne se udgivelsesåret for alle hans blogindlæg i Google Analytics.
+Han ville gerne kunne se udgivelsesåret for alle hans blogindlæg i Google Analytics.
 
 Jeg skrev en hurtig mail til Chris og fortalte at jeg var ekspert i Google Analytics samt en lille guide til at tracke året i en custom dimension. Jeg respekterede hans tid og lavede derfor alt koden så det var nemt for ham at copy/paste ind på sitet.
 

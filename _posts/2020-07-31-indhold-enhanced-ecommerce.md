@@ -149,19 +149,19 @@ Det første trin i kunderejsen er product impressions på en produktliste.
 Der vises lister af blogindlæg på forsiden, kategorisider, som relaterede indlæg, etc. Der er primært to ting der er vigtige når der trackes impressions.
 
 <ol>
-<li>Der skal kun trackes impressions af blogindlæg som brugeren rent faktisk har set. Det er ikke nok at linket til  blogindlægget har været længere nede på siden (below the fold), eller at brugeren har scrollet lynhurtigt forbi det. Brugeren skal have set blogindlægget og jeg skal være rimelig sikker på at brugeren har set og forholdt sig til det.</p></li>
+<li><p>Der skal kun trackes impressions af blogindlæg som brugeren rent faktisk har set. Det er ikke nok at linket til  blogindlægget har været længere nede på siden (below the fold), eller at brugeren har scrollet lynhurtigt forbi det. Brugeren skal have set blogindlægget og jeg skal være rimelig sikker på at brugeren har set og forholdt sig til det.</p></li>
 <li><p>Trackingen må ikke sløve brugerens computer og gøre sitet langsomt. Når jeg skal holde øje med hvor langt brugeren scroller ned af siden og dermed om et givent blogindlæg er blevet synligt på skærmen, kan jeg nemt risikere at der skal køres noget JavaScript kode meget ofte, især hvis brugeren scroller hurtigt ned over siden. Dette kan påvirke hvor gnidningsfrit scrollet opleves for brugeren.</p></li>
 </ol>
 
-<p>I værste fald kan det gøre sitet ubrugeligt, som det <a href="https://johnresig.com/blog/learning-from-twitter/" rel="noopener noreferrer" target="_blank">skete for Twitter tilbage i 2011</a>.
+<p>I værste fald kan det gøre sitet ubrugeligt, som det <a href="https://johnresig.com/blog/learning-from-twitter/" rel="noopener noreferrer" target="_blank">skete for Twitter tilbage i 2011</a>.</p>
 
 <blockquote><p>Depending upon the browser the scroll event can fire a lot and putting code in the scroll callback will slow down any attempts to scroll the page (not a good idea). Instead it’s much better to use some form of a timer to check every X milliseconds OR to attach a scroll event and only run your code after a delay.<cite><a href="https://johnresig.com/blog/learning-from-twitter/" target="_blank" rel="noopener noreferrer">John Resig, skaberen af jQuery</a></cite></p></blockquote>
 
-<p><strong>Begge ting kan løses med en debounce funktion.</strong>
+<p><strong>Begge ting kan løses med en debounce funktion.</strong></p>
 
-En debounce funktion siger: “Udfør denne kode når noget ikke er sket i X antal millisekunder”.
+<p>En debounce funktion siger: “Udfør denne kode når noget ikke er sket i X antal millisekunder”.</p>
 
-<a href="https://css-tricks.com/debouncing-throttling-explained-examples/" rel="noopener noreferrer" target="_blank">Denne artikel fra CSS-Tricks.com</a> har nogle gode visualiseringer og demoer som viser hvordan debounce virker. David Walsh har også <a href="https://davidwalsh.name/javascript-debounce-function" rel="noopener noreferrer" target="_blank">skrevet om det her</a>.
+<p><a href="https://css-tricks.com/debouncing-throttling-explained-examples/" rel="noopener noreferrer" target="_blank">Denne artikel fra CSS-Tricks.com</a> har nogle gode visualiseringer og demoer som viser hvordan debounce virker. David Walsh har også <a href="https://davidwalsh.name/javascript-debounce-function" rel="noopener noreferrer" target="_blank">skrevet om det her</a>.</p>
 
 <figure><a href="{{ '/assets/images/2020/07/css-tricks-debounce.png' | relative_url }}"><img src="{{ '/assets/images/2020/07/css-tricks-debounce.png' | relative_url }}" alt="Kilde: CSS-Tricks.com" width="661" height="133" class="size-full wp-image-2328" /></a><figcaption>Kilde: <a href="https://css-tricks.com/debouncing-throttling-explained-examples/">CSS-Tricks.com</a></figcaption></figure>
 
@@ -408,15 +408,15 @@ Løsningen er at annullere sideskiftet med JavaScript og istedet få GTM til at 
 Der er særligt to ting der er vigtige at tage højde for når man annullerer et sideskift.
 
 <ol>
-<li>Hvis requestet til Google Analytics fejler eller GTM ikke bliver loaded korrekt på siden, kan det betyde at sideskiftet aldrig bliver lavet.</p></li>
+<li><p>Hvis requestet til Google Analytics fejler eller GTM ikke bliver loaded korrekt på siden, kan det betyde at sideskiftet aldrig bliver lavet.</p></li>
 <li><p>Hvis brugeren holder CTRL (eller CMD på Mac) nede mens der klikkes på linket for at åbne det i en ny tab, skal der ikke laves et sideskift, da brugeren jo netop gerne vil blive på siden.</p></li>
 </ol>
 
-<p>Den første kan løses ved at lave et <a href="https://www.simoahava.com/gtm-tips/use-eventtimeout-eventcallback/" rel="noopener noreferrer" target="_blank">timeout på fx 2 sekunder</a>, så sideskiftet bliver lavet uanset hvad, hvis requestet til Google Analytics ikke er gennemført efter 2 sekunder.
+<p>Den første kan løses ved at lave et <a href="https://www.simoahava.com/gtm-tips/use-eventtimeout-eventcallback/" rel="noopener noreferrer" target="_blank">timeout på fx 2 sekunder</a>, så sideskiftet bliver lavet uanset hvad, hvis requestet til Google Analytics ikke er gennemført efter 2 sekunder.</p>
 
-Den anden kan løses ved at tjekke om click eventet har enten <code>event.ctrlKey</code> (Windows) eller <code>event.metaKey</code> (Mac) for at tjekke om brugeren holder CTRL/CMD nede mens der klikkes.
+<p>Den anden kan løses ved at tjekke om click eventet har enten <code>event.ctrlKey</code> (Windows) eller <code>event.metaKey</code> (Mac) for at tjekke om brugeren holder CTRL/CMD nede mens der klikkes.</p>
 
-Alt logikken tilføjes til det <code>dataLayer.push</code> som udføres når brugeren klikker på et blogindlæg på en liste, fx forsiden.
+<p>Alt logikken tilføjes til det <code>dataLayer.push</code> som udføres når brugeren klikker på et blogindlæg på en liste, fx forsiden.</p>
 
 <pre><code class="language-javascript">dataLayer.push({
   event: "productClick",

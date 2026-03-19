@@ -46,13 +46,13 @@ Derefter indsætter du et stykke JavaScript i din Tag Manager, som sørger for a
 Det har nogle store fordele.
 
 <ol>
-<li>Adblockere har ikke så nemt ved at blokere dette request, fordi subdomænet er unikt og kan hedde hvad som helst. Det er derimod meget nemt at blokere Google Analytics, fordi den altid sender til <code>collect.google-analytics.com</code>.</p></li>
+<li><p>Adblockere har ikke så nemt ved at blokere dette request, fordi subdomænet er unikt og kan hedde hvad som helst. Det er derimod meget nemt at blokere Google Analytics, fordi den altid sender til <code>collect.google-analytics.com</code>.</p></li>
 <li><p>Når man laver et request til ens eget subdomæne for at sende data, er der mulighed for at serveren sætter en cookie via Set-Cookie som en del af det HTTP response der kommer retur fra serveren. Fordi requestet er lavet til ens eget domæne, kan serveren sætte en første parts server-side cookie, hvilket pt. ikke bliver blokeret af ITP.</p></li>
 </ol>
 
 <h2>Google kommer ikke med en "nem" løsning</h2>
 
-<p>I hvert fald ikke hvis løsningen er server-side cookies. Det er simpelthen ikke teknisk muligt for Google at lave en simpel løsning på dette. For at sætte en server-side cookie kræver det at der laves et subdomæne på det website. Det kan Google ikke bare gøre for dig. Det skal du aktivt selv oprette.
+I hvert fald ikke hvis løsningen er server-side cookies. Det er simpelthen ikke teknisk muligt for Google at lave en simpel løsning på dette. For at sætte en server-side cookie kræver det at der laves et subdomæne på det website. Det kan Google ikke bare gøre for dig. Det skal du aktivt selv oprette.
 
 Det betyder at du ikke skal sidde og vente på at Google løser det for dig. Det kan de ikke. Rent teknisk kan det ikke lade sig gøre.
 
