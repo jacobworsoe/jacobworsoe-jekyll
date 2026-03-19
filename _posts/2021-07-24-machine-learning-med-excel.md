@@ -8,7 +8,7 @@ categories:
   - Analytics
 ---
 
-<blockquote>Mennesker lærer af erfaring. Maskiner lærer af data.</blockquote>
+<blockquote><p>Mennesker lærer af erfaring. Maskiner lærer af data.</p></blockquote>
 
 Interessen for Machine Learning er steget markant i løbet af de sidste år, men for mange er det stadig mest et buzz word. Her vil jeg prøve at bringe det lidt ned på et niveau som de fleste kan relatere til, nemlig ved at lave lidt Machine Learning i Excel. Machine Learning behøver ikke være mere kompleks end det.
 

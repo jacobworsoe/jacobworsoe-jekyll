@@ -12,7 +12,7 @@ categories:
 
 I januar skrev Chris Coyier, som driver sitet, at han ærgrede sig lidt over hans muligheder med Google Analytics og så slog jeg til!
 
-<blockquote>I almost wish our URLs had years in them because I still don't have a way to scope analytic data to only show me data from content published this year. I can see the most popular stuff from the year, but that's regardless of when it was published, and that's dominated by the big guides we've had for years and keep updated.<cite><a href="https://css-tricks.com/thank-you-2018-edition/" rel="noopener noreferrer">Chris Coyier</a></cite></p></blockquote>
+<blockquote><p>I almost wish our URLs had years in them because I still don't have a way to scope analytic data to only show me data from content published this year. I can see the most popular stuff from the year, but that's regardless of when it was published, and that's dominated by the big guides we've had for years and keep updated.<cite><a href="https://css-tricks.com/thank-you-2018-edition/" rel="noopener noreferrer">Chris Coyier</a></cite></p></blockquote>
 
 <p>Han ville gerne kunne se udgivelsesåret for alle hans blogindlæg i Google Analytics.
 

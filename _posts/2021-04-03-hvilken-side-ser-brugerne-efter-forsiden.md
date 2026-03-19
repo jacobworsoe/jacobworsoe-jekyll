@@ -10,7 +10,7 @@ categories:
 
 Et af de spørgsmål som mange stiller er:
 
-<blockquote>Kan vi se hvad brugerne gør efter de ser forsiden?</p></blockquote>
+<blockquote><p>Kan vi se hvad brugerne gør efter de ser forsiden?</p></blockquote>
 
 <p>Det er et godt spørgsmål!
 

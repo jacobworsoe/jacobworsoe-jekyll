@@ -1,0 +1,17 @@
+---
+description: After substantive edits, commit and push to origin (unless user opts out)
+alwaysApply: true
+---
+
+# Commit and push after changes
+
+When you **finish** a task that changes tracked files in this repo (code, content, styles, generated `assets/css/main.css`, etc.):
+
+1. Run `git status` in the repo you edited.
+2. If there are changes worth keeping, **`git add`** the relevant paths, **`git commit`** with a short, accurate message, and **`git push`** to **`origin`** on the current branch.
+
+**Do not** end the session with only local edits when the user expected delivery—push unless they explicitly asked for “no commit”, “plan only”, or “don’t push yet”.
+
+**Skip** committing when: there is nothing to commit; or the user’s message is read-only / questions-only with no file edits.
+
+If multiple workspace roots exist, commit in **each** git repo that had edits.

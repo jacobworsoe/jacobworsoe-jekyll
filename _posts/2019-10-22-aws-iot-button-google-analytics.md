@@ -50,7 +50,7 @@ Men IoT knappen kan programmeres via AWS og udføre vilkårlig kode, så alle mu
 
 Amazon siger selv at IoT knappen er lavet til at udviklere kan have en nem måde at prøve de mange funktioner i AWS.
 
-<blockquote>The AWS IoT Button is a programmable button based on the Amazon Dash Button hardware. This simple Wi-Fi device is easy to configure and designed for developers to get started with AWS IoT Core, AWS Lambda, Amazon DynamoDB, Amazon SNS, and many other Amazon Web Services without writing device-specific code.<cite><a href="https://aws.amazon.com/iotbutton/"  rel="noopener noreferrer">Amazon.com</a></cite></p></blockquote>
+<blockquote><p>The AWS IoT Button is a programmable button based on the Amazon Dash Button hardware. This simple Wi-Fi device is easy to configure and designed for developers to get started with AWS IoT Core, AWS Lambda, Amazon DynamoDB, Amazon SNS, and many other Amazon Web Services without writing device-specific code.<cite><a href="https://aws.amazon.com/iotbutton/"  rel="noopener noreferrer">Amazon.com</a></cite></p></blockquote>
 
 <h2>Funktioner i AWS</h2>
 

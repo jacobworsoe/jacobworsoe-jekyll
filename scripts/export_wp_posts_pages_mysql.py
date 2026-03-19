@@ -25,6 +25,55 @@ def escape_liquid(content):
     return content
 
 
+def normalize_blockquote_paragraphs(content):
+    """
+    WordPress wraps blockquote bodies in <p>. Plain <blockquote>text</blockquote> from DB or old exports
+    becomes <blockquote><p>text</p></blockquote>. Skips twitter-tweet embeds (already use <p> for tweet text).
+    Strips a stray closing </p> when there was no opening <p> (migration artifact).
+    """
+    if not content:
+        return content
+    parts = []
+    pos = 0
+    lower = content.lower()
+    while True:
+        idx = lower.find("<blockquote", pos)
+        if idx == -1:
+            parts.append(content[pos:])
+            break
+        parts.append(content[pos:idx])
+        m = re.match(r"<blockquote\b[^>]*>", content[idx:], re.I)
+        if not m:
+            parts.append(content[idx])
+            pos = idx + 1
+            continue
+        open_tag = m.group(0)
+        inner_start = idx + len(open_tag)
+        if re.search(r'class\s*=\s*["\'][^"\']*twitter-tweet', open_tag, re.I):
+            close_idx = lower.find("</blockquote>", inner_start)
+            if close_idx == -1:
+                parts.append(content[idx:])
+                break
+            close_idx_end = close_idx + len("</blockquote>")
+            parts.append(content[idx:close_idx_end])
+            pos = close_idx_end
+            continue
+        close_idx = lower.find("</blockquote>", inner_start)
+        if close_idx == -1:
+            parts.append(content[idx:])
+            break
+        inner = content[inner_start:close_idx].strip()
+        if re.match(r"<p\b", inner, re.I):
+            wrapped = inner
+        else:
+            if inner.lower().endswith("</p>"):
+                inner = inner[: -len("</p>")].rstrip()
+            wrapped = "<p>" + inner + "</p>"
+        parts.append(open_tag + wrapped + "</blockquote>")
+        pos = close_idx + len("</blockquote>")
+    return "".join(parts)
+
+
 def convert_wp_caption_shortcodes(content):
     """
     Convert WordPress [caption id="..." align="..." width="..."]...[/caption] to <figure>/<figcaption>.
@@ -241,6 +290,7 @@ def main():
             post_name = "post-%s" % post_id
         post_content = (post_content or "").replace("\r\n", "\n")
         post_content = convert_wp_caption_shortcodes(post_content)
+        post_content = normalize_blockquote_paragraphs(post_content)
         post_content = rewrite_wp_uploads_to_asset_tokens(post_content)
         post_content = escape_liquid(post_content)
         post_content = finalize_jekyll_asset_tokens(post_content)
@@ -282,6 +332,7 @@ def main():
         post_title = (post_title or "").strip()
         post_content = (post_content or "").replace("\r\n", "\n")
         post_content = convert_wp_caption_shortcodes(post_content)
+        post_content = normalize_blockquote_paragraphs(post_content)
         post_content = rewrite_wp_uploads_to_asset_tokens(post_content)
         post_content = escape_liquid(post_content)
         post_content = finalize_jekyll_asset_tokens(post_content)

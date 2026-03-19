@@ -111,7 +111,7 @@ Under Obamas valgkamp i 2012 skulle hans webteam bruge et website der kunne klar
 
 De havde derfor brug for et website der kunne klare ekstremt meget trafik og mange transaktioner.
 
-<blockquote>Our highest surge was $3 million an hour so any down time would have been very costly.<cite>Kyle Rush</cite></blockquote>
+<blockquote><p>Our highest surge was $3 million an hour so any down time would have been very costly.<cite>Kyle Rush</cite></p></blockquote>
 
 3 millioner dollars i timen! Som du nok har gættet, valgte de et statisk website, bygget med Jekyll, for at kunne klare presset. Og presset var faktisk så stort at det svageste led i kæden var deres betalingsgateway. De var derfor nødt til at lave et redundant setup med to betalingsgateways, og et system som fordelte trafikken mellem de to gateways. Et ret avanceret setup, men med et meget simpelt website.
 
@@ -182,7 +182,7 @@ I den danske blogverden har antallet af kommentarer været kraftigt faldende de 
 
 Men du kan sagtens eje data selv. Bare fordi sitet ikke selv bruger server-side kode, kan man stadig sagtens hente og sende data til en database med lidt AJAX. Det er der flere der har gjort, for at få et kommentarsystem, hvor man selv ejer data. Det kan fx bygges med <a href="https://css-tricks.com/building-a-jekyll-site-part-3-of-3/">Firebase</a> eller <a href="http://savaslabs.com/2016/04/20/squabble-comments.html">Lumen</a>. Men det er ikke noget der er indbygget i Jekyll, så du skal kode alt selv.
 
-<blockquote>The major downside of building your own comment hosting application is that you have to … build your own comment hosting application. In other words, nothing comes for free — you have to build every feature yourself.<cite><a href="http://savaslabs.com/2016/04/20/squabble-comments.html" target="_blank" rel="noopener noreferrer">Kosta Harlan</a></cite></blockquote>
+<blockquote><p>The major downside of building your own comment hosting application is that you have to … build your own comment hosting application. In other words, nothing comes for free — you have to build every feature yourself.<cite><a href="http://savaslabs.com/2016/04/20/squabble-comments.html" target="_blank" rel="noopener noreferrer">Kosta Harlan</a></cite></p></blockquote>
 
 <h2>Kan det ikke bare løses med et caching plugin?</h2>
 

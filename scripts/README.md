@@ -22,7 +22,7 @@ python scripts/export_all.py
 
 Or: `scripts/build.ps1` / `scripts/build.bat` (same as `export_all.py`).
 
-- **`export_wp_posts_pages_mysql.py`** — `_posts/`, root pages, `_data/wordpress_settings.yml`, `_config.yml` permalink, rewrites media URLs to `assets/images/…` + Liquid.
+- **`export_wp_posts_pages_mysql.py`** — `_posts/`, root pages, `_data/wordpress_settings.yml`, `_config.yml` permalink, rewrites media URLs to `assets/images/…` + Liquid; normalizes `<blockquote>` to wrap body in `<p>` (like WordPress), except `twitter-tweet` embeds.
 
 ### Static assets vs. embeds in the DB
 

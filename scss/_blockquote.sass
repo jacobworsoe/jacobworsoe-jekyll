@@ -5,7 +5,11 @@ blockquote
   font-size: 1.25rem
   padding: 1em 0 1em 30px
   line-height: 1.45
-  position: relative  
+  position: relative
+
+  // Match WordPress: quote body is in <p>; avoid doubled vertical margins
+  p
+    margin: 0
   
   &:before
     display: block

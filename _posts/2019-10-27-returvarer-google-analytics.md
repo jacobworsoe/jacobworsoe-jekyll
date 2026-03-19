@@ -442,7 +442,7 @@ Derefter kan du lave endnu en Calculated Metric, hvor du trækker konverteringsr
 
 <a href="https://nochmal.dk/podcasts/hm163-5-datadrevne-tips-til-at-stoppe-hullerne-i-din-webshop-hvor-pengene-fosser-ud/" rel="noopener noreferrer" target="_blank">Returvarer kan kvæle en webshop</a>, både fordi det er mistet omsætning, men også fordi det kræver en masse tid at håndtere.
 
-<blockquote>Sælger du tøj, kan du fx risikere at få den samme vare retur, fordi størrelsesangivelsen er misvisende. Justerer du teksten på dit site til folks forventninger, nedsætter du mængden af returvarer (og dermed tid og penge) betragteligt.<cite><a href="https://nochmal.dk/podcasts/hm163-5-datadrevne-tips-til-at-stoppe-hullerne-i-din-webshop-hvor-pengene-fosser-ud/" target="_blank" rel="noopener noreferrer">Morten Vadskær i Help Marketing Podcast</a></cite></blockquote>
+<blockquote><p>Sælger du tøj, kan du fx risikere at få den samme vare retur, fordi størrelsesangivelsen er misvisende. Justerer du teksten på dit site til folks forventninger, nedsætter du mængden af returvarer (og dermed tid og penge) betragteligt.<cite><a href="https://nochmal.dk/podcasts/hm163-5-datadrevne-tips-til-at-stoppe-hullerne-i-din-webshop-hvor-pengene-fosser-ud/" target="_blank" rel="noopener noreferrer">Morten Vadskær i Help Marketing Podcast</a></cite></p></blockquote>
 
 Der er stor værdi i at identificere de produkter som oftest bliver sendt retur, og justere produktbeskrivelsen på websitet.
 

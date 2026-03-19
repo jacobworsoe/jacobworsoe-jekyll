@@ -155,7 +155,7 @@ Der vises lister af blogindlæg på forsiden, kategorisider, som relaterede indl
 
 <p>I værste fald kan det gøre sitet ubrugeligt, som det <a href="https://johnresig.com/blog/learning-from-twitter/" rel="noopener noreferrer" target="_blank">skete for Twitter tilbage i 2011</a>.
 
-<blockquote>Depending upon the browser the scroll event can fire a lot and putting code in the scroll callback will slow down any attempts to scroll the page (not a good idea). Instead it’s much better to use some form of a timer to check every X milliseconds OR to attach a scroll event and only run your code after a delay.<cite><a href="https://johnresig.com/blog/learning-from-twitter/" target="_blank" rel="noopener noreferrer">John Resig, skaberen af jQuery</a></cite></p></blockquote>
+<blockquote><p>Depending upon the browser the scroll event can fire a lot and putting code in the scroll callback will slow down any attempts to scroll the page (not a good idea). Instead it’s much better to use some form of a timer to check every X milliseconds OR to attach a scroll event and only run your code after a delay.<cite><a href="https://johnresig.com/blog/learning-from-twitter/" target="_blank" rel="noopener noreferrer">John Resig, skaberen af jQuery</a></cite></p></blockquote>
 
 <p><strong>Begge ting kan løses med en debounce funktion.</strong>
 
@@ -475,7 +475,7 @@ Fordi der er meget få kliks er det svært at optimere ud fra. Men hvis der havd
 
 CTR på de links var dermed så lav, at de for langt de fleste brugere ikke er brugbare links, og dermed blot støj. Jeg valgte derfor at fjerne dem i det nye design og dermed få et mere clean design.
 
-<blockquote>Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.<cite>Antoine de Saint-Exupery</cite></blockquote>
+<blockquote><p>Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.<cite>Antoine de Saint-Exupery</cite></p></blockquote>
 
 Til sammenligning har links på forsiden en CTR på 4,92%.
 
