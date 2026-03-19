@@ -14,7 +14,7 @@ Lad os lige tage de store spillere i ITP set ud fra et web analytics perspektiv.
 
 <strong>Adobe</strong> har kun en <a href="https://business.adobe.com/products/analytics/adobe-analytics.html">analytics platform</a>. Ingen browser eller annoncer. Adobe skal kun tænke på at lave den bedst mulige Analytics platform, og kan sagtens <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/cname.html?lang=en#reference">lave workarounds til ITP</a>.
 
-<strong>Facebook</strong> har en annonceplatform hvor deres omsætning kommer fra og de har en analytics platform. Facebook skal lave den bedst mulige annonceringsplatform for deres annoncører som dermed bruger flere penge hos dem, og <a href="{{ '/ekskluder-facebooks-fbclid-url-parameter-i-google-analytics/' | relative_url }}">de laver derfor workarounds til ITP</a>.
+<strong>Facebook</strong> har en annonceplatform hvor deres omsætning kommer fra og de har en analytics platform. Facebook skal lave den bedst mulige annonceringsplatform for deres annoncører som dermed bruger flere penge hos dem, og <a href="https://www.jacobworsoe.dk/ekskluder-facebooks-fbclid-url-parameter-i-google-analytics/">de laver derfor workarounds til ITP</a>.
 
 <strong>Google</strong> har både den mest brugte browser, den mest brugte web analytics platform og 95+% af deres omsætning kommer fra deres annonceplatform. De har en fod i alle lejre og skal træde meget varsomt.
 

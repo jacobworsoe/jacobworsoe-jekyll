@@ -8,7 +8,7 @@ categories:
   - Analytics
 ---
 
-En af de vigtigste opgaver når man lancerer et nyt website er at få opsat redirects fra alle de gamle URL'er. Det har jeg tidligere skrevet om her: <a href="{{ '/husk-301-nar-du-far-ny-hjemmeside/' | relative_url }}" title="Husk 301 når du får ny hjemmeside" target="_blank" rel="noopener noreferrer">Husk redirects når du får nyt website</a>.
+En af de vigtigste opgaver når man lancerer et nyt website er at få opsat redirects fra alle de gamle URL'er. Det har jeg tidligere skrevet om her: <a href="https://www.jacobworsoe.dk/husk-301-nar-du-far-ny-hjemmeside/" title="Husk 301 når du får ny hjemmeside" target="_blank" rel="noopener noreferrer">Husk redirects når du får nyt website</a>.
 
 Men selvom man har været grundig kan der være svipsere, så derfor er det vigtigt at holde øje med trafikken på 404 sider i timerne efter launch. Når vi launcher et nyt website for en kunde eller os selv i IMPACT sidder jeg altid med et champagneglas i hånden og overvåger 404 siderne i Real-time rapporterne i Google Analytics via mit Real-time 404 tracking system.
 

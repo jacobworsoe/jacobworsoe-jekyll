@@ -48,7 +48,7 @@ I rapporten i Google Analytics hedder den "Start here" ligesom teksten på knapp
 
 Subscribe knappen i footeren bliver næsten ikke brugt og har kun en CTR på 0,09%. Som forventet vil jeg næsten sige, men det kræver data at få det bekræftet.
 
-På kvitteringssiden opfordrer vi kunderne til at lave et review på facebook. Det er der cirka 2% der gør. Det har jeg skrevet meget mere om her: <a href="{{ '/skab-vaerdifulde-konverteringer-paa-kvitteringssiden/' | relative_url }}">Skab værdifulde konverteringer på kvitteringssiden</a>.
+På kvitteringssiden opfordrer vi kunderne til at lave et review på facebook. Det er der cirka 2% der gør. Det har jeg skrevet meget mere om her: <a href="https://www.jacobworsoe.dk/skab-vaerdifulde-konverteringer-paa-kvitteringssiden/">Skab værdifulde konverteringer på kvitteringssiden</a>.
 
 Breaking News var en nyheds-ribbon vi havde på forsiden med et tekstlink som linkede videre. Den har en CTR på 3% og dermed slet ikke samme CTR som vores CTA-knapper. "Start Exchange here >" er fx en CTA-knap på en landingpage og har en CTR på 18%. Igen er det ikke overraskende at knapper er bedre end tekstlinks, men det er bare så fedt at få noget data på det!
 

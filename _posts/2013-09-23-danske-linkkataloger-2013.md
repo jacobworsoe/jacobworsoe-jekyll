@@ -10,7 +10,7 @@ categories:
 
 <strong>Opdatering 2017:</strong> Der er ikke længere nogen værdi i at tilmelde sig linkkataloger, så derfor har jeg fjernet listen. Hvis du vil arbejde med linkbuilding der giver værdi kan jeg anbefale <a href="http://www.impact.dk/blog/saadan-arbejder-du-med-linkbuilding/">denne guide</a> som er skrevet af min dygtige kollega Emil Lykkeskov.
 
-Så blev det tid til endnu en opdatering af den ultimative oversigt over danske linkkataloger. Jeg har denne gang undersøgt <strong>149 danske linkkataloger</strong> og registreret PageRank og antal indekserede sider. Jeg har undersøgt de 144 linkkataloger der var på <a title="Opdateret liste over linkkataloger" href="{{ '/opdateret-liste-over-linkkataloger/' | relative_url }}">min sidste liste</a>, plus fem nye kataloger.
+Så blev det tid til endnu en opdatering af den ultimative oversigt over danske linkkataloger. Jeg har denne gang undersøgt <strong>149 danske linkkataloger</strong> og registreret PageRank og antal indekserede sider. Jeg har undersøgt de 144 linkkataloger der var på <a title="Opdateret liste over linkkataloger" href="//www.jacobworsoe.dk/opdateret-liste-over-linkkataloger/">min sidste liste</a>, plus fem nye kataloger.
 
 En del af linkkatalogerne var ikke længere aktive, så der kiggede jeg på hvad de nu bliver brugt til. En stor del har valgt at opsige domænet, mens andre har omdannet domænet til en splog (formentlig dem som har brugt tid på at linkbuilde til domænet da det blev brugt til linkkatalog). Resten af domænerne bliver brugt til noget helt andet eller er redirectet til andre hjemmesider.
 
@@ -24,4 +24,4 @@ Da jeg lavede denne oversigt første gang, var formålet at identificere hvilke 
 
 Selvom betydningen af linkkataloger er faldet, så er måden du skal tilmelde dit website på stadig den samme. <a href="http://www.concept-i.dk/" target="_blank">Thomas Rosenstand</a> lavede tilbage i 2009 en <a href="http://www.youtube.com/watch?v=XgRaFytC3DA" target="_blank">rigtig god video</a>, hvor han viser hvordan du skal tilmelde dig, for at få maksimal værdi ud af linkkatalogerne. Kort fortalt er det vigtigt at bruge unikke ankertekster og beskrivelser når du tilmelder dig, så alle dine tilmeldinger ikke bliver kopier af hinanden (duplicate content) og dermed ikke kommer i Googles indeks. Så har det link du får tilbage fra linkkataloget nemlig inden værdi overhovedet. Hvis du derimod varierer dine tilmeldinger, så har du gjort hvad du kan for at alle siderne kommer i indeks og linket dermed giver værdi tilbage til dit website.
 
-Hvis du gerne vil have hurtig besked deler andre fantastiske ting her på siden, <a title="Nyhedsbrev" href="{{ '/nyhedsbrev/' | relative_url }}">så skriv dit op på mit nyhedsbrev</a>.
+Hvis du gerne vil have hurtig besked deler andre fantastiske ting her på siden, <a title="Nyhedsbrev" href="//www.jacobworsoe.dk/nyhedsbrev/">så skriv dit op på mit nyhedsbrev</a>.

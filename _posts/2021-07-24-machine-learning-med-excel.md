@@ -18,7 +18,7 @@ Interessen for Machine Learning er steget markant i løbet af de sidste år, men
 
 Som eksempel på machine learning der kan laves i Excel, vil jeg analysere forholdet mellem længden på blogindlæg og mængden af organisk SEO trafik. Sammenhængen er bevist flere gange tidligere, fx af Backlinko:
 
-<figure><a href="{{ '/assets/images/backlinko-content-total-word-count.png' | relative_url }}"><img src="{{ '/assets/images/backlinko-content-total-word-count-690x475.png' | relative_url }}" alt="Kilde: https://backlinko.com/search-engine-ranking" width="690" height="475" class="size-medium wp-image-1297" /></a> Kilde: <a href="https://backlinko.com/search-engine-ranking">https://backlinko.com/search-engine-ranking</a></figure>
+<figure><a href="{{ '/assets/images/backlinko-content-total-word-count.png' | relative_url }}"><img src="{{ '/assets/images/backlinko-content-total-word-count-690x475.png' | relative_url }}" alt="Kilde: https://backlinko.com/search-engine-ranking" width="690" height="475" class="size-medium wp-image-1297" /></a><figcaption>Kilde: <a href="https://backlinko.com/search-engine-ranking">https://backlinko.com/search-engine-ranking</a></figcaption></figure>
 
 Rand Fiskin har dog et helt andet take på det i denne Whiteboard Friday:
 
@@ -85,9 +85,9 @@ I første omgang er det svært at se om der er en sammenhæng, da de fleste er k
 
 De to outliers er:
 
-1) Mit indlæg om <a href="{{ '/hvor-meget-drikker-gaesterne-til-et-bryllup/' | relative_url }}">drikkevarer til et bryllup</a>, som får ekstremt meget trafik, sammenlignet med mine normale indlæg om digital marketing, så derfor fjernes den fra modellen.
+1) Mit indlæg om <a href="https://www.jacobworsoe.dk/hvor-meget-drikker-gaesterne-til-et-bryllup/">drikkevarer til et bryllup</a>, som får ekstremt meget trafik, sammenlignet med mine normale indlæg om digital marketing, så derfor fjernes den fra modellen.
 
-2) Den anden outlier er mit indlæg om <a href="{{ '/responsive-design-3-nemme-trin/' | relative_url }}">responsivt web design i 3 nemme trin</a> som er på 4253 ord, som er markant længere end mine øvrige indlæg, så derfor fjerner jeg også den.
+2) Den anden outlier er mit indlæg om <a href="https://www.jacobworsoe.dk/responsive-design-3-nemme-trin/">responsivt web design i 3 nemme trin</a> som er på 4253 ord, som er markant længere end mine øvrige indlæg, så derfor fjerner jeg også den.
 
 <figure><a href="{{ '/assets/images/2019/06/machine-learning-scatter-outliers.png' | relative_url }}"><img src="{{ '/assets/images/2019/06/machine-learning-scatter-outliers.png' | relative_url }}" alt="De to outliers der forvrænger data." width="1053" height="597" class="size-full wp-image-1679" /></a><figcaption>De to outliers der forvrænger data.</figcaption></figure>
 

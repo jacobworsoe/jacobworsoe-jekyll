@@ -163,7 +163,7 @@ En debounce funktion siger: “Udfør denne kode når noget ikke er sket i X ant
 
 <a href="https://css-tricks.com/debouncing-throttling-explained-examples/" rel="noopener noreferrer" target="_blank">Denne artikel fra CSS-Tricks.com</a> har nogle gode visualiseringer og demoer som viser hvordan debounce virker. David Walsh har også <a href="https://davidwalsh.name/javascript-debounce-function" rel="noopener noreferrer" target="_blank">skrevet om det her</a>.
 
-<figure><a href="{{ '/assets/images/2020/07/css-tricks-debounce.png' | relative_url }}"><img src="{{ '/assets/images/2020/07/css-tricks-debounce.png' | relative_url }}" alt="Kilde: CSS-Tricks.com" width="661" height="133" class="size-full wp-image-2328" /></a> Kilde: <a href="https://css-tricks.com/debouncing-throttling-explained-examples/">CSS-Tricks.com</a></figure>
+<figure><a href="{{ '/assets/images/2020/07/css-tricks-debounce.png' | relative_url }}"><img src="{{ '/assets/images/2020/07/css-tricks-debounce.png' | relative_url }}" alt="Kilde: CSS-Tricks.com" width="661" height="133" class="size-full wp-image-2328" /></a><figcaption>Kilde: <a href="https://css-tricks.com/debouncing-throttling-explained-examples/">CSS-Tricks.com</a></figcaption></figure>
 
 I dette tilfælde køres koden når brugeren stopper med at scrolle i 2 sekunder. Hvis brugeren scroller igen inden de 2 sekunder er gået, nulstilles timeren og når brugeren stopper med at scrolle, starter timeren igen fra 0 og hvis der går 2 sekunder uden scroll, udføres koden.
 
@@ -202,7 +202,7 @@ Den næste laver et Enhanced Ecommerce product object med de relevante produktda
 Produktdataene er placeret i data attributter i HTML koden.
 
 <pre><code class="language-html"><h1 class="home-post-headline">
-    <a href="{{ '/returvarer-google-analytics/' | relative_url }}" 
+    <a href="https://www.jacobworsoe.dk/returvarer-google-analytics/" 
         data-title="Tracking af returvarer i Google Analytics (den ultimative guide)" 
         data-id="1597" 
         data-category="Webanalyse" 
@@ -851,7 +851,7 @@ Antal sessioner bliver cirka halveret i hvert step, men dog er 78% af dem som sc
 
 <h3>Ekskludering af irrelevante blogindlæg</h3>
 
-Mit mest besøgte blogindlæg er uden sammenligning min <a href="{{ '/hvor-meget-drikker-gaesterne-til-et-bryllup/' | relative_url }}">infografik over hvor meget der blev drukket til vores bryllup</a>.
+Mit mest besøgte blogindlæg er uden sammenligning min <a href="https://www.jacobworsoe.dk/hvor-meget-drikker-gaesterne-til-et-bryllup/">infografik over hvor meget der blev drukket til vores bryllup</a>.
 
 <figure><a href="{{ '/assets/images/2019/08/Mest-viste-sider-GDS-chart.png' | relative_url }}"><img src="{{ '/assets/images/2019/08/Mest-viste-sider-GDS-chart.png' | relative_url }}" alt="Mest besøgte sider siden 2009." width="823" height="415" class="size-full wp-image-1887" /></a><figcaption>Mest besøgte sider siden 2009.</figcaption></figure>
 
@@ -944,8 +944,8 @@ Men pageviews er bare en vanity metric. Den fortæller intet om kvaliteten eller
 Og de to blogindlæg er meget forskellige.
 
 <ul>
-<li><a href="{{ '/returvarer-google-analytics/' | relative_url }}">Tracking af returvarer i Google Analytics (den ultimative guide 2019)</a> er en inspiration, men også noget som er en reference til senere brug og den er på 3668 ord.</li>
-<li><a href="{{ '/aws-iot-button-google-analytics/' | relative_url }}">Tracking af kaffeforbrug med AWS IoT Button og Google Analytics</a> er en sjov use-case for Google Analytics, den er rimelig letlæst og man skal læse (eller skimme) det hele for at den er sjov. Den er kun på 1571 ord.</li>
+<li><a href="https://www.jacobworsoe.dk/returvarer-google-analytics/">Tracking af returvarer i Google Analytics (den ultimative guide 2019)</a> er en inspiration, men også noget som er en reference til senere brug og den er på 3668 ord.</li>
+<li><a href="https://www.jacobworsoe.dk/aws-iot-button-google-analytics/">Tracking af kaffeforbrug med AWS IoT Button og Google Analytics</a> er en sjov use-case for Google Analytics, den er rimelig letlæst og man skal læse (eller skimme) det hele for at den er sjov. Den er kun på 1571 ord.</li>
 </ul>
 
 <h3>Buy-to-Detail Rate</h3>
@@ -970,11 +970,11 @@ På kaffe-indlægget er der slet ikke samme frafald, så det indlæg fastholder 
 
 <h2>Blog kategorier</h2>
 
-Der er også kæmpe forskel i fastholdelse af brugerne fordelt på kategorier. Indlæg om <a href="{{ '/category/nethandel/' | relative_url }}">Nethandel</a> bliver læst meget.
+Der er også kæmpe forskel i fastholdelse af brugerne fordelt på kategorier. Indlæg om <a href="https://www.jacobworsoe.dk/category/nethandel/">Nethandel</a> bliver læst meget.
 
-Heldigvis bliver mine indlæg om <a href="{{ '/category/webanalyse/' | relative_url }}">Webanalyse</a>, som jeg lægger meget arbejde i, også læst meget, hvor 24% læser hele indlægget.
+Heldigvis bliver mine indlæg om <a href="https://www.jacobworsoe.dk/category/webanalyse/">Webanalyse</a>, som jeg lægger meget arbejde i, også læst meget, hvor 24% læser hele indlægget.
 
-Til gengæld skal jeg vidst tage mig lidt sammen, når jeg skriver om <a href="{{ '/category/seo/' | relative_url }}">SEO</a>, som umiddelbart ikke er så interessante indlæg. Her har jeg også lige taget <a href="{{ '/category/hverdagsstatistik/' | relative_url }}">Hverdagsstatisk</a> med, som er mit indlæg om <a href="{{ '/hvor-meget-drikker-gaesterne-til-et-bryllup/' | relative_url }}">drikkevarer til et bryllup</a>.
+Til gengæld skal jeg vidst tage mig lidt sammen, når jeg skriver om <a href="https://www.jacobworsoe.dk/category/seo/">SEO</a>, som umiddelbart ikke er så interessante indlæg. Her har jeg også lige taget <a href="https://www.jacobworsoe.dk/category/hverdagsstatistik/">Hverdagsstatisk</a> med, som er mit indlæg om <a href="https://www.jacobworsoe.dk/hvor-meget-drikker-gaesterne-til-et-bryllup/">drikkevarer til et bryllup</a>.
 
 <a href="{{ '/assets/images/2019/11/Buy-to-Detail-rate-for-kategorier.jpg' | relative_url }}"><img src="{{ '/assets/images/2019/11/Buy-to-Detail-rate-for-kategorier-860x597.jpg' | relative_url }}" alt="" width="860" height="597" class="alignnone size-large wp-image-2117" /></a>
 

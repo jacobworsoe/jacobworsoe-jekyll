@@ -8,11 +8,11 @@ categories:
   - Webdesign
 ---
 
-Jeg startede denne blog i 2009 og <a href="{{ '/design-versioner/' | relative_url }}" rel="noopener">den første version</a> var bygget helt fra bunden hvor jeg havde kodet det hele i PHP med MySQL som database.
+Jeg startede denne blog i 2009 og <a href="https://www.jacobworsoe.dk/design-versioner/" rel="noopener">den første version</a> var bygget helt fra bunden hvor jeg havde kodet det hele i PHP med MySQL som database.
 
-I 2013 <a href="{{ '/flyttet-til-wordpress/' | relative_url }}" rel="noopener noreferrer">flyttede jeg bloggen over på WordPress</a> hvor alt HTML blev konverteret til WordPress templates, men designet forblev nogenlunde uændret.
+I 2013 <a href="https://www.jacobworsoe.dk/flyttet-til-wordpress/" rel="noopener noreferrer">flyttede jeg bloggen over på WordPress</a> hvor alt HTML blev konverteret til WordPress templates, men designet forblev nogenlunde uændret.
 
-I 2014 <a href="{{ '/responsive-design-3-nemme-trin/' | relative_url }}">lavede jeg designet responsivt</a> så siden blev mobilvenlig.
+I 2014 <a href="https://www.jacobworsoe.dk/responsive-design-3-nemme-trin/">lavede jeg designet responsivt</a> så siden blev mobilvenlig.
 
 I 2019 var det så tid til et redesign hvor jeg har brugt data fra Google Analytics, både til at tage beslutninger for at få sitet til at loade så hurtigt som muligt, men også til at forbedre KPI'erne for sitet. Jeg har også testet et råd fra Steve Krug's Dont Make Me Think, for at få brugerne til at læse flere af mine blogindlæg.
 
@@ -289,7 +289,7 @@ Jeg har omskrevet alt jQuery til ren JavaScript for at slippe for at loade de 87
 
 <h3 id="article-header-id-7">JavaScript reduceret fra 184 KB til 31 KB</h3>
 
-JavaScript koden til websitet er reduceret kraftigt med i alt 153 KB hvoraf de 87 KB er jQuery. Men der er også en masse andre ting jeg har skåret væk og skrevet smartere. Fx <a href="http://fitvidsjs.com/">FitVids.JS</a> som jeg brugte da jeg lavede <a href="{{ '/responsive-design-3-nemme-trin/' | relative_url }}">sitet responsivt</a> til at gøre YouTube videoer responsive. Det er meget smart, men med lidt simpel HTML og CSS kan man undvære det jQuery plugin.
+JavaScript koden til websitet er reduceret kraftigt med i alt 153 KB hvoraf de 87 KB er jQuery. Men der er også en masse andre ting jeg har skåret væk og skrevet smartere. Fx <a href="http://fitvidsjs.com/">FitVids.JS</a> som jeg brugte da jeg lavede <a href="https://www.jacobworsoe.dk/responsive-design-3-nemme-trin/">sitet responsivt</a> til at gøre YouTube videoer responsive. Det er meget smart, men med lidt simpel HTML og CSS kan man undvære det jQuery plugin.
 
 Jeg indsætter en <code>div</code> rundt om videoen.
 
@@ -530,7 +530,7 @@ Jeg har alle mine SVG filer liggende i koden og selve koden til grafen i logoet 
 
 Indholdet af SVG filen indsætter jeg i <code>header.php</code> med følgende kode. Når SVG filen ligger i koden, skal der ikke laves et ekstra request for at hente den og færre requests er med til at gøre sitet hurtigt.
 
-<pre><code class="language-php"><a href="{{ '/' | relative_url }}" title="jacobworsoe.dk" rel="home" class="blog-title">
+<pre><code class="language-php"><a href="https://www.jacobworsoe.dk/" title="jacobworsoe.dk" rel="home" class="blog-title">
    <span class="logo"><?php include("svg/logo.svg"); ?></span>
    <span class="title"><?php bloginfo( 'name' ); ?></span>
 </a>
@@ -590,7 +590,7 @@ Men gennemsnit kan snyde meget og skjule sandheden.
 
 Ikke alle sider loader lige hurtigt.
 
-Jeg har blogindlæg på mere end <a href="{{ '/indhold-enhanced-ecommerce/' | relative_url }}">6000 ord med masser af billeder</a>. Jeg har meget populære blogindlæg som står for <a href="{{ '/hvor-meget-drikker-gaesterne-til-et-bryllup/' | relative_url }}">70% af sidevisningerne</a> som kun har få, men til gengæld meget store billeder. Og så er der <a href="{{ '/' | relative_url }}">forsiden</a> som stort set kun er tekst.
+Jeg har blogindlæg på mere end <a href="https://www.jacobworsoe.dk/indhold-enhanced-ecommerce/">6000 ord med masser af billeder</a>. Jeg har meget populære blogindlæg som står for <a href="https://www.jacobworsoe.dk/hvor-meget-drikker-gaesterne-til-et-bryllup/">70% af sidevisningerne</a> som kun har få, men til gengæld meget store billeder. Og så er der <a href="https://www.jacobworsoe.dk">forsiden</a> som stort set kun er tekst.
 
 Især det faktum at de har meget forskellige antal sidevisninger gør at de fylder meget forskelligt i gennemsnittet.
 
@@ -602,7 +602,7 @@ Lad os derfor kigge på top 10 mest populære sider hver for sig, samt et vægte
 
 <h3 id="article-header-id-20">Hvad med konvertering?</h3>
 
-Jeg har tidligere skrevet om hvordan jeg bruger Enhanced Ecommerce til at <a href="{{ '/indhold-enhanced-ecommerce/' | relative_url }}">tracke om brugerne læser mine blogindlæg</a>.
+Jeg har tidligere skrevet om hvordan jeg bruger Enhanced Ecommerce til at <a href="https://www.jacobworsoe.dk/indhold-enhanced-ecommerce/">tracke om brugerne læser mine blogindlæg</a>.
 
 Kort fortalt tracker jeg hvor mange der scroller helt til bunden af et blogindlæg og har været mindst 1 minut på siden. Det er den vigtigste KPI for min blog. Hvor mange læser hele blogindlægget?
 

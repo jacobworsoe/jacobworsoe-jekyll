@@ -156,7 +156,7 @@ Hvis du læser dette, er der god chance for at du er igang med at planlægge et 
 
 <strong>I alt:</strong> 100.389,-
 
-<figure><a href="{{ '/assets/images/20140816-Tina-og-Jacobs-bryllup-1284-Edit.jpg' | relative_url }}"><img src="{{ '/assets/images/20140816-Tina-og-Jacobs-bryllup-1284-Edit.jpg' | relative_url }}" alt="Et billede fra vores bryllup taget af vores fotograf Allan Høgholm." width="692" height="461" class="size-full wp-image-884" /></a> Et billede fra vores bryllup taget af vores fotograf <a href="http://hoegholm.dk/">Allan Høgholm</a><figcaption>.</figcaption></figure>
+<figure><a href="{{ '/assets/images/20140816-Tina-og-Jacobs-bryllup-1284-Edit.jpg' | relative_url }}"><img src="{{ '/assets/images/20140816-Tina-og-Jacobs-bryllup-1284-Edit.jpg' | relative_url }}" alt="Et billede fra vores bryllup taget af vores fotograf Allan Høgholm." width="692" height="461" class="size-full wp-image-884" /></a><figcaption>Et billede fra vores bryllup taget af vores fotograf <a href="http://hoegholm.dk/">Allan Høgholm</a>.</figcaption></figure>
 
 <style type="text/css">
 .drinksCalculatorResult {

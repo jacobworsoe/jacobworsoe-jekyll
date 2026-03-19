@@ -14,7 +14,7 @@ Tilbage i 2019 satte jeg mig for at undersøge om browser fingerprinting kunne v
 
 <h2>Cookies er geniale men begrænsede</h2>
 
-De seneste år er cookies blevet stærkt begrænset som redskab til at tracke brugere. Både fordi 3. part cookies er blevet begrænset med fx <a href="{{ '/itp-og-google-analytics/' | relative_url }}">ITP</a> men også fordi brugere nu skal give consent til cookies og dermed tracking.
+De seneste år er cookies blevet stærkt begrænset som redskab til at tracke brugere. Både fordi 3. part cookies er blevet begrænset med fx <a href="https://www.jacobworsoe.dk/itp-og-google-analytics/">ITP</a> men også fordi brugere nu skal give consent til cookies og dermed tracking.
 
 Cookies er geniale til at genkende en bestemt browser på tværs af sidevisninger og sessioner. Det er helt anonymt og brugeren har fuld kontrol og kan slette cookies efter behov.
 
@@ -60,7 +60,7 @@ Fra et teknisk synspunkt er det interessant at teste om fingerprinting overhoved
 
 <a href="https://github.com/fingerprintjs/fingerprintjs">Fingerprintjs</a> laver et Array med alle datapunkterne som derefter hashes så man får en værdi som fx <code>69a45868bbc98e83a463e2e0730be988</code>.
 
-<figure><a href="{{ '/assets/images/2021/08/Fingerprint-components-console.png' | relative_url }}"><img src="{{ '/assets/images/2021/08/Fingerprint-components-console-860x495.png' | relative_url }}" alt="Datapunkter der indgår i et fingerprintjs fingerprint som derefter hashes." width="860" height="495" class="size-large wp-image-2718" /></a> Datapunkter som <a href="https://github.com/fingerprintjs/fingerprintjs">fingerprintjs</a><figcaption>bruger til at lave et fingerprint som derefter hashes.</figcaption></figure>
+<figure><a href="{{ '/assets/images/2021/08/Fingerprint-components-console.png' | relative_url }}"><img src="{{ '/assets/images/2021/08/Fingerprint-components-console-860x495.png' | relative_url }}" alt="Datapunkter der indgår i et fingerprintjs fingerprint som derefter hashes." width="860" height="495" class="size-large wp-image-2718" /></a><figcaption>Datapunkter som <a href="https://github.com/fingerprintjs/fingerprintjs">fingerprintjs</a> bruger til at lave et fingerprint som derefter hashes.</figcaption></figure>
 
 Herunder ses nogle eksempler på fingerprints, device, browser samt hvor mange GA users der har præcis denne kombination. Hvis et fingerprint skal være unikt, skal det kun matche én bestemt User. Ellers er der dermed flere browsere som har det samme fingerprint og så kan det ikke bruges til at genkende én browser mellem sidevisninger og besøg, som en cookie kan.
 

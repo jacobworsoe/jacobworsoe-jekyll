@@ -28,6 +28,7 @@ def convert_wp_caption_shortcodes(content):
     """
     Convert WordPress [caption id="..." align="..." width="..."]...[/caption] to <figure>/<figcaption>.
     Inner content is typically: <a href="..."><img ... /></a> Caption text.
+    Caption may contain its own <a>...</a>; use the first </a> (closes the image link), not rfind.
     """
     if not content:
         return content
@@ -37,7 +38,7 @@ def convert_wp_caption_shortcodes(content):
         inner = m.group(1).strip()
         caption = ""
         if "</a>" in inner:
-            pos = inner.rfind("</a>")
+            pos = inner.find("</a>")
             content_part = inner[: pos + len("</a>")]
             caption = inner[pos + len("</a>") :].strip()
         elif "/>" in inner:

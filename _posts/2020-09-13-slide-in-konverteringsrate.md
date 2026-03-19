@@ -114,9 +114,9 @@ Jeg tracker detaljeret hvor meget der bliver læst af mine blogindlæg ved at se
 <li>Når brugeren har scrollet 100% af indlæggets længde og været på siden mindst et minut (purchase).</li>
 </ol>
 
-Jeg tracker de events med <a href="{{ '/indhold-enhanced-ecommerce/' | relative_url }}">Enhanced Ecommerce hvis du vil læse mere om det</a>.
+Jeg tracker de events med <a href="https://www.jacobworsoe.dk/indhold-enhanced-ecommerce/">Enhanced Ecommerce hvis du vil læse mere om det</a>.
 
-Jeg vil gerne tracke det optimale tidspunkt at vise en slide-in på af de 6 ovenstående tidspunkter. Både for at øge konverteringen og få flest mulige tilmeldinger til mit <a href="{{ '/nyhedsbrev/' | relative_url }}">nyhedsbrev</a>. Men også for at undgå at irritere brugeren, så de forlader siden uden at læse indlægget færdigt.
+Jeg vil gerne tracke det optimale tidspunkt at vise en slide-in på af de 6 ovenstående tidspunkter. Både for at øge konverteringen og få flest mulige tilmeldinger til mit <a href="https://www.jacobworsoe.dk/nyhedsbrev/">nyhedsbrev</a>. Men også for at undgå at irritere brugeren, så de forlader siden uden at læse indlægget færdigt.
 
 <h3 id="article-header-id-5">Vis på et tilfældigt tidspunkt</h3>
 
@@ -202,7 +202,7 @@ Videre til sidste event.
 
 <h3 id="article-header-id-11">Læst 100% + 1 minut</h3>
 
-Det sidste event er dem som har scrollet 100% og været på siden mindst 1 minut - det er dem hvor jeg antager at de faktisk har læst hele blogindlægget (<a href="{{ '/indhold-enhanced-ecommerce/' | relative_url }}">og dem jeg tracker som et transaktion i Enhanced Ecommerce</a>).
+Det sidste event er dem som har scrollet 100% og været på siden mindst 1 minut - det er dem hvor jeg antager at de faktisk har læst hele blogindlægget (<a href="https://www.jacobworsoe.dk/indhold-enhanced-ecommerce/">og dem jeg tracker som et transaktion i Enhanced Ecommerce</a>).
 
 <figure><img src="{{ '/assets/images/2020/09/Laest-100p-1-minut-konvertering.jpg' | relative_url }}" alt="Heller ikke ved 100% læst + 1 minut på siden er der nogen entydig forskel." width="1030" height="577" class="size-full wp-image-2534" /><figcaption>Heller ikke ved 100% læst + 1 minut på siden er der nogen entydig forskel.</figcaption></figure>
 
@@ -214,4 +214,4 @@ Konklusionen er derfor at min slide-in ikke er irriterende for brugerne - i hver
 
 I dette blogindlæg har jeg brugt Google Analytics og Google Tag Manager til at indsamle det nødvendige data til at teste hypotesen om at slide-ins ødelægger konverteringsraten. Min konklusion gælder ikke for alle sites og alle brancher - sådan noget skal altid testes på det enkelte site. Men jeg håber at ovenstående kan give noget inspiration til hvordan man kan opstille en hypotese, indsamle den nødvendige data og analysere det, så der kan træffes en beslutning på baggrund af data.
 
-Tilbage er der blot at få lavet en ordentlig content upgrade, så jeg kan lave en slide-in der faktisk kan give nogle tilmeldinger til mit <a href="{{ '/nyhedsbrev/' | relative_url }}">nyhedsbrev</a>.
+Tilbage er der blot at få lavet en ordentlig content upgrade, så jeg kan lave en slide-in der faktisk kan give nogle tilmeldinger til mit <a href="https://www.jacobworsoe.dk/nyhedsbrev/">nyhedsbrev</a>.

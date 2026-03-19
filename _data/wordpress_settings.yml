@@ -1,11 +1,11 @@
 # Exported from WordPress wp_options (run export_wp_posts_pages_mysql.py to refresh)
 
 blogname: jacobworsoe.dk
-home: https://www.jacobworsoe.dk
+home: "https://www.jacobworsoe.dk"
 page_on_front: 0
 permalink_structure: /%postname%/
 show_on_front: posts
-siteurl: https://www.jacobworsoe.dk
+siteurl: "https://www.jacobworsoe.dk"
 
 # Derived Jekyll permalink (from permalink_structure)
-jekyll_permalink: :title
+jekyll_permalink: ":title"
