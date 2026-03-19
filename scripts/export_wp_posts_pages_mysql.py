@@ -4,6 +4,7 @@ Export WordPress posts and pages from MySQL to Jekyll.
 Reads wp_options (permalink_structure, blogname, siteurl, etc.) and writes _data/wordpress_settings.yml;
 updates _config.yml permalink from permalink_structure so no manual permalink config is required.
 Rewrites www.jacobworsoe.dk/wp-content/uploads/... to {{ '/assets/images/...' | relative_url }} (host files under assets/images/).
+After export, replaces known third-party image URLs (e.g. Wistia poster frames) with repo assets — see rewrite_external_images_to_static_repo.
 Uses shared credentials from wp_mysql_credentials (scripts/.mysql-credentials, gitignored).
 Usage: python scripts/export_wp_posts_pages_mysql.py
 """
@@ -89,6 +90,27 @@ def finalize_jekyll_asset_tokens(content):
         return "{{ '" + full.replace("'", "\\'") + "' | relative_url }}"
 
     return re.sub(r"__JAS__([A-Za-z0-9_-]+)__JAE__", repl, content)
+
+
+# WordPress DB may still reference embed CDNs (e.g. Wistia thumbnails). Map those to files under assets/images/.
+# Add (regex, liquid_relative_url_filter) pairs when you host a local replacement. Runs after finalize_jekyll_asset_tokens.
+_STATIC_IMAGE_OVERRIDES = [
+    (
+        re.compile(
+            r"https://embedwistia-a\.akamaihd\.net/deliveries/e39d34732ebc9dda5f64d76e5e4d4a60b97e6703\.jpg(?:\?[^\"\s<>]*)?",
+            re.IGNORECASE,
+        ),
+        "{{ '/assets/images/5995f3471cf5f3.webp' | relative_url }}",
+    ),
+]
+
+
+def rewrite_external_images_to_static_repo(content):
+    if not content:
+        return content
+    for pattern, liquid_src in _STATIC_IMAGE_OVERRIDES:
+        content = pattern.sub(liquid_src, content)
+    return content
 
 
 def escape_yaml(s):
@@ -222,6 +244,7 @@ def main():
         post_content = rewrite_wp_uploads_to_asset_tokens(post_content)
         post_content = escape_liquid(post_content)
         post_content = finalize_jekyll_asset_tokens(post_content)
+        post_content = rewrite_external_images_to_static_repo(post_content)
 
         # Jekyll post filename: YYYY-MM-DD-slug.md -> URL /:year/:month/:title/ = /YYYY/MM/slug/
         date_str = str(post_date)[:10] if post_date else "2020-01-01"
@@ -262,6 +285,7 @@ def main():
         post_content = rewrite_wp_uploads_to_asset_tokens(post_content)
         post_content = escape_liquid(post_content)
         post_content = finalize_jekyll_asset_tokens(post_content)
+        post_content = rewrite_external_images_to_static_repo(post_content)
         date_str = str(post_date)[:10] if post_date else ""
         date_fm = date_str
         if post_date and len(str(post_date)) >= 19:
