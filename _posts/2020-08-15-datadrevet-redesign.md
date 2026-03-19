@@ -293,10 +293,11 @@ JavaScript koden til websitet er reduceret kraftigt med i alt 153 KB hvoraf de 8
 
 Jeg indsætter en <code>div</code> rundt om videoen.
 
-<pre><code class="language-html"><div class="videoWrapper">
+```html
+<div class="videoWrapper">
     <iframe src="//www.youtube.com/embed/usyYXNNBRjc" frameborder="0" allowfullscreen></iframe>
 </div>
-</code></pre>
+```
 
 Og tilføjer lidt styling af den <code>div</code> samt iframen som indeholder videoen, og så er videoen responsiv.
 
