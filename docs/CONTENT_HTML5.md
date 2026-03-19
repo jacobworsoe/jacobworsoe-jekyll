@@ -2,6 +2,14 @@
 
 ## Rules of thumb
 
+- **HTML samples in posts:** Do not put tags like `<div>` inside raw `<pre><code>` in Markdown—Kramdown will parse them as real HTML (and `<div>` is not valid inside `<code>`). Use a **fenced block** instead so the source is escaped and Prism still highlights it:
+
+  ````markdown
+  ```html
+  <div>...</div>
+  ```
+  ````
+
 - **`<p>` is only for phrasing content.** Close `</p>` before block-level siblings: headings (`<h1>`–`<h6>`), `<figure>`, `<blockquote>`, `<pre>`, lists (`<ul>`/`<ol>` when outer), `<div>`, etc.
 - **Prefer Markdown paragraphs** (blank-line separated text) over a single opening `<p>` that runs to the end of the article—Kramdown will emit valid `<p>` boundaries.
 - **`<blockquote>`** (non–Twitter embed): use `<blockquote><p>…</p></blockquote>` like WordPress; `<cite>` may sit inside that `<p>`.

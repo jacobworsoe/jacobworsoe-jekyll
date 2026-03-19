@@ -43,14 +43,15 @@ Jeg lavede en simpel slide-in her på min blog.
 
 Selve slide-in boxen er blot noget simpel HTML.
 
-<pre><code class="language-html"><div class="slide-in-box">
+```html
+<div class="slide-in-box">
     <a href="#" class="slide-in-box-close"></a>
     <h3>Få gratis tips og tricks i din indbakke!</h3>
     <form action="" method="post">
     ... input felter ...
     </form>
 </div>
-</code></pre>
+```
 
 <h3 id="article-header-id-2">CSS</h3>
 
