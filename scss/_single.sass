@@ -40,7 +40,9 @@
 		margin: 30px 0
 
 
-.wp-caption
+// Exported posts use <figure>/<figcaption>; legacy WP markup used .wp-caption / .wp-caption-text
+.wp-caption,
+.post-content figure:has(figcaption)
 	line-height: 18px
 	margin-bottom: 20px
 	max-width: 100% !important
@@ -48,7 +50,8 @@
 	padding: 4px
 	text-align: center
 
-.wp-caption-text
+.wp-caption-text,
+.post-content figcaption
 	color: #8a8a8a
 	font-size: 16px
 	padding-bottom: 20px

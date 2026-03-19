@@ -23,6 +23,10 @@ Static site (former WordPress content). Deploy on GitHub Pages or any static hos
    - `python scripts/export_all.py` or `scripts/build.ps1` / `build.bat`  
    - Credentials: `scripts/.mysql-credentials` (see `scripts/README.md`)
 
+## Analytics (GA4 dataLayer)
+
+Post/list engagement is pushed from **`js/content-as-ecommerce.js`** (GA4 ecommerce-style events, currency **DKK**). GTM wiring and custom dimensions: **`docs/GA4-content-ecommerce-gtm.md`**.
+
 ## Deploy (GitHub Pages)
 
 Workflow **`.github/workflows/jekyll.yml`**: `npm run build` + `bundle exec jekyll build` on push to `main` / `master`.
