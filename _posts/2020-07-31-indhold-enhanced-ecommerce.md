@@ -971,11 +971,11 @@ På kaffe-indlægget er der slet ikke samme frafald, så det indlæg fastholder 
 
 <h2>Blog kategorier</h2>
 
-Der er også kæmpe forskel i fastholdelse af brugerne fordelt på kategorier. Indlæg om <a href="https://www.jacobworsoe.dk/category/nethandel/">Nethandel</a> bliver læst meget.
+Der er også kæmpe forskel i fastholdelse af brugerne fordelt på kategorier. Indlæg om Nethandel bliver læst meget.
 
-Heldigvis bliver mine indlæg om <a href="https://www.jacobworsoe.dk/category/webanalyse/">Webanalyse</a>, som jeg lægger meget arbejde i, også læst meget, hvor 24% læser hele indlægget.
+Heldigvis bliver mine indlæg om Webanalyse, som jeg lægger meget arbejde i, også læst meget, hvor 24% læser hele indlægget.
 
-Til gengæld skal jeg vidst tage mig lidt sammen, når jeg skriver om <a href="https://www.jacobworsoe.dk/category/seo/">SEO</a>, som umiddelbart ikke er så interessante indlæg. Her har jeg også lige taget <a href="https://www.jacobworsoe.dk/category/hverdagsstatistik/">Hverdagsstatisk</a> med, som er mit indlæg om <a href="https://www.jacobworsoe.dk/hvor-meget-drikker-gaesterne-til-et-bryllup/">drikkevarer til et bryllup</a>.
+Til gengæld skal jeg vidst tage mig lidt sammen, når jeg skriver om SEO, som umiddelbart ikke er så interessante indlæg. Her har jeg også lige taget Hverdagsstatisk med, som er mit indlæg om <a href="{{ '/hvor-meget-drikker-gaesterne-til-et-bryllup/' | relative_url }}">drikkevarer til et bryllup</a>.
 
 <a href="{{ '/assets/images/2019/11/Buy-to-Detail-rate-for-kategorier.jpg' | relative_url }}"><img src="{{ '/assets/images/2019/11/Buy-to-Detail-rate-for-kategorier-860x597.jpg' | relative_url }}" alt="" width="860" height="597" class="alignnone size-large wp-image-2117" /></a>
 
