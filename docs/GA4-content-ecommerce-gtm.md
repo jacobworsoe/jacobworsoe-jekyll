@@ -21,6 +21,8 @@ Reference: [Measure ecommerce (GTM)](https://developers.google.com/analytics/dev
 
 Each ecommerce push is preceded by `dataLayer.push({ ecommerce: null })`.
 
+On single posts and pages, `_includes/datalayer_product.html` sets global **`product`** to a one-element array of **GA4 `items` objects** (same keys as below). Homepage/category listing events build that shape in JS from link `data-*` attributes.
+
 Standard GA4 keys on `ecommerce`:
 
 - `currency`: `DKK`

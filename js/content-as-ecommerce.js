@@ -11,41 +11,38 @@ var ContentAsEcommerce = (function() {
     return isNaN(n) ? 0 : n;
   }
 
-  /** Map UA-style product object to GA4 item. */
-  function toGa4Item(raw, extra) {
-    var qty = raw.quantity != null ? parseInt(raw.quantity, 10) : 1;
-    if (isNaN(qty) || qty < 1) qty = 1;
-    var price = parsePrice(raw.price);
-    var idx = raw.position != null ? parseInt(raw.position, 10) : raw.index;
-    if (!isNaN(idx) && raw.position != null) idx = idx - 1;
-    if (isNaN(idx)) idx = 0;
-    var item = {
-      item_id: String(raw.id != null ? raw.id : ""),
-      item_name: raw.name != null ? String(raw.name) : "",
-      price: price,
-      quantity: qty,
-      item_brand: raw.brand != null ? String(raw.brand) : "",
-      item_category: raw.category != null ? String(raw.category) : "",
-      item_variant: "",
-      index: idx
-    };
-    if (extra) {
-      for (var k in extra) {
-        if (Object.prototype.hasOwnProperty.call(extra, k)) item[k] = extra[k];
-      }
-    }
-    return item;
+  /** 0-based index; listing markup uses 1-based data-position */
+  function itemIndexFromDataPosition(pos) {
+    var idx = parseInt(pos, 10);
+    if (isNaN(idx)) return 0;
+    return Math.max(0, idx - 1);
   }
 
-  function itemsFromRawList(rawList, listId, listName) {
-    var items = [];
-    for (var i = 0; i < rawList.length; i++) {
-      var ex = {};
-      if (listId) ex.item_list_id = listId;
-      if (listName) ex.item_list_name = listName;
-      items.push(toGa4Item(rawList[i], ex));
-    }
-    return items;
+  /** GA4 item from home/category link data-* attributes */
+  function itemFromHomeDataset(ds) {
+    return {
+      item_id: String(ds.id != null ? ds.id : ""),
+      item_name: String(ds.title != null ? ds.title : ""),
+      price: parsePrice(ds.price),
+      quantity: 1,
+      item_brand: String(ds.year != null ? ds.year : ""),
+      item_category: String(ds.category != null ? ds.category : ""),
+      item_variant: "",
+      index: itemIndexFromDataPosition(ds.position)
+    };
+  }
+
+  function withListContext(item, listId, listName) {
+    var o = Object.assign({}, item);
+    if (listId) o.item_list_id = listId;
+    if (listName) o.item_list_name = listName;
+    return o;
+  }
+
+  function cloneItems(items) {
+    var out = [];
+    for (var i = 0; i < items.length; i++) out.push(Object.assign({}, items[i]));
+    return out;
   }
 
   function lineValue(item) {
@@ -93,19 +90,7 @@ var ContentAsEcommerce = (function() {
       if (!target || !target.matches || !target.matches("a.home-post-link")) return;
 
       var labels = listLabels();
-      var raw = {
-        name: target.dataset.title,
-        id: target.dataset.id,
-        price: target.dataset.price,
-        brand: target.dataset.year,
-        category: target.dataset.category,
-        position: target.dataset.position,
-        quantity: 1
-      };
-      var item = toGa4Item(raw, {
-        item_list_id: labels.id,
-        item_list_name: labels.name
-      });
+      var item = withListContext(itemFromHomeDataset(target.dataset), labels.id, labels.name);
       pushGa4Ecommerce("select_item", {
         item_list_id: labels.id,
         item_list_name: labels.name,
@@ -113,7 +98,7 @@ var ContentAsEcommerce = (function() {
       });
     },
 
-    trackSinglePostAsProduct: function(product) {
+    trackSinglePostAsProduct: function(itemsInput) {
       var contentArea = document.querySelector(".post-content");
       if (!contentArea) return;
 
@@ -127,7 +112,7 @@ var ContentAsEcommerce = (function() {
       var scrollToEndBeforeOneMinute = false;
       var beginning = Date.now();
 
-      var items = itemsFromRawList(product);
+      var items = cloneItems(itemsInput);
       var v = sumItemsValue(items);
 
       pushGa4Ecommerce("view_item", {
@@ -140,7 +125,7 @@ var ContentAsEcommerce = (function() {
         clearTimeout(scrollTimeout);
         scrollTimeout = setTimeout(function() {
           var bottom = window.innerHeight + window.pageYOffset;
-          var itemsNow = itemsFromRawList(product);
+          var itemsNow = cloneItems(itemsInput);
           var val = sumItemsValue(itemsNow);
 
           if (bottom > readerLocation && !scroller) {
@@ -210,6 +195,7 @@ var ContentAsEcommerce = (function() {
     trackProductImpressions: function() {
       window.contentItemListBuffer = window.contentItemListBuffer || [];
       window.contentItemListPending = window.contentItemListPending || [];
+      var labels = listLabels();
 
       function checkVisible(elm) {
         var rect = elm.getBoundingClientRect();
@@ -218,26 +204,18 @@ var ContentAsEcommerce = (function() {
       }
 
       function pushProducts(articles, i) {
-        contentItemListBuffer.push({
-          name: articles[i].dataset.title,
-          id: articles[i].dataset.id,
-          price: articles[i].dataset.price,
-          brand: articles[i].dataset.year,
-          category: articles[i].dataset.category,
-          position: articles[i].dataset.position,
-          quantity: 1
-        });
+        contentItemListBuffer.push(
+          withListContext(itemFromHomeDataset(articles[i].dataset), labels.id, labels.name)
+        );
       }
 
       function sendProducts() {
-        var labels = listLabels();
         var raw = window.contentItemListBuffer.slice();
         if (!raw.length) return;
-        var items = itemsFromRawList(raw, labels.id, labels.name);
         pushGa4Ecommerce("view_item_list", {
           item_list_id: labels.id,
           item_list_name: labels.name,
-          items: items
+          items: raw
         });
         window.contentItemListBuffer = [];
       }

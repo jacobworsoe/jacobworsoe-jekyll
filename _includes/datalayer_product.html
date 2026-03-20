@@ -1,5 +1,5 @@
 {% comment %}
-  Outputs pageType, product array, and dataLayer push for GA (matches WordPress).
+  pageType, GA4 ecommerce items[] for the current post/page, and a small non-ecommerce dataLayer push.
   Usage: {% include datalayer_product.html page_type="single" product_id=... product_name=page.title brand=year_str year=year_str category=... content=content %}
 {% endcomment %}
 {% assign words_count = include.content | default: '' | number_of_words %}
@@ -7,12 +7,14 @@
   var pageType = "{{ include.page_type }}";
   var wordsCount = {{ words_count }};
   var product = [{
-    name: {{ include.product_name | jsonify }},
-    id: "{{ include.product_id }}",
-    price: "" + wordsCount,
-    brand: "{{ include.brand }}",
-    category: {{ include.category | jsonify }},
-    quantity: 1
+    item_id: {{ include.product_id | jsonify }},
+    item_name: {{ include.product_name | jsonify }},
+    price: {{ words_count }},
+    quantity: 1,
+    item_brand: {{ include.brand | jsonify }},
+    item_category: {{ include.category | jsonify }},
+    item_variant: "",
+    index: 0
   }];
   window.dataLayer = window.dataLayer || [];
   dataLayer.push({
