@@ -26,7 +26,7 @@ Standard GA4 keys on `ecommerce`:
 - `currency`: `DKK`
 - `value`: sum of `price * quantity` for `items` (word-count based)
 - `items`: array of objects with at least `item_id`, `item_name`, `price`, `quantity`, `item_brand`, `item_category`, `item_variant`, `index`
-- Optional on items: `content_word_bucket` (word-count bucket, e.g. `0-500`)
+- `item_variant`: word-count bucket (e.g. `0-500`) on single-post events when `dimension1` is set on the product object; often empty on list/click items (year stays on `item_brand`).
 - `purchase` also requires `transaction_id` (unique string per conversion)
 - `add_shipping_info`: include `shipping_tier` on `ecommerce` (GTM: Data Layer Variable `ecommerce.shipping_tier`).
 - `add_payment_info`: include `payment_type` on `ecommerce` (`ecommerce.payment_type`).
@@ -45,7 +45,7 @@ Standard GA4 keys on `ecommerce`:
 4. **Optional – custom dimensions in GA4** (Admin → Data display → Custom definitions):
 
    - Map `shipping_tier` / `payment_type` if you want them as dedicated dimensions (often available on the ecommerce event payload).
-   - Item-scoped: register **`content_word_bucket`** on items if needed.
+   - Item-scoped: map **`item_variant`** if you want the word-count bucket as a custom dimension.
 
 5. **Debug**: GTM Preview + GA4 **DebugView** to confirm `items`, `currency`, and `transaction_id` on `purchase`.
 

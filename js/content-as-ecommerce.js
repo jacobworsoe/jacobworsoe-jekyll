@@ -19,6 +19,10 @@ var ContentAsEcommerce = (function() {
     var idx = raw.position != null ? parseInt(raw.position, 10) : raw.index;
     if (!isNaN(idx) && raw.position != null) idx = idx - 1;
     if (isNaN(idx)) idx = 0;
+    var bucket =
+      raw.dimension1 != null && raw.dimension1 !== ""
+        ? String(raw.dimension1)
+        : "";
     var item = {
       item_id: String(raw.id != null ? raw.id : ""),
       item_name: raw.name != null ? String(raw.name) : "",
@@ -26,12 +30,9 @@ var ContentAsEcommerce = (function() {
       quantity: qty,
       item_brand: raw.brand != null ? String(raw.brand) : "",
       item_category: raw.category != null ? String(raw.category) : "",
-      item_variant: raw.variant != null ? String(raw.variant) : "",
+      item_variant: bucket,
       index: idx
     };
-    if (raw.dimension1 != null && raw.dimension1 !== "") {
-      item.content_word_bucket = String(raw.dimension1);
-    }
     if (extra) {
       for (var k in extra) {
         if (Object.prototype.hasOwnProperty.call(extra, k)) item[k] = extra[k];
@@ -102,7 +103,6 @@ var ContentAsEcommerce = (function() {
         price: target.dataset.price,
         brand: target.dataset.year,
         category: target.dataset.category,
-        variant: target.dataset.year,
         position: target.dataset.position,
         quantity: 1
       };
@@ -232,7 +232,6 @@ var ContentAsEcommerce = (function() {
           price: articles[i].dataset.price,
           brand: articles[i].dataset.year,
           category: articles[i].dataset.category,
-          variant: "",
           position: articles[i].dataset.position,
           quantity: 1
         });
