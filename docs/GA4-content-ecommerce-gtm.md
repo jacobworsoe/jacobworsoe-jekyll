@@ -12,8 +12,8 @@ Reference: [Measure ecommerce (GTM)](https://developers.google.com/analytics/dev
 | `select_item` | Click a post link on homepage/category. |
 | `view_item` | Single post/page load (one “product” = that post). |
 | `add_to_cart` | User scrolls past ~150px on the post. |
-| `add_shipping_info` | Scroll past ~33% of `.post-content` (metaphor: content “checkout”). `ecommerce.shipping_tier` = `33pct` or `33pct_{word_bucket}`. |
-| `add_payment_info` | Scroll past ~66% (`payment_type` `66pct_…`). |
+| `add_shipping_info` | Scroll past ~33% of `.post-content` (metaphor: content “checkout”). `ecommerce.shipping_tier` = `33pct`. |
+| `add_payment_info` | Scroll past ~66% (`payment_type` = `66pct`). |
 | `remove_from_cart` | User reaches end of content in &lt; 60 seconds. |
 | `purchase` | User reaches end of content after &gt; 60 seconds (assumed read). |
 
@@ -25,8 +25,7 @@ Standard GA4 keys on `ecommerce`:
 
 - `currency`: `DKK`
 - `value`: sum of `price * quantity` for `items` (word-count based)
-- `items`: array of objects with at least `item_id`, `item_name`, `price`, `quantity`, `item_brand`, `item_category`, `item_variant`, `index`
-- `item_variant`: word-count bucket (e.g. `0-500`) on single-post events when `dimension1` is set on the product object; often empty on list/click items (year stays on `item_brand`).
+- `items`: array of objects with at least `item_id`, `item_name`, `price`, `quantity`, `item_brand`, `item_category`, `item_variant` (empty), `index`
 - `purchase` also requires `transaction_id` (unique string per conversion)
 - `add_shipping_info`: include `shipping_tier` on `ecommerce` (GTM: Data Layer Variable `ecommerce.shipping_tier`).
 - `add_payment_info`: include `payment_type` on `ecommerce` (`ecommerce.payment_type`).
@@ -45,7 +44,6 @@ Standard GA4 keys on `ecommerce`:
 4. **Optional – custom dimensions in GA4** (Admin → Data display → Custom definitions):
 
    - Map `shipping_tier` / `payment_type` if you want them as dedicated dimensions (often available on the ecommerce event payload).
-   - Item-scoped: map **`item_variant`** if you want the word-count bucket as a custom dimension.
 
 5. **Debug**: GTM Preview + GA4 **DebugView** to confirm `items`, `currency`, and `transaction_id` on `purchase`.
 

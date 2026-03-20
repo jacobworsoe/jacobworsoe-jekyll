@@ -1,19 +1,18 @@
 {% comment %}
   Outputs pageType, product array, and dataLayer push for GA (matches WordPress).
-  When used after word_buckets.html, price/words come from window.__wordCount.
-  Usage: {% include datalayer_product.html page_type="single" product_id=... product_name=page.title brand=year_str year=year_str category=... %}
+  Usage: {% include datalayer_product.html page_type="single" product_id=... product_name=page.title brand=year_str year=year_str category=... content=content %}
 {% endcomment %}
+{% assign words_count = include.content | default: '' | number_of_words %}
 <script>
   var pageType = "{{ include.page_type }}";
-  var wordsCount = window.__wordCount ? window.__wordCount.count : "{{ include.price | default: 0 }}";
+  var wordsCount = {{ words_count }};
   var product = [{
     name: {{ include.product_name | jsonify }},
     id: "{{ include.product_id }}",
     price: "" + wordsCount,
     brand: "{{ include.brand }}",
     category: {{ include.category | jsonify }},
-    quantity: 1,
-    dimension1: window.__wordCount ? window.__wordCount.bucket : "0-500"
+    quantity: 1
   }];
   window.dataLayer = window.dataLayer || [];
   dataLayer.push({

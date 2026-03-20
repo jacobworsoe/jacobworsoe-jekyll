@@ -19,10 +19,6 @@ var ContentAsEcommerce = (function() {
     var idx = raw.position != null ? parseInt(raw.position, 10) : raw.index;
     if (!isNaN(idx) && raw.position != null) idx = idx - 1;
     if (isNaN(idx)) idx = 0;
-    var bucket =
-      raw.dimension1 != null && raw.dimension1 !== ""
-        ? String(raw.dimension1)
-        : "";
     var item = {
       item_id: String(raw.id != null ? raw.id : ""),
       item_name: raw.name != null ? String(raw.name) : "",
@@ -30,7 +26,7 @@ var ContentAsEcommerce = (function() {
       quantity: qty,
       item_brand: raw.brand != null ? String(raw.brand) : "",
       item_category: raw.category != null ? String(raw.category) : "",
-      item_variant: bucket,
+      item_variant: "",
       index: idx
     };
     if (extra) {
@@ -146,10 +142,6 @@ var ContentAsEcommerce = (function() {
           var bottom = window.innerHeight + window.pageYOffset;
           var itemsNow = itemsFromRawList(product);
           var val = sumItemsValue(itemsNow);
-          var bucket =
-            product[0] && product[0].dimension1 != null
-              ? String(product[0].dimension1)
-              : "";
 
           if (bottom > readerLocation && !scroller) {
             pushGa4Ecommerce("add_to_cart", {
@@ -168,7 +160,7 @@ var ContentAsEcommerce = (function() {
             pushGa4Ecommerce("add_shipping_info", {
               currency: CURRENCY,
               value: val,
-              shipping_tier: bucket ? "33pct_" + bucket : "33pct",
+              shipping_tier: "33pct",
               items: itemsNow
             });
             oneThird = true;
@@ -178,7 +170,7 @@ var ContentAsEcommerce = (function() {
             pushGa4Ecommerce("add_payment_info", {
               currency: CURRENCY,
               value: val,
-              payment_type: bucket ? "66pct_" + bucket : "66pct",
+              payment_type: "66pct",
               items: itemsNow
             });
             twoThirds = true;

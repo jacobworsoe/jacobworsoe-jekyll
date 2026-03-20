@@ -3,7 +3,6 @@ layout: default
 style: single
 ---
 
-{% include word_buckets.html content=content %}
 {% assign product_id = page.wordpress_id | default: page.id %}
 {% assign year_str = page.date | date: '%Y' %}
 
@@ -18,5 +17,6 @@ style: single
     brand=year_str
     year=year_str
     category="page"
+    content=content
   %}
 </article>

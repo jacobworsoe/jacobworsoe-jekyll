@@ -3,7 +3,6 @@ layout: default
 style: single
 ---
 
-{% include word_buckets.html content=content %}
 {% assign slug = page.slug | default: page.url | split: '/' | last | replace: '/','' %}
 {% assign category_display = page.categories | join: ', ' %}
 {% assign product_id = page.wordpress_id | default: page.id %}
@@ -26,6 +25,7 @@ style: single
   brand=year_str
   year=year_str
   category=category_display
+  content=content
 %}
 
 <div class="comments wrap" id="comments" aria-label="Kommentarer">
