@@ -4,6 +4,7 @@ Build _data/comments.yml from jekyll-import WordPress output.
 Run after: cd tmp_wp_import && bundle exec jekyll import wordpress ...
 Reads tmp_wp_import/_posts/*.html (YAML front matter with comments), writes repo _data/comments.yml.
 """
+import html
 import re
 import os
 from pathlib import Path
@@ -83,11 +84,11 @@ def main():
             content = re.sub(r"<[^>]+>", " ", content)
             content = re.sub(r"\s+", " ", content).strip()
             by_slug[slug].append({
-                "author": author,
+                "author": html.unescape(author),
                 "date": date,
                 "content": content,
                 "avatar_url": gravatar_url(email),
-                "author_url": url,
+                "author_url": html.unescape(url),
             })
     out_path.parent.mkdir(parents=True, exist_ok=True)
     lines = ["# WordPress comments from jekyll-import (keyed by post slug)", ""]

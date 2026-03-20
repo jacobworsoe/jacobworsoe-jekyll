@@ -27,7 +27,8 @@ Or: `scripts/build.ps1` / `scripts/build.bat` (same as `export_all.py`).
 ### Static assets vs. embeds in the DB
 
 WordPress may store **third-party image URLs** (e.g. Wistia video poster on Akamai) in `post_content`. Those are rewritten to **repo files** after each export via `_STATIC_IMAGE_OVERRIDES` in `export_wp_posts_pages_mysql.py` (function `rewrite_external_images_to_static_repo`). When you replace another embed with a file under `assets/images/`, add a regex + Liquid `relative_url` pair there so future `export_all.py` runs keep the Jekyll site self-hosted.
-- **`export_wp_comments_mysql.py`** — `_data/comments.yml`.
+- **`export_wp_comments_mysql.py`** — `_data/comments.yml` (decodes HTML entities in `comment_author` / `comment_author_url`).
+- **`normalize_comments_author_entities.py`** — one-off line fix: decode entities in existing `_data/comments.yml` `author` / `author_url` fields only (safe if export wasn’t run yet).
 - **`rewrite_markdown_off_wordpress.py`** — bulk-rewrite existing Markdown off `www.jacobworsoe.dk` (run after manual edits if needed).
 - **`check_post_html5.py`** — heuristic: detect `<p>` that wraps block-level tags; see `docs/CONTENT_HTML5.md`.
 
@@ -42,6 +43,16 @@ Example host: `linux12.unoeuro.com`. Paths in posts are `/assets/images/YYYY/MM/
 ```bash
 python scripts/download_referenced_images_ftp.py
 python scripts/download_referenced_images_ftp.py --favicon
+```
+
+## FTP: full uploads + custom WordPress files (restore)
+
+- **`mirror_wp_uploads_ftp.py`** — recursive `wp-content/uploads` → local folder (skip if file exists).
+- **`backup_wp_custom_ftp.py`** — themes, plugins, `mu-plugins`, languages, drop-ins under `wp-content`, plus `wp-config.php`, `.htaccess`, and common root extras. Skips `uploads` (use the mirror above), `upgrade`, `cache`, and typical log/backup dirs. Writes `RESTORE_NOTES.txt` next to the download.
+
+```bash
+python scripts/mirror_wp_uploads_ftp.py
+python scripts/backup_wp_custom_ftp.py
 ```
 
 Legacy Node/REST export scripts are not used for this project.
