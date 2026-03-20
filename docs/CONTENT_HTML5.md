@@ -13,6 +13,7 @@
 - **Liquid in samples:** If a fence must show `{%` / `{{`, either keep **HTML entities** (`&#123;` …) as in the original export, or wrap with `{% raw %}…{% endraw %}`—otherwise Jekyll may execute Liquid inside the Markdown file.
 
 - **`<p>` is only for phrasing content.** Close `</p>` before block-level siblings: headings (`<h1>`–`<h6>`), `<figure>`, `<blockquote>`, `<pre>`, lists (`<ul>`/`<ol>` when outer), `<div>`, etc.
+- **Raw `<img>` (or `<div>…<img>…</div>`) in Markdown:** Put a **blank line** after the image block before normal paragraph text. If the image line is glued to the next prose line, Kramdown often emits one `<p>` that wraps both the image and the text, which is invalid / unreliable in HTML5.
 - **Prefer Markdown paragraphs** (blank-line separated text) over a single opening `<p>` that runs to the end of the article—Kramdown will emit valid `<p>` boundaries.
 - **`<blockquote>`** (non–Twitter embed): use `<blockquote><p>…</p></blockquote>` like WordPress; `<cite>` may sit inside that `<p>`.
 - **Ordered lists:** each `<li>` that uses a paragraph should be `<li><p>…</p></li>`—never `</p></li>` without a matching `<p>`.

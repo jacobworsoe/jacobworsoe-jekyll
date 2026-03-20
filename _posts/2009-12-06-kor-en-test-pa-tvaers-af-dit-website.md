@@ -32,6 +32,7 @@ Den menu fungerer jo meget godt, men set i det lys at "Tilmeld link" er mit <em
 <a href="{{ '/assets/images/green.jpg' | relative_url }}"><img class="alignnone size-full wp-image-6 no-border" title="green" alt="" src="{{ '/assets/images/green.jpg' | relative_url }}" width="387" height="65" /></a>
 
 <a href="{{ '/assets/images/red.jpg' | relative_url }}"><img class="alignnone size-full wp-image-7 no-border" title="red" alt="" src="{{ '/assets/images/red.jpg' | relative_url }}" width="386" height="65" /></a>
+
 Det er jo et noget stærkere Call-To-Action og samtidig kan vi også lige få testet hvor meget det betyder om knappen er rød eller grøn, og det skader jo aldrig :)
 
 <h2>Opsætning af testen</h2>

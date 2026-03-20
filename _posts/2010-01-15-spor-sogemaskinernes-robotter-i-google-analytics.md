@@ -38,16 +38,20 @@ Nu har du adgang til en masse informationer om de bots der besøger din side. Je
 
 </div>
 <div><a href="{{ '/assets/images/spor-bots-ga-6.jpg' | relative_url }}"><img class="alignnone size-full wp-image-31 no-border" title="spor-bots-ga-6" alt="" src="{{ '/assets/images/spor-bots-ga-6.jpg' | relative_url }}" width="777" height="426" /></a></div>
+
 Hvis man klikker på de enkelte bots kan man se at der faktisk er meget forskel på hvordan de crawler en side. Yahoo kommer f.eks. næsten hver dag og crawler et lille udsnit af sitet hver gang:
 <div><a href="{{ '/assets/images/spor-bots-ga-7.jpg' | relative_url }}"><img class="alignnone size-full wp-image-32 no-border" title="spor-bots-ga-7" alt="" src="{{ '/assets/images/spor-bots-ga-7.jpg' | relative_url }}" width="779" height="247" /></a></div>
+
 Google kommer derimod kun sjældent, men crawler så til gengæld 811 sider og holder sig så væk. Botten kommer dog forbi engang imellem når der kommer nyt indhold på sitet og crawler de nye sider, men alle de "gamle" sider bliver kun crawlet sjældent. I hvert fald på mit linkkatalog, men det afhænger selvfølgelig meget af sitet:
 <div><a href="{{ '/assets/images/spor-bots-ga-8.jpg' | relative_url }}"><img class="alignnone size-full wp-image-33 no-border" title="spor-bots-ga-8" alt="" src="{{ '/assets/images/spor-bots-ga-8.jpg' | relative_url }}" width="784" height="248" /></a></div>
 <div>
 
 Man kan derudover også se hvilke sider der er besøgt og her er robots.txt en klar topscorer, men også de vigtigste undersider bliver crawlet ofte:
 <div> <a href="{{ '/assets/images/spor-bots-ga-9.jpg' | relative_url }}"><img class="alignnone size-full wp-image-34 no-border" title="spor-bots-ga-9" alt="" src="{{ '/assets/images/spor-bots-ga-9.jpg' | relative_url }}" width="773" height="341" /></a></div>
+
 Til sidst et eksempel fra denne blog, hvor man kan se at Google har en bestemt bot som kun crawler rss-feeds. Det var ny viden for mig :)
 <div><a href="{{ '/assets/images/spor-bots-ga-10.jpg' | relative_url }}"><img class="alignnone size-full wp-image-35 no-border" title="spor-bots-ga-10" alt="" src="{{ '/assets/images/spor-bots-ga-10.jpg' | relative_url }}" width="777" height="126" /></a></div>
+
 Alt i alt et ganske smart lille trick som kan give lidt ny viden hvis man interesserer sig lidt for hvordan de forskellige bots egentlig opfører sig i praksis. Jeg glæder mig til at høre om det er noget I andre også finder sjovt?
 <div></div>
 </div>
