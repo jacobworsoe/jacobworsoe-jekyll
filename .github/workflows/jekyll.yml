@@ -1,5 +1,6 @@
 # Build and deploy Jekyll site to GitHub Pages
-# Combines: Node assets build + GitHub's configure-pages (correct baseurl for project sites)
+# Use _config.yml baseurl (empty). Do not use configure-pages base_path here: this repo is a
+# project site, so base_path would be `/jacobworsoe-jekyll`, but the live site is at www.jacobworsoe.dk/ (root).
 name: Deploy Jekyll site to Pages
 
 on:
@@ -32,7 +33,6 @@ jobs:
           bundler-cache: true
 
       - name: Setup Pages
-        id: pages
         uses: actions/configure-pages@v5
 
       - name: Setup Node (for theme assets)
@@ -51,7 +51,7 @@ jobs:
             echo "=== npm run build (Grunt) ==="
             npm run build
             echo "=== Jekyll build ==="
-            bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+            bundle exec jekyll build
           } 2>&1 | tee jekyll-build.log
 
       - name: Upload build log on failure
