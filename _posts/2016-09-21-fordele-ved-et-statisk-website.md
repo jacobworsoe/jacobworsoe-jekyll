@@ -10,7 +10,7 @@ categories:
 
 Vi kan lige så godt tage den største fordel først. Statiske websites er lynende hurtige!
 
-<a href="https://tools.pingdom.com/#!/eJQ7vr/http://jacobworsoe.github.io/exchangemycoins-jekyll-blog/"><figure><img src="{{ '/assets/images/Jekyll-Pingdom-tools-Github-pages-1.png' | relative_url }}" alt="Statiske websites er hurtige... meget hurtige!" width="750" height="209" class="size-medium wp-image-991" /><figcaption>Statiske websites er hurtige... meget hurtige!</figcaption></figure></a>
+<figure><a href="https://tools.pingdom.com/#!/eJQ7vr/http://jacobworsoe.github.io/exchangemycoins-jekyll-blog/"><img src="{{ '/assets/images/Jekyll-Pingdom-tools-Github-pages-1.png' | relative_url }}" alt="Statiske websites er hurtige... meget hurtige!" width="750" height="209" class="size-medium wp-image-991" /></a><figcaption>Statiske websites er hurtige... meget hurtige!</figcaption></figure>
 
 <strong>178 ms!</strong>
 
