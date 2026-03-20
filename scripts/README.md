@@ -27,8 +27,7 @@ Or: `scripts/build.ps1` / `scripts/build.bat` (same as `export_all.py`).
 ### Static assets vs. embeds in the DB
 
 WordPress may store **third-party image URLs** (e.g. Wistia video poster on Akamai) in `post_content`. Those are rewritten to **repo files** after each export via `_STATIC_IMAGE_OVERRIDES` in `export_wp_posts_pages_mysql.py` (function `rewrite_external_images_to_static_repo`). When you replace another embed with a file under `assets/images/`, add a regex + Liquid `relative_url` pair there so future `export_all.py` runs keep the Jekyll site self-hosted.
-- **`export_wp_comments_mysql.py`** — `_data/comments.yml` (decodes HTML entities in `comment_author` / `comment_author_url`).
-- **`normalize_comments_author_entities.py`** — one-off line fix: decode entities in existing `_data/comments.yml` `author` / `author_url` fields only (safe if export wasn’t run yet).
+- **`export_wp_comments_mysql.py`** — `_data/comments.yml`. Prefer storing comments as **UTF-8** in that file (see existing `_data/comments.yml`); normalize entities after export if needed.
 - **`rewrite_markdown_off_wordpress.py`** — bulk-rewrite existing Markdown off `www.jacobworsoe.dk` (run after manual edits if needed).
 - **`check_post_html5.py`** — heuristic: detect `<p>` that wraps block-level tags; see `docs/CONTENT_HTML5.md`.
 

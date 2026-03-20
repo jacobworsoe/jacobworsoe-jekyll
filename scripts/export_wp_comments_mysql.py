@@ -4,7 +4,6 @@ Export WordPress comments from MySQL to Jekyll _data/comments.yml.
 Uses shared credentials from wp_mysql_credentials (scripts/.mysql-credentials, gitignored).
 Usage: python scripts/export_wp_comments_mysql.py
 """
-import html
 import re
 from pathlib import Path
 
@@ -84,14 +83,12 @@ def main():
             avatar = f"https://www.gravatar.com/avatar/{hashlib.md5(email.strip().lower().encode()).hexdigest()}?s=96&d=mm&r=g"
         else:
             avatar = ""
-        author = html.unescape(author or "")
-        url = html.unescape((url or "").strip())
         by_slug[slug].append({
-            "author": author,
+            "author": author or "",
             "date": date_str,
             "content": content,
             "avatar_url": avatar,
-            "author_url": url,
+            "author_url": (url or "").strip(),
         })
 
     repo_root = Path(__file__).resolve().parent.parent
