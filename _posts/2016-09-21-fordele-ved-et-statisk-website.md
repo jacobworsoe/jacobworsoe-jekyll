@@ -26,7 +26,7 @@ Nej, ikke længere. Med en statisk website generator som <a href="https://jekyll
 
 <a href="https://jekyllrb.com/"><img src="{{ '/assets/images/jekyll-logo-light-solid.png' | relative_url }}" alt="jekyll-logo-light-solid" width="960" height="489" class="alignnone size-full wp-image-1005" /></a>
 
-Vores blog på ExchangeMyCoins.com er drevet af Jekyll og består kun af statiske HTML filer og serveren skal derfor ikke først lave en masse arbejde, før websiden kan sendes til brugeren. Og det gør sitet lynende hurtigt!
+Vores blog på ExchangeMyCoins&#46;com er drevet af Jekyll og består kun af statiske HTML filer og serveren skal derfor ikke først lave en masse arbejde, før websiden kan sendes til brugeren. Og det gør sitet lynende hurtigt!
 
 <h2>Statiske vs. dynamiske websites</h2>
 
@@ -150,7 +150,7 @@ Der er et tæt samarbejde mellem Github og Jekyll, primært fordi de begge er st
 
 <h2>Fordel #10: Slut med at have bloggen på et subdomæne</h2>
 
-En af grundene til at jeg valgte at bruge Jekyll til vores blog var at mit foretrukne værktøj til blogging er Wordpress. Vores website er dog bygget i ASP, så derfor var jeg nødt til at smide bloggen på blog.exchangemycoins.com så linkjuice ville blive spredt over to domæner. Jekylls statiske HTML filer kan køre på alle webservere, så uanset om man bruger PHP, ASP, Ruby, etc. vil man altid kunne uploade filerne til en mappe der hedder ”blog” og få samlet det hele på ét domæne. Dette vil alene være argument nok for mange af de virksomheder som blogger på et subdomæne uden optimalt SEO værdi.
+En af grundene til at jeg valgte at bruge Jekyll til vores blog var at mit foretrukne værktøj til blogging er Wordpress. Vores website er dog bygget i ASP, så derfor var jeg nødt til at smide bloggen på blog&#46;exchangemycoins&#46;com så linkjuice ville blive spredt over to domæner. Jekylls statiske HTML filer kan køre på alle webservere, så uanset om man bruger PHP, ASP, Ruby, etc. vil man altid kunne uploade filerne til en mappe der hedder ”blog” og få samlet det hele på ét domæne. Dette vil alene være argument nok for mange af de virksomheder som blogger på et subdomæne uden optimalt SEO værdi.
 
 <h2>Fordel #11: Et hav af smarte funktioner</h2>
 

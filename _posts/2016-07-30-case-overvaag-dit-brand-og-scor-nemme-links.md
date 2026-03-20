@@ -8,7 +8,7 @@ categories:
   - SEO
 ---
 
-Folk der omtaler dig på nettet, men uden at linke til dig, er de nemmeste links at få. Her viser jeg dig hvordan jeg skaffede et godt redaktionelt link på 5 minutter ved at overvåge omtale af vores website ExchangeMyCoins.com.
+Folk der omtaler dig på nettet, men uden at linke til dig, er de nemmeste links at få. Her viser jeg dig hvordan jeg skaffede et godt redaktionelt link på 5 minutter ved at overvåge omtale af vores website ExchangeMyCoins&#46;com.
 
 <h2>3 gode værktøjer til at overvåge omtale af dit brand</h2>
 

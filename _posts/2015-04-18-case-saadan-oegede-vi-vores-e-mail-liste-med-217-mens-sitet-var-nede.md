@@ -10,7 +10,7 @@ categories:
 
 Nedetid på et website er noget møg. Især når det ikke er planlagt. Men når det er planlagt, så kan man ligeså godt få det bedste ud af det.
 
-I ExchangeMyCoins.com, som jeg driver sammen med Kasper Ebsen og Tino Dainese, var vi i januar nødt til at tage sitet offline, da vi skulle lancere en ny version af sitet. Vi forventede kun at være offline i nogle timer, men besluttede alligevel at få det bedste ud af situationen. En beslutning der senere viste sig at være rigtig god!
+I ExchangeMyCoins&#46;com, som jeg driver sammen med Kasper Ebsen og Tino Dainese, var vi i januar nødt til at tage sitet offline, da vi skulle lancere en ny version af sitet. Vi forventede kun at være offline i nogle timer, men besluttede alligevel at få det bedste ud af situationen. En beslutning der senere viste sig at være rigtig god!
 
 <h2>Statusside mens sitet er nede</h2>
 

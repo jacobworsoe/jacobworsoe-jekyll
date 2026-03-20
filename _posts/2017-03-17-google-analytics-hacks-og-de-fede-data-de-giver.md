@@ -16,7 +16,7 @@ Der er guld at hente ved at tilpasse værktøjet til det enkelte website og ikke
 
 Man skal bare lige vide hvordan de forskellige dimensioner og metrics udregnes og påvirker hinanden, så kan man lave noget rigtig fedt.
 
-På ExchangeMyCoins.com kan man veksle Bitcoins og andre digitale valuter og passer dermed ikke lige umiddelbart ned i standardrapporterne. Her vil jeg derfor vise dig hvordan vi har brugt Google Analytics kreativt og får en masse værdifuld viden om adfærden på websitet.
+På ExchangeMyCoins&#46;com kan man veksle Bitcoins og andre digitale valuter og passer dermed ikke lige umiddelbart ned i standardrapporterne. Her vil jeg derfor vise dig hvordan vi har brugt Google Analytics kreativt og får en masse værdifuld viden om adfærden på websitet.
 
 <h2>1. Tracking af CTR for dine Call-to-Actions</h2>
 
