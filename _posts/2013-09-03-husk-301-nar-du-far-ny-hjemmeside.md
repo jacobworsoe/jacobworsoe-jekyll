@@ -14,7 +14,7 @@ Da jeg opsatte denne blog, lyttede jeg til et <a href="http://www.antphilosophy
 
 <figure><img class="size-full wp-image-227" alt="Mit link til Hi-Fi klubben var dødt." src="{{ '/assets/images/hifi-klubben-broken-link-checker.png' | relative_url }}" width="508" height="170" /><figcaption>Mit link til Hi-Fi klubben var dødt.</figcaption></figure>
 
-Linket findes i et gammelt blogindlæg om at <a title="HDMI kabel – Skal det virkelig koste 249 kroner?" href="//www.jacobworsoe.dk/skal-et-hdmi-kabel-koste-249/" target="_blank">købe billige HDMI kabler i Østen</a>. Grunden til at linket nu er dødt er fordi Hi-Fi klubbens nye website har en anden URL struktur end det gamle site og produkterne har dermed ikke samme URL som tidligere. Det produkt jeg linkede til, lå tidligere på:
+Linket findes i et gammelt blogindlæg om at <a title="HDMI kabel – Skal det virkelig koste 249 kroner?" href="{{ '/skal-et-hdmi-kabel-koste-249/' | relative_url }}" target="_blank">købe billige HDMI kabler i Østen</a>. Grunden til at linket nu er dødt er fordi Hi-Fi klubbens nye website har en anden URL struktur end det gamle site og produkterne har dermed ikke samme URL som tidligere. Det produkt jeg linkede til, lå tidligere på:
 
 <code>http://www.hifiklubben.dk/produkter/tilbehor/kabel/hdmi-kabel/qed_reference_hdmi-kabel_5-meter.htm</code>
 

@@ -18,13 +18,13 @@ aws-iot-button-google-analytics:
     content: |-
       Hej Ole og tusind tak for din kommentar og interessen for mine indlæg. Det er sådan noget der giver lyst til at skrive endnu mere! Jeg tror du har helt ret! Det kræver to ting: 1. Finde noget interessant at måle. 2. Finde en automatisk måde at måle det på, så det ikke bliver bøvlet at få det tracket. Jeg har også lige købt en Samsung SmartThings hub (det er endelig lanceret i Danmark) og en føler til at sætte på døren, så jeg kan registrere når døren bliver åbnet. I første omgang bruger jeg det til at se hvornår vores hundelufter har gået med hunden og på sigt om pigerne kommer hjem til aftalt tid. Den ældste er dog kun 3 år, men det er godt at være i god tid :) Anyway, den kunne man også tracke i Google Analytics, så det sker helt automatisk. Efter jeg var færdig med cola-projektet, har jeg brugt mine Flic knapper til at styre mine Philips Hue lamper. Vi har en Flic knap i hver vores side af sengen, som vi bruger til at tænde lys om natten, hvis vores mindste datter vågner. Udover at tænde lyset, sender jeg også lige et event til GA, og så kan jeg se hvor meget vi er oppe om natten, og hvem der er bedst til at stå op om natten. Og så lige samlet i et lille dashboard: https://datastudio.google.com/reporting/1mGnK0zuJfz-P2Rhz1NAgsIsZ8QUaxCIQ/page/77dU Det er fedt, fordi det bliver tracket helt automatisk og ikke noget man skal huske. Jeg har ikke leget med Arduino endnu. Men umiddelbart kræver det vel også lidt kode, eller hvordan?
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
   - author: Jacob Worsøe
     date: 23/10-2019 - 21:27
     content: |-
       Hej Jesper og mange tak for interessen og de pæne ord! Ja, Flic er meget mere brugervenligt, fordi det hele kan laves i deres app, hvorimod AWS kræver at man skal opsætte nogle ting ovre i AWS. Men Flic er bare lidt mere bøvlet/dyr at sætte op, fordi den kræver en Hub. Så det er lidt smag og behag, hvilken løsning der er bedst i situationen, tror jeg. Fed idé at levere noget statistik på dine maskiner. Det kunne også være forbrug over dagen, så man fx kan se om det er sjovest i starten, hvor det er nyt for alle og derefter falder forbruget meget, så man kan give den information med til de næste kunder, så den kan planlægge hvor længe de skal blive ved med at fylde nyt saftevand i maskinen. Fin lille ekstra data-drevet service til kunderne :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
   - author: Michael Kjeldsen
     date: 24/10-2019 - 15:28
     content: |-
@@ -36,7 +36,7 @@ aws-iot-button-google-analytics:
     content: |-
       Hej Michael og tusing tak for alle dine idéer! Der var sku mange jeg ikke havde tænkt over. Den med Pomodoro-sessions giver rigtig god mening. Jeg plejer bare at bruge https://tomato-timer.com/ men det kunne være fedt med en som havde en API der kunne kalde Measurement Protocol URL'en når en session var afsluttet. Kender du en? Det giver også rigtig god mening at koble den til TODO lister. Jeg bruger todoist, hvad bruger du? Jeg må lige tjekke om den har et API. I den mere brugbare ende kunne det kobles til task managers, fx Asana, Trello eller lignende. Så kunne man tilføre lidt gamification og se hvem på kontoret der udfører flest opgaver. Og det hele kan selvfølgelig korreleres med kaffe-forbruget, for at finde sweet-spot for antal kopper kaffe :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
   - author: Joachim
     date: 17/12-2019 - 22:14
     content: Hej Jacob Tak for en spændende artikel😊 Må jeg spørge, hvor du har bestilt din aws IoT knap? Jeg kan desværre ikke rigtig finde et sted, hvor de sender til dk.
@@ -47,7 +47,7 @@ aws-iot-button-google-analytics:
     content: |-
       Hej Joachim Mange tak! Jeg købte min på Amazon.co.uk, men jeg kan se den pt. ikke er på lager: https://www.amazon.co.uk/gp/product/B0727NW8HT/ref=ppx_yo_dt_b_asin_title_o01_s02?ie=UTF8&psc=1 Og det ser ud til den slet ikke findes på Amazon.com - så det kan godt være de er ved at udfase den :(
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
 case-overvaag-dit-brand-og-scor-nemme-links:
   - author: Philip Løvland
     date: 06/08-2016 - 23:37
@@ -59,7 +59,7 @@ case-overvaag-dit-brand-og-scor-nemme-links:
     date: 07/08-2016 - 08:08
     content: Tak! Ja, jeg synes nok at den var stoppet med at virke, men den har kørt perfekt siden jeg begyndte at bruge den i marts 2015 og sender masser af mails :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
 case-saadan-oegede-vi-vores-e-mail-liste-med-217-mens-sitet-var-nede:
   - author: Bjarke Klüwer
     date: 13/05-2015 - 01:05
@@ -72,7 +72,7 @@ case-saadan-oegede-vi-vores-e-mail-liste-med-217-mens-sitet-var-nede:
     content: |-
       Bjarke: Tak for input, og jeg er helt enig. Et andet godt eksempel er kvitteringssiden på webshops, som oftest er en blindgyde. Den er oplagt at bruge aktivt til at få mere værdi ud af kunderne. På ExchangeMyCoins.com bruger vi den til at få kundernes umiddelbare feedback efter købet. Det er guld værd! Vi får masser af gode idéer til nye features ind den vej og masser af værdifulde testimonials ud af det, som giver social proof.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
 cola-google-analytics-flic-buttons:
   - author: Michael Kjeldsen
     date: 06/08-2018 - 12:22
@@ -85,7 +85,7 @@ cola-google-analytics-flic-buttons:
     content: |-
       Mange tak! Ja, udfordringen om natten er jo nok at man er i zoombie-mode og ikke husker at få klikket på knappen. Med mindre den selvfølgelig sidder fast på sutteflasken :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Michael Kjeldsen
     date: 10/08-2018 - 10:55
     content: 'Et lille tip i øvrigt, til iOS-brugere: https://workflow.is/ kan gøre det samme, dog kræver det jo så en iOS/watchOS enhed, til at klikke på.'
@@ -96,7 +96,7 @@ cola-google-analytics-flic-buttons:
     content: |-
       Fedt, det virker lidt som IFTTT skræddersyet til iOS features? Det der med at have en genvej til ofte brugte funktioner er super fedt, især hvis man sidder i en bil.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Ole Gregersen
     date: 10/10-2018 - 07:01
     content: |-
@@ -108,7 +108,7 @@ cola-google-analytics-flic-buttons:
     content: |-
       Hej Ole Mange tak, jeg er super glad for at det kan give noget inspiration! Jo, Cola er uden tvivl familiens store last. Der er bare grænser for hvor meget kaffe man kan klare i løbet af en dag, så efter aftensmaden er der ofte mere lyst til en kold Cola :) Jeg har tilføjet et afsnit til sidst omkring hvor man kan købe dem.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
   - author: Christian Højbo Møller
     date: 29/11-2018 - 09:41
     content: Google Measurement Protocol er for fedt, og det her er sku en kreativ og fed måde at illustrere de uendelige muligheder :D Godt arbejde, Jacob.
@@ -119,7 +119,7 @@ cola-google-analytics-flic-buttons:
     content: |-
       Hej Christian Mange tak! Det er super fedt at man kan spore offline events i den virkelige verden, men der er desværre ikke mange praktiske use cases på det, selvom det har været tilgængeligt en del år efterhånden. Jeg håber dette kan give lidt inspiration :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
   - author: Ole Gregersen
     date: 24/01-2019 - 11:57
     content: |-
@@ -131,7 +131,7 @@ cola-google-analytics-flic-buttons:
     content: |-
       Haha, godt fundet på! Den glæder jeg mig til at se data på :) Jeg har også brugt den til at tracke hvor meget vand jeg drikker, så jeg kan se om jeg får drukket nok hver dag.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
 danske-linkkataloger-2013:
   - author: Thomas
     date: 23/09-2013 - 22:46
@@ -142,7 +142,7 @@ danske-linkkataloger-2013:
     date: 24/09-2013 - 07:44
     content: Sorry, de virker nu :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Frank
     date: 24/09-2013 - 20:55
     content: Super Jacob Vil da lige gå i gang med og tilmelde mig et par stykker:-) Tak for det. Frank
@@ -152,7 +152,7 @@ danske-linkkataloger-2013:
     date: 24/09-2013 - 21:09
     content: Det var så lidt Frank. God fornøjelse, men husk også at lave andre former for linkbuilding.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Anders Risager
     date: 25/09-2013 - 14:58
     content: |-
@@ -175,18 +175,18 @@ danske-linkkataloger-2013:
     content: |-
       Anders: God ide. De kataloger er for det meste ikke det ekstra arbejde værd, så det ville være fint at kunne fjerne dem fra listen. Det vil jeg prøve at indarbejde næste gang jeg skal opdatere listen.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jacob Worsøe
     date: 28/09-2013 - 18:20
     content: 'Kenneth: Ja, det ser da lidt dødt ud. Har du prøvet at tilmelde et link? Så kan vi da lige se om det bliver godkendt...'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jacob Worsøe
     date: 28/09-2013 - 18:22
     content: |-
       Jimmy: Ja, man bør som minimum stille krav om unikke beskrivelser, så man ikke får en masse duplicate content på sit linkkatalog som kan begynde at skade hele domænet, hvis det bliver for udbredt. Hvad er det for et der er dit?
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Kenneth Wellin
     date: 28/09-2013 - 19:13
     content: 'Jacob: Ja, jeg tilmeldte et den 15/9, men det er der ikke sket det store ved :-)'
@@ -196,7 +196,7 @@ danske-linkkataloger-2013:
     date: 28/09-2013 - 19:28
     content: 'Kenneth: Det er hermed slettet :) Ellers ærgeligt at sådan et fint PR 3 domæne skal slettes...'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jimmy
     date: 29/09-2013 - 09:46
     content: |-
@@ -214,13 +214,13 @@ danske-linkkataloger-2013:
     content: |-
       Jimmy: Og du har enda gjort det meget tydeligt at der skal skrives unikke tekster. Tjekker du det manuelt eller har du lavet noget smart som kan tjekke det for dig?
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jacob Worsøe
     date: 29/09-2013 - 17:51
     content: |-
       Halfdan: Tak! Ja, de kan være fine til at få de allerførste links til nye affiliate sider og lignende. Bare indtil snebolden ruller :) Hvis du gerne vil læse flere indlæg, så kan jeg da kun anbefale dig mit nyhedsbrev :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Bo Lyhne
     date: 01/10-2013 - 10:24
     content: Godt med en opdateret liste over linkkatalogerne. Man har vel altid et affiliateside eller 2, som er svære at skaffe links til :-)
@@ -230,7 +230,7 @@ danske-linkkataloger-2013:
     date: 02/10-2013 - 09:11
     content: 'Bo: Lige præcis :)'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jimmy
     date: 04/10-2013 - 09:22
     content: |-
@@ -241,7 +241,7 @@ danske-linkkataloger-2013:
     date: 09/10-2013 - 17:42
     content: 'Jimmy: Hehe, det kunne ellers være fint med en global blacklist af personer som indsender duplicate content :)'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Lenny
     date: 24/10-2013 - 18:27
     content: Bedste liste over danske linkkataloger som jeg har fundet online so far. Super stor hjælp!
@@ -251,7 +251,7 @@ danske-linkkataloger-2013:
     date: 25/10-2013 - 08:01
     content: 'Lenny: Tak :) Fedt at den er brugbar!'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Rene
     date: 29/10-2013 - 15:18
     content: Super nice helt sikkert noget man kan bruge...
@@ -266,7 +266,7 @@ danske-linkkataloger-2013:
     date: 12/11-2013 - 21:41
     content: 'Rune & Kristian: Tak skal I ha :) Jeg er glad for den kan bruges!'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Lars E
     date: 10/02-2014 - 21:12
     content: Super cool - helt sikkert noget man kan bruge… Tak :)
@@ -281,7 +281,7 @@ danske-linkkataloger-2013:
     date: 16/02-2014 - 21:57
     content: Tak Jesper, fedt det kan bruges! Men ja, det er et stort arbejde at vedligeholde de lister, så de fleste bliver kun lavet én gang :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Christoffer
     date: 30/04-2014 - 00:03
     content: |-
@@ -297,7 +297,7 @@ danske-linkkataloger-2013:
     date: 01/05-2014 - 14:31
     content: '@Christoffer: Fedt, de er tilføjet! Sphigg.dk var dog allerede på listen :)'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Kenny Lyskjær
     date: 25/07-2014 - 13:36
     content: |-
@@ -309,7 +309,7 @@ danske-linkkataloger-2013:
     content: |-
       @Kenny: Det er godt at høre, bare husk at linkkataloger kun skal være en lille del af dine linkbuilding aktiviteter. Men det kan være fint til at komme igang med en helt ny side.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Elisabeth
     date: 30/07-2014 - 15:13
     content: |-
@@ -321,7 +321,7 @@ danske-linkkataloger-2013:
     content: |-
       @Elisabeth: Ja, med tæt på 150 aktive linkkataloger igennem tiden, bare i Danmark, kan det være en jungle at finde dem der er værd at bruge tid på. Godt du fandt listen nyttig :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Kasper
     date: 05/09-2014 - 13:30
     content: Rigtig stor hjælp! Så skal jeg bare i gang med at tilmelde mig
@@ -384,7 +384,7 @@ danske-linkkataloger-2013:
     content: |-
       Jonas: Ja, det er meget småt med kataloger. Mit linkkatalog døde også da domænet skulle fornyes for en måneds tid siden. Den tid er desværre forbi, så listen bliver heller ikke opdateret længere... Så dette bliver den sidste liste over de kære linkkataloger :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Mikkel
     date: 31/01-2016 - 09:42
     content: Rigtig god og overskuelige liste og jeg har tilmeldt mit site til 4 linkkataloger med unikke tekster :-)
@@ -408,12 +408,12 @@ danske-split-test-cases:
     content: |-
       Frank: Det er godt du kan bruge det, og det giver lyst til at komme igang med det. For at få det grundlæggende på plads ligger der her en række gode artikler som jeg kan anbefale: http://www.v4d5.net/ Ellers må du selvfølgelig komme og spørge hvis der er noget du skal have lidt hjælp til, så skal jeg gerne hjælpe :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jacob Worsøe
     date: 12/03-2010 - 10:41
     content: Så er listen opdateret med Mogens Møllers spændende test af forsidens bouncerate.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: peter
     date: 16/04-2010 - 09:40
     content: hej Jacob, ville sådan set bare sige tak for en fed post. er strandet i wien på grund af islandsk vulkan aske så har GOD tid :) MVH Peter
@@ -424,7 +424,7 @@ danske-split-test-cases:
     content: |-
       Godt du kunne bruge den Peter. Jeg håber snart der kommer nogle flere danske cases som skal tilføjes listen. Måske laver I selv nogen? Jeg har i hvert fald et par stykker igang, som snart er færdige... Håber du snart kommer væk fra Wien :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: MIchael Aagaard
     date: 07/05-2010 - 11:22
     content: |-
@@ -436,7 +436,7 @@ danske-split-test-cases:
     content: |-
       Michael: Tak ska du ha, det er i hvert fald vigtigt med noget inspiration når man står og skal igang med den allerførste test. Jeg har godt set dine spændende CTA-tests, men jeg kunne godt tænke mig at du havde smidt et screenshot med fra GWO da testen var slut? På den måde kan man også give "de nye" en mulighed for at se hvor man besøgende der skal igennem de forskellige tests før der kan konkluderes noget. Kunne du få fat på det? Jeg vil meget gerne have dine tests med på oversigten.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: MIchael Aagaard
     date: 18/05-2010 - 10:00
     content: Hej Jacob - jeg har dem liggende på min computer et eller andet sted. Jeg giver dig lige besked, når jeg har fået dem smidt ind i indlæggene. Tak! Michael
@@ -446,7 +446,7 @@ danske-split-test-cases:
     date: 19/05-2010 - 01:49
     content: 'Michael: Det er super, så skal jeg få skrevet dine tests ind i indlægget.'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: John Dencker
     date: 15/09-2010 - 22:53
     content: Super fede indlæg, må igang med at teste. http://www.marjoe.dk
@@ -467,12 +467,12 @@ danske-split-test-cases:
     content: |-
       Kasper: Tak for roserne og godt spørgsmål. Jeg tror der er mange bureauer som kan udføre det, men jeg kender ikke lige til nogen der har specialiseret sig i det.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jacob Worsøe
     date: 20/11-2010 - 15:29
     content: Så er der tilføjet en ny case på listen fra Michael Aagaard som tester webtekst.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Kim Sørensen
     date: 02/02-2011 - 09:16
     content: Det er nogle gode cases du har samlet.
@@ -482,7 +482,7 @@ danske-split-test-cases:
     date: 02/02-2011 - 15:11
     content: 'Kim: Mange tak, håber du kan bruge det til lidt inspiration. Sig endelig til hvis du kender til nogen danske tests jeg ikke har med på listen.'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jesper
     date: 20/02-2011 - 15:06
     content: |-
@@ -524,7 +524,7 @@ danske-split-test-cases:
     date: 29/03-2016 - 12:29
     content: Artiklen er opdateret med en masse nye cases og der er fjernet gamle cases som ikke længere er online.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Ole Gregersen
     date: 01/04-2016 - 08:27
     content: Hej Jacob. God liste, dejligt at du samler og deler, disse danske cases er faktisk ikke altid så nemme at (gen)finde.
@@ -571,7 +571,7 @@ danske-split-test-cases:
     content: |-
       Tak for heads up, Frederik. Jeg har skrevet til MCB og Vadskær, som var de to blogs der var nede (som tilsammen havde 7 ud af de 15 cases!). http://www.v4d5.net/ er oppe igen.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Julie
     date: 19/09-2019 - 21:16
     content: Rigtig god viden om end det er et ældre indlæg men vel stadig gældende og vil da prøve at splitteste på https://www.abelstedt.dk/ - håber det kan give god info.
@@ -582,7 +582,7 @@ danske-split-test-cases:
     content: |-
       Hej Julie og mange tak! Håber listen var inspirerende. Selvom den er gammel, kan mange af hypoteserne bag testene stadig give inspiration. Husk på at alle websites er forskellige, så alting bør i princippet testes på et nyt website.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
 datadrevet-redesign:
   - author: Michael Kjeldsen
     date: 31/08-2020 - 14:16
@@ -593,9 +593,9 @@ datadrevet-redesign:
   - author: Jacob Worsøe
     date: 31/08-2020 - 20:52
     content: |-
-      Mange tak Michael! Content tracking er inspireret af Simo og så har jeg tilføjet nogle ekstra detaljer. Jeg har for nyligt skrevet et alt alt for langt blogindlæg om det i alle detaljer: https://www.jacobworsoe.dk/indhold-enhanced-ecommerce/
+      Mange tak Michael! Content tracking er inspireret af Simo og så har jeg tilføjet nogle ekstra detaljer. Jeg har for nyligt skrevet et alt alt for langt blogindlæg om det i alle detaljer: /indhold-enhanced-ecommerce/
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
 ekskluder-facebooks-fbclid-url-parameter-i-google-analytics:
   - author: Christian Johansen
     date: 18/01-2022 - 10:59
@@ -608,7 +608,7 @@ ekskluder-facebooks-fbclid-url-parameter-i-google-analytics:
     content: |-
       Hej Christian. Better late than never :) Du kan stadig se at trafikken kommer fra FB samt hvilken landingpage de har. Så alt den gode data bliver bevaret. Det er kun fbclid= parameteren der bliver fjernet fra URL'en.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
   - author: Michael
     date: 21/04-2022 - 13:00
     content: Hey Jacob, Super artikel! Kan man gøre det samme i Google Analytics 4? Venlig hilsen Michael
@@ -619,7 +619,7 @@ ekskluder-facebooks-fbclid-url-parameter-i-google-analytics:
     content: |-
       Hej Michael, det er desværre ikke muligt endnu i GA4, men fordi vi har adgangt til rådata i BigQuery med GA4 kan man selv fjerne det i BigQuery og alt muligt andet fedt :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
 fede-wordpress-plugins:
   - author: Emil Stahl Pedersen
     date: 02/01-2014 - 07:42
@@ -630,7 +630,7 @@ fede-wordpress-plugins:
     date: 03/01-2014 - 11:23
     content: 'Emil: Ja, de er også uundværlige. Men jeg regnede dog med alle Wordpress brugere allerede kendte dem, så de ikke var nødvendige at nævne :)'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jens Jakob Andersen
     date: 18/05-2014 - 17:10
     content: |-
@@ -642,7 +642,7 @@ fede-wordpress-plugins:
     content: |-
       @Jens: Helt afgjort. Plug-ins sløver sitet og udgør en sikkerhedsrisiko, så det handler om at minimere antallet af plug-ins og kun bruge de bedste som er kodet godt i forhold til performance og sikkerhed. Denne liste er et forsøg på at grave nogle af dem frem :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: govertz
     date: 02/06-2014 - 20:00
     content: |-
@@ -654,7 +654,7 @@ fede-wordpress-plugins:
     content: |-
       @Govertz: Jeg er enig i at nybegyndere skal kende til cache og SEO plugins, men jeg synes der var skrevet rigeligt at sådan nogle lister og jeg linker også til nogle af dem, både herfra og og i den artikel jeg skrev efter jeg lige var flyttet til Wordpress . Fx synes jeg dette podcast er super godt for nybegyndere, hvor de virkelig kommer godt omkring det hele: http://www.antphilosophy.com/opsaetning-af-wordpress/ Men ellers bør nybegyndere også kigge den officielle liste igennem, der er stor chance for at mange af disse plugins er brugbare: http://wordpress.org/plugins/browse/popular/
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Michael
     date: 01/07-2014 - 21:26
     content: |-
@@ -687,7 +687,7 @@ fede-wordpress-plugins:
     content: |-
       Hej Michael Tak for dit spørgsmål. Jeg vil ligesom Emil anbefale MailChimp, det bruger jeg også her på bloggen til at sende mails automatisk når jeg skriver nye indlæg. Det kan du læse mere om her: Få en mail når jeg skriver nye indlæg . MailChimp er gratis op til 2000 modtagere, hvilket også gør det til et godt system at starte med. Men hvis du er villig til at bruge lidt penge så synes jeg personligt at Campaign Monitor er nemmere at bruge.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Michael
     date: 03/07-2014 - 10:26
     content: |-
@@ -699,7 +699,7 @@ fede-wordpress-plugins:
     content: |-
       Hej Michael. Det eneste du skal gøre i Wordpress er at indtaste din API key fra MailChimp, så de bliver tilmeldt den rigtige liste. Derefter skal resten sættes op i MailChimp. Har du fulgt den getting started guide som Emil linker til?
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Anna
     date: 16/01-2015 - 11:26
     content: |-
@@ -711,7 +711,7 @@ fede-wordpress-plugins:
     content: |-
       Hej Anna, det gør der helt sikkert, men jeg kender ikke lige nogen på stående fod. Jeg kan forestille mig det er noget med at vise det "featured image" som man kan sætte på hvert indlæg. Jeg skal nok lige sige til hvis jeg finder et.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: govertz
     date: 16/01-2015 - 13:20
     content: |-
@@ -744,7 +744,7 @@ fede-wordpress-plugins:
     content: |-
       Hej Anne, tak skal du have. Det er ikke en fejl jeg har set før. Prøv at hør dit webhotel, det kan være de ved lige præcis hvad der skal gøres. Ellers skal der nok Googles lidt :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Louise Glad
     date: 19/12-2017 - 10:31
     content: |-
@@ -755,7 +755,7 @@ fede-wordpress-plugins:
     date: 10/01-2018 - 21:22
     content: Hej Louise. Mange tak for dit spørgsmål, men det er desværre ikke noget jeg har erfaringer med. Med lidt held er der en anden læser der kan hjælpe?
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
 flyttet-til-wordpress:
   - author: Jacob Worsøe
     date: 15/05-2013 - 11:58
@@ -766,12 +766,12 @@ flyttet-til-wordpress:
     date: 15/05-2013 - 12:46
     content: Det virker vist :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jacob Worsøe
     date: 15/05-2013 - 12:48
     content: Hvad med HTML ?
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
 fordele-ved-et-statisk-website:
   - author: Jeppe
     date: 26/09-2016 - 20:34
@@ -784,7 +784,7 @@ fordele-ved-et-statisk-website:
     content: |-
       Lige præcis, Jekyll er perfekt til sites der sjældent opdateres. Der findes masser af themes til Jekyll, fx http://themes.jekyllrc.org/ og Jekyll har også et ret lækkert standardtheme, som du kan bruge til en start.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Troels Johannesen
     date: 28/09-2016 - 20:49
     content: |-
@@ -796,7 +796,7 @@ fordele-ved-et-statisk-website:
     content: |-
       Troels: Mange tak! Jeg er enig i at Jekyll vil være en fordel for mange andre end nørder, men jeg vil dog sige at det kræver en vis nørderi at kunne bygge et site med Jekyll :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Fordele ved statiske websites | blog.hostingdk.net
     date: 27/07-2021 - 11:55
     content: |-
@@ -815,7 +815,7 @@ google-analytics-hacks-og-de-fede-data-de-giver:
     content: |-
       Hej Lars Tak for spørgsmålet. Med den URL struktur I har, vil det være nemt at gøre det via "Content Drilldown", som du finder under Behaviour -> Site content -> Content Drilldown. Kan det bruges?
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Lars
     date: 11/01-2018 - 14:19
     content: |-
@@ -880,7 +880,7 @@ husk-301-nar-du-far-ny-hjemmeside:
     content: |-
       Michael Kjeldsen: Man kunne godt lave noget logik der matchede nye og gamle URL'er på baggrund af indholdet i URL'en, fx produktnavnet i dette tilfælde. Men det kan hurtigt blive svært, fx fordi de i dette tilfælde har fjernet "5-meter" fra produktnavnet i den nye URL. Så man kan ikke bare finde exact match og derfor vil det kræve noget logik at finde ud af hvad den nye URL ved at kigge på den gamle URL. Men interessant med systemet som kan holde styr på det her. Skriv endelig hvis du kommer i tanke om nogen der kan det.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Michael Kjeldsen
     date: 03/09-2013 - 11:46
     content: |-
@@ -892,7 +892,7 @@ husk-301-nar-du-far-ny-hjemmeside:
     content: |-
       Ja, hvis man kan finde ud af hvordan de gamle URL'er bliver genereret på baggrund af produktdata/kategoristruktur/forumopbygning, så ville det være det optimale. Især med sites af denne størrelse :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Kasper Ebsen
     date: 04/09-2013 - 14:33
     content: |-
@@ -903,12 +903,12 @@ husk-301-nar-du-far-ny-hjemmeside:
     date: 04/09-2013 - 14:36
     content: 'Kasper: Præcis :)'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jacob Worsøe
     date: 12/09-2013 - 12:09
     content: Der bliver vist arbejdet på sagen men de er ikke helt i mål endnu. Der er opsat en 301 redirect, men desværre til endnu en fejlside.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Rasmus Andersen - Ejendomsmægler.dk
     date: 11/12-2014 - 16:48
     content: |-
@@ -920,7 +920,7 @@ husk-301-nar-du-far-ny-hjemmeside:
     content: |-
       Rasmus: Tak! Og ja, det skal du. Og derudover er der et par andre tricks du kan bruge for at få det til at gå gnidningsfrit. Se min guide i bunden af dette indlæg: http://blog.webdanmark.com/https-giver-bedre-placeringer-men-skal-du-bruge-det/
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
 hvilken-side-ser-brugerne-efter-forsiden:
   - author: Nino
     date: 06/11-2021 - 01:16
@@ -932,7 +932,7 @@ hvilken-side-ser-brugerne-efter-forsiden:
     content: |-
       Mange tak Nino! Hotjar er et godt værktøj, men jeg foretrækker selv at opsamle kvantitative data med Google Analytics til at forstå hvad brugerne gør på et website og derigennem forbedring websitet. Men kvantitive data kan kun svare på hvad brugerne gør og ikke hvorfor, så her kan Hotjar være en mulighed.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
   - author: Nino
     date: 10/11-2021 - 08:10
     content: Tusind tak for at bidrage til forståelsen :)
@@ -950,7 +950,7 @@ hvor-hurtigt-fanger-google-en-301:
     content: |-
       Interessant Thomas. Så var min test jo faktisk i den hurtige ende :) Som jeg skrev i indlægget, så er jeg ved at holde øje med et stort site på 200.000 sider. Det blev flyttet den 29. maj, men nu mere end tre måneder senere er der stadig 28.000 sider indekseret på det gamle domæne, så det tyder virkelig på at Google ikke sætter crawl frekvensen op, så de kan få ryddet op i gamle domæner.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
 hvor-meget-drikker-gaesterne-til-et-bryllup:
   - author: Kristoffer Hjerrild
     date: 28/06-2015 - 16:15
@@ -966,7 +966,7 @@ hvor-meget-drikker-gaesterne-til-et-bryllup:
     date: 30/06-2015 - 12:07
     content: 'Peter: Tak, det er rettet i teksten nu. Tallene i infografikken er de rigtige.'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Esben
     date: 30/06-2015 - 13:41
     content: Hej Jacob, Jeg er nok ikke lige i målgruppen for indholdet. Men formen synes jeg virker rigtig godt. :)
@@ -989,7 +989,7 @@ hvor-meget-drikker-gaesterne-til-et-bryllup:
     content: |-
       Danni: Stikprøven i forhold til antal gæster der var med til festen er tilpas stor, men du har ret i at det kunne være godt med data fra flere fester, da stemningen til festen betyder meget for hvor meget der bliver drukket.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Kristian
     date: 22/09-2016 - 20:00
     content: Det er en kæmpe hjælp! Hilsen en med-datanørd :-)
@@ -999,7 +999,7 @@ hvor-meget-drikker-gaesterne-til-et-bryllup:
     date: 23/09-2016 - 10:59
     content: Tak Kristian. Fedt det kan bruges!
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Inge Østergaard
     date: 31/10-2016 - 20:43
     content: |-
@@ -1011,7 +1011,7 @@ hvor-meget-drikker-gaesterne-til-et-bryllup:
     content: |-
       Tak :) Vi brugte denne til velkomst: https://www.fleggaard.dk/pi/Black-Tower-Pink-Bubbly-Perlwein-s%C3%B8d-0-75-l-_1215094_40409.aspx?languageid=1&countryid=11¤cyid=54 Og den her som dessertvin: Mostaco Frizzante
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Inge Østergaard
     date: 01/11-2016 - 06:50
     content: Tusind tak for hurtig svar. Hvilken hvidvin, rødvin og shots fik i? På forhånd mange tak for inspiration
@@ -1022,7 +1022,7 @@ hvor-meget-drikker-gaesterne-til-et-bryllup:
     content: |-
       Som hvidvin havde vi: http://www.fleggaard.dk/pi/Black-Tower-Hvidvin-0-75-l-_1209555_.aspx?locId=724 Og rødvinen var denne Ripasso: http://www.fleggaard.dk/pi/Quintus-Ripasso-0-75-l-_1209528_.aspx?locId=724 Som shots havde vi http://www.fleggaard.dk/pi/Sm%C3%A5-Gr%C3%B8nne-30-0-7-l-_1215306_.aspx?locId=724 og nogle "Små Kolde" som vi selv blandede af 1/3 Southern Comfort og 2/3 Roses Lime.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Mette Eskildsen
     date: 02/11-2016 - 06:26
     content: |-
@@ -1034,7 +1034,7 @@ hvor-meget-drikker-gaesterne-til-et-bryllup:
     content: |-
       Hej Mette. Ja, vi var meget tilfredse. Han var med fra kirken kl. 13 og frem til vi gik igang med middagen kl. 18. Vi fik omkring 500 billeder samt 10 særligt udvalgte billeder som han gjorde lidt ekstra ud af. Men han kan lave det præcis som I vil have det, så det er bare at tage en snak med ham. Se i øvrigt vores anmeldelse af ham ovre på hans facebook side: https://www.facebook.com/jacobworsoe/posts/10152873875813122:0
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Allan Høgholm
     date: 17/12-2016 - 21:01
     content: |-
@@ -1051,7 +1051,7 @@ hvor-meget-drikker-gaesterne-til-et-bryllup:
     date: 30/04-2017 - 11:38
     content: Hej Thomas, det lyder sku godt! Husk at linke til kilden :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jacob H.
     date: 04/05-2017 - 08:16
     content: |-
@@ -1063,7 +1063,7 @@ hvor-meget-drikker-gaesterne-til-et-bryllup:
     content: |-
       Hej Jacob og mange tak! Den er faktisk bare lavet med nogle Excel grafer som er samlet i Photoshop. Men jeg vil helt sikkert prøve et online tool næste gang, der er en del forskellige som skal testes (de har allesammen deres fordele og ulemper): https://blog.bufferapp.com/infographic-makers
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jacob H.
     date: 04/05-2017 - 09:29
     content: |-
@@ -1084,7 +1084,7 @@ hvor-meget-drikker-gaesterne-til-et-bryllup:
     date: 04/08-2017 - 19:59
     content: 'Peter: Tak! Jeg må indrømme at det er en vennepris :)'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jeanette
     date: 04/11-2017 - 19:12
     content: Mega smart :) Men når nu du siger en flaske vin pr. gæst, mener du så pr. Vindrikkende gæst eller?:)
@@ -1095,7 +1095,7 @@ hvor-meget-drikker-gaesterne-til-et-bryllup:
     content: |-
       Tak Jeanette. Det er pr. gæst, netop fordi man typisk ikke ved hvor mange der kører bil, er gravide eller af andre årsager ikke drikker (er der andre? :)) Men hvis du ved at der er mange gravide, så er det oplagt at tage højde for det.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Lene Jelstrup
     date: 16/11-2017 - 11:05
     content: Super beregner du har lavet. Det er lige præcis sådan en man mangler når der skal holdes fest, så mange tak 🤗
@@ -1116,7 +1116,7 @@ hvor-meget-drikker-gaesterne-til-et-bryllup:
     date: 15/02-2018 - 11:35
     content: '@Johanne: Fedt det kan bruges! Nej, vi havde øl, vin, cider og shots men ingen drinks.'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Henrik B. Andersen
     date: 20/03-2018 - 10:49
     content: |-
@@ -1127,7 +1127,7 @@ hvor-meget-drikker-gaesterne-til-et-bryllup:
     date: 28/03-2018 - 10:52
     content: Hej Henrik, mange tak, håber den rammer rigtigt til din fest! Vi har regnet med at et shot er 2 cl.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Thomas Volden
     date: 14/06-2018 - 10:37
     content: |-
@@ -1139,7 +1139,7 @@ hvor-meget-drikker-gaesterne-til-et-bryllup:
     content: |-
       Hej Thomas, mange tak! Det er en god pointe og i dette tilfælde hvor det var et bryllup, var langt de fleste forberedt på en stor fest, så de havde ladet bilen stå hjemme. Jeg vil tro at max 10 personer ud af gæsterne skulle køre.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Karina
     date: 08/02-2019 - 06:56
     content: Hvad så hvis man har drinks bar? Så kan jeg regne ud der bruges en del mere sodavand??!!
@@ -1150,7 +1150,7 @@ hvor-meget-drikker-gaesterne-til-et-bryllup:
     content: |-
       Hej Karina Vi havde ikke drinks, kun øl, cider, mokai, vin og sodavand. Så jeg vil tro du skal regne med en del mere sodavand og tilsvarende mindre af vin, øl og cider. Men det er svært at sige hvor meget mindre der skal købes, det kommer nok mere an på gæsterne.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
   - author: Gitte
     date: 24/06-2019 - 19:01
     content: Hej Mand Mega fedt lavet, sådan, en kæmpe hjælp :D
@@ -1165,7 +1165,7 @@ hvor-meget-drikker-gaesterne-til-et-bryllup:
     date: 25/01-2020 - 23:21
     content: Mange tak Emillie!
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
   - author: Christian
     date: 05/09-2020 - 18:59
     content: |-
@@ -1176,7 +1176,7 @@ hvor-meget-drikker-gaesterne-til-et-bryllup:
     date: 06/09-2020 - 21:05
     content: Hej Christian Jeg vil tro vi havde cirka 1/3 tilbage, så vi havde købt for meget. Men vi havde heller ikke denne beregner :) Håber I får en fed fest!
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
   - author: Susan lagoni
     date: 07/09-2020 - 12:30
     content: Hvor mange var børn ud af din beregner. Vi har lidt teengere og 7 små børn. Og ved rigtig mange drikker slet ikke.
@@ -1187,7 +1187,7 @@ hvor-meget-drikker-gaesterne-til-et-bryllup:
     content: |-
       Hej Susan Vi havde ingen børn med til festen, men der var nogle der kørte som ikke drak, og så er der jo altid nogen der drikker mere og mindre. Men sådan er det nok for de fleste bryllupper, så jeg vil tro beregningen kan bruges til de fleste bryllupper. Men hvis du ved at der er mange på vandvognen (måske mange gravide, som der godt kan være til bryllupper), så kan du nok godt nøjes med lidt mindre. Du kan evt. lave en beregning uden børn og så bare købe lidt sodavand til dem. Håber du får en god fest!
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
 i-naerkontakt-med-matt-cutts:
   - author: Michael Kjeldsen
     date: 12/03-2010 - 10:58
@@ -1200,7 +1200,7 @@ i-naerkontakt-med-matt-cutts:
     content: |-
       Nej, han er god til at give politiske svar, som giver lidt ny viden, men uden at afsløre for meget om hvordan Google egentlig arbejder :) Men i virkeligheden så foregår det nok sådan at hvis botten støder på et dofollow link, så tager den det med tilbage til Google og så bliver der sendt en anden bot ud og besøge den side. Så det er nok ikke den samme bot der fortsætter rundt på nettet. Jeg tror faktsk kun den henter en enkelt side af gangen, ikke engang et helt site. Men det er et interessant emne for det er jo også enormt vigtigt for Googles succes at de kan få crawler så mange sider som muligt, på så kort tid så muligt. Ellers vil de jo aldrig have aktuelle resultater.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Andreas Linde
     date: 16/06-2011 - 16:14
     content: |-
@@ -1218,7 +1218,7 @@ kor-en-test-pa-tvaers-af-dit-website:
     content: |-
       Mange tak for ros - jeg er glad for at jeg har fået det skrevet, så det er forståeligt. Testen kører stadig, men resultatet bliver offentliggjort ligeså snart der er udråbt en vinder. Men der er ingen tvivl om resultatet - tydelige Call-To-Actions er ekstremt vigtigt!
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Christian Jessen
     date: 06/12-2009 - 12:29
     content: |-
@@ -1230,7 +1230,7 @@ kor-en-test-pa-tvaers-af-dit-website:
     content: |-
       Christian: Super fedt at høre det kan bruges, du skal være velkommen til at bookmarke siden :) Når man opsætter testen, så siger Google at man bare skal gøre det på den måde uden at starte det. Men du har vist ret i at der bør være et <noscript>-tag til at starte med. Men det er Google åbenbart ligeglade med :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Michael Kjeldsen
     date: 07/12-2009 - 23:12
     content: |-
@@ -1241,7 +1241,7 @@ kor-en-test-pa-tvaers-af-dit-website:
     date: 07/12-2009 - 23:23
     content: 'Michael: Tak for opklaringen og opbakningen :)'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Mogens Møller
     date: 09/12-2009 - 13:44
     content: |-
@@ -1253,7 +1253,7 @@ kor-en-test-pa-tvaers-af-dit-website:
     content: |-
       Mogens: Mange tak for roserne - det er virkelig fedt at høre det kan bruges til noget og at jeg har fået det skrevet så det er til at forstå! Du behøver ikke vente længe på det næste indlæg. Forhåbentlig ikke mere end 24 timer :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Rasmus Thomsen
     date: 15/02-2011 - 22:05
     content: |-
@@ -1265,7 +1265,7 @@ kor-en-test-pa-tvaers-af-dit-website:
     content: |-
       Rasmus: Fedt at du kunne bruge artiklen :) Man kan godt køre flere tests på samme side på samme tidspunkt, men det kan ikke anbefales, da de to tests kører uafhængigt af hinanden og den ene test derfor ikke ved hvilket indhold den anden test leverer til brugeren i en given situation. Jeg har dog tidligere brugt den samme side som landing page for én test samtidig med at den var test-side for en anden side. F.eks. i et betalingsflow.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Pia-Britt Ruberg
     date: 21/04-2017 - 16:09
     content: |-
@@ -1276,7 +1276,7 @@ kor-en-test-pa-tvaers-af-dit-website:
     date: 24/04-2017 - 09:33
     content: Hej Pia Du kan bruge https://formspree.io/ som står for alt det tekniske. Det er gratis op til 1000 udfyldelser om måneden.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
 machine-learning-med-excel:
   - author: Charlotte
     date: 06/10-2022 - 12:00
@@ -1314,7 +1314,7 @@ match-brugerens-mindset-og-tjen-kassen:
     content: |-
       Michael: Det kunne faktisk være smart at indbygge en kalender funktionalitet i webshoppen, så man kunne planlægge hvad der skulle stå i meta description, title, USP'er rundt omkring på siden og købeknappen, i løbet af året og den så automatisk skifter. God idé med at dele til næste år. Jeg må lige få en service til at gøre det automatisk 1. november 2014 :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Kenny Lyskjær
     date: 04/08-2014 - 20:25
     content: God artikel, Jacob og Casper. Hvornår begynder i som hovedregel at gøre december-klar på affiliatesites? Begynder i på det allerede i oktober måned?
@@ -1325,7 +1325,7 @@ match-brugerens-mindset-og-tjen-kassen:
     content: |-
       @Kenny: Ifølge Google Trends så begynder interessen for julegaver at stige midt i oktober, hvorfra den så stiger stødt indtil den peaker midt i december. Så det giver god mening at have sitet juleklart i oktober måned :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Simon Rohde Nielsen
     date: 17/07-2015 - 01:33
     content: '@Jacob: God ide med Google trends til, at få en indikation af, hvornår man skal gøre juleklar.'
@@ -1367,7 +1367,7 @@ opdateret-liste-over-linkkataloger:
     date: 06/12-2011 - 21:02
     content: 'Kim: Det var så lidt :) Jimmy: Hvad var det for et katalog? Et af dem jeg har med på listen?'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jimmy
     date: 06/12-2011 - 21:12
     content: |-
@@ -1379,7 +1379,7 @@ opdateret-liste-over-linkkataloger:
     content: |-
       Jimmy: Ja, det er da gået ret meget frem siden sidste gang. Jeg kørte også et linkkatalog for lidt over et år siden, men jeg synes ikke tidsforbruget var pengene værd, så det fik bare lov at passe sig selv og så røg det i nedslagtningen... Hehe, godt spørgsmål. Det er en kombination af ikke at have tid til at skrive nogle gode unikke artikler og ikke at kunne finde på noget spændende at skrive om :) Det er ikke den bedste kombination :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Mikkel Plæhn
     date: 08/12-2011 - 11:41
     content: Må have været noget af et arbejde, tak fordi du tog dig tiden til at lave samlingen og dele den med os :)
@@ -1389,7 +1389,7 @@ opdateret-liste-over-linkkataloger:
     date: 08/12-2011 - 12:38
     content: 'Mikkel: Det var så lidt, håber det kan gøre din linkbuilding lidt mere effektiv :)'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jimmy
     date: 08/12-2011 - 16:09
     content: |-
@@ -1416,7 +1416,7 @@ opdateret-liste-over-linkkataloger:
     date: 13/12-2011 - 14:09
     content: 'Anders: Tak. Tænker du at listen kunne sorteres efter PageRank istedet for antal sider indekseret? Eller en gruppering efter PageRank?'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Kristian Ole Rørbye
     date: 18/12-2011 - 16:46
     content: Tak for din nye og opdateret liste. Den bliver hermed givet videre til de interesseret gør-det-selv SEO folk som jeg støder på :)
@@ -1518,7 +1518,7 @@ opdateret-liste-over-linkkataloger:
     content: |-
       Torben: Fedt! Jeg har tilføjet linkfinder.dk - den anden er vist lidt for niche :) Thomas Frost: Du må meget gerne give den en +1. Der er knapper til det nederst i indlægget.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Torben
     date: 17/05-2012 - 23:49
     content: 'Jacob Worsøe: Det var så lidt og tak fordi du tilføjede. Jeg kikkede lige lidt på din liste og faldt over dasyh.dk, som jeg kunne huske er lukket.'
@@ -1533,7 +1533,7 @@ opdateret-liste-over-linkkataloger:
     date: 18/05-2012 - 13:49
     content: 'Torben: Super, den får jeg lige slettet... Thomas Frost: Tak, fedt du gider gøre det!'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Torben
     date: 18/05-2012 - 14:06
     content: 'Der er i øvrigt heller ikke meget at hente her: abclink.dk onix.dk jagtlinks.dk'
@@ -1553,7 +1553,7 @@ opdateret-liste-over-linkkataloger:
     date: 06/06-2012 - 15:54
     content: 'Casper: Jeg tror mange af disse kataloger får mange tilmeldinger fra denne liste, så hvis du skriver det her, så skal jeg gerne tage det med på listen.'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jimmy Sigenstrøm
     date: 06/06-2012 - 17:29
     content: |-
@@ -1584,7 +1584,7 @@ opdateret-liste-over-linkkataloger:
     date: 07/11-2012 - 12:30
     content: 'Kasper K: Tak, den kommer med når jeg opdaterer listen :)'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: kim
     date: 14/12-2012 - 19:34
     content: Hvornår er denne blevet sidst update?
@@ -1632,9 +1632,9 @@ opdateret-liste-over-linkkataloger:
   - author: Jacob Worsøe
     date: 23/09-2013 - 22:22
     content: |-
-      Så er listen opdateret til 2013 version. På den nye liste er der undersøgt 149 linkkataloger, men mange er lukkede så der er kun 72 aktive linkkataloger tilbage i Danmark. Happy linkbuilding :) https://www.jacobworsoe.dk/danske-linkkataloger-2013/
+      Så er listen opdateret til 2013 version. På den nye liste er der undersøgt 149 linkkataloger, men mange er lukkede så der er kun 72 aktive linkkataloger tilbage i Danmark. Happy linkbuilding :) /danske-linkkataloger-2013/
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Lars E
     date: 10/02-2014 - 21:11
     content: Super fedt, lige hvad jeg har ledt efter.. takker mange gange :)
@@ -1650,7 +1650,7 @@ opdateret-liste-over-linkkataloger:
     date: 24/08-2015 - 13:30
     content: 'Mike: Jeg tror godt jeg kan love at 2013-listen bliver den sidste opdatering :)'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Anders R.
     date: 30/11-2016 - 16:53
     content: Tusind tak for listen, den har været brugbar!
@@ -1664,9 +1664,9 @@ opdateret-liste-over-linkkataloger:
   - author: Jacob Worsøe
     date: 24/02-2017 - 10:08
     content: |-
-      Hej Kristoffer Nej, listen bliver ikke opdateret længere. Linkkataloger er 100% spild af tid i 2017. Se her hvordan du istedet bør lave linkbuilding nu: http://www.impact.dk/blog/saadan-arbejder-du-med-linkbuilding/ Denne case kan også bruges som eksempel: https://www.jacobworsoe.dk/case-overvaag-dit-brand-og-scor-nemme-links/
+      Hej Kristoffer Nej, listen bliver ikke opdateret længere. Linkkataloger er 100% spild af tid i 2017. Se her hvordan du istedet bør lave linkbuilding nu: http://www.impact.dk/blog/saadan-arbejder-du-med-linkbuilding/ Denne case kan også bruges som eksempel: /case-overvaag-dit-brand-og-scor-nemme-links/
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jens
     date: 29/03-2017 - 11:19
     content: Tak for listen, Jacob. Rigtig brugbar.
@@ -1688,7 +1688,7 @@ opdateret-liste-over-linkkataloger:
     content: |-
       @Jens: Den er sidst opdateret i 2013, men jeg har fjernet alle listerne, da linkkataloger ikke længere har nogen værdi. Her er istedet en god guide til at lave værdifuld linkbuilding i 2017: http://www.impact.dk/blog/saadan-arbejder-du-med-linkbuilding/
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Freja
     date: 12/12-2017 - 11:26
     content: Interessant artikel Jacob - tak for den :)
@@ -1704,7 +1704,7 @@ opdateret-liste-over-linkkataloger:
     content: |-
       Hej Lene, mange tak og velkommen til SEO! Ja, der er sket en masse siden jeg skrev dette indlæg. Der er ikke længere nogen værdi i at tilmelde sig linkkataloger, så derfor har jeg fjernet listen. Hvis du vil arbejde med linkbuilding der giver værdi kan jeg anbefale denne guide som er skrevet af min dygtige tidligere kollega Emil Lykkeskov: https://www.impact.dk/viden/saadan-arbejder-du-med-linkbuilding/
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: jens benny
     date: 21/12-2020 - 13:52
     content: 'Tak for linket til opdateret indhold på: https://www.impact.dk/viden/saadan-arbejder-du-med-linkbuilding/'
@@ -1722,7 +1722,7 @@ real-time-404-tracking-med-google-tag-manager:
     content: |-
       Det officielle svar fra Google er at der mistes lige meget link juice i et link og et redirect: https://www.youtube.com/watch?v=Filv4pP-1nw Det lyder på Matt Cutts som om det er 10-15% der mistes. Min erfaring er dog at der mistes lidt mere gennem et redirect. Dette ses fx når et site får et nyt domæne. Så oplever jeg ofte at det giver et mindre tab i PageRank og rankings på det nye site, selvom alle sider er redirected korrekt. Men det er svært at sige præcis hvor meget tab der er, men lidt tab er der, så der er god grund til at få rettet linket, så det peger rigtigt.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jeppe
     date: 02/08-2015 - 13:25
     content: |-
@@ -1739,7 +1739,7 @@ real-time-404-tracking-med-google-tag-manager:
     content: |-
       Hej Jacob. Helt enig, redirects bør altid sættes op baseret på besøgte sider i GA, kombineret med sider med indgående links. Det er bare ikke altid nok... Vi lancerede et nyt site forleden dag. Der var lavet redirects, baseret på besøgte sider i GA for de sidste 2 år, men et par dage inden skiftet til nyt site, blev der lanceret en ny kampagne med landingpage, som derfor ikke var med i listen fra GA. Siden fik masser af trafik fra AdWords og e-mails og blev fanget med det samme i real-time GA. Kun to brugere nåede at se 404 siden, inden der var opsat redirect!﻿
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
 responsive-design-3-nemme-trin:
   - author: Mark
     date: 20/01-2014 - 19:03
@@ -1752,7 +1752,7 @@ responsive-design-3-nemme-trin:
     content: |-
       Hej Mark Tak, fedt den kunne bruges :) Jeg er helt enig i at frameworks er smarte at bruge, men i forhold til at få en forståelse for hvad der skal til for at gøre et statisk design responsivt, synes jeg ikke det vil gøre det mindre mystisk, hvis jeg byggede artiklen på et framework. Hvis jeg forstår dig korrekt? Men det var da en glimrende idé til en follow-up artikel, for at vise hvor nemt man kan lave et responsivt design, hvis man bygger det på et framework.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Britta Nielsen
     date: 27/11-2014 - 21:44
     content: |-
@@ -1764,7 +1764,7 @@ responsive-design-3-nemme-trin:
     content: |-
       Hej Britta Beklager det sene svar! Det du vil gøre er lige præcis det jeg har gjort her på bloggen, og det er et meget populært trick. Det vigtige her er width. Her på bloggen har jeg to kolonner hvoraf den ene (content) er 66,6% bred og den anden (sidebar) er 33,3% bred. Når de to tilsammen er 100% eller derunder (og der er brugt float: left;) kan de være ved siden af hinanden. Kommer de to over 100% tilsammen vil den til højre blive skubbet ned under den anden, dvs. sidebar bliver skubbet under content. Hvis du har tre kolonner som hver er 33,3% og du gerne vil have dem ovenpå hinanden, skal du sætte dem til 100% og derved vil de blive skubbet ned under hinanden. Håber det giver mening?
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Christoffer Steenbeck
     date: 14/01-2015 - 15:36
     content: |-
@@ -1776,7 +1776,7 @@ responsive-design-3-nemme-trin:
     content: |-
       Mange tak Christoffer. Jeg kan også godt huske første gang jeg skulle rode i et Wordpress theme der var responsivt, hvor jeg hurtigt fik ødelagt en masse ting, uden at vide hvorfor :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Michael
     date: 25/01-2015 - 22:03
     content: |-
@@ -1787,7 +1787,7 @@ responsive-design-3-nemme-trin:
     date: 25/01-2015 - 23:15
     content: Hej Michael Det er jeg dælme glad for at høre! Send hellere alle dine klassekammerater herover, så de også kan lære lidt :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Michael
     date: 12/05-2015 - 08:02
     content: |-
@@ -1805,7 +1805,7 @@ responsive-design-3-nemme-trin:
     content: |-
       Jeppe: Det skal det nok, især hvis du får lavet din tabel på en elegant måde, så den virker godt på mobile. Derudover ville jeg nok smide lidt flere billeder ind i artiklen, den virker meget tung med alt det tekst :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Nick
     date: 06/10-2016 - 10:49
     content: Tak for artiklen! Bruger selv Bootstrap, men har aldrig rørt Skeleton. Hvilken foretrækker du?
@@ -1816,7 +1816,7 @@ responsive-design-3-nemme-trin:
     content: |-
       Jeg bruger Bootstrap til nogle små interne projekter, men til kundevendte websites koder jeg det altid selv fra bunden. Bootstrap har meget unødvendig kode, som jeg ikke bruger, så det er for tungt at bruge til websites der skal være hurtige.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Erik R.N.
     date: 06/11-2016 - 16:55
     content: Fantastisk vejledning ! Meget anvendelig for en begynder der søger oversigt. så, TAK
@@ -1833,7 +1833,7 @@ responsive-design-3-nemme-trin:
     content: |-
       Hej Rasmus Hvis du indsætter billedet som en background og sætter background-size: cover; så får du lige præcis det du gerne vil have. Se fx et tilsvarende hero-billede på en forside. Mere om teknikken her: https://css-tricks.com/perfect-full-page-background-image/
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: r
     date: 31/03-2017 - 08:43
     content: |-
@@ -1845,7 +1845,7 @@ responsive-design-3-nemme-trin:
     content: |-
       Hej Rasmus. Hvis du fx har en div med en class der hedder .header så indsætter du følgende i din CSS: .header { background: url('baggrund.jpg') no-repeat; background-size: cover; }
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Rasmus
     date: 03/08-2017 - 08:43
     content: |-
@@ -1856,7 +1856,7 @@ responsive-design-3-nemme-trin:
     date: 04/08-2017 - 19:51
     content: 'Rasmus: Godt at høre! Jeg glæder mig til at se dine sider!'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Ulla
     date: 06/10-2018 - 12:29
     content: |-
@@ -1868,7 +1868,7 @@ responsive-design-3-nemme-trin:
     content: |-
       Hej Ulla og mange tak! Umiddelbart er dine billeder godt optimeret og du får også en fin score på 86/100, så den er tæt på at være i mål. Du kan dog optimere billederne yderligere. Hvis du indtaster http://www.kristianna.dk/galleri.html i https://webspeedtest.cloudinary.com får du dette resultat: https://webspeedtest.cloudinary.com/results/181018_TM_68a914b5ad23c65c8282a91574a25aa6 Her kan du se at billederne på siden tilsammen fylder 161 KB og kan optimeres ned til 41 KB. Derunder kan du se de enkelte billeder og downloade den optimerede version af de enkelte billeder. Her bør du bruge JPEG da de andre versioner kun virker i nogle browsere. Så kan du presse de sidste kilobyte ud af billederne og få en optimal load tid. Håber det kan bruges?
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
   - author: Ulla
     date: 18/10-2018 - 13:34
     content: Det vil jeg arbejde lidt videre med. 1000 tak for hjælpen!
@@ -1884,7 +1884,7 @@ returvarer-google-analytics:
     date: 28/10-2019 - 19:57
     content: Mange tak Christian! Det varmer!
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
   - author: Kasper Gregersen
     date: 11/12-2019 - 13:25
     content: Meget detaljeret og brugbart, tak for det! 😌
@@ -1894,7 +1894,7 @@ returvarer-google-analytics:
     date: 13/12-2019 - 21:19
     content: Hej Kasper Mange tak for de pæne ord, det er jeg glad for at høre!
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
   - author: Christoffer Steenbeck
     date: 23/03-2020 - 05:30
     content: |-
@@ -1906,7 +1906,7 @@ returvarer-google-analytics:
     content: |-
       Mange tak Christoffer! Ja, det er et kæmpe manuelt arbejde, så det skal helt sikkert automatiseres. I forhold til at det gælder bagudrettet, så det er vigtigt at sige at Refunds kan laves op til 6 måneder efter ordren er lavet, derefter er det ikke længere muligt. Og Refund'en kommer stadig til at ligge på den dato hvor den blev sendt til GA og ikke datoen for ordren - så det er bedst at få gjort det så hurtigt som muligt, så det skal automatiseres. Calculated Metrics gælder dog på alt historisk data, så det er fedt!
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
 skab-vaerdifulde-konverteringer-paa-kvitteringssiden:
   - author: Kenneth
     date: 16/09-2015 - 13:09
@@ -1919,7 +1919,7 @@ skab-vaerdifulde-konverteringer-paa-kvitteringssiden:
     content: |-
       Fedt, jeg er glad for at det kan bruges! Flyselskaber er gode, men jeg synes generelt at alt for mange webshops er for passive på deres kvitteringsside. Det er som om de siger: "Tak for dit køb, vær venlig at forlade siden nu..."
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Ole Gregersen
     date: 17/10-2015 - 09:04
     content: |-
@@ -1931,7 +1931,7 @@ skab-vaerdifulde-konverteringer-paa-kvitteringssiden:
     content: |-
       Ole: Tak skal du have! Ja, man har typisk ikke noget at miste på kvitteringssiden, så man kan ligeså godt gå til den :) Vi er i fuld gang med at køre den sidste mulighed, hvor vi kombinerer det hele, så den kommer jeg snart med noget data på!
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Anton Hoelstad
     date: 02/11-2015 - 20:21
     content: |-
@@ -1942,7 +1942,7 @@ skab-vaerdifulde-konverteringer-paa-kvitteringssiden:
     date: 03/11-2015 - 10:43
     content: '@Anton: Det var så lidt, fedt det giver inspiration til ikke at lave blindgyder!'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Kristoffer
     date: 17/11-2015 - 10:42
     content: Hej Jacob! Tak for tippet - det er helt sikkert noget de fleste webshopejere kan gøre brug af!
@@ -1970,7 +1970,7 @@ skab-vaerdifulde-konverteringer-paa-kvitteringssiden:
     date: 28/03-2016 - 15:05
     content: Hej Tim. Vingummibamserne er guld værd! Jeg bruger dem til at bestikke min elektrikerkammerat til at hjælpe mig :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Anders Kristensen
     date: 13/07-2016 - 16:14
     content: |-
@@ -1982,12 +1982,12 @@ skab-vaerdifulde-konverteringer-paa-kvitteringssiden:
     content: |-
       Tak Anders! Jeg tror oven i købt mange kunder vil være glade for at man spørger ind til deres oplevelse med købet, især hvis det har været lidt vanskeligt. Så det er bare at spørge løs, og se det som god kundeservice...
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jacob Worsøe
     date: 03/11-2016 - 22:11
     content: Indlægget er opdateret med tal fra vores seneste tids forsøg på at få brugerne over på facebook, for at anmelde os der.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Bo Lyhne
     date: 28/11-2016 - 00:18
     content: |-
@@ -2022,7 +2022,7 @@ skal-et-hdmi-kabel-koste-249:
     content: |-
       Hej Ricco. Godt du kunne bruge artiklen. Det er rigtigt nok at kvaliteten på kablet kan være meget forskellig, selvom signalet er det samme. I den test jeg linker til i artiklen prøver de også at bøje kablet 10.000 gange mens det er i brug, for at se om det kan holde til nogle tæsk, og det er jo også værd at betale lidt ekstra for. Kablet jeg fik virker perfekt, og jeg regner ikke med at flytte så meget rundt på min opsætning, så kablet skal ikke kunne holde til så meget i min situation. Men hvis man tit flytter rundt på tingene eller lignende, så skal man nok købe et lidt bedre kabel. Men indtil videre har det kørt perfekt.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Martin Rieck
     date: 21/04-2010 - 19:09
     content: |-
@@ -2069,7 +2069,7 @@ skal-et-hdmi-kabel-koste-249:
     content: |-
       Der er den meget væsentlige forskel på VGA og HDMI at VGA er et analogt signal og det kan derfor godt være mere eller mindre godt til at overføre det signalet, ligesom der også kan opstå støj på som giver nogle mærkelige farver. Det kan der ikke på et digitalt signal
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Robert
     date: 20/01-2011 - 12:17
     content: |-
@@ -2081,7 +2081,7 @@ skal-et-hdmi-kabel-koste-249:
     content: |-
       Robert: Det er fuldstændig korrekt. HDMI og DVI er begge to digitale måder at overføre billede på, hvor HDMI så også har mulighed for digital lyd. Så det er det samme med DVI, der kan heller ikke være forskel.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Tobias Bay
     date: 15/10-2011 - 23:18
     content: Det er altid rart at læse sådan en artikel. Specielt når man lige har startet firma der sælger kabler - behovet er der, godt at se ;)
@@ -2115,7 +2115,7 @@ skal-et-hdmi-kabel-koste-249:
     content: |-
       Hej Arlosa Ja, det kan ikke betale sig hvis pakken bliver taget i tolden, men som jeg skriver i artiklen, så er der noget med en marginalgrænse på 80 kroner, som ikke skal fortoldes. Så hvis man kan holde sig under det beløb, så skulle man være sikker.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Morten
     date: 21/11-2014 - 19:13
     content: Der er godt nok mange penge at spare ja,og fint du lige fik forklaret at der ikke burde være forskel på de dyre og de billige :)
@@ -2132,7 +2132,7 @@ skal-et-hdmi-kabel-koste-249:
     content: |-
       ComputerJoe: Det er korrekt at de allernyeste features kun findes i 2.x men allerede i 1.3 fra 2006 var der understøttelse for 1080p60, DTS-HD MA og Dolby TrueHD som er rigeligt til langt de fleste privates behov. Og jeg er ret sikker på at de fleste, hvis ikke alle kabler på markedet er minimum v1.3 :) Så joh, der er forskel på kabler, men ikke noget private vil mærke.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
 skriv-bedre-webtekst-med-gratis-e-bog:
   - author: Tim Petersson
     date: 09/06-2012 - 20:27
@@ -2166,7 +2166,7 @@ skriv-bedre-webtekst-med-gratis-e-bog:
     content: |-
       Hej Dorte Tak for din interesse for bogen. Har du udfyldt formularen på denne side? http://online-tekstforfatter.dk/landing/bog/ Så skulle du gerne modtage bogen på mail. Hvis det ikke virker, skal jeg gerne sende den til dig. Hilsen Jacob
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: jan
     date: 26/01-2018 - 13:20
     content: Hejsa Jacob Du må meget gerne sende den bog til mig. Go weekend. Hilsen Jan
@@ -2176,7 +2176,7 @@ skriv-bedre-webtekst-med-gratis-e-bog:
     date: 26/01-2018 - 13:28
     content: Hej Jan Jeg kan se at websitet ikke virker længere, så jeg tror desværre ikke bogen er tilgængelig mere.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
 slide-in-konverteringsrate:
   - author: Ole Bak
     date: 14/09-2020 - 08:05
@@ -2192,12 +2192,12 @@ slide-in-konverteringsrate:
     date: 14/09-2020 - 12:27
     content: Mange tak Ole! Jeg indsamler i hvert fald data på det, men det bliver nok desværre ikke så mange :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
   - author: Jacob Worsøe
     date: 14/09-2020 - 12:28
     content: Mange tak Morten! Alle gode blogindlæg i 2020 skal have en gif :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
   - author: Joakim Ditlev
     date: 14/09-2020 - 13:14
     content: |-
@@ -2209,7 +2209,7 @@ slide-in-konverteringsrate:
     content: |-
       Hej Joakim, min indre nørd takker for de pæne ord! Mht. Content Upgrade, så er det den eneste vej frem på en blog. Jeg har faktisk testet det i et tidligere blogindlæg og det virkede forrygende! Jeg samler lige lidt data på det i et blogindlæg på et tidspunkt. Men der er langt fra et enkelt indlæg til at have en Content Upgrade som er så generel at den giver værdi på alle blogindlæg. Eller endnu værre: At lave specifikke Content Upgrades til alle blogindlæg. Det kommer bare ikke til at ske :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /
 spor-sogemaskinernes-robotter-i-google-analytics:
   - author: Vadskær
     date: 15/01-2010 - 07:51
@@ -2222,7 +2222,7 @@ spor-sogemaskinernes-robotter-i-google-analytics:
     content: |-
       Vadskær: Hvis du tænker på at det ødelægger ens statistik (f.eks. giver en lavere konverteringsrate) så skal du ikke være nervøs. Fordi man laver en ny profil til at have dem i, så bliver de ikke talt med i ens oprindelige profil, så den indeholder fortsat kun "rigtige" mennesker. Alt det her bliver udelukkende registreret under den profil som hedder "robots.jacobworsoe.dk" eller hvad man nu vælger at kalde den :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Vadskær
     date: 15/01-2010 - 10:03
     content: |-
@@ -2240,7 +2240,7 @@ spor-sogemaskinernes-robotter-i-google-analytics:
     content: |-
       Vadskær: Det glæder mig du kan bruge tricket :) Torben: Logfiler er gode engang imellem, men det er nu meget sjovt at have samlet så meget statistik som muligt i Google Analytics :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Michael Kjeldsen
     date: 15/01-2010 - 13:20
     content: Nice - installeret, og så venter jeg bare på data :-)
@@ -2255,7 +2255,7 @@ spor-sogemaskinernes-robotter-i-google-analytics:
     date: 29/01-2010 - 13:02
     content: 'Mikael: Ja, eller en hulens masse blogindlæg :) Det var så lidt - håber du får noget spændende data ud af det.'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Janno Damgaard Lassen
     date: 18/02-2010 - 09:56
     content: Meget interessant indlæg... Jeg vil straks sætte det op, så der kan komme nogle data at analysere... Takker ydmygt!
@@ -2265,18 +2265,18 @@ spor-sogemaskinernes-robotter-i-google-analytics:
     date: 22/02-2010 - 18:04
     content: 'Janno: Fedt du kunne bruge det. Lad mig endelig høre hvis du får nogle spændende data ud af det :)'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jacob Worsøe
     date: 03/03-2010 - 13:09
     content: |-
       Jeg har forresten lige fundet ud af at Google-Feedfetcher er den bot som arbejder hos Google Reader. Så det er bare den der er inde og tjekke dit feed et par gange i timen og se om du har udgivet nogle nye indlæg siden sidst. Men det kan selvfølgelig også blive til en del besøg :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jacob Worsøe
     date: 27/04-2010 - 18:07
     content: 'Christian: Tak for roserne. Godt du kunne bruge det, og at det er til at forstå hvad jeg skriver :)'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: gustav
     date: 01/06-2010 - 10:58
     content: Hvad betyder crawler?
@@ -2297,7 +2297,7 @@ spor-sogemaskinernes-robotter-i-google-analytics:
     date: 14/06-2010 - 13:30
     content: 'Martin: Hvilken fejl får du?'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Grethe
     date: 25/03-2011 - 09:54
     content: Rigtig cool hack. Er dog ikke så velbevandret i analytics endnu, men må lege med det her i weekenden og se om jeg kan få det til at virke.
@@ -2326,13 +2326,13 @@ statistikken-bag-google-website-optimizer:
     content: |-
       Jacob: Jeg vidste det lige var noget for en talnørd som dig :) Jeg bliver også selv cand.merc på et par år, så vi har nok en del tilfælles på det punkt. Michael: Tak for rosen. Det er ærgeligt at du synes den er for teknisk. Jeg havde hele tiden som mål at gøre det nemt at forstå, selvom man måske ikke kender noget til statistik, men det er åbenbart ikke helt lykkedes. Det kan godt være det bare er umuligt med sådan et emne. Kan du give nogle eksempler på ting der var lidt svære at forstå? Kurt: Tak for det, jeg er glad for at den satte nogle tanker igang.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jacob Worsøe
     date: 13/12-2009 - 22:17
     content: |-
       Jeg har forresten lige tilføjet artiklen til aNyhed igen. De havde et nedbrud som gjorde at artiklen var blevet slettet fra aNyhed, men nu er det altså igen muligt at give den en stemme :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Rasmus Henriksen
     date: 04/02-2010 - 03:13
     content: |-
@@ -2344,7 +2344,7 @@ statistikken-bag-google-website-optimizer:
     content: |-
       Rasmus: Tak for din kommentar og jeg beklager det sene svar. Jeg skal være ærlig og sige at jeg ikke har haft statistik på et højt nok niveau til at jeg kan forklare matematikken bag ved de udregningen, men bare forstå hvordan man bruger hypotese-test. Derfor har jeg været nødt til at lave mere eller mindre direkte oversættelser af enkelte dele. Det er taget herfra: "The 80% confidence level is what determines the width of the range. It is what allows us to say, with 95% confidence, that a range that exceeds and does not overlap another range will outperform the other range." Jeg er dog selv nysgerrig efter at finde ud af mere af den bagved liggende matematik, så jeg vil lige prøve at skrive en mail til Google og høre om de kan komme med en forklaring der er til at forstå :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Rasmus Henriksen
     date: 10/11-2011 - 08:57
     content: Hej Jacob Kan se at jeg aldrig fik svaret, det troede jeg nu jeg havde. Tak for dit svar! Og tak for det nye link! :)
@@ -2371,7 +2371,7 @@ status-pa-google-and-china-testen:
     content: |-
       Hej Kasper, nej jeg lavede intet linkbuilding, twitter, anyhed eller noget som helst. Så det er helt ren trafik. Dette gjorde jeg for bedre at kunne sammeligne trafikken med mine danske artikler, som jeg heller ikke linkbuilder til når jeg skriver dem. Dog bliver der brugt lidt twitter og anyhed normalt...
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Preben
     date: 18/10-2011 - 15:23
     content: |-
@@ -2388,7 +2388,7 @@ status-pa-google-and-china-testen:
     content: |-
       Preben: Det var så lidt. Det ser ud til at være ret tilfældigt at der var så mange sidevisninger den dag. Der var 17 sidevisninger og 2 unikke besøg, så den ene af dem har vist bare reloaded siden en masse gange. Simon: Artiklen var en synopsis jeg skrev som oplæg til en mundtlig eksamen, så det er faktisk en "rigtig" artikel og ikke bare en gang spinner sludder :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Simon
     date: 04/01-2012 - 17:25
     content: Det link havde jeg vidst overset :)
@@ -2404,13 +2404,13 @@ tag-manager-quick-tip-gem-dit-analytics-id-en-makro:
     date: 09/07-2014 - 09:54
     content: '@Michael: Tak, fedt det kan bruges!'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jacob Worsøe
     date: 19/09-2014 - 15:40
     content: |-
       Jeg ved ikke om Simo Ahava læser med her på bloggen, men han har i hvert fald skrevet om det samme tip for et par dage siden: http://www.simoahava.com/gtm-tips/save-gatc-constant-string-macro/ Hans blog kan forresten stærkt anbefales, hvis man roder med Google Tag Manager. Masser af seje hacks!
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
 undga-at-spilde-din-tid-pa-dode-linkkataloger:
   - author: Dennis Kjærgaard
     date: 12/01-2011 - 00:35
@@ -2451,7 +2451,7 @@ undga-at-spilde-din-tid-pa-dode-linkkataloger:
     content: |-
       Dennis: Joh, med mindre man lige smider tre hurtige tips til adwords nybegyndere, så tager det altid længere tid end man lige tror :) Rosenstand: Jeg er helt enig i at PageRank ikke kan bruges som kvalitetsstempel af et katalog og det var faktisk heller ikke det der var meningen med listen. Meningen var at finde frem til de kataloger der helt sikkert ikke er i stand til at overføre nogen værdi og er vi ikke enige om at man bør holde sig fra de nederste 50 på listen, for at sikre at man ikke spilder sin tid? Ellegaard: Tak, det var lige det jeg tænkte :) Riisager: Hehe, ja din liste har været god inspiration. I hvert fald til de første 102 kataloger, resten har jeg måttet finde rundt omkring :) Og i forhold til Scrapebox (som iøvrigt ikke findes til Mac) så har jeg jo lige sparet $97 og det er noget vi jyder ka li :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Per Allerup
     date: 12/01-2011 - 12:09
     content: |-
@@ -2463,7 +2463,7 @@ undga-at-spilde-din-tid-pa-dode-linkkataloger:
     content: |-
       Ja, og som deMib skriver i sin artikel på amino, så har det ikke være særlig svært for Google at finde de linkkataloger der udelukkende forsøger at manipulere: http://www.amino.dk/blogs/mikkeldemib/archive/2010/09/23/kunsten-at-r-248-ve-en-bank.aspx
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Dennis V. Kjærgaard
     date: 12/01-2011 - 13:44
     content: |-
@@ -2484,7 +2484,7 @@ undga-at-spilde-din-tid-pa-dode-linkkataloger:
     date: 20/01-2011 - 10:21
     content: 'Robert: Tak, godt du kunne bruge den og forhåbentlig spare lidt tid :)'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Claush
     date: 20/01-2011 - 20:30
     content: |-
@@ -2496,7 +2496,7 @@ undga-at-spilde-din-tid-pa-dode-linkkataloger:
     content: |-
       Jeg kan godt se at jeg ikke har været god nok til forklare hvad formålet med listen var. Det var nemlig ikke at trække de gode frem i lyset (for det kan man ikke bare ved at kigge på antal indekserede sider) men derimod at skabe et overblik over hvilke og hvor mange kataloger der var blevet deindekseret. På den måde ved man i hvert fald hvilke katalog der ikke giver nogen værdi at tilmelde sig til. Det har altid været meget tvivlsomt hvor stor effekt det har at tilmelde sig diverse kataloger, og selvom man tager de øverste på listen, så er der ingen garanti for at det har en effekt på placeringer. Men hvis man vil undgå at spilde sin tid mere end højst nødvendigt, så kan man holde sig fra de nederste på listen. Dermed ikke sagt at der er noget at hente øverst på listen.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Morten
     date: 22/01-2011 - 01:22
     content: |-
@@ -2508,7 +2508,7 @@ undga-at-spilde-din-tid-pa-dode-linkkataloger:
     content: |-
       Listen er forresten omtalt i en længere artikel om linkkataloger og lignende ovre hos ComON: http://www.comon.dk/nyheder/seo-luftkastellet-der-blev-spraengt-1.385138.html
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jimmy Sigenstrøm
     date: 30/01-2011 - 23:29
     content: |-
@@ -2544,7 +2544,7 @@ undga-at-spilde-din-tid-pa-dode-linkkataloger:
     content: |-
       Andreas: Fedt at du kan bruge mit arbejde :) Som det bliver diskuteret lidt her, så er det svært at sige hvor meget værdi der er i at tilmelde sig de øverste på listen, men det er derimod helt sikkert at der ikke er noget værdi i at tilmelde sig de nederste. Det virker til at den måde Google fjerner værdien af links er ved at fjerne siden linket ligger på helt fra deres indeks. Så hvis siden ikke er indekseret får linket ikke nogen værdi og det er idéen bag listen og konklusioner i artiklen.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Mikkel Demant
     date: 04/03-2011 - 02:49
     content: |-
@@ -2555,7 +2555,7 @@ undga-at-spilde-din-tid-pa-dode-linkkataloger:
     date: 04/03-2011 - 10:07
     content: 'Mikkel: Tak, jeg elsker når folk bookmarker mine sider :)'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jimmy
     date: 04/03-2011 - 11:58
     content: |-
@@ -2567,7 +2567,7 @@ undga-at-spilde-din-tid-pa-dode-linkkataloger:
     content: |-
       Jimmy: Tak for stats, det lyder til at min liste er blevet det nye starting-point for linkbuilding med linkkataloger :) Med hensyn til at opdatere listen, så har jeg tænkt på at lave en komplet opdatering af listen på et tidspunkt - måske en gang i kvartalet eller lignende. Blandt andet for at lave lidt statistik på den generelle udvikling i indekserede sider og PR.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Camilla
     date: 08/03-2011 - 16:01
     content: Tak Jacob for et stort arbejde. Ja, listen er faktisk perfekt til linkbuilding. Man slipper for at lave links, som alligevel ikke bliver indekseret:=)
@@ -2588,7 +2588,7 @@ undga-at-spilde-din-tid-pa-dode-linkkataloger:
     content: |-
       @Nikolaj: Det er vist snart ved at være tid til en opdatering. Planen var bare at vente et par måneder, så jeg var sikker på at der havde været en udvikling, men det er vist ved at være tiden til det nu. Så nu skal tiden bare lige findes :)
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Kenni Bonde
     date: 12/04-2011 - 11:03
     content: |-
@@ -2667,9 +2667,9 @@ undga-at-spilde-din-tid-pa-dode-linkkataloger:
     author_url: http://iphonezone.dk
   - author: Jacob Worsøe
     date: 03/12-2011 - 21:28
-    content: 'Så fik jeg endelig lavet en opdateret liste: https://www.jacobworsoe.dk/danske-linkkataloger-2013/'
+    content: 'Så fik jeg endelig lavet en opdateret liste: /danske-linkkataloger-2013/'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Kristian Ole Rørbye
     date: 18/12-2011 - 16:44
     content: |-
@@ -2684,13 +2684,13 @@ undga-at-spilde-din-tid-pa-dode-linkkataloger:
   - author: Jacob Worsøe
     date: 20/12-2011 - 20:33
     content: |-
-      Seotext: Tak skal du ha. Ja, jeg håber den er god at sende videre til kunderne og så bare bede dem om at starte fra toppen og fortsætte så længe de gider :) Christian: Tak, ja det tog lidt tid at lave. Husk at bruge den opdaterede liste når du skal linkbuilde: https://www.jacobworsoe.dk/danske-linkkataloger-2013/
+      Seotext: Tak skal du ha. Ja, jeg håber den er god at sende videre til kunderne og så bare bede dem om at starte fra toppen og fortsætte så længe de gider :) Christian: Tak, ja det tog lidt tid at lave. Husk at bruge den opdaterede liste når du skal linkbuilde: /danske-linkkataloger-2013/
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Sebastian Krausing
     date: 22/12-2011 - 16:21
     content: |-
-      Rigtig godt du gad bruge tiden på at lave sådan en liste. - skulle lige til at skrive, at den måske burde opdateres, men det kan jeg så se du har lavet her. https://www.jacobworsoe.dk/danske-linkkataloger-2013/
+      Rigtig godt du gad bruge tiden på at lave sådan en liste. - skulle lige til at skrive, at den måske burde opdateres, men det kan jeg så se du har lavet her. /danske-linkkataloger-2013/
     avatar_url: https://www.gravatar.com/avatar/c78f377e471a3bd63abb776443118519?s=96&d=mm&r=g
     author_url: http://linkconnection.dk/
   - author: Frands Simonsen
@@ -2758,9 +2758,9 @@ undga-at-spilde-din-tid-pa-dode-linkkataloger:
     author_url: ''
   - author: Jacob Worsøe
     date: 06/07-2012 - 14:41
-    content: 'Kevin: Der er en opdateret liste her: https://www.jacobworsoe.dk/danske-linkkataloger-2013/'
+    content: 'Kevin: Der er en opdateret liste her: /danske-linkkataloger-2013/'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Jack
     date: 26/07-2012 - 16:22
     content: Linket til den opdaterede liste virker ikke :-( Så starter lige med den der er der pt. ;-)
@@ -2770,7 +2770,7 @@ undga-at-spilde-din-tid-pa-dode-linkkataloger:
     date: 26/07-2012 - 17:07
     content: 'Jack: Så virker linket :)'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Nick
     date: 03/10-2012 - 00:20
     content: God liste, den må lige kigges igennem
@@ -2794,9 +2794,9 @@ undga-at-spilde-din-tid-pa-dode-linkkataloger:
   - author: Jacob Worsøe
     date: 23/09-2013 - 22:22
     content: |-
-      Så er listen opdateret til 2013 version. På den nye liste er der undersøgt 149 linkkataloger, men mange er lukkede så der er kun 72 aktive linkkataloger tilbage i Danmark. Happy linkbuilding :) https://www.jacobworsoe.dk/danske-linkkataloger-2013/
+      Så er listen opdateret til 2013 version. På den nye liste er der undersøgt 149 linkkataloger, men mange er lukkede så der er kun 72 aktive linkkataloger tilbage i Danmark. Happy linkbuilding :) /danske-linkkataloger-2013/
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: https://www.jacobworsoe.dk
+    author_url: /
   - author: Lone
     date: 23/02-2017 - 00:28
     content: Der burde være flere af denne slags kataloger, så man ikke skal suse nettet rundt :-)
@@ -2818,4 +2818,4 @@ visualisering-af-google-analytics-data-med-excel-heatmaps:
     date: 19/06-2019 - 09:07
     content: 'RNA: Mange tak for de pæne ord og godt forslag med de danske navne, det er tilføjet nu. Det kan godt være svært at finde ud af hvad de er oversat til :)'
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
-    author_url: http://www.jacobworsoe.dk
+    author_url: /

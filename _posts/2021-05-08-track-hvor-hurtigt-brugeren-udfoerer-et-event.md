@@ -97,7 +97,7 @@ Ved at tracke tiden indtil der sker en JavaScript fejl, er det meget nemt at se 
 
 <h3>Use case #2: Læsning af indhold</h3>
 
-Jeg tracker min blog med Enhanced Ecommerce, som du kan <a href="https://www.jacobworsoe.dk/indhold-enhanced-ecommerce/">læse meget mere om her</a>. Jeg tracker en række events når brugeren har læst hhv. 33%, 66% samt 100% af et blogindlæg. Her bruger jeg også tiden, til at se hvor hurtigt brugerne læser indholdet og hvor lang tid det tager dem at nå til bunden af siden.
+Jeg tracker min blog med Enhanced Ecommerce, som du kan <a href="{{ '/indhold-enhanced-ecommerce/' | relative_url }}">læse meget mere om her</a>. Jeg tracker en række events når brugeren har læst hhv. 33%, 66% samt 100% af et blogindlæg. Her bruger jeg også tiden, til at se hvor hurtigt brugerne læser indholdet og hvor lang tid det tager dem at nå til bunden af siden.
 
 <figure><a href="{{ '/assets/images/2019/10/Content-with-ecommerce-time-to-events.jpg' | relative_url }}"><img src="{{ '/assets/images/2019/10/Content-with-ecommerce-time-to-events-860x313.jpg' | relative_url }}" alt="Den gennemsnitlige tid det tager brugerne af scrolle igennem et blogindlæg." width="860" height="313" class="size-large wp-image-1984" /></a><figcaption>Den gennemsnitlige tid det tager brugerne af scrolle igennem et blogindlæg.</figcaption></figure>
 
@@ -115,11 +115,11 @@ Jeg tracker også når brugeren klikker i menuen. Her er det interessant at se h
 
 <figure><a href="{{ '/assets/images/2019/10/Klik-i-hamburger-menuen.jpg' | relative_url }}"><img src="{{ '/assets/images/2019/10/Klik-i-hamburger-menuen-860x499.jpg' | relative_url }}" alt="Tid før klik på de forskellige kategorier i menuen." width="860" height="499" class="size-large wp-image-1987" /></a><figcaption>Tid før klik på de forskellige kategorier i menuen.</figcaption></figure>
 
-Jeg har efterfølgende lavet et stort redesign af min blog og alle beslutningerne var baseret på data, fx at fjerne menuen. <a href="https://www.jacobworsoe.dk/datadrevet-redesign/">Det kan du læse mere om her</a>.
+Jeg har efterfølgende lavet et stort redesign af min blog og alle beslutningerne var baseret på data, fx at fjerne menuen. <a href="{{ '/datadrevet-redesign/' | relative_url }}">Det kan du læse mere om her</a>.
 
 <h3>Use case #4: Brug af drikkevare beregner</h3>
 
-Tilbage i 2015 lavede jeg en <a href="https://www.jacobworsoe.dk/hvor-meget-drikker-gaesterne-til-et-bryllup/">infografik over hvor meget der blev drukket til vores bryllup</a>. Det er i øvrigt suverænt det mest blogindlæg jeg har. Jeg skal have skrevet noget mere/bedre om Google Analytics.
+Tilbage i 2015 lavede jeg en <a href="{{ '/hvor-meget-drikker-gaesterne-til-et-bryllup/' | relative_url }}">infografik over hvor meget der blev drukket til vores bryllup</a>. Det er i øvrigt suverænt det mest blogindlæg jeg har. Jeg skal have skrevet noget mere/bedre om Google Analytics.
 
 <a href="{{ '/assets/images/2019/10/Mest-besøgte-indlæg-siden-2009.jpg' | relative_url }}"><img src="{{ '/assets/images/2019/10/Mest-besøgte-indlæg-siden-2009.jpg' | relative_url }}" alt="" width="844" height="465" class="alignnone size-full wp-image-1993" /></a>
 

@@ -111,7 +111,7 @@ Men hvad med mobil trafik? Her er Safari 36% af trafikken.
 
 Og desktop og mobil bør analyseres særskilt, da kunderejsen kan være meget forskellig.
 
-De ovenstående tal er som nævnt fra <a href="https://www.googlemerchandisestore.com/" rel="noopener noreferrer">Google Merchandise Store</a>. Det er anderledes i Danmark. Sådan her ser fordelingen ud for <a href="https://www.jacobworsoe.dk/">jacobworsoe.dk</a> hvor desktop er næsten identisk med en meget stor markedsandel til Chrome, men der er langt flere iPhones i Danmark og dermed udgør Safari på mobile 62% af trafikken.
+De ovenstående tal er som nævnt fra <a href="https://www.googlemerchandisestore.com/" rel="noopener noreferrer">Google Merchandise Store</a>. Det er anderledes i Danmark. Sådan her ser fordelingen ud for <a href="{{ '/' | relative_url }}">jacobworsoe.dk</a> hvor desktop er næsten identisk med en meget stor markedsandel til Chrome, men der er langt flere iPhones i Danmark og dermed udgør Safari på mobile 62% af trafikken.
 
 Det er altså en stor del af trafikken, hvor data nu er forkerte!
 

@@ -203,7 +203,7 @@ Produktdataene er placeret i data attributter i HTML koden.
 
 ```html
 <h1 class="home-post-headline">
-    <a href="https://www.jacobworsoe.dk/returvarer-google-analytics/" 
+    <a href="{{ '/returvarer-google-analytics/' | relative_url }}" 
         data-title="Tracking af returvarer i Google Analytics (den ultimative guide)" 
         data-id="1597" 
         data-category="Webanalyse" 
@@ -852,7 +852,7 @@ Antal sessioner bliver cirka halveret i hvert step, men dog er 78% af dem som sc
 
 <h3>Ekskludering af irrelevante blogindlæg</h3>
 
-Mit mest besøgte blogindlæg er uden sammenligning min <a href="https://www.jacobworsoe.dk/hvor-meget-drikker-gaesterne-til-et-bryllup/">infografik over hvor meget der blev drukket til vores bryllup</a>.
+Mit mest besøgte blogindlæg er uden sammenligning min <a href="{{ '/hvor-meget-drikker-gaesterne-til-et-bryllup/' | relative_url }}">infografik over hvor meget der blev drukket til vores bryllup</a>.
 
 <figure><a href="{{ '/assets/images/2019/08/Mest-viste-sider-GDS-chart.png' | relative_url }}"><img src="{{ '/assets/images/2019/08/Mest-viste-sider-GDS-chart.png' | relative_url }}" alt="Mest besøgte sider siden 2009." width="823" height="415" class="size-full wp-image-1887" /></a><figcaption>Mest besøgte sider siden 2009.</figcaption></figure>
 
@@ -945,8 +945,8 @@ Men pageviews er bare en vanity metric. Den fortæller intet om kvaliteten eller
 Og de to blogindlæg er meget forskellige.
 
 <ul>
-<li><a href="https://www.jacobworsoe.dk/returvarer-google-analytics/">Tracking af returvarer i Google Analytics (den ultimative guide 2019)</a> er en inspiration, men også noget som er en reference til senere brug og den er på 3668 ord.</li>
-<li><a href="https://www.jacobworsoe.dk/aws-iot-button-google-analytics/">Tracking af kaffeforbrug med AWS IoT Button og Google Analytics</a> er en sjov use-case for Google Analytics, den er rimelig letlæst og man skal læse (eller skimme) det hele for at den er sjov. Den er kun på 1571 ord.</li>
+<li><a href="{{ '/returvarer-google-analytics/' | relative_url }}">Tracking af returvarer i Google Analytics (den ultimative guide 2019)</a> er en inspiration, men også noget som er en reference til senere brug og den er på 3668 ord.</li>
+<li><a href="{{ '/aws-iot-button-google-analytics/' | relative_url }}">Tracking af kaffeforbrug med AWS IoT Button og Google Analytics</a> er en sjov use-case for Google Analytics, den er rimelig letlæst og man skal læse (eller skimme) det hele for at den er sjov. Den er kun på 1571 ord.</li>
 </ul>
 
 <h3>Buy-to-Detail Rate</h3>

@@ -8,7 +8,7 @@ categories:
   - Analytics
 ---
 
-Sidste sommer skrev jeg om hvordan jeg brugte <a href="https://www.jacobworsoe.dk/cola-google-analytics-flic-buttons/">Flic knapper og Google Analytics</a> til at tracke vores forbrug af cola.
+Sidste sommer skrev jeg om hvordan jeg brugte <a href="{{ '/cola-google-analytics-flic-buttons/' | relative_url }}">Flic knapper og Google Analytics</a> til at tracke vores forbrug af cola.
 
 <a href="{{ '/assets/images/flic-analytics-featured-image.jpg' | relative_url }}"><img src="{{ '/assets/images/flic-analytics-featured-image-725x495.jpg' | relative_url }}" alt="" width="725" height="495" class="alignnone size-large wp-image-1389" /></a>
 
@@ -76,7 +76,7 @@ Det fede ved Node.js er at det egentlig bare er JavaScript, men hvor JavaScript 
 
 For at tracke et Event i Google Analytics skal der laves et <code>POST</code> request af en URL.
 
-Det er beskrevet i detaljer i <a href="https://www.jacobworsoe.dk/cola-google-analytics-flic-buttons/">indlægget om tracking af cola</a>.
+Det er beskrevet i detaljer i <a href="{{ '/cola-google-analytics-flic-buttons/' | relative_url }}">indlægget om tracking af cola</a>.
 
 Det kan gøres med Node.js med nedenstående kode.
 
@@ -195,7 +195,7 @@ Hvis vi kigger på det akkumulerede kaffeforbrug over dagen er der også en fast
 
 <figure><a href="{{ '/assets/images/2019/10/Akkumuleret-kaffeforbrug-v2.jpg' | relative_url }}"><img src="{{ '/assets/images/2019/10/Akkumuleret-kaffeforbrug-v2.jpg' | relative_url }}" alt="Akkumuleret kaffeforbrug" width="1166" height="664" class="size-full wp-image-2033" /></a><figcaption>Akkumuleret kaffeforbrug</figcaption></figure>
 
-Jeg har lavet en Excel skabelon, som gør det super nemt at lave heatmaps, som viser Google Analytics metrics fordelt over ugen. Læs mere om den og hent den gratis lige her: <a href="https://www.jacobworsoe.dk/visualisering-af-google-analytics-data-med-excel-heatmaps/">Visualisering af Google Analytics data med Excel heatmaps</a>.
+Jeg har lavet en Excel skabelon, som gør det super nemt at lave heatmaps, som viser Google Analytics metrics fordelt over ugen. Læs mere om den og hent den gratis lige her: <a href="{{ '/visualisering-af-google-analytics-data-med-excel-heatmaps/' | relative_url }}">Visualisering af Google Analytics data med Excel heatmaps</a>.
 
 Med den skabelon kan jeg nemt lave et overblik over kaffe fordelt over ugen. Det er interessant at der igennem et helt år er drukket markant mindre kaffe om torsdagen og man kan også se at der er klart mest brug for kaffe i starten af ugen, til lige at komme igang. Fredag eftermiddag kunne det godt ligne at kaffen er skiftet ud med en velfortjent fyraftensøl.
 

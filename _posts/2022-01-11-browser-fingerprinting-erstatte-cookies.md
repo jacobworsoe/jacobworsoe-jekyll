@@ -14,7 +14,7 @@ Tilbage i 2019 satte jeg mig for at undersøge om browser fingerprinting kunne v
 
 <h2>Cookies er geniale men begrænsede</h2>
 
-De seneste år er cookies blevet stærkt begrænset som redskab til at tracke brugere. Både fordi 3. part cookies er blevet begrænset med fx <a href="https://www.jacobworsoe.dk/itp-og-google-analytics/">ITP</a> men også fordi brugere nu skal give consent til cookies og dermed tracking.
+De seneste år er cookies blevet stærkt begrænset som redskab til at tracke brugere. Både fordi 3. part cookies er blevet begrænset med fx <a href="{{ '/itp-og-google-analytics/' | relative_url }}">ITP</a> men også fordi brugere nu skal give consent til cookies og dermed tracking.
 
 Cookies er geniale til at genkende en bestemt browser på tværs af sidevisninger og sessioner. Det er helt anonymt og brugeren har fuld kontrol og kan slette cookies efter behov.
 

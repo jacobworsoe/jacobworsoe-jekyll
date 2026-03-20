@@ -24,7 +24,7 @@ Overordnet kan man jo sige at søgeordene passer meget godt til det artiklen han
 
 Trafikken er kommet forholdsvis konstant, dog med et par peaks da sagen var helt aktuel og løbende udviklede sig.
 
-Er 112 besøg så meget eller lidt? Det kommer selvfølgelig an på sitet og mit site er jo rimelig nyt og får derfor ikke så meget trafik, så derfor har jeg kigget lidt på hvor meget trafik mine andre artikler har fået i samme periode. Højdespringeren er min artikel om at købe <a title="HDMI kabel – Skal det virkelig koste 249 kroner?" href="//www.jacobworsoe.dk/skal-et-hdmi-kabel-koste-249/">billige HDMI kabler</a> i Hong Kong, som retfærdigvis også har en noget bredere interesse end mine andre artikler.
+Er 112 besøg så meget eller lidt? Det kommer selvfølgelig an på sitet og mit site er jo rimelig nyt og får derfor ikke så meget trafik, så derfor har jeg kigget lidt på hvor meget trafik mine andre artikler har fået i samme periode. Højdespringeren er min artikel om at købe <a title="HDMI kabel – Skal det virkelig koste 249 kroner?" href="{{ '/skal-et-hdmi-kabel-koste-249/' | relative_url }}">billige HDMI kabler</a> i Hong Kong, som retfærdigvis også har en noget bredere interesse end mine andre artikler.
 
 <a href="{{ '/assets/images/google-and-china-status4.jpg' | relative_url }}"><img class="alignnone  wp-image-64 no-border" title="google-and-china-status4" src="{{ '/assets/images/google-and-china-status4.jpg' | relative_url }}" alt="" /></a>
 

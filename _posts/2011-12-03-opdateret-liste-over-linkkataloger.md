@@ -10,7 +10,7 @@ categories:
 
 <strong>Opdatering 2017:</strong> Der er ikke længere nogen værdi i at tilmelde sig linkkataloger, så derfor har jeg fjernet listen.
 
-For snart et år siden kiggede jeg lidt nærmere på <a title="Undgå at spilde din tid på døde linkkataloger" href="https://www.jacobworsoe.dk/undga-at-spilde-din-tid-pa-dode-linkkataloger/">hvor mange linkkataloget der var ramt af den nedslagtning</a> der skete i slutningen af 2010 og hvor hårdt de var ramt. Mange af katalogerne røg helt ud af indeks og alle deres sider med links blev derfor ubetydelige. Der var rigtig mange kataloger der var røget ud af indeks men også nogle stykker der havde fået lov at blive.
+For snart et år siden kiggede jeg lidt nærmere på <a title="Undgå at spilde din tid på døde linkkataloger" href="{{ '/undga-at-spilde-din-tid-pa-dode-linkkataloger/' | relative_url }}">hvor mange linkkataloget der var ramt af den nedslagtning</a> der skete i slutningen af 2010 og hvor hårdt de var ramt. Mange af katalogerne røg helt ud af indeks og alle deres sider med links blev derfor ubetydelige. Der var rigtig mange kataloger der var røget ud af indeks men også nogle stykker der havde fået lov at blive.
 
 Nu er der så gået næsten et år og det er tid til at gøre status og se hvor mange kataloger der fortsat er ramt. Som man kan se på listen herunder har jeg kigget på de samme 144 kataloger som sidst og har kigget på udviklingen siden da. Dengang var der 72 kataloger der havde mere end 100 sider indekseret. I dag er der 86, så det er måske et tegn på at nogle af de kataloger som var røget ud af indeks eller kun havde meget få sider indekseret nu igen er begyndt have sider indekseret.
 

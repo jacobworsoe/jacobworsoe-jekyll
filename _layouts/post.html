@@ -43,7 +43,13 @@ style: single
       <div class="comment-content">
         <div class="comment-author">
           {% if c.author_url and c.author_url != '' and c.author_url != 'http://' %}
-            <a {% unless c.author_url contains 'jacobworsoe.dk' %}rel="nofollow"{% endunless %} href="{{ c.author_url | escape }}">{{ c.author | escape }}</a>
+            {% assign _au0 = c.author_url | slice: 0, 1 %}
+            {% assign _same_site = false %}
+            {% if c.author_url contains 'jacobworsoe.dk' %}{% assign _same_site = true %}
+            {% elsif c.author_url == '/' %}{% assign _same_site = true %}
+            {% elsif _au0 == '/' %}{% assign _same_site = true %}
+            {% endif %}
+            <a {% unless _same_site %}rel="nofollow"{% endunless %} href="{{ c.author_url | escape }}">{{ c.author | escape }}</a>
           {% else %}
             {{ c.author | escape }}
           {% endif %}
