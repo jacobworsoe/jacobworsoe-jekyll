@@ -179,7 +179,7 @@ Det næste event er dem som har scrollet 33% af indlægget og her vil den først
 
 Add to Cart har en anelse lavere konverteringsrate end Læst 33% men forskellen er meget lille og med en p-værdi på 0,1572 er den ikke signifikant.
 
-<figure><img src="{{ '/assets/images/2020/09/significance-test-860x413.jpg' | relative_url }}" alt="&lt;a href=&quot;https://www.surveymonkey.com/mp/ab-testing-significance-calculator/&quot;&gt;SurveyMonkey&lt;/a&gt; har en god signifikans test." width="860" height="413" class="size-large wp-image-2543" /> <a href="https://www.surveymonkey.com/mp/ab-testing-significance-calculator/">SurveyMonkey</a><figcaption>har en god signifikans test.</figcaption></figure>
+<figure><a href="https://www.surveymonkey.com/mp/ab-testing-significance-calculator/"><img src="{{ '/assets/images/2020/09/significance-test-860x413.jpg' | relative_url }}" alt="SurveyMonkey: A/B-test signifikansberegner (skærmbillede)" width="860" height="413" class="size-large wp-image-2543" /></a><figcaption><a href="https://www.surveymonkey.com/mp/ab-testing-significance-calculator/">SurveyMonkey</a> har en god signifikans test.</figcaption></figure>
 
 Man kan også se at Læst 100% har en konverteringsrate der er endnu lavere end Add to Cart og Læst 100% har altså ikke set slide-in boxen endnu, så det er bare naturlig varians.
 
