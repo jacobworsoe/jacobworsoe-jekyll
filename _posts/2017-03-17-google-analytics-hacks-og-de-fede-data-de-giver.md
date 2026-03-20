@@ -16,7 +16,7 @@ Der er guld at hente ved at tilpasse værktøjet til det enkelte website og ikke
 
 Man skal bare lige vide hvordan de forskellige dimensioner og metrics udregnes og påvirker hinanden, så kan man lave noget rigtig fedt.
 
-På <a href="https://www.exchangemycoins.com/">ExchangeMyCoins.com</a> kan man veksle Bitcoins og andre digitale valuter og passer dermed ikke lige umiddelbart ned i standardrapporterne. Her vil jeg derfor vise dig hvordan vi har brugt Google Analytics kreativt og får en masse værdifuld viden om adfærden på websitet.
+På ExchangeMyCoins.com kan man veksle Bitcoins og andre digitale valuter og passer dermed ikke lige umiddelbart ned i standardrapporterne. Her vil jeg derfor vise dig hvordan vi har brugt Google Analytics kreativt og får en masse værdifuld viden om adfærden på websitet.
 
 <h2>1. Tracking af CTR for dine Call-to-Actions</h2>
 
@@ -52,7 +52,7 @@ På kvitteringssiden opfordrer vi kunderne til at lave et review på facebook. D
 
 Breaking News var en nyheds-ribbon vi havde på forsiden med et tekstlink som linkede videre. Den har en CTR på 3% og dermed slet ikke samme CTR som vores CTA-knapper. "Start Exchange here >" er fx en CTA-knap på en landingpage og har en CTR på 18%. Igen er det ikke overraskende at knapper er bedre end tekstlinks, men det er bare så fedt at få noget data på det!
 
-Vi har Call-to-Actions på alle vores landingpages som fx <a href="https://www.exchangemycoins.com/pages/buy-bitcoins-with-usd">den her</a> eller <a href="https://www.exchangemycoins.com/pages/exchange-bitcoins-paypal">den her</a>.
+Vi har call-to-actions på alle vores landingpages (fx sider til køb af bitcoin med USD eller udveksling til PayPal).
 
 Med disse data kan vi også nemt se hvor godt de performer og CTR gør det super nemt at sammenligne sider med vidt forskellige antal visninger og kliks.
 

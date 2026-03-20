@@ -70,7 +70,7 @@ case-saadan-oegede-vi-vores-e-mail-liste-med-217-mens-sitet-var-nede:
   - author: Jacob Worsøe
     date: 03/06-2015 - 10:06
     content: |-
-      Bjarke: Tak for input, og jeg er helt enig. Et andet godt eksempel er kvitteringssiden på webshops, som oftest er en blindgyde. Den er oplagt at bruge aktivt til at få mere værdi ud af kunderne. På ExchangeMyCoins.com bruger vi den til at få kundernes umiddelbare feedback efter købet. Det er guld værd! Vi får masser af gode idéer til nye features ind den vej og masser af værdifulde testimonials ud af det, som giver social proof: https://www.exchangemycoins.com/pages/testimonials
+      Bjarke: Tak for input, og jeg er helt enig. Et andet godt eksempel er kvitteringssiden på webshops, som oftest er en blindgyde. Den er oplagt at bruge aktivt til at få mere værdi ud af kunderne. På ExchangeMyCoins.com bruger vi den til at få kundernes umiddelbare feedback efter købet. Det er guld værd! Vi får masser af gode idéer til nye features ind den vej og masser af værdifulde testimonials ud af det, som giver social proof.
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
     author_url: https://www.jacobworsoe.dk
 cola-google-analytics-flic-buttons:
@@ -1843,7 +1843,7 @@ responsive-design-3-nemme-trin:
   - author: Jacob Worsøe
     date: 27/03-2017 - 12:59
     content: |-
-      Hej Rasmus Hvis du indsætter billedet som en background og sætter background-size: cover; så får du lige præcis det du gerne vil have. Se fx hero billedet her: https://www.exchangemycoins.com/ Mere om teknikken her: https://css-tricks.com/perfect-full-page-background-image/
+      Hej Rasmus Hvis du indsætter billedet som en background og sætter background-size: cover; så får du lige præcis det du gerne vil have. Se fx et tilsvarende hero-billede på en forside. Mere om teknikken her: https://css-tricks.com/perfect-full-page-background-image/
     avatar_url: https://www.gravatar.com/avatar/6c0a0aa8df43f6419e1fcbe4c21740c9?s=96&d=mm&r=g
     author_url: https://www.jacobworsoe.dk
   - author: r

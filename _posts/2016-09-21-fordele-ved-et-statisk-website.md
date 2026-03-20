@@ -10,7 +10,7 @@ categories:
 
 Vi kan lige så godt tage den største fordel først. Statiske websites er lynende hurtige!
 
-<figure><a href="https://tools.pingdom.com/#!/eJQ7vr/http://jacobworsoe.github.io/exchangemycoins-jekyll-blog/"><img src="{{ '/assets/images/Jekyll-Pingdom-tools-Github-pages-1.png' | relative_url }}" alt="Statiske websites er hurtige... meget hurtige!" width="750" height="209" class="size-medium wp-image-991" /></a><figcaption>Statiske websites er hurtige... meget hurtige!</figcaption></figure>
+<figure><img src="{{ '/assets/images/Jekyll-Pingdom-tools-Github-pages-1.png' | relative_url }}" alt="Statiske websites er hurtige... meget hurtige!" width="750" height="209" class="size-medium wp-image-991" /><figcaption>Statiske websites er hurtige... meget hurtige!</figcaption></figure>
 
 <strong>178 ms!</strong>
 
@@ -26,7 +26,7 @@ Nej, ikke længere. Med en statisk website generator som <a href="https://jekyll
 
 <a href="https://jekyllrb.com/"><img src="{{ '/assets/images/jekyll-logo-light-solid.png' | relative_url }}" alt="jekyll-logo-light-solid" width="960" height="489" class="alignnone size-full wp-image-1005" /></a>
 
-Vores blog på <a href="https://www.exchangemycoins.com/blog">ExchangeMyCoins.com</a> er drevet af Jekyll og består kun af statiske HTML filer og serveren skal derfor ikke først lave en masse arbejde, før websiden kan sendes til brugeren. Og det gør sitet lynende hurtigt!
+Vores blog på ExchangeMyCoins.com er drevet af Jekyll og består kun af statiske HTML filer og serveren skal derfor ikke først lave en masse arbejde, før websiden kan sendes til brugeren. Og det gør sitet lynende hurtigt!
 
 <h2>Statiske vs. dynamiske websites</h2>
 
