@@ -43,9 +43,9 @@ style: single
       <div class="comment-content">
         <div class="comment-author">
           {% if c.author_url and c.author_url != '' and c.author_url != 'http://' %}
-            <a {% unless c.author_url contains 'jacobworsoe.dk' %}rel="nofollow"{% endunless %} href="{{ c.author_url | escape }}">{{ c.author | escape }}</a>
+            <a {% unless c.author_url contains 'jacobworsoe.dk' %}rel="nofollow"{% endunless %} href="{{ c.author_url | html_unescape | escape }}">{{ c.author | html_unescape | escape }}</a>
           {% else %}
-            {{ c.author | escape }}
+            {{ c.author | html_unescape | escape }}
           {% endif %}
         </div>
         <div class="comment-date">{{ c.date }}</div>
