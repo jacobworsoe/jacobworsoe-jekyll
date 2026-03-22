@@ -33,11 +33,16 @@ WordPress may store **third-party image URLs** (e.g. Wistia video poster on Akam
 
 ## FTP: download referenced images only
 
-Create **`scripts/.ftp-credentials`** (gitignored), one line:
+Create **`scripts/.ftp-credentials`** (gitignored). Use `host:`, `user:`, and `password:` lines (or set `FTP_HOST`, `FTP_USER`, `FTP_PASSWORD` in the environment):
 
-`host user password`
+```
+# Simply.dk / UnoEuro (example)
+host: linux12.unoeuro.com
+user: your-ftp-user
+password: your-ftp-password
+```
 
-Example host: `linux12.unoeuro.com`. Paths in posts are `/assets/images/YYYY/MM/file.ext`; the script fetches from `public_html/wp-content/uploads/YYYY/MM/file.ext`.
+Paths in posts are `/assets/images/YYYY/MM/file.ext`; the script fetches from `public_html/wp-content/uploads/YYYY/MM/file.ext`.
 
 ```bash
 python scripts/download_referenced_images_ftp.py
