@@ -142,7 +142,7 @@ var ContentAsEcommerce = (function() {
           var twoThirdsY = contentArea.offsetTop + (contentArea.clientHeight * 2) / 3;
 
           if (bottom >= oneThirdY && !oneThird) {
-            pushGa4Ecommerce("begin_checkout", {
+            pushGa4Ecommerce("add_shipping_info", {
               currency: CURRENCY,
               value: val,
               shipping_tier: "33pct",
@@ -152,7 +152,7 @@ var ContentAsEcommerce = (function() {
           }
 
           if (bottom >= twoThirdsY && !twoThirds) {
-            pushGa4Ecommerce("add_shipping_info", {
+            pushGa4Ecommerce("add_payment_info", {
               currency: CURRENCY,
               value: val,
               payment_type: "66pct",
