@@ -10,7 +10,8 @@ module.exports = function(grunt) {
           "js/libs/prism.js",
           "js/content-as-ecommerce.js",
           "js/jacobworsoe.js",
-          "js/drinksberegner.js"
+          "js/drinksberegner.js",
+          "js/chart-bitcoin.js"
         ],
         dest: "assets/js/bundle.js"
       }
