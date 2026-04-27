@@ -14,10 +14,8 @@ Når man har mulighed for at skyde JavaScript ind på et website, kan man nemlig
 
 Det har jeg for nyligt brugt til at visualisere data på et website, ved at indsætte grafer som denne kun ved brug af Google Tag Manager.
 
-Grafen viser udviklingen af Bitcoins værdi de sidste 90 dage og opdateres dagligt med nyeste data. Og det fede er, at grafen slet ikke findes i kildekoden. Alt der skal bruges - både koden som laver grafen og de data der vises - hentes asynkront med Google Tag Manager og indsættes på siden, når det hele er hentet og klar. Og det kan indsættes et vilkårligt sted på alle sites på 5-10 minutter!
-
 <div class="attention">
-<strong>Opdatering 2026:</strong> Grafen herunder var oprindeligt indsat via GTM. Den er nu bygget direkte ind i sitet — den oprindelige guide nedenfor står urørt af historiske grunde.
+<strong>Opdatering 2026:</strong> Grafen herunder var oprindeligt indsat via GTM. Den er nu bygget direkte ind i sitet takket være Claude Code.
 </div>
 
 <div class="bitcoin-chart-wrapper">
@@ -25,6 +23,8 @@ Grafen viser udviklingen af Bitcoins værdi de sidste 90 dage og opdateres dagli
   <canvas id="bitcoinChart" aria-label="Linjegraf over Bitcoin værdi i USD det sidste år" role="img"></canvas>
   <table class="visually-hidden bitcoin-chart-data"><caption>Bitcoin værdi i USD per dag</caption><thead><tr><th>Dato</th><th>Værdi (USD)</th></tr></thead><tbody></tbody></table>
 </div>
+
+Grafen viser udviklingen af Bitcoins værdi de sidste 90 dage og opdateres dagligt med nyeste data. Og det fede er, at grafen slet ikke findes i kildekoden. Alt der skal bruges - både koden som laver grafen og de data der vises - hentes asynkront med Google Tag Manager og indsættes på siden, når det hele er hentet og klar. Og det kan indsættes et vilkårligt sted på alle sites på 5-10 minutter!
 
 <h2>Opskriften</h2>
 
