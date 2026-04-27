@@ -9,7 +9,6 @@ module.exports = function(grunt) {
         src: [
           "js/libs/prism.js",
           "js/content-as-ecommerce.js",
-          "js/tracking.js",
           "js/jacobworsoe.js",
           "js/drinksberegner.js"
         ],

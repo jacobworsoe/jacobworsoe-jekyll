@@ -10,12 +10,6 @@ var JacobWorsoeMain = {
       if (typeof product !== "undefined" && Array.isArray(product) && product.length) {
         ContentAsEcommerce.trackSinglePostAsProduct(product);
       }
-      var postContent = document.querySelector(".post-content");
-      if (postContent) {
-        postContent.addEventListener("click", function(e) {
-          Tracking.trackLinkClicks(e, "Link click in content");
-        });
-      }
     }
 
     if (pageType === "homepage" || pageType === "category") {
