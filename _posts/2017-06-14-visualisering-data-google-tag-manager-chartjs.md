@@ -21,7 +21,7 @@ Det har jeg for nyligt brugt til at visualisere data på et website, ved at inds
 <div class="bitcoin-chart-wrapper">
   <div class="bitcoin-chart-skeleton" aria-hidden="true"></div>
   <canvas id="bitcoinChart" aria-label="Linjegraf over Bitcoin værdi i USD det sidste år" role="img"></canvas>
-  <table class="visually-hidden bitcoin-chart-data"><caption>Bitcoin værdi i USD per dag</caption><thead><tr><th>Dato</th><th>Værdi (USD)</th></tr></thead><tbody></tbody></table>
+  <div class="visually-hidden"><table class="bitcoin-chart-data"><caption>Bitcoin værdi i USD per dag</caption><thead><tr><th>Dato</th><th>Værdi (USD)</th></tr></thead><tbody></tbody></table></div>
 </div>
 
 Grafen viser udviklingen af Bitcoins værdi de sidste 90 dage og opdateres dagligt med nyeste data. Og det fede er, at grafen slet ikke findes i kildekoden. Alt der skal bruges - både koden som laver grafen og de data der vises - hentes asynkront med Google Tag Manager og indsættes på siden, når det hele er hentet og klar. Og det kan indsættes et vilkårligt sted på alle sites på 5-10 minutter!
