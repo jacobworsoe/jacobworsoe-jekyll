@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'da-DK' }}">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" sizes="any">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#121d21">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>{{ page.title | default: 'Game' }} — {{ site.title }}</title>
+  {% seo %}
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+      touch-action: none;
+      -webkit-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      font-family: "Open Sans", system-ui, -apple-system, sans-serif;
+      background: #121d21;
+      color: #e8f0f2;
+    }
+
+    .game-shell {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      height: 100dvh;
+      padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    }
+
+    .game-top {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem 0.5rem;
+    }
+
+    .game-top a {
+      color: #5bb1ed;
+      text-decoration: none;
+      font-size: 0.875rem;
+      white-space: nowrap;
+    }
+
+    .game-top h1 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+      flex: 1;
+    }
+
+    .game-stage {
+      position: relative;
+      flex: 1 1 auto;
+      min-height: 0;
+      margin: 0 0.75rem 0.75rem;
+      border-radius: 1rem;
+      overflow: hidden;
+      background: #0a1114;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: inset 0 0 0 1px rgba(91, 177, 237, 0.06);
+    }
+
+    #circle-canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      touch-action: none;
+    }
+
+    .game-hud {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .game-hud.is-hidden {
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .game-hud__prompt {
+      font-size: 1.05rem;
+      line-height: 1.4;
+      color: rgba(232, 240, 242, 0.75);
+      max-width: 16rem;
+    }
+
+    .game-hud__score {
+      font-size: clamp(3.5rem, 18vw, 6rem);
+      font-weight: 700;
+      line-height: 1;
+      color: #93da8a;
+      text-shadow: 0 0 40px rgba(147, 218, 138, 0.35);
+      transform: scale(0.6);
+      opacity: 0;
+      transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+    }
+
+    .game-hud__score.is-visible {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    .game-hud__label {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: rgba(232, 240, 242, 0.9);
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 0.35s ease 0.15s, transform 0.35s ease 0.15s;
+    }
+
+    .game-hud__label.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .game-actions {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      pointer-events: none;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .game-actions.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .game-actions button {
+      appearance: none;
+      border: 0;
+      border-radius: 999px;
+      padding: 0.85rem 1.5rem;
+      font: inherit;
+      font-weight: 600;
+      color: #121d21;
+      background: #5bb1ed;
+      box-shadow: 0 8px 24px rgba(91, 177, 237, 0.35);
+    }
+
+    .game-actions button:active {
+      transform: scale(0.97);
+    }
+  </style>
+</head>
+<body>
+  <div class="game-shell">
+    <header class="game-top">
+      <a href="{{ '/' | relative_url }}">← Home</a>
+      <h1>{{ page.title }}</h1>
+      <span aria-hidden="true" style="width: 3.5rem;"></span>
+    </header>
+
+    <div class="game-stage" id="game-stage">
+      <canvas id="circle-canvas" aria-label="Draw a circle on this canvas"></canvas>
+
+      <div class="game-hud" id="game-hud">
+        <p class="game-hud__prompt" id="game-prompt">Draw a circle with your finger. Lift to score.</p>
+        <div class="game-hud__score" id="game-score" aria-live="polite"></div>
+        <p class="game-hud__label" id="game-label"></p>
+      </div>
+
+      <div class="game-actions" id="game-actions">
+        <button type="button" id="try-again">Try again</button>
+      </div>
+    </div>
+  </div>
+
+  {{ content }}
+
+  <script src="{{ '/js/perfect-circle.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+</body>
+</html>
