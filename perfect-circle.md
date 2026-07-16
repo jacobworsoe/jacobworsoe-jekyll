@@ -1,6 +1,6 @@
 ---
 layout: game
-title: Perfect Circle
+title: Perfekt Cirkel
 permalink: /perfect-circle/
-description: Draw a perfect circle with your finger and get scored on how round it is.
+description: Tegn en perfekt cirkel med fingeren og få point for hvor rund den er.
 ---

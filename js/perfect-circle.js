@@ -8,11 +8,19 @@
   var HUE_STEP = 6;
   var FX_DURATION = 3000;
   var FX_HARD_STOP = 4500;
+  var SCORES_KEY = "perfectCircleScores";
+  var MAX_SCORES = 10;
+  // Det løbende estimat plejer at ligge 10-15 point højere end slutresultatet
+  // (de sidste, hakkende punkter lige inden man slipper trækker snittet ned),
+  // så vi nedjusterer den løbende visning for at matche det bedre.
+  var LIVE_SCORE_CALIBRATION = 12;
 
   var canvas = document.getElementById("circle-canvas");
   var stage = document.getElementById("game-stage");
   var hud = document.getElementById("game-hud");
   var prompt = document.getElementById("game-prompt");
+  var leaderboardEl = document.getElementById("game-leaderboard");
+  var leaderboardListEl = document.getElementById("game-leaderboard-list");
   var scoreEl = document.getElementById("game-score");
   var labelEl = document.getElementById("game-label");
   var actions = document.getElementById("game-actions");
@@ -62,9 +70,73 @@
     render();
   }
 
+  function loadScores() {
+    try {
+      var raw = localStorage.getItem(SCORES_KEY);
+      var list = raw ? JSON.parse(raw) : [];
+      if (!Array.isArray(list)) return [];
+      return list.filter(function (n) { return typeof n === "number" && isFinite(n); });
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function saveScores(list) {
+    try {
+      localStorage.setItem(SCORES_KEY, JSON.stringify(list));
+    } catch (e) {
+      // localStorage utilgængelig (fx privat browsing) — highscore gemmes bare ikke
+    }
+  }
+
+  function isTopTenScore(score, list) {
+    if (list.length < MAX_SCORES) return true;
+    return score > list[list.length - 1];
+  }
+
+  function addScoreIfTopTen(score) {
+    var list = loadScores();
+    var qualifies = isTopTenScore(score, list);
+    if (qualifies) {
+      list.push(score);
+      list.sort(function (a, b) { return b - a; });
+      list = list.slice(0, MAX_SCORES);
+      saveScores(list);
+    }
+    renderLeaderboard(list);
+    return qualifies;
+  }
+
+  function renderLeaderboard(list) {
+    if (!leaderboardListEl) return;
+    list = list || loadScores();
+    leaderboardListEl.innerHTML = "";
+
+    if (list.length === 0) {
+      var emptyItem = document.createElement("li");
+      emptyItem.className = "game-hud__leaderboard-empty";
+      emptyItem.textContent = "Ingen highscores endnu — tegn din første cirkel!";
+      leaderboardListEl.appendChild(emptyItem);
+      return;
+    }
+
+    for (var i = 0; i < list.length; i++) {
+      var item = document.createElement("li");
+      var rank = document.createElement("span");
+      rank.textContent = (i + 1) + ".";
+      var value = document.createElement("span");
+      value.textContent = list[i] + " point";
+      item.appendChild(rank);
+      item.appendChild(value);
+      leaderboardListEl.appendChild(item);
+    }
+  }
+
   function clearHud() {
     hud.classList.remove("is-drawing");
     prompt.hidden = false;
+    if (leaderboardEl) leaderboardEl.hidden = false;
+    renderLeaderboard();
     scoreEl.textContent = "";
     scoreEl.classList.remove("is-visible");
     scoreEl.style.color = "";
@@ -223,7 +295,8 @@
     if (pts.length < MIN_LIVE_POINTS) return 0;
     var result = computeCircleQuality(pts);
     if (!result || result.circle.r < MIN_LIVE_RADIUS) return 0;
-    return scoreFromQuality(result.quality);
+    var raw = scoreFromQuality(result.quality);
+    return Math.round(clamp(raw - LIVE_SCORE_CALIBRATION, 0, 100));
   }
 
   function updateLiveScore() {
@@ -234,12 +307,12 @@
 
   function scoreStroke(pts) {
     if (pts.length < MIN_POINTS) {
-      return { score: 0, message: "Too short — draw a bigger circle." };
+      return { score: 0, message: "For kort — tegn en større cirkel." };
     }
 
     var result = computeCircleQuality(pts);
     if (result.circle.r < MIN_RADIUS) {
-      return { score: 0, message: "Circle too small — use more of the screen." };
+      return { score: 0, message: "Cirklen er for lille — brug mere af skærmen." };
     }
 
     var score = scoreFromQuality(result.quality);
@@ -252,12 +325,12 @@
   }
 
   function messageForScore(score) {
-    if (score >= 97) return "Impossibly round!";
-    if (score >= 90) return "Excellent circle!";
-    if (score >= 75) return "Pretty good!";
-    if (score >= 55) return "Not bad — keep practicing.";
-    if (score >= 35) return "A bit wobbly.";
-    return "That was… creative.";
+    if (score >= 97) return "Utroligt rund!";
+    if (score >= 90) return "Fremragende cirkel!";
+    if (score >= 75) return "Ret godt!";
+    if (score >= 55) return "Ikke dårligt — bliv ved med at øve dig.";
+    if (score >= 35) return "Lidt vaklende.";
+    return "Det var... kreativt.";
   }
 
   function colorForScore(score) {
@@ -276,9 +349,13 @@
 
     hud.classList.remove("is-drawing");
     prompt.hidden = true;
+    if (leaderboardEl) leaderboardEl.hidden = true;
+
+    var madeTopTen = result.circle ? addScoreIfTopTen(result.score) : false;
+
     scoreEl.textContent = String(result.score);
     scoreEl.style.color = colorForScore(result.score);
-    labelEl.textContent = result.message;
+    labelEl.textContent = madeTopTen ? result.message + " Nyt highscore!" : result.message;
 
     if (navigator.vibrate) {
       navigator.vibrate(result.score >= 75 ? [20, 40, 20] : 20);
@@ -290,7 +367,7 @@
       actions.classList.add("is-visible");
     });
 
-    if (result.circle) {
+    if (madeTopTen) {
       triggerCelebration(result.score);
     }
   }
@@ -510,5 +587,6 @@
     setTimeout(resize, 100);
   });
 
+  renderLeaderboard();
   resize();
 })();

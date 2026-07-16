@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#121d21">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>{{ page.title | default: 'Game' }} — {{ site.title }}</title>
+  <title>{{ page.title | default: 'Spil' }} — {{ site.title }}</title>
   {% seo %}
   <style>
     *, *::before, *::after { box-sizing: border-box; }
@@ -99,16 +99,60 @@
       text-align: center;
     }
 
+    .game-hud__prompt,
+    .game-hud__leaderboard {
+      transition: opacity 0.2s ease;
+    }
+
+    .game-hud.is-drawing .game-hud__prompt,
+    .game-hud.is-drawing .game-hud__leaderboard {
+      opacity: 0;
+    }
+
     .game-hud__prompt {
       font-size: 1.05rem;
       line-height: 1.4;
       color: rgba(232, 240, 242, 0.75);
       max-width: 16rem;
-      transition: opacity 0.2s ease;
     }
 
-    .game-hud.is-drawing .game-hud__prompt {
-      opacity: 0;
+    .game-hud__leaderboard {
+      margin-top: 1.25rem;
+      width: 100%;
+      max-width: 15rem;
+    }
+
+    .game-hud__leaderboard-title {
+      margin: 0 0 0.4rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(232, 240, 242, 0.5);
+    }
+
+    .game-hud__leaderboard-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      font-size: 0.95rem;
+      color: rgba(232, 240, 242, 0.85);
+    }
+
+    .game-hud__leaderboard-list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.15rem 0.5rem;
+    }
+
+    .game-hud__leaderboard-empty {
+      color: rgba(232, 240, 242, 0.5);
+      font-style: italic;
+      justify-content: center !important;
     }
 
     .game-hud__score {
@@ -181,23 +225,27 @@
 <body>
   <div class="game-shell">
     <header class="game-top">
-      <a href="{{ '/' | relative_url }}">← Home</a>
+      <a href="{{ '/' | relative_url }}">← Hjem</a>
       <h1>{{ page.title }}</h1>
       <span aria-hidden="true" style="width: 3.5rem;"></span>
     </header>
 
     <div class="game-stage" id="game-stage">
-      <canvas id="circle-canvas" aria-label="Draw a circle on this canvas"></canvas>
+      <canvas id="circle-canvas" aria-label="Tegn en cirkel på dette felt"></canvas>
       <canvas id="fx-canvas" aria-hidden="true"></canvas>
 
       <div class="game-hud" id="game-hud">
-        <p class="game-hud__prompt" id="game-prompt">Draw a circle with your finger. Lift to score.</p>
+        <p class="game-hud__prompt" id="game-prompt">Tegn en cirkel med fingeren. Slip for at få point.</p>
+        <div class="game-hud__leaderboard" id="game-leaderboard">
+          <h2 class="game-hud__leaderboard-title">Highscore</h2>
+          <ol class="game-hud__leaderboard-list" id="game-leaderboard-list"></ol>
+        </div>
         <div class="game-hud__score" id="game-score" aria-live="polite"></div>
         <p class="game-hud__label" id="game-label"></p>
       </div>
 
       <div class="game-actions" id="game-actions">
-        <button type="button" id="try-again">Try again</button>
+        <button type="button" id="try-again">Prøv igen</button>
       </div>
     </div>
   </div>
